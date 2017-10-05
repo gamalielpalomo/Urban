@@ -1,0 +1,21 @@
+{
+
+	"features":[{
+
+		"geometry": {
+			"coordinates": [
+				[-103.429555, 20.677018],
+				[-103.430647, 20.672575]],
+			"type" : "LineString"
+		},
+		"properties": {
+            "GRADE": 7,
+            "LINE": "GREEN",
+            "ROUTE": "Galerías - Mozart",
+            "SHAPE_LEN": 458.38609573999997
+        },
+        "type": "Feature"
+
+	}]
+
+}
