@@ -34,7 +34,10 @@ void setup() {
   for(int column = 0; column < columns; column++){
     for(int row = 0; row<rows; row++){
       //int randomNumber = int(random(2));
-      board[column][row] = int(random(2));
+      if(int(random(0,100))>50)
+        board[column][row] = 1;
+      else 
+        board[column][row] = 0;
       System.out.println(board[column][row]);
     }
   }
@@ -58,7 +61,7 @@ void draw() {
 }
 
 void updateScenario(){
-  
+  next = new int [columns][rows];
   for(int column = 1; column<columns-1; column++) {
     for(int row = 1; row<rows-1; row++){
     
