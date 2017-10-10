@@ -38,7 +38,6 @@ void setup() {
         board[column][row] = 1;
       else 
         board[column][row] = 0;
-      System.out.println(board[column][row]);
     }
   }
   
