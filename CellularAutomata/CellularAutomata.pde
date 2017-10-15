@@ -6,8 +6,6 @@ import de.fhpotsdam.unfolding.data.Feature;
 import de.fhpotsdam.unfolding.marker.Marker;
 import de.fhpotsdam.unfolding.data.ShapeFeature;
 import de.fhpotsdam.unfolding.marker.SimpleLinesMarker;
-import java.util.List;
-import java.util.ArrayList;
 
 UnfoldingMap map;
 PImage bg;
