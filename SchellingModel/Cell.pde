@@ -1,10 +1,13 @@
 public class Cell{
   int row;
   int column;
-  int state;
-  public Cell(int r, int c, int s){
+  int type;
+  public Cell(int r, int c, int t){
        this.row = r;
        this.column = c;
-       this.state = s;
+       this.type = t;
   }
+  public int getType(){return this.type;}
+  public int getRow(){return this.row;}
+  public int getColumn(){return this.column;}
 }
