@@ -18,17 +18,18 @@ void setup(){
   types = 2;
   
   //Board building
+  rows = height/cellSize;
+  columns = width/cellSize;
   board = new int[rows][columns];
   cells = new ArrayList();
   freeCells = new ArrayList();
-  rows = height/cellSize;
-  columns = width/cellSize;
+  
   for(int row = 0; row<rows; row++){
     for(int column = 0; column<columns; column++){
       int random = int(random(0,100));
       if(random<33){
         freeCells.add(new Cell(row,column,0));
-        board[row][columns] = 0;
+        board[row][column] = 0;
       }
       else if(random>=33 && random<66){
         cells.add(new Cell(row,column,1));
