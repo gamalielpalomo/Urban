@@ -6,7 +6,6 @@ int columns;
 int types;
 ArrayList<Cell> freeCells;
 ArrayList<Cell> cells;
-ArrayList<Cell> next;
 int [][]board;
 
 void setup(){
@@ -36,25 +35,25 @@ void setup(){
   for(int row = 0; row<rows; row++){
     for(int column = 0; column<columns; column++){
       int random = int(random(0,100));
-      if(random<33){
+      if(random<20){
         freeCells.add(new Cell(row,column,0,0f));
         board[row][column] = 0;
       }
-      else if(random>=33 && random<66){
-        //float  rndmSatisfaction = int(random(70,100))/100f;
-        cells.add(new Cell(row,column,1,0.8f));
+      else if(random>=20 && random<90){
+        //float  rndmSatisfaction = int(random(20,100))/100f;
+        cells.add(new Cell(row,column,1,1f));
         board[row][column] = 1;
       }
       else{
         //float  rndmSatisfaction = int(random(0,50))/100f;
-        cells.add(new Cell(row,column,2,0.5f));
+        cells.add(new Cell(row,column,2,0f));
         board[row][column] = 2;
       }
     }
   }
 }
 void draw(){
-  delay(0);
+  delay(400);
   for(Cell element:freeCells){
     fill(color(255,255,255));
     rect(element.getRow()*cellSize,element.getColumn()*cellSize,cellSize,cellSize);
@@ -69,12 +68,14 @@ void draw(){
   updateScenario();
 }
 void updateScenario(){
-  next = new ArrayList();
+  ArrayList<Cell> unsatisfied = new ArrayList();
   for(Cell element:cells){
     if(getActualSatisfaction(element)<element.getSatisfaction()){
       moveCell(element);
+      unsatisfied.add(element);
     }
   }
+  cells = new ArrayList(unsatisfied);
 }
 
 float getActualSatisfaction(Cell cell){
@@ -83,9 +84,9 @@ float getActualSatisfaction(Cell cell){
   int column = cell.getColumn();
   float neighbors = 0;
   for(int r=-1; r<=1; r++){
-    if((row+r>0)&&(row+r<rows)){
+    if((row+r>=0)&&(row+r<rows)){
       for(int c=-1; c<=1; c++){
-        if((column+c>0)&&(column+c<columns)){
+        if((column+c>=0)&&(column+c<columns)){
           if(board[row+r][column+c]!=0)
             neighbors+=1;
           if(board[row+r][column+c]==cell.getType())
@@ -96,6 +97,7 @@ float getActualSatisfaction(Cell cell){
     }
   }
   result = result - 1;
+  neighbors = neighbors - 1;
   if(neighbors == 0)
     return 1;
   return result/neighbors;
