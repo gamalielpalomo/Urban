@@ -10,11 +10,20 @@ ArrayList<Cell> next;
 int [][]board;
 
 void setup(){
+  
+ 
+  //Graph window
+  /*String []args = {"Output data"};
+  Graph output = new Graph();
+  PApplet.runSketch(args,output);*/
+  
   //Graphic initialization
-  size(600,600);
+  size(800,800);
+  //fullScreen();
+  
   
   //Simulation variables
-  cellSize = 20;
+  cellSize = 3;
   types = 2;
   
   //Board building
@@ -33,19 +42,19 @@ void setup(){
       }
       else if(random>=33 && random<66){
         //float  rndmSatisfaction = int(random(70,100))/100f;
-        cells.add(new Cell(row,column,1,0.5f));
+        cells.add(new Cell(row,column,1,0.8f));
         board[row][column] = 1;
       }
       else{
         //float  rndmSatisfaction = int(random(0,50))/100f;
-        cells.add(new Cell(row,column,2,0.3f));
+        cells.add(new Cell(row,column,2,0.5f));
         board[row][column] = 2;
       }
     }
   }
 }
 void draw(){
-  delay(500);
+  delay(0);
   for(Cell element:freeCells){
     fill(color(255,255,255));
     rect(element.getRow()*cellSize,element.getColumn()*cellSize,cellSize,cellSize);
