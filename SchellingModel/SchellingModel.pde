@@ -28,24 +28,24 @@ void setup(){
     for(int column = 0; column<columns; column++){
       int random = int(random(0,100));
       if(random<33){
-        freeCells.add(new Cell(row,column,0));
+        freeCells.add(new Cell(row,column,0,0f));
         board[row][column] = 0;
       }
       else if(random>=33 && random<66){
-        cells.add(new Cell(row,column,1));
+        cells.add(new Cell(row,column,1,0.3f));
         board[row][column] = 1;
       }
       else{
-        cells.add(new Cell(row,column,2));
+        cells.add(new Cell(row,column,2,0.3f));
         board[row][column] = 2;
       }        
     }
   }
 }
 void draw(){
-  delay(100);
+  delay(500);
   for(Cell element:freeCells){
-    noFill();
+    fill(color(255,255,255));
     rect(element.getRow()*cellSize,element.getColumn()*cellSize,cellSize,cellSize);
   }
   for(Cell element:cells){
@@ -55,22 +55,41 @@ void draw(){
       fill(color(0,0,255));
     rect(element.getRow()*cellSize,element.getColumn()*cellSize,cellSize,cellSize);
   }  
+  updateScenario();
 }
 void updateScenario(){
   next = new ArrayList();
   for(Cell element:cells){
-    
+    if(getActualSatisfaction(element)<element.getSatisfaction()){
+      moveCell(element);
+    }
   }
 }
 
-int getSatisfaction(Cell cell){
-  int result = 100;
+float getActualSatisfaction(Cell cell){
+  float result = 0;
   int row = cell.getRow();
   int column = cell.getColumn();
-  int type = cell.getType(); 
   for(int r=-1; r<=1; r++){
-        for(int c=-1; c<=1; c++)
-          result += board[row+r][column+c];
+    if((row+r>0)&&(row+r<rows)){
+      for(int c=-1; c<=1; c++)
+        if((column+c>0)&&(column+c<columns))
+          if(board[row+r][column+c]==cell.getType())
+            result+=1;
+    }
   }
-  return result;
+  result = result - 1;
+  return result/9f;
+}
+
+void moveCell(Cell cell){
+  if(freeCells.size()>0){
+    Cell freeCell = freeCells.get(0);
+    freeCells.remove(0);
+    freeCells.add(new Cell(cell.getRow(),cell.getColumn(),0,0));
+    board[cell.getRow()][cell.getColumn()] = 0;
+    cell.setRow(freeCell.getRow());
+    cell.setColumn(freeCell.getColumn());
+    board[cell.getRow()][cell.getColumn()] = cell.getType();    
+  }
 }
