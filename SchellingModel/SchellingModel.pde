@@ -22,7 +22,7 @@ void setup(){
   
   
   //Simulation variables
-  cellSize = 3;
+  cellSize = 2;
   types = 2;
   
   //Board building
@@ -35,25 +35,25 @@ void setup(){
   for(int row = 0; row<rows; row++){
     for(int column = 0; column<columns; column++){
       int random = int(random(0,100));
-      if(random<20){
+      if(random<40){
         freeCells.add(new Cell(row,column,0,0f));
         board[row][column] = 0;
       }
-      else if(random>=20 && random<90){
+      else if(random>=40 && random<70){
         //float  rndmSatisfaction = int(random(20,100))/100f;
         cells.add(new Cell(row,column,1,1f));
         board[row][column] = 1;
       }
       else{
         //float  rndmSatisfaction = int(random(0,50))/100f;
-        cells.add(new Cell(row,column,2,0f));
+        cells.add(new Cell(row,column,2,1f));
         board[row][column] = 2;
       }
     }
   }
 }
 void draw(){
-  delay(400);
+  delay(0);
   for(Cell element:freeCells){
     fill(color(255,255,255));
     rect(element.getRow()*cellSize,element.getColumn()*cellSize,cellSize,cellSize);
