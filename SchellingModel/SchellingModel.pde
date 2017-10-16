@@ -32,18 +32,22 @@ void setup(){
         board[row][column] = 0;
       }
       else if(random>=33 && random<66){
-        cells.add(new Cell(row,column,1,0.3f));
+        /*float  rndmSatisfaction = int(random(0,100))/100f;
+        cells.add(new Cell(row,column,1,rndmSatisfaction));*/
+        cells.add(new Cell(row,column,1,0.6f));
         board[row][column] = 1;
       }
       else{
-        cells.add(new Cell(row,column,2,0.3f));
+        /*float  rndmSatisfaction = int(random(0,100))/100f;
+        cells.add(new Cell(row,column,2,rndmSatisfaction));*/
+        cells.add(new Cell(row,column,2,0.6f));
         board[row][column] = 2;
-      }        
+      }
     }
   }
 }
 void draw(){
-  delay(500);
+  delay(100);
   for(Cell element:freeCells){
     fill(color(255,255,255));
     rect(element.getRow()*cellSize,element.getColumn()*cellSize,cellSize,cellSize);
@@ -70,16 +74,24 @@ float getActualSatisfaction(Cell cell){
   float result = 0;
   int row = cell.getRow();
   int column = cell.getColumn();
+  float neighbors = 0;
   for(int r=-1; r<=1; r++){
     if((row+r>0)&&(row+r<rows)){
-      for(int c=-1; c<=1; c++)
-        if((column+c>0)&&(column+c<columns))
+      for(int c=-1; c<=1; c++){
+        if((column+c>0)&&(column+c<columns)){
+          if(board[row+r][column+c]!=0)
+            neighbors+=1;
           if(board[row+r][column+c]==cell.getType())
             result+=1;
+        }
+      }
+        
     }
   }
   result = result - 1;
-  return result/9f;
+  if(neighbors == 0)
+    return 1;
+  return result/neighbors;
 }
 
 void moveCell(Cell cell){
