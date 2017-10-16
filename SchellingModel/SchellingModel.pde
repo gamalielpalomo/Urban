@@ -32,31 +32,29 @@ void setup(){
         board[row][column] = 0;
       }
       else if(random>=33 && random<66){
-        /*float  rndmSatisfaction = int(random(0,100))/100f;
-        cells.add(new Cell(row,column,1,rndmSatisfaction));*/
-        cells.add(new Cell(row,column,1,0.6f));
+        //float  rndmSatisfaction = int(random(70,100))/100f;
+        cells.add(new Cell(row,column,1,0.5f));
         board[row][column] = 1;
       }
       else{
-        /*float  rndmSatisfaction = int(random(0,100))/100f;
-        cells.add(new Cell(row,column,2,rndmSatisfaction));*/
-        cells.add(new Cell(row,column,2,0.6f));
+        //float  rndmSatisfaction = int(random(0,50))/100f;
+        cells.add(new Cell(row,column,2,0.3f));
         board[row][column] = 2;
       }
     }
   }
 }
 void draw(){
-  delay(100);
+  delay(500);
   for(Cell element:freeCells){
     fill(color(255,255,255));
     rect(element.getRow()*cellSize,element.getColumn()*cellSize,cellSize,cellSize);
   }
   for(Cell element:cells){
     if(element.getType()==1)
-      fill(color(255,0,0));
+      fill(color(142,49,49));
     else if(element.getType()==2)
-      fill(color(0,0,255));
+      fill(color(53,191,181));
     rect(element.getRow()*cellSize,element.getColumn()*cellSize,cellSize,cellSize);
   }  
   updateScenario();
@@ -96,8 +94,9 @@ float getActualSatisfaction(Cell cell){
 
 void moveCell(Cell cell){
   if(freeCells.size()>0){
-    Cell freeCell = freeCells.get(0);
-    freeCells.remove(0);
+    int index = int(random(0,freeCells.size()-1));
+    Cell freeCell = freeCells.get(index);
+    freeCells.remove(index);
     freeCells.add(new Cell(cell.getRow(),cell.getColumn(),0,0));
     board[cell.getRow()][cell.getColumn()] = 0;
     cell.setRow(freeCell.getRow());
