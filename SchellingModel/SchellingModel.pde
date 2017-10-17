@@ -4,6 +4,8 @@ int cellSize;
 int rows;
 int columns;
 int types;
+int gridSize;
+float satisfied;
 ArrayList<Cell> freeCells;
 ArrayList<Cell> cells;
 int [][]board;
@@ -25,9 +27,10 @@ void setup(){
   cellSize = 2;
   types = 2;
   
-  //Board building
+  //Board building  
   rows = height/cellSize;
   columns = width/cellSize;
+  gridSize = columns*rows;
   board = new int[rows][columns];
   cells = new ArrayList();
   freeCells = new ArrayList();
@@ -41,12 +44,12 @@ void setup(){
       }
       else if(random>=40 && random<70){
         //float  rndmSatisfaction = int(random(20,100))/100f;
-        cells.add(new Cell(row,column,1,1f));
+        cells.add(new Cell(row,column,1,0.7f));
         board[row][column] = 1;
       }
       else{
         //float  rndmSatisfaction = int(random(0,50))/100f;
-        cells.add(new Cell(row,column,2,1f));
+        cells.add(new Cell(row,column,2,0.3f));
         board[row][column] = 2;
       }
     }
@@ -64,8 +67,15 @@ void draw(){
     else if(element.getType()==2)
       fill(color(53,191,181));
     rect(element.getRow()*cellSize,element.getColumn()*cellSize,cellSize,cellSize);
-  }  
-  updateScenario();
+  }
+  System.out.println("size(cells) -> "+cells.size());
+  satisfied = (gridSize-cells.size());
+  satisfied = satisfied / gridSize;
+  System.out.println("Satisfied cells -> "+(gridSize-cells.size())+"/"+gridSize+" ("+satisfied*100+" %)");
+  if(cells.size()>0)
+    updateScenario();
+  else 
+    System.out.println("COMPLETED");
 }
 void updateScenario(){
   ArrayList<Cell> unsatisfied = new ArrayList();
