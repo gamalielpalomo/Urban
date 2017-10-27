@@ -22,12 +22,12 @@ void setup(){
   PApplet.runSketch(args,output);*/
   
   //Graphic initialization
-  size(800,800);
+  size(900,900);
   //fullScreen();
   
   
   //Simulation variables
-  cellSize = 3;
+  cellSize = 5;
   types = 2;
   nSize = 3;
   
@@ -48,19 +48,19 @@ void setup(){
       }
       else if(random>=50 && random<75){
         //float  rndmSatisfaction = int(random(20,100))/100f;
-        cells.add(new Cell(row,column,1,0.7f));
+        cells.add(new Cell(row,column,1,0.8f));
         board[row][column] = 1;
       }
       else{
         //float  rndmSatisfaction = int(random(0,50))/100f;
-        cells.add(new Cell(row,column,2,0.9f));
+        cells.add(new Cell(row,column,2,0.7f));
         board[row][column] = 2;
       }
     }
   }
 }
 void draw(){
-  delay(200);
+  delay(300);
   for(Cell element:freeCells){
     fill(color(255,255,255));
     rect(element.getRow()*cellSize,element.getColumn()*cellSize,cellSize,cellSize);
