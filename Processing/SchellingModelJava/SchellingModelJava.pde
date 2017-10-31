@@ -22,14 +22,14 @@ void setup(){
   PApplet.runSketch(args,output);*/
   
   //Graphic initialization
-  size(800,800);
+  size(900,900);
   //fullScreen();
   
   
   //Simulation variables
   cellSize = 2;
   types = 2;
-  nSize = 2;
+  nSize = 5;
   
   //Board building  
   rows = height/cellSize;
@@ -60,7 +60,7 @@ void setup(){
   }
 }
 void draw(){
-  delay(00);
+  delay(300);
   for(Cell element:freeCells){
     fill(color(255,255,255));
     rect(element.getRow()*cellSize,element.getColumn()*cellSize,cellSize,cellSize);
