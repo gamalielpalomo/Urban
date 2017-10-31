@@ -3,9 +3,9 @@ from Cell import Cell
 #Simulation variables
 h = 900
 w = 900
-cellSize = 5
+cellSize = 2
 cellTypes = 2
-nSize = 3
+nSize = 2
 columns = int(w/cellSize)
 rows = int(h/cellSize)
 board = []
