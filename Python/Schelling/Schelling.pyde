@@ -3,19 +3,31 @@ from Cell import Cell
 #Simulation variables
 h = 900
 w = 900
-cellSize = 2
+cellSize = 3
 cellTypes = 2
-nSize = 2
+nSize = 6
 columns = int(w/cellSize)
 rows = int(h/cellSize)
+gridSize = columns*rows
 board = []
 freeCells = list()
 cells = list()
+cellsToRepaint = list()
 
 def setup():
     size(h,w)
-    gridSize = columns*rows
     initGrid(columns,rows)
+    
+    for element in freeCells:
+        fill(color(255,255,255))
+        rect(element.row*cellSize,element.column*cellSize,cellSize,cellSize)
+    for element in cells:
+        if element.type == 1:
+            fill(color(142,49,49))
+        elif element.type == 2:
+            fill(color(53,191,181))
+        rect(element.row*cellSize,element.column*cellSize,cellSize,cellSize)
+    
     
 def initGrid(columns,rows):
     for row in range (0, rows):
@@ -29,11 +41,11 @@ def initGrid(columns,rows):
                 cells.append(Cell(row,column,1,0.6))
                 board[row].append(1)
             else:
-                cells.append(Cell(row,column,2,0.7))
+                cells.append(Cell(row,column,2,0.6))
                 board[row].append(2)
                 
 def draw():
-    for element in freeCells:
+    """for element in freeCells:
         fill(color(255,255,255))
         rect(element.row*cellSize,element.column*cellSize,cellSize,cellSize)
     for element in cells:
@@ -42,9 +54,22 @@ def draw():
         elif element.type == 2:
             fill(color(53,191,181))
         rect(element.row*cellSize,element.column*cellSize,cellSize,cellSize)
+    """
+    print "cells to repaint: "+str(len(cellsToRepaint))
+    satisfied = gridSize - len(cellsToRepaint)
+    print "percentage: "+str(float(satisfied)/float(gridSize)*100)
+    for element in cellsToRepaint:
+        if element.type == 0:
+            fill(color(255,255,255))
+        elif element.type == 1:
+            fill(color(142,49,49))
+        elif element.type == 2:
+            fill(color(53,191,181))
+        rect(element.row*cellSize,element.column*cellSize,cellSize,cellSize)
     updateScenario()
     
 def updateScenario():
+    cellsToRepaint[:] = []
     for element in cells:
         actualSat = getActualSatisfaction(element)
         cellSat = float(element.satisfaction)
@@ -76,8 +101,11 @@ def moveCell(cell):
         index = int(random(0,len(freeCells)))
         freeCell = freeCells[index]
         del freeCells[index]
-        freeCells.append(Cell(cell.row,cell.column,0,0))
+        newFreeCell = Cell(cell.row,cell.column,0,0)
+        freeCells.append(newFreeCell)
+        cellsToRepaint.append(newFreeCell)
         board[cell.row][cell.column] = 0
         cell.row = freeCell.row
         cell.column = freeCell.column
-        board[cell.row][cell.column] = cell.type                                                                                                                                
+        board[cell.row][cell.column] = cell.type
+        cellsToRepaint.append(cell)                                                                                                                                
