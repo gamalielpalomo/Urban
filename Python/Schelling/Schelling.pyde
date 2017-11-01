@@ -1,11 +1,11 @@
 from Cell import Cell
 
 #Simulation variables
-h = 900
-w = 900
+h = 800
+w = 800
 cellSize = 3
 cellTypes = 2
-nSize = 6
+nSize = 1
 columns = int(w/cellSize)
 rows = int(h/cellSize)
 gridSize = columns*rows
@@ -19,7 +19,7 @@ def setup():
     initGrid(columns,rows)
     
     for element in freeCells:
-        fill(color(255,255,255))
+        fill(color(0,0,0))
         rect(element.row*cellSize,element.column*cellSize,cellSize,cellSize)
     for element in cells:
         if element.type == 1:
@@ -34,14 +34,14 @@ def initGrid(columns,rows):
         board.append([])
         for column in range (0, columns):
             rnd = int(random(0,100))
-            if rnd<50 :
+            if rnd<20 :
                 freeCells.append(Cell(row,column,0,0))
                 board[row].append(0)
-            elif rnd>=50 and rnd < 75:
-                cells.append(Cell(row,column,1,0.6))
+            elif rnd>=20 and rnd < 60:
+                cells.append(Cell(row,column,1,0.8))
                 board[row].append(1)
             else:
-                cells.append(Cell(row,column,2,0.6))
+                cells.append(Cell(row,column,2,0.7))
                 board[row].append(2)
                 
 def draw():
@@ -60,7 +60,7 @@ def draw():
     print "percentage: "+str(float(satisfied)/float(gridSize)*100)
     for element in cellsToRepaint:
         if element.type == 0:
-            fill(color(255,255,255))
+            fill(color(0,0,0))
         elif element.type == 1:
             fill(color(142,49,49))
         elif element.type == 2:
