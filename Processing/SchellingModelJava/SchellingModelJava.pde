@@ -27,9 +27,9 @@ void setup(){
   
   
   //Simulation variables
-  cellSize = 2;
+  cellSize = 3;
   types = 2;
-  nSize = 5;
+  nSize = 3;
   
   //Board building  
   rows = height/cellSize;
@@ -48,12 +48,12 @@ void setup(){
       }
       else if(random>=50 && random<75){
         //float  rndmSatisfaction = int(random(20,100))/100f;
-        cells.add(new Cell(row,column,1,0.5f));
+        cells.add(new Cell(row,column,1,0.8f));
         board[row][column] = 1;
       }
       else{
         //float  rndmSatisfaction = int(random(0,50))/100f;
-        cells.add(new Cell(row,column,2,0.5f));
+        cells.add(new Cell(row,column,2,0.7f));
         board[row][column] = 2;
       }
     }

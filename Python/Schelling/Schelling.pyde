@@ -5,7 +5,7 @@ h = 900
 w = 900
 cellSize = 3
 cellTypes = 2
-nSize = 6
+nSize = 2
 columns = int(w/cellSize)
 rows = int(h/cellSize)
 gridSize = columns*rows
@@ -15,16 +15,20 @@ cells = list()
 cellsToRepaint = list()
 
 def setup():
+    randomSeed(100)
     size(h,w)
     initGrid(columns,rows)
-    
+    background(0)
     for element in freeCells:
-        fill(color(255,255,255))
+        stroke(0)
+        fill(0)
         rect(element.row*cellSize,element.column*cellSize,cellSize,cellSize)
     for element in cells:
         if element.type == 1:
+            stroke(color(142,49,49))
             fill(color(142,49,49))
         elif element.type == 2:
+            stroke(color(53,191,181))
             fill(color(53,191,181))
         rect(element.row*cellSize,element.column*cellSize,cellSize,cellSize)
     
@@ -38,10 +42,10 @@ def initGrid(columns,rows):
                 freeCells.append(Cell(row,column,0,0))
                 board[row].append(0)
             elif rnd>=50 and rnd < 75:
-                cells.append(Cell(row,column,1,0.6))
+                cells.append(Cell(row,column,1,0.75))
                 board[row].append(1)
             else:
-                cells.append(Cell(row,column,2,0.6))
+                cells.append(Cell(row,column,2,0.75))
                 board[row].append(2)
                 
 def draw():
@@ -60,12 +64,21 @@ def draw():
     print "percentage: "+str(float(satisfied)/float(gridSize)*100)
     for element in cellsToRepaint:
         if element.type == 0:
-            fill(color(255,255,255))
+            stroke(0)
+            fill(0)
         elif element.type == 1:
+            stroke(color(142,49,49))
+            #stroke(0)
             fill(color(142,49,49))
         elif element.type == 2:
+            stroke(color(53,191,181))
+            #stroke(0)
             fill(color(53,191,181))
         rect(element.row*cellSize,element.column*cellSize,cellSize,cellSize)
+        global ss
+    if len(cellsToRepaint) == 0:
+        save("resultScreenshot.png")
+        print "Saved"
     updateScenario()
     
 def updateScenario():
