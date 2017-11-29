@@ -21,7 +21,7 @@ for layerNum in range(numLayers):
 		print "Feature %d has name %s" % (featureNum, featureName)
 
 layer = shapefile.GetLayer(0)
-feature = layer.GetFeature(55)
+feature = layer.GetFeature(2)
 
 #--------------------------------------------------------------------#
 print
