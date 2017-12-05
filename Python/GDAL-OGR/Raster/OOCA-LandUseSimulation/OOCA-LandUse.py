@@ -43,9 +43,34 @@ print
 rows = raster.RasterYSize
 columns = raster.RasterXSize
 
-timesteps = 5
+timesteps = 10
 nSize = 1
 gridSize = columns * rows
+
+landUseNames = [
+	
+	"",
+	"Temperate or sub-polar needleleaf forest",
+	"",
+	"Tropical or sub-tropical broadleaf evergreen forest",
+	"Tropical or sub-tropical broadleaf deciduous forest",
+	"Temperate or sub-polar broadleaf deciduous forest",
+	"Mixed forest",
+	"Tropical or sub-tropical shrubland",
+	"Temperate or sub-polar shrubland",
+	"Tropical or sub-tropical grassland",
+	"Temperate or sub-polar grassland",
+	"",
+	"",
+	"",
+	"Wetland",
+	"Cropland",
+	"Barren land",
+	"Urban and built-up",
+	"Water",
+	"Snow and ice"
+	
+]
 
 print "Simulation Variables:"
 print "Grid rows: ",rows
@@ -54,85 +79,110 @@ print "Time-steps: ",timesteps
 print "Neighborhod size: ",nSize
 print "Grid size: ", gridSize
 print 
-board = raster.ReadAsArray()
-
+board = []
 
 #------------------Simulation functions---------------------------------
 def runSim():
-	board = initGrid()
+	global board
+	typeArray, board = initGrid()
 	stpCounter = 0
+	print
+	for i in range (0,len(typeArray)-1):
+		if landUseNames[i] == "":
+			pass
+		else:
+			print "%s: %i" %(landUseNames[i],typeArray[i])
+	print
 	while stpCounter < timesteps:
-		board = updateScenario(board)	
+		print "timestep ",stpCounter
+		tmpBoard = updateScenario(board)
+		board = numpy.array(tmpBoard)
 		stpCounter+=1
 	plotBand(board)
 
 
 def initGrid():
+	typeArray = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 	rasterArray = raster.ReadAsArray()
 	print ""
 	print rasterArray
 	print "array shape: ",rasterArray.shape
-	return rasterArray
-	"""for y in range(0,rows):
-					board.apped([])
-					for x in range(0,columns):
-						#We have to be careful with the x,y format used in rasters (X are the columns and Y are the rows)
-						#We make the raster sweep left-right and up-down
-						pxValue = raster.ReadAsArray(x,y,1,1)"""
+	
+	for row in range (rows):
+		for column in range (columns):
+			typeArray[rasterArray[row,column]] += 1	
+
+	return typeArray,rasterArray
 
 def updateScenario(grid):
 	tmpGrid = numpy.array(grid)
 	for row in range (0, rows-1):
 		for column in range (0, columns-1):
 			nextState = getNextState(row, column)
-			if nextState != None:
+			if nextState != 0:
 				tmpGrid[row,column] = nextState
 
 	return tmpGrid
 
+
 def getNextState(row, column):
+	global board
 	value = board[row,column]
 
+	"""
+		As we are modeling the ZMG as a cellular automata, it is necessary to
+		define the simulation rules.
+		There are 18 different types of cell in the raster and every one has 
+		its own behavior.
+	"""
+
 	if value == 1:
-		pass
+		return 0
 	elif value == 2:
-		pass
+		return 0
 	elif value == 3:
-		pass
+		return 0
 	elif value == 4:
-		pass
+		return 0
 	elif value == 5:
-		pass
+		return 0
 	elif value == 6:
-		pass
+		return 0
 	elif value == 7:
-		pass
+		return 0
 	elif value == 8:
-		pass
+		return 0
 	elif value == 9:
 		if 17 in getNeighborhod(row, column):
-			board[row,column] = 17
+			return 17
+		else:
+			return 0
 	elif value == 10:
 		if 17 in getNeighborhod(row, column):
-			board[row,column] = 17
+			return 17
+		else:
+			return 0
 	elif value == 11:
-		pass
+		return 0
 	elif value == 12:
-		pass
+		return 0
 	elif value == 13:
-		pass
+		return 0
 	elif value == 14:
-		pass
+		return 0
 	elif value == 15:
-		pass
+		if 17 in getNeighborhod(row, column):
+			return 17
+		else:
+			return 0
 	elif value == 16:
-		pass
+		return 0
 	elif value == 17:
-		pass
+		return 0
 	elif value == 18:
-		pass
+		return 0
 	elif value == 19:
-		pass
+		return 0
 
 def getNeighborhod(row, column):
 	neighborhod = []
