@@ -19,10 +19,10 @@ global torus:false{
 	float distanceForInteraction;
 	graph road_network;
 	
+	file envelope_shp <- file("/miramar/0409/miramar040918-2.osm");
 	map filter <- map("highway"::["tertiary", "residential"]);
 	file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0409/miramar040918-2.osm"));
-	file places_shp <- file("/miramar/0409/miramar040818-places.shp");
-	geometry shape <- envelope(osm_file);
+	geometry shape <- envelope(envelope_shp);
 	reflex mainLoop{
 		//if time >= 1000{do pause;}
 	}
@@ -36,11 +36,12 @@ global torus:false{
 				}
 			do die;
 		}
-		create places from: places_shp;
-		road_network <- as_edge_graph(road);
-		create people number:100{
-			location <- any_location_in(one_of(road)) ;
-			target <- any_location_in(one_of(road));
+		
+		create people number:10{
+			location <- any_location_in(one_of(places)) ;
+			//point initPlace <- {rnd(worldDimension), rnd(worldDimension)};
+			//location <- initPlace;
+			//target <- any_location_in(one_of(roads));
 		}
 		
 	}
@@ -150,20 +151,19 @@ species people skills:[moving]{
 }
 experiment simulation type:gui{
 	output{
-		display chart {
-			chart "Encounters" type:series{
-				data "encounters" value:chartEncounters color:#red;
-				//data "mean" value:meanEncounters color: #blue;
-			}
-		}
-		/*display display1 type:opengl ambient_light:150{
+		display display1 type:opengl ambient_light:150{
 			species road aspect:road_aspect;
 			species places aspect:place_aspect;
 			//species targets aspect:targets_aspect;
 			species people aspect:sphere;			
 		}
-	
-		
+	}
+		/*display chart {
+			chart "Encounters" type:series{
+				data "encounters" value:chartEncounters color:#red;
+				//data "mean" value:meanEncounters color: #blue;
+			}
+		}
 		display map background:#lightgray{
 			graphics "edges" {
 				loop edge over: road_network.edges {
@@ -173,13 +173,11 @@ experiment simulation type:gui{
 		}
 		
 		monitor "number of encounters" value:sumEncounters;
-		*/
+		
 		display display1{
 			species road aspect:road_aspect;
-			species places aspect:place_aspect;
+			//species places aspect:place_aspect;
 			species people aspect:standard_aspect;
-			//species targets aspect:targets_aspect;
-		}
-	
-	}
+			species targets aspect:targets_aspect;
+		}*/
 }

@@ -150,12 +150,6 @@ species people skills:[moving]{
 }
 experiment simulation type:gui{
 	output{
-		display chart {
-			chart "Encounters" type:series{
-				data "encounters" value:chartEncounters color:#red;
-				//data "mean" value:meanEncounters color: #blue;
-			}
-		}
 		/*display display1 type:opengl ambient_light:150{
 			species road aspect:road_aspect;
 			species places aspect:place_aspect;
@@ -163,7 +157,12 @@ experiment simulation type:gui{
 			species people aspect:sphere;			
 		}
 	
-		
+		display chart {
+			chart "Encounters" type:series{
+				data "encounters" value:chartEncounters color:#red;
+				//data "mean" value:meanEncounters color: #blue;
+			}
+		}
 		display map background:#lightgray{
 			graphics "edges" {
 				loop edge over: road_network.edges {
