@@ -5,11 +5,16 @@ h = 800
 w = 800
 cellSize = 3
 cellTypes = 2
+<<<<<<< HEAD
+nSize = 2
+nSize = 1
+=======
 <<<<<<< HEAD:Python/Schelling/Schelling.pyde
 nSize = 2
 =======
 nSize = 1
 >>>>>>> 4aa473a2e5a15b444d62c620a6770156e26d1540:ProcessingPython/Schelling/Schelling.pyde
+>>>>>>> 741646ce6d858badea2893ddcf04734206d46273
 columns = int(w/cellSize)
 rows = int(h/cellSize)
 gridSize = columns*rows
@@ -24,12 +29,18 @@ def setup():
     initGrid(columns,rows)
     background(0)
     for element in freeCells:
+<<<<<<< HEAD
+        stroke(0)
+        fill(0)
+        fill(color(0,0,0))
+=======
 <<<<<<< HEAD:Python/Schelling/Schelling.pyde
         stroke(0)
         fill(0)
 =======
         fill(color(0,0,0))
 >>>>>>> 4aa473a2e5a15b444d62c620a6770156e26d1540:ProcessingPython/Schelling/Schelling.pyde
+>>>>>>> 741646ce6d858badea2893ddcf04734206d46273
         rect(element.row*cellSize,element.column*cellSize,cellSize,cellSize)
     for element in cells:
         if element.type == 1:
@@ -49,19 +60,28 @@ def initGrid(columns,rows):
             if rnd<20 :
                 freeCells.append(Cell(row,column,0,0))
                 board[row].append(0)
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD:Python/Schelling/Schelling.pyde
+>>>>>>> 741646ce6d858badea2893ddcf04734206d46273
             elif rnd>=50 and rnd < 75:
                 cells.append(Cell(row,column,1,0.75))
                 board[row].append(1)
             else:
                 cells.append(Cell(row,column,2,0.75))
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 741646ce6d858badea2893ddcf04734206d46273
             elif rnd>=20 and rnd < 60:
                 cells.append(Cell(row,column,1,0.8))
                 board[row].append(1)
             else:
                 cells.append(Cell(row,column,2,0.7))
+<<<<<<< HEAD
+=======
 >>>>>>> 4aa473a2e5a15b444d62c620a6770156e26d1540:ProcessingPython/Schelling/Schelling.pyde
+>>>>>>> 741646ce6d858badea2893ddcf04734206d46273
                 board[row].append(2)
                 
 def draw():
@@ -80,12 +100,18 @@ def draw():
     print "percentage: "+str(float(satisfied)/float(gridSize)*100)
     for element in cellsToRepaint:
         if element.type == 0:
+<<<<<<< HEAD
+            stroke(0)
+            fill(0)
+            #fill(color(0,0,0))
+=======
 <<<<<<< HEAD:Python/Schelling/Schelling.pyde
             stroke(0)
             fill(0)
 =======
             fill(color(0,0,0))
 >>>>>>> 4aa473a2e5a15b444d62c620a6770156e26d1540:ProcessingPython/Schelling/Schelling.pyde
+>>>>>>> 741646ce6d858badea2893ddcf04734206d46273
         elif element.type == 1:
             stroke(color(142,49,49))
             #stroke(0)

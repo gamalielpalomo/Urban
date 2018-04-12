@@ -1,7 +1,11 @@
 from osgeo import gdal
 import sys
 
+<<<<<<< HEAD
+src_ds = gdal.Open("C:\Users\gamaa\OneDrive\CINVESTAV\Thesis\TMP NetLogo\QGIS Project\Geo-Miramar-Image.tif")
+=======
 src_ds = gdal.Open("grid.tiff")
+>>>>>>> 741646ce6d858badea2893ddcf04734206d46273
 if src_ds is None:
 	print 'Unable to open file'
 	sys.exit(1)

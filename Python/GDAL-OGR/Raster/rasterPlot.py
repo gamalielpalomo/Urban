@@ -5,12 +5,20 @@ import matplotlib.pyplot as plt
 #raster = gdal.Open('C:\Users\gamaa\Desktop\GeoPythonLib\\nyc\\nyc')
 #raster = gdal.Open('C:\Users\gamaa\Desktop\GeoData\gpw-v4-population-density-adjusted-to-2015-unwpp-country-totals-2015\gpw-v4-population-density-adjusted-to-2015-unwpp-country-totals_2015.tif')
 #raster = gdal.Open('C:\Users\gamaa\Desktop\GeoData\\nalcmsmx11gw-Uso de suelo en mexico 2011\\nalcmsmx11gw.tif')
+<<<<<<< HEAD
+raster = gdal.Open('C:\Users\gamaa\OneDrive\CINVESTAV\Thesis\TMP NetLogo\QGIS Project\Geo-Miramar-Image.tif')
+=======
 raster = gdal.Open('C:\Users\gamaa\Desktop\GeoData\Land Use ZMG\Land Use ZMG.tif')
+>>>>>>> 741646ce6d858badea2893ddcf04734206d46273
 if raster is None:
 	print 'Unable to open file'
 	sys.exit(1)
 
+<<<<<<< HEAD
+print "[ RASTER BAND COUNT ]: ",raster.RasterCount
+=======
 print "[RASTER BAND COUNT ]: ",raster.RasterCount
+>>>>>>> 741646ce6d858badea2893ddcf04734206d46273
 for band in range( raster.RasterCount ):
 	band += 1
 	print "[GETTING BAND]: ",band
