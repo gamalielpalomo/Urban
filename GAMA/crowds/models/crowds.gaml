@@ -20,8 +20,9 @@ global torus:false{
 	graph road_network;
 	
 	map filter <- map("highway"::["tertiary", "residential"]);
-	file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0409/miramar040918-2.osm"));
-	file places_shp <- file("/miramar/0409/miramar040818-places.shp");
+	file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0409/miramar040918.osm"));
+	//file<geometry> osm_file <- file<geometry>(osm_file("/zona_centro/zona_centro.osm"));
+	file places_shp <- file("/miramar/0409/miramar040818-2-places.shp");
 	geometry shape <- envelope(osm_file);
 	reflex mainLoop{
 		//if time >= 1000{do pause;}
@@ -38,11 +39,10 @@ global torus:false{
 		}
 		create places from: places_shp;
 		road_network <- as_edge_graph(road);
-		create people number:100{
-			location <- any_location_in(one_of(road)) ;
-			target <- any_location_in(one_of(road));
+		create people number:1000{
+			location <- any_location_in(one_of(places)) ;
+			target <- any_location_in(one_of(places));
 		}
-		
 	}
 }
 
@@ -55,7 +55,7 @@ species osm_agent{
 species road {
 	
 	aspect road_aspect {
-		draw shape color: rgb(51, 175, 148);
+		draw shape color: rgb(3, 130, 173);
 	}
 	
 }
@@ -115,8 +115,8 @@ species people skills:[moving]{
 	point target;
 	init{
 		interacting <- false;
-		speed <- 3.0;
-		target  <- any_location_in(one_of(road));
+		speed <- 5.0;
+		target  <- any_location_in(one_of(places));
 		create targets number:1{
 			location <- myself.target;
 		}
@@ -126,7 +126,7 @@ species people skills:[moving]{
 		interacting <- false;
 		do goto target:target on:road_network;
 		if(location = target){
-			target <- any_location_in(one_of(road));
+			target <- any_location_in(one_of(places));
 			ask targets{
 				location<-myself.target;
 			}
@@ -156,14 +156,14 @@ experiment simulation type:gui{
 				//data "mean" value:meanEncounters color: #blue;
 			}
 		}
-		/*display display1 type:opengl ambient_light:150{
+		display display1 type:opengl ambient_light:150{
 			species road aspect:road_aspect;
 			species places aspect:place_aspect;
 			//species targets aspect:targets_aspect;
 			species people aspect:sphere;			
 		}
 	
-		
+		/*
 		display map background:#lightgray{
 			graphics "edges" {
 				loop edge over: road_network.edges {
@@ -173,13 +173,13 @@ experiment simulation type:gui{
 		}
 		
 		monitor "number of encounters" value:sumEncounters;
-		*/
+		
 		display display1{
 			species road aspect:road_aspect;
 			species places aspect:place_aspect;
 			species people aspect:standard_aspect;
 			//species targets aspect:targets_aspect;
-		}
+		}*/
 	
 	}
 }

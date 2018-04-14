@@ -3691,3 +3691,995 @@ java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 	at msi.gama.runtime.FrontEndScheduler.step(FrontEndScheduler.java:83)
 	at msi.gama.runtime.FrontEndScheduler.run(FrontEndScheduler.java:122)
 	at java.lang.Thread.run(Unknown Source)
+!SESSION 2018-04-13 10:39:27.510 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=${target.nl}
+Framework arguments:  C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-04-13 10:42:07.905
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.apache.log4j 2 0 2018-04-13 10:42:09.497
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.apache.log4j 2 0 2018-04-13 10:42:10.310
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:42:10.531
+!MESSAGE >> GAMA bundle loaded in 79ms: 	msi.gama.jogl
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:42:10.631
+!MESSAGE >> GAMA bundle loaded in 92ms: 	irit.gaml.extensions.test
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:42:10.691
+!MESSAGE >> GAMA bundle loaded in 51ms: 	ummisco.gaml.extensions.maths
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:42:10.801
+!MESSAGE >> GAMA bundle loaded in 103ms: 	idees.gama.mapcomparison
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:42:10.832
+!MESSAGE >> GAMA bundle loaded in 16ms: 	msi.gama.application
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:42:10.908
+!MESSAGE >> GAMA bundle loaded in 60ms: 	simtools.gaml.extensions.physics
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:42:10.940
+!MESSAGE >> GAMA bundle loaded in 32ms: 	msi.gaml.extensions.fipa
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:42:10.993
+!MESSAGE >> GAMA total load time 2370 ms.
+
+!ENTRY org.eclipse.ui.workbench 4 2 2018-04-13 10:42:11.294
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 1
+org.eclipse.ui.WorkbenchException: The markup in the document preceding the root element must be well-formed.
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:143)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:65)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2093)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.restoreState(Workbench.java:2088)
+	at org.eclipse.ui.internal.WorkbenchConfigurer.restoreState(WorkbenchConfigurer.java:183)
+	at org.eclipse.ui.application.WorkbenchAdvisor$1.run(WorkbenchAdvisor.java:781)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:116)
+	... 6 more
+!SUBENTRY 1 org.eclipse.ui 4 0 2018-04-13 10:42:11.345
+!MESSAGE The markup in the document preceding the root element must be well-formed.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:116)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:65)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2093)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.restoreState(Workbench.java:2088)
+	at org.eclipse.ui.internal.WorkbenchConfigurer.restoreState(WorkbenchConfigurer.java:183)
+	at org.eclipse.ui.application.WorkbenchAdvisor$1.run(WorkbenchAdvisor.java:781)
+!SUBENTRY 1 org.eclipse.ui 4 0 2018-04-13 10:42:11.345
+!MESSAGE The markup in the document preceding the root element must be well-formed.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:116)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:65)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2093)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.restoreState(Workbench.java:2088)
+	at org.eclipse.ui.internal.WorkbenchConfigurer.restoreState(WorkbenchConfigurer.java:183)
+	at org.eclipse.ui.application.WorkbenchAdvisor$1.run(WorkbenchAdvisor.java:781)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:42:12.172
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.findAndInstallUpdates", command "org.eclipse.ui.update.findAndInstallUpdates" not defined
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:42:12.172
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.manageConfiguration", command "org.eclipse.ui.update.manageConfiguration" not defined
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:42:17.710
+!MESSAGE WorkspaceModelsManager.findAndLoadIFile C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:42:17.950
+!MESSAGE WorkspaceModelsManager.findInWorkspace  C:/Users/gamaa/Documents/City Science Projects/GAMA/crowds/models/crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:42:19.455
+!MESSAGE WorkspaceModelsManager.findAndLoadIFile C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:42:19.470
+!MESSAGE WorkspaceModelsManager.findInWorkspace  C:/Users/gamaa/Documents/City Science Projects/GAMA/crowds/models/crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:42:27.667
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+!SESSION 2018-04-13 10:42:54.760 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=${target.nl}
+Framework arguments:  C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:43:07.407
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.findAndInstallUpdates", command "org.eclipse.ui.update.findAndInstallUpdates" not defined
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:43:07.438
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.manageConfiguration", command "org.eclipse.ui.update.manageConfiguration" not defined
+
+!ENTRY org.apache.log4j 2 0 2018-04-13 10:43:07.917
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.apache.log4j 2 0 2018-04-13 10:43:08.116
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:43:10.791
+!MESSAGE WorkspaceModelsManager.findAndLoadIFile C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:43:10.807
+!MESSAGE WorkspaceModelsManager.findInWorkspace  C:/Users/gamaa/Documents/City Science Projects/GAMA/crowds/models/crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:43:11.623
+!MESSAGE WorkspaceModelsManager.findAndLoadIFile C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:43:11.623
+!MESSAGE WorkspaceModelsManager.findInWorkspace  C:/Users/gamaa/Documents/City Science Projects/GAMA/crowds/models/crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:43:12.627
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:43:23.919
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:43:27.136
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@3e685bf5 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:43:28.217
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:43:39.417
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@2123a61c (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:43:42.279
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:44:30.501
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:44:31.073
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_SpeciesImpl@18b3c1ff (key: species, firstFacet: null) (name: people)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:44:46.444
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:45:05.615
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:45:06.043
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@44f6b500
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:45:10.448
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.DoubleLiteralImpl@4f4e17e9 (op: 3.0)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:45:12.595
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 10:46:22.167
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 11:08:08.398
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@7f7fe286 (key: null, firstFacet: null) (name: acumEncounters)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 11:55:07.251
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 11:55:17.060
+!MESSAGE ERROR: Cannot find icon prefs.workspace
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 11:56:05.135
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 11:56:06.182
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 11:56:35.905
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 11:56:54.975
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 11:57:00.508
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 11:57:33.138
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 11:58:17.742
+!MESSAGE GamaRuntimeException java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 11:58:17.748
+!MESSAGE GamaRuntimeException java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+!STACK 0
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at msi.gama.util.path.GamaSpatialPath.init(GamaSpatialPath.java:132)
+	at msi.gama.util.path.GamaSpatialPath.init(GamaSpatialPath.java:1)
+	at msi.gama.util.path.GamaPath.<init>(GamaPath.java:43)
+	at msi.gama.util.path.GamaSpatialPath.<init>(GamaSpatialPath.java:42)
+	at msi.gama.util.path.PathFactory.newInstance(PathFactory.java:38)
+	at msi.gama.util.path.PathFactory.newInstance(PathFactory.java:71)
+	at msi.gama.metamodel.topology.graph.GraphTopology.pathBetweenCommon(GraphTopology.java:352)
+	at msi.gama.metamodel.topology.graph.GraphTopology.pathBetween(GraphTopology.java:106)
+	at msi.gaml.skills.MovingSkill.primGoto(MovingSkill.java:426)
+	at gaml.additions.GamlAdditions$813.run(GamlAdditions.java:863)
+	at gaml.additions.GamlAdditions$813.run(GamlAdditions.java:1)
+	at msi.gaml.statements.PrimitiveStatement.privateExecuteIn(PrimitiveStatement.java:73)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.DoStatement.privateExecuteIn(DoStatement.java:126)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AbstractStatementSequence.privateExecuteIn(AbstractStatementSequence.java:69)
+	at msi.gaml.architecture.reflex.ReflexStatement.privateExecuteIn(ReflexStatement.java:57)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.architecture.reflex.ReflexArchitecture.executeReflexes(ReflexArchitecture.java:73)
+	at msi.gaml.architecture.reflex.ReflexArchitecture.executeOn(ReflexArchitecture.java:64)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.metamodel.agent.GamlAgent._step_(GamlAgent.java:168)
+	at msi.gama.metamodel.agent.GamlAgent.step(GamlAgent.java:138)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.metamodel.population.GamaPopulation.step(GamaPopulation.java:142)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.metamodel.agent.GamlAgent.stepSubPopulations(GamlAgent.java:179)
+	at msi.gama.metamodel.agent.GamlAgent._step_(GamlAgent.java:170)
+	at msi.gama.kernel.simulation.SimulationAgent._step_(SimulationAgent.java:179)
+	at msi.gama.metamodel.agent.GamlAgent.step(GamlAgent.java:138)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.metamodel.population.GamaPopulation.step(GamaPopulation.java:142)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.kernel.experiment.AgentScheduler.step(AgentScheduler.java:96)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.runtime.FrontEndScheduler.step(FrontEndScheduler.java:83)
+	at msi.gama.runtime.FrontEndScheduler.run(FrontEndScheduler.java:122)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 11:58:19.492
+!MESSAGE GamaRuntimeException java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 11:58:19.508
+!MESSAGE GamaRuntimeException java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+!STACK 0
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at msi.gama.util.path.GamaSpatialPath.init(GamaSpatialPath.java:132)
+	at msi.gama.util.path.GamaSpatialPath.init(GamaSpatialPath.java:1)
+	at msi.gama.util.path.GamaPath.<init>(GamaPath.java:43)
+	at msi.gama.util.path.GamaSpatialPath.<init>(GamaSpatialPath.java:42)
+	at msi.gama.util.path.PathFactory.newInstance(PathFactory.java:38)
+	at msi.gama.util.path.PathFactory.newInstance(PathFactory.java:71)
+	at msi.gama.metamodel.topology.graph.GraphTopology.pathBetweenCommon(GraphTopology.java:352)
+	at msi.gama.metamodel.topology.graph.GraphTopology.pathBetween(GraphTopology.java:106)
+	at msi.gaml.skills.MovingSkill.primGoto(MovingSkill.java:426)
+	at gaml.additions.GamlAdditions$813.run(GamlAdditions.java:863)
+	at gaml.additions.GamlAdditions$813.run(GamlAdditions.java:1)
+	at msi.gaml.statements.PrimitiveStatement.privateExecuteIn(PrimitiveStatement.java:73)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.DoStatement.privateExecuteIn(DoStatement.java:126)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AbstractStatementSequence.privateExecuteIn(AbstractStatementSequence.java:69)
+	at msi.gaml.architecture.reflex.ReflexStatement.privateExecuteIn(ReflexStatement.java:57)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.architecture.reflex.ReflexArchitecture.executeReflexes(ReflexArchitecture.java:73)
+	at msi.gaml.architecture.reflex.ReflexArchitecture.executeOn(ReflexArchitecture.java:64)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.metamodel.agent.GamlAgent._step_(GamlAgent.java:168)
+	at msi.gama.metamodel.agent.GamlAgent.step(GamlAgent.java:138)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.metamodel.population.GamaPopulation.step(GamaPopulation.java:142)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.metamodel.agent.GamlAgent.stepSubPopulations(GamlAgent.java:179)
+	at msi.gama.metamodel.agent.GamlAgent._step_(GamlAgent.java:170)
+	at msi.gama.kernel.simulation.SimulationAgent._step_(SimulationAgent.java:179)
+	at msi.gama.metamodel.agent.GamlAgent.step(GamlAgent.java:138)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.metamodel.population.GamaPopulation.step(GamaPopulation.java:142)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.kernel.experiment.AgentScheduler.step(AgentScheduler.java:96)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.runtime.FrontEndScheduler.step(FrontEndScheduler.java:83)
+	at msi.gama.runtime.FrontEndScheduler.run(FrontEndScheduler.java:122)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:38:59.832
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:48:27.774
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:51:03.677
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:51:04.096
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@201e700d (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:51:05.626
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:51:25.021
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:54:18.925
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@541397ea (op: /miramar/0409/miramar040818-2-places.shp)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:54:20.870
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:54:21.586
+!MESSAGE GamaRuntimeException File C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\miramar\0409\miramar040818-2-places.osm does not exist
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:54:21.594
+!MESSAGE GamaRuntimeException File C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\miramar\0409\miramar040818-2-places.osm does not exist
+!STACK 0
+File C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\miramar\0409\miramar040818-2-places.osm does not exist
+	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:69)
+	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:65)
+	at msi.gama.util.file.GamaFile.getContents(GamaFile.java:281)
+	at msi.gama.util.file.GamaFile.length(GamaFile.java:321)
+	at msi.gaml.statements.CreateStatement.fillInits(CreateStatement.java:341)
+	at msi.gaml.statements.CreateStatement.privateExecuteIn(CreateStatement.java:264)
+	at msi.gaml.statements.CreateStatement.privateExecuteIn(CreateStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AbstractStatementSequence.privateExecuteIn(AbstractStatementSequence.java:69)
+	at msi.gaml.architecture.reflex.ReflexStatement.privateExecuteIn(ReflexStatement.java:57)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.architecture.reflex.ReflexArchitecture.init(ReflexArchitecture.java:83)
+	at msi.gama.metamodel.agent.GamlAgent._init_(GamlAgent.java:158)
+	at msi.gama.kernel.simulation.SimulationAgent._init_(SimulationAgent.java:194)
+	at msi.gama.metamodel.agent.GamlAgent.init(GamlAgent.java:120)
+	at msi.gama.runtime.AbstractScope.init(AbstractScope.java:485)
+	at msi.gama.kernel.experiment.AgentScheduler.init(AgentScheduler.java:127)
+	at msi.gama.runtime.AbstractScope.init(AbstractScope.java:485)
+	at msi.gama.runtime.FrontEndScheduler.schedule(FrontEndScheduler.java:155)
+	at msi.gama.kernel.simulation.SimulationAgent.schedule(SimulationAgent.java:152)
+	at msi.gama.metamodel.population.SimulationPopulation.createAgents(SimulationPopulation.java:59)
+	at msi.gama.kernel.experiment.ExperimentAgent.createSimulation(ExperimentAgent.java:192)
+	at msi.gama.kernel.experiment.ExperimentAgent._init_(ExperimentAgent.java:182)
+	at msi.gama.metamodel.agent.GamlAgent.init(GamlAgent.java:120)
+	at msi.gama.runtime.AbstractScope.init(AbstractScope.java:485)
+	at msi.gama.runtime.FrontEndScheduler.schedule(FrontEndScheduler.java:155)
+	at msi.gama.kernel.experiment.ExperimentAgent.schedule(ExperimentAgent.java:238)
+	at msi.gama.kernel.experiment.ExperimentPlan.open(ExperimentPlan.java:294)
+	at msi.gama.runtime.FrontEndController.processUserCommand(FrontEndController.java:85)
+	at msi.gama.runtime.FrontEndController.run(FrontEndController.java:64)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:54:30.919
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:54:34.952
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@2973594c (op: /miramar/0409/miramar040918-2.osm)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:54:39.813
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@14ec9a1c (op: /miramar/0409/miramar040818-2-places.shp)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:54:45.971
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:54:46.711
+!MESSAGE GamaRuntimeException File C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\miramar\0409\miramar040818-2.osm does not exist
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:54:46.719
+!MESSAGE GamaRuntimeException File C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\miramar\0409\miramar040818-2.osm does not exist
+!STACK 0
+File C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\miramar\0409\miramar040818-2.osm does not exist
+	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:69)
+	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:65)
+	at msi.gama.util.file.GamaFile.getContents(GamaFile.java:281)
+	at msi.gama.util.file.GamaFile.length(GamaFile.java:321)
+	at msi.gaml.statements.CreateStatement.fillInits(CreateStatement.java:341)
+	at msi.gaml.statements.CreateStatement.privateExecuteIn(CreateStatement.java:264)
+	at msi.gaml.statements.CreateStatement.privateExecuteIn(CreateStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AbstractStatementSequence.privateExecuteIn(AbstractStatementSequence.java:69)
+	at msi.gaml.architecture.reflex.ReflexStatement.privateExecuteIn(ReflexStatement.java:57)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.architecture.reflex.ReflexArchitecture.init(ReflexArchitecture.java:83)
+	at msi.gama.metamodel.agent.GamlAgent._init_(GamlAgent.java:158)
+	at msi.gama.kernel.simulation.SimulationAgent._init_(SimulationAgent.java:194)
+	at msi.gama.metamodel.agent.GamlAgent.init(GamlAgent.java:120)
+	at msi.gama.runtime.AbstractScope.init(AbstractScope.java:485)
+	at msi.gama.kernel.experiment.AgentScheduler.init(AgentScheduler.java:127)
+	at msi.gama.runtime.AbstractScope.init(AbstractScope.java:485)
+	at msi.gama.runtime.FrontEndScheduler.schedule(FrontEndScheduler.java:155)
+	at msi.gama.kernel.simulation.SimulationAgent.schedule(SimulationAgent.java:152)
+	at msi.gama.metamodel.population.SimulationPopulation.createAgents(SimulationPopulation.java:59)
+	at msi.gama.kernel.experiment.ExperimentAgent.createSimulation(ExperimentAgent.java:192)
+	at msi.gama.kernel.experiment.ExperimentAgent._init_(ExperimentAgent.java:182)
+	at msi.gama.metamodel.agent.GamlAgent.init(GamlAgent.java:120)
+	at msi.gama.runtime.AbstractScope.init(AbstractScope.java:485)
+	at msi.gama.runtime.FrontEndScheduler.schedule(FrontEndScheduler.java:155)
+	at msi.gama.kernel.experiment.ExperimentAgent.schedule(ExperimentAgent.java:238)
+	at msi.gama.kernel.experiment.ExperimentPlan.open(ExperimentPlan.java:294)
+	at msi.gama.runtime.FrontEndController.processUserCommand(FrontEndController.java:85)
+	at msi.gama.runtime.FrontEndController.run(FrontEndController.java:64)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:54:50.018
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 12:54:52.299
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@7411beaf (op: /miramar/0409/miramar040918-2.osm)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:12:40.783
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:12:41.075
+!MESSAGE GamaRuntimeException java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:12:41.082
+!MESSAGE GamaRuntimeException java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at msi.gaml.types.GamaGeometryType.buildPolyline(GamaGeometryType.java:215)
+	at msi.gama.util.file.GamaOsmFile.createRoad(GamaOsmFile.java:230)
+	at msi.gama.util.file.GamaOsmFile.createSplitRoad(GamaOsmFile.java:219)
+	at msi.gama.util.file.GamaOsmFile.buildGeometries(GamaOsmFile.java:168)
+	at msi.gama.util.file.GamaOsmFile.getFeatureIterator(GamaOsmFile.java:124)
+	at msi.gama.util.file.GamaOsmFile.fillBuffer(GamaOsmFile.java:135)
+	at msi.gama.util.file.GamaFile.getContents(GamaFile.java:283)
+	at msi.gama.util.file.GamaFile.length(GamaFile.java:321)
+	at msi.gaml.statements.CreateStatement.fillInits(CreateStatement.java:341)
+	at msi.gaml.statements.CreateStatement.privateExecuteIn(CreateStatement.java:264)
+	at msi.gaml.statements.CreateStatement.privateExecuteIn(CreateStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AbstractStatementSequence.privateExecuteIn(AbstractStatementSequence.java:69)
+	at msi.gaml.architecture.reflex.ReflexStatement.privateExecuteIn(ReflexStatement.java:57)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.architecture.reflex.ReflexArchitecture.init(ReflexArchitecture.java:83)
+	at msi.gama.metamodel.agent.GamlAgent._init_(GamlAgent.java:158)
+	at msi.gama.kernel.simulation.SimulationAgent._init_(SimulationAgent.java:194)
+	at msi.gama.metamodel.agent.GamlAgent.init(GamlAgent.java:120)
+	at msi.gama.runtime.AbstractScope.init(AbstractScope.java:485)
+	at msi.gama.kernel.experiment.AgentScheduler.init(AgentScheduler.java:127)
+	at msi.gama.runtime.AbstractScope.init(AbstractScope.java:485)
+	at msi.gama.runtime.FrontEndScheduler.schedule(FrontEndScheduler.java:155)
+	at msi.gama.kernel.simulation.SimulationAgent.schedule(SimulationAgent.java:152)
+	at msi.gama.metamodel.population.SimulationPopulation.createAgents(SimulationPopulation.java:59)
+	at msi.gama.kernel.experiment.ExperimentAgent.createSimulation(ExperimentAgent.java:192)
+	at msi.gama.kernel.experiment.ExperimentAgent._init_(ExperimentAgent.java:182)
+	at msi.gama.metamodel.agent.GamlAgent.init(GamlAgent.java:120)
+	at msi.gama.runtime.AbstractScope.init(AbstractScope.java:485)
+	at msi.gama.runtime.FrontEndScheduler.schedule(FrontEndScheduler.java:155)
+	at msi.gama.kernel.experiment.ExperimentAgent.schedule(ExperimentAgent.java:238)
+	at msi.gama.kernel.experiment.ExperimentPlan.open(ExperimentPlan.java:294)
+	at msi.gama.runtime.FrontEndController.processUserCommand(FrontEndController.java:85)
+	at msi.gama.runtime.FrontEndController.run(FrontEndController.java:64)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:12:47.129
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:12:47.549
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ModelImpl@2d801d8 (name: crowds)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:12:48.394
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@3d70a1f4 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:13:23.503
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:13:23.834
+!MESSAGE GamaRuntimeException java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:13:23.844
+!MESSAGE GamaRuntimeException java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:13:43.200
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:13:45.091
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@19dd6237 (op: /miramar/0409/miramar040918-2.osm)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:13:50.170
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@19dd6237 (op: /miramar/0409/miramar040918-2.osm)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:15:12.562
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@19dd6237 (op: /miramar/0409/miramar040918-2.osm)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:15:14.713
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:15:15.047
+!MESSAGE GamaRuntimeException java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:15:15.054
+!MESSAGE GamaRuntimeException java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at msi.gama.util.file.GamaOsmFile.computeEnvelope(GamaOsmFile.java:315)
+	at msi.gama.common.util.GeometryUtils.computeEnvelopeFrom(GeometryUtils.java:735)
+	at msi.gaml.operators.Spatial$Creation.envelope(Spatial.java:711)
+	at gaml.additions.GamlAdditions$670.run(GamlAdditions.java:718)
+	at gaml.additions.GamlAdditions$670.run(GamlAdditions.java:1)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:57)
+	at msi.gama.runtime.AbstractScope.evaluate(AbstractScope.java:443)
+	at msi.gaml.variables.Variable.initializeWith(Variable.java:339)
+	at msi.gama.metamodel.population.GamaPopulation.createVariablesFor(GamaPopulation.java:331)
+	at msi.gama.metamodel.population.SimulationPopulation.createAgents(SimulationPopulation.java:57)
+	at msi.gama.kernel.experiment.ExperimentAgent.createSimulation(ExperimentAgent.java:192)
+	at msi.gama.kernel.experiment.ExperimentAgent._init_(ExperimentAgent.java:182)
+	at msi.gama.metamodel.agent.GamlAgent.init(GamlAgent.java:120)
+	at msi.gama.runtime.AbstractScope.init(AbstractScope.java:485)
+	at msi.gama.runtime.FrontEndScheduler.schedule(FrontEndScheduler.java:155)
+	at msi.gama.kernel.experiment.ExperimentAgent.schedule(ExperimentAgent.java:238)
+	at msi.gama.kernel.experiment.ExperimentPlan.open(ExperimentPlan.java:294)
+	at msi.gama.runtime.FrontEndController.processUserCommand(FrontEndController.java:85)
+	at msi.gama.runtime.FrontEndController.run(FrontEndController.java:64)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:15:18.443
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:15:19.877
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@670a0cdb (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:15:53.455
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@67748214 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:15:53.461
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@f86167e (key: null, firstFacet: null) (name: places_shp)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:16:04.609
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@683a4aaf (key: create, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:16:08.049
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@3a098c8c (op: /miramar/0409/miramar040818-places.shp)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:16:14.437
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@3a098c8c (op: /miramar/0409/miramar040818-places.shp)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:16:17.056
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:16:36.632
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:16:38.517
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@463e32a (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:16:44.659
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:16:44.977
+!MESSAGE GamaRuntimeException java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:16:44.983
+!MESSAGE GamaRuntimeException java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at msi.gaml.operators.Spatial$Punctal.any_location_in(Spatial.java:1899)
+	at gaml.additions.GamlAdditions$475.run(GamlAdditions.java:523)
+	at gaml.additions.GamlAdditions$475.run(GamlAdditions.java:1)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:57)
+	at msi.gaml.statements.SetStatement.privateExecuteIn(SetStatement.java:95)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.privateExecuteIn(AbstractStatementSequence.java:69)
+	at msi.gaml.architecture.reflex.ReflexStatement.privateExecuteIn(ReflexStatement.java:57)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.architecture.reflex.ReflexArchitecture.init(ReflexArchitecture.java:83)
+	at msi.gama.metamodel.agent.GamlAgent._init_(GamlAgent.java:158)
+	at msi.gama.metamodel.agent.GamlAgent.init(GamlAgent.java:120)
+	at msi.gama.runtime.AbstractScope.init(AbstractScope.java:485)
+	at msi.gama.kernel.experiment.AgentScheduler.init(AgentScheduler.java:127)
+	at msi.gama.runtime.AbstractScope.init(AbstractScope.java:485)
+	at msi.gama.runtime.FrontEndScheduler.schedule(FrontEndScheduler.java:155)
+	at msi.gama.kernel.simulation.SimulationAgent.schedule(SimulationAgent.java:152)
+	at msi.gama.metamodel.population.SimulationPopulation.createAgents(SimulationPopulation.java:59)
+	at msi.gama.kernel.experiment.ExperimentAgent.createSimulation(ExperimentAgent.java:192)
+	at msi.gama.kernel.experiment.ExperimentAgent._init_(ExperimentAgent.java:182)
+	at msi.gama.metamodel.agent.GamlAgent.init(GamlAgent.java:120)
+	at msi.gama.runtime.AbstractScope.init(AbstractScope.java:485)
+	at msi.gama.runtime.FrontEndScheduler.schedule(FrontEndScheduler.java:155)
+	at msi.gama.kernel.experiment.ExperimentAgent.schedule(ExperimentAgent.java:238)
+	at msi.gama.kernel.experiment.ExperimentPlan.open(ExperimentPlan.java:294)
+	at msi.gama.runtime.FrontEndController.processUserCommand(FrontEndController.java:85)
+	at msi.gama.runtime.FrontEndController.run(FrontEndController.java:64)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:16:57.094
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:17:00.107
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@72a331a9 (op: /miramar/0409/miramar040818.shp)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:17:01.795
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@40cb4bb8 (op: /miramar/0409/miramar040918-3.osm)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:17:07.022
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:17:07.265
+!MESSAGE GamaRuntimeException java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:17:07.272
+!MESSAGE GamaRuntimeException java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:17:12.209
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:17:15.083
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:17:50.294
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:17:59.921
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:18:20.132
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:19:43.376
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@68b6e917 (op: /miramar/0409/miramar040818-places.shp)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:19:45.701
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:22:54.375
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:22:55.967
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:44:48.322
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 13:44:48.775
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_GlobalImpl@7dbde66c (key: global, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 14:50:01.916
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 14:50:43.993
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 15:16:00.181
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 15:59:25.413
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 15:59:27.022
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.PairImpl@10559aec (op: ::)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:00:53.805
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:00:55.479
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@5aaaf628 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:00:55.479
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@4b932235 (key: null, firstFacet: null) (name: osm_file)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:00:58.214
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@113d63a (op: /miramar/0409/miramar040918.osm)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:01:01.856
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@113d63a (op: /miramar/0409/miramar040918.osm)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:01:11.222
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@3c37d95f (op: /zona_centro/.osm)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:01:16.054
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:01:33.085
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:01:34.716
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@7daa40fa (op: /miramar/0409/miramar040818-2-places.shp)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:01:37.155
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@4c16cac0 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:01:40.263
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:01:48.321
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.speciesOrGridDisplayStatementImpl@16eb2ca3 (key: species, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:01:49.008
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FacetImpl@1f67d660 (name: null) (key: aspect:)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:01:56.516
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@280f1014 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:02:05.290
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@3f079787 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:02:12.070
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:02:19.401
+!MESSAGE GamaRuntimeException java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:02:19.416
+!MESSAGE GamaRuntimeException java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+!STACK 0
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at msi.gama.util.path.GamaSpatialPath.init(GamaSpatialPath.java:132)
+	at msi.gama.util.path.GamaSpatialPath.init(GamaSpatialPath.java:1)
+	at msi.gama.util.path.GamaPath.<init>(GamaPath.java:43)
+	at msi.gama.util.path.GamaSpatialPath.<init>(GamaSpatialPath.java:42)
+	at msi.gama.util.path.PathFactory.newInstance(PathFactory.java:38)
+	at msi.gama.util.path.PathFactory.newInstance(PathFactory.java:71)
+	at msi.gama.metamodel.topology.graph.GraphTopology.pathBetweenCommon(GraphTopology.java:352)
+	at msi.gama.metamodel.topology.graph.GraphTopology.pathBetween(GraphTopology.java:106)
+	at msi.gaml.skills.MovingSkill.primGoto(MovingSkill.java:426)
+	at gaml.additions.GamlAdditions$813.run(GamlAdditions.java:863)
+	at gaml.additions.GamlAdditions$813.run(GamlAdditions.java:1)
+	at msi.gaml.statements.PrimitiveStatement.privateExecuteIn(PrimitiveStatement.java:73)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.DoStatement.privateExecuteIn(DoStatement.java:126)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AbstractStatementSequence.privateExecuteIn(AbstractStatementSequence.java:69)
+	at msi.gaml.architecture.reflex.ReflexStatement.privateExecuteIn(ReflexStatement.java:57)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.architecture.reflex.ReflexArchitecture.executeReflexes(ReflexArchitecture.java:73)
+	at msi.gaml.architecture.reflex.ReflexArchitecture.executeOn(ReflexArchitecture.java:64)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.metamodel.agent.GamlAgent._step_(GamlAgent.java:168)
+	at msi.gama.metamodel.agent.GamlAgent.step(GamlAgent.java:138)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.metamodel.population.GamaPopulation.step(GamaPopulation.java:142)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.metamodel.agent.GamlAgent.stepSubPopulations(GamlAgent.java:179)
+	at msi.gama.metamodel.agent.GamlAgent._step_(GamlAgent.java:170)
+	at msi.gama.kernel.simulation.SimulationAgent._step_(SimulationAgent.java:179)
+	at msi.gama.metamodel.agent.GamlAgent.step(GamlAgent.java:138)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.metamodel.population.GamaPopulation.step(GamaPopulation.java:142)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.kernel.experiment.AgentScheduler.step(AgentScheduler.java:96)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.runtime.FrontEndScheduler.step(FrontEndScheduler.java:83)
+	at msi.gama.runtime.FrontEndScheduler.run(FrontEndScheduler.java:122)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:02:26.995
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:02:27.933
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:02:31.044
+!MESSAGE GamaRuntimeException java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:02:31.059
+!MESSAGE GamaRuntimeException java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+!STACK 0
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at msi.gama.util.path.GamaSpatialPath.init(GamaSpatialPath.java:121)
+	at msi.gama.util.path.GamaSpatialPath.init(GamaSpatialPath.java:1)
+	at msi.gama.util.path.GamaPath.<init>(GamaPath.java:43)
+	at msi.gama.util.path.GamaSpatialPath.<init>(GamaSpatialPath.java:42)
+	at msi.gama.util.path.PathFactory.newInstance(PathFactory.java:38)
+	at msi.gama.util.path.PathFactory.newInstance(PathFactory.java:71)
+	at msi.gama.metamodel.topology.graph.GraphTopology.pathBetweenCommon(GraphTopology.java:352)
+	at msi.gama.metamodel.topology.graph.GraphTopology.pathBetween(GraphTopology.java:106)
+	at msi.gaml.skills.MovingSkill.primGoto(MovingSkill.java:426)
+	at gaml.additions.GamlAdditions$813.run(GamlAdditions.java:863)
+	at gaml.additions.GamlAdditions$813.run(GamlAdditions.java:1)
+	at msi.gaml.statements.PrimitiveStatement.privateExecuteIn(PrimitiveStatement.java:73)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.DoStatement.privateExecuteIn(DoStatement.java:126)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AbstractStatementSequence.privateExecuteIn(AbstractStatementSequence.java:69)
+	at msi.gaml.architecture.reflex.ReflexStatement.privateExecuteIn(ReflexStatement.java:57)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.architecture.reflex.ReflexArchitecture.executeReflexes(ReflexArchitecture.java:73)
+	at msi.gaml.architecture.reflex.ReflexArchitecture.executeOn(ReflexArchitecture.java:64)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.metamodel.agent.GamlAgent._step_(GamlAgent.java:168)
+	at msi.gama.metamodel.agent.GamlAgent.step(GamlAgent.java:138)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.metamodel.population.GamaPopulation.step(GamaPopulation.java:142)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.metamodel.agent.GamlAgent.stepSubPopulations(GamlAgent.java:179)
+	at msi.gama.metamodel.agent.GamlAgent._step_(GamlAgent.java:170)
+	at msi.gama.kernel.simulation.SimulationAgent._step_(SimulationAgent.java:179)
+	at msi.gama.metamodel.agent.GamlAgent.step(GamlAgent.java:138)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.metamodel.population.GamaPopulation.step(GamaPopulation.java:142)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.kernel.experiment.AgentScheduler.step(AgentScheduler.java:96)
+	at msi.gama.runtime.AbstractScope.step(AbstractScope.java:463)
+	at msi.gama.runtime.FrontEndScheduler.step(FrontEndScheduler.java:83)
+	at msi.gama.runtime.FrontEndScheduler.run(FrontEndScheduler.java:122)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:02:38.149
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:02:42.808
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@1c5d147f (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:02:44.886
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:11:05.889
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:11:09.634
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@4af2bf9b (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:11:10.275
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:11:17.937
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@543788a8 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:11:17.952
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@76958827 (key: null, firstFacet: null) (name: places_shp)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:11:21.736
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@5941d06 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:11:22.852
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:11:23.758
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@394a11b7 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:11:24.730
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@26f7f388 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:11:25.864
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:11:27.553
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:11:34.529
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@7dbf7861 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:11:51.871
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:11:56.428
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:11:56.847
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@7c8368ac (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:47:18.801
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:47:27.124
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:47:37.673
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@26827fb1 (op: Encounters)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:47:42.220
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:49:14.954
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:49:18.920
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@11fdde2
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:49:19.882
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:49:20.030
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FacetImpl@1a39961b (name: null) (key: value:)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:49:22.690
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:49:38.514
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:49:52.982
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:50:55.011
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:51:00.846
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.speciesOrGridDisplayStatementImpl@3579e4a7 (key: species, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 16:51:03.246
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 17:43:47.032
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 18:07:44.813
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 18:08:12.927
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 18:08:19.263
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.DoubleLiteralImpl@688539bd (op: 1.0)
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 18:08:22.618
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 19:05:04.241
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 19:37:02.950
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-04-13 19:37:37.554
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 

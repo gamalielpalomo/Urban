@@ -15571,12 +15571,6 @@
  <node id="4615670594" visible="true" version="1" changeset="45262067" timestamp="2017-01-18T05:58:19Z" user="rodatirod" uid="1045127" lat="20.6184781" lon="-103.4728952"/>
  <node id="4615670595" visible="true" version="1" changeset="45262067" timestamp="2017-01-18T05:58:19Z" user="rodatirod" uid="1045127" lat="20.6185334" lon="-103.4726860"/>
  <node id="4615670596" visible="true" version="1" changeset="45262067" timestamp="2017-01-18T05:58:19Z" user="rodatirod" uid="1045127" lat="20.6185283" lon="-103.4724982"/>
- <node id="4615670597" visible="true" version="1" changeset="45262067" timestamp="2017-01-18T05:58:19Z" user="rodatirod" uid="1045127" lat="20.6184681" lon="-103.4723158">
-  <tag k="highway" v="turning_circle"/>
- </node>
- <node id="4615670598" visible="true" version="1" changeset="45262067" timestamp="2017-01-18T05:58:19Z" user="rodatirod" uid="1045127" lat="20.6179510" lon="-103.4734960">
-  <tag k="highway" v="turning_circle"/>
- </node>
  <node id="4615670599" visible="true" version="1" changeset="45262067" timestamp="2017-01-18T05:58:19Z" user="rodatirod" uid="1045127" lat="20.6183796" lon="-103.4732274"/>
  <node id="4615670600" visible="true" version="1" changeset="45262067" timestamp="2017-01-18T05:58:19Z" user="rodatirod" uid="1045127" lat="20.6192856" lon="-103.4796981"/>
  <node id="4615670601" visible="true" version="1" changeset="45262067" timestamp="2017-01-18T05:58:19Z" user="rodatirod" uid="1045127" lat="20.6188346" lon="-103.4797294"/>
@@ -24395,67 +24389,7 @@
   <tag k="name" v="Remanso de las Jirafas"/>
   <tag k="width:street" v="16"/>
  </way>
- <way id="153931550" visible="true" version="2" changeset="45261831" timestamp="2017-01-18T05:41:04Z" user="rodatirod" uid="1045127">
-  <nd ref="1665446356"/>
-  <nd ref="1665481810"/>
-  <nd ref="1665481249"/>
-  <nd ref="1665481119"/>
-  <nd ref="1665481570"/>
-  <nd ref="1665481400"/>
-  <nd ref="1665481391"/>
-  <nd ref="1665481248"/>
-  <nd ref="1665481720"/>
-  <nd ref="1665481568"/>
-  <nd ref="1665481035"/>
-  <nd ref="1665481891"/>
-  <nd ref="1665481313"/>
-  <nd ref="1665481199"/>
-  <nd ref="1665481643"/>
-  <nd ref="1665481486"/>
-  <nd ref="1665481951"/>
-  <nd ref="1665481803"/>
-  <nd ref="1665481242"/>
-  <nd ref="1665481108"/>
-  <nd ref="1665481556"/>
-  <nd ref="1665481387"/>
-  <nd ref="1665481963"/>
-  <nd ref="1665481815"/>
-  <nd ref="1665481257"/>
-  <nd ref="1665481125"/>
-  <nd ref="1665481576"/>
-  <nd ref="1665481403"/>
-  <nd ref="1665481898"/>
-  <nd ref="1665481723"/>
-  <nd ref="1665481204"/>
-  <nd ref="1665481041"/>
-  <nd ref="1665481490"/>
-  <nd ref="1665481321"/>
-  <nd ref="1665481809"/>
-  <nd ref="1665481653"/>
-  <nd ref="1665481117"/>
-  <nd ref="1665481959"/>
-  <nd ref="1665481297"/>
-  <nd ref="1665481182"/>
-  <nd ref="1665481612"/>
-  <nd ref="1665481455"/>
-  <nd ref="1665481927"/>
-  <nd ref="1665481768"/>
-  <nd ref="1665481494"/>
-  <nd ref="1665481964"/>
-  <nd ref="1665481816"/>
-  <nd ref="1665481259"/>
-  <nd ref="1665481128"/>
-  <nd ref="1665481578"/>
-  <nd ref="1665481404"/>
-  <nd ref="1665481900"/>
-  <nd ref="1665481724"/>
-  <nd ref="1665481271"/>
-  <nd ref="1665481145"/>
-  <nd ref="1665481959"/>
-  <tag k="highway" v="living_street"/>
-  <tag k="name" v="Avenida del Reno"/>
-  <tag k="oneway" v="yes"/>
- </way>
+ 
  <way id="153931553" visible="true" version="3" changeset="45262067" timestamp="2017-01-18T05:58:23Z" user="rodatirod" uid="1045127">
   <nd ref="1665481201"/>
   <nd ref="1665481037"/>
@@ -24477,66 +24411,7 @@
   <tag k="highway" v="living_street"/>
   <tag k="name" v="Canguros"/>
  </way>
- <way id="153931556" visible="true" version="3" changeset="45262067" timestamp="2017-01-18T05:58:22Z" user="rodatirod" uid="1045127">
-  <nd ref="1665481578"/>
-  <nd ref="1665481213"/>
-  <nd ref="1665481058"/>
-  <nd ref="1665481506"/>
-  <nd ref="1665481339"/>
-  <nd ref="1665481825"/>
-  <nd ref="1665481669"/>
-  <nd ref="1665481139"/>
-  <nd ref="1665481969"/>
-  <nd ref="1665481415"/>
-  <nd ref="1665481267"/>
-  <nd ref="1665481645"/>
-  <nd ref="1665481487"/>
-  <nd ref="1665481952"/>
-  <nd ref="1665481804"/>
-  <nd ref="1665481243"/>
-  <nd ref="1665481109"/>
-  <nd ref="1665481558"/>
-  <nd ref="1665481388"/>
-  <nd ref="1665481879"/>
-  <nd ref="1665481707"/>
-  <nd ref="1665481194"/>
-  <nd ref="1665481991"/>
-  <nd ref="1665481476"/>
-  <nd ref="1665481304"/>
-  <nd ref="1665481787"/>
-  <nd ref="1665481632"/>
-  <nd ref="1665481205"/>
-  <nd ref="4615670574"/>
-  <nd ref="1665481043"/>
-  <nd ref="1665481491"/>
-  <nd ref="1665481323"/>
-  <nd ref="1665481811"/>
-  <nd ref="1665481654"/>
-  <nd ref="1665481121"/>
-  <nd ref="1665481960"/>
-  <nd ref="1665481401"/>
-  <nd ref="1665481250"/>
-  <nd ref="1665481721"/>
-  <nd ref="1665481572"/>
-  <nd ref="1665481036"/>
-  <nd ref="1665481893"/>
-  <nd ref="1665481315"/>
-  <nd ref="4615670581"/>
-  <nd ref="1665481200"/>
-  <nd ref="1665481531"/>
-  <nd ref="1665481374"/>
-  <nd ref="1665481851"/>
-  <nd ref="1665481693"/>
-  <nd ref="1665481172"/>
-  <nd ref="1665481979"/>
-  <nd ref="1665481446"/>
-  <nd ref="1665481286"/>
-  <nd ref="1665481762"/>
-  <nd ref="1665446158"/>
-  <tag k="highway" v="living_street"/>
-  <tag k="name" v="Avenida del Reno"/>
-  <tag k="oneway" v="yes"/>
- </way>
+
  <way id="153931558" visible="true" version="4" changeset="45262067" timestamp="2017-01-18T05:58:24Z" user="rodatirod" uid="1045127">
   <nd ref="1665481280"/>
   <nd ref="1665481162"/>
@@ -24563,29 +24438,7 @@
   <tag k="highway" v="living_street"/>
   <tag k="name" v="Remanso del Coatí Sur"/>
  </way>
- <way id="153931561" visible="true" version="4" changeset="45262067" timestamp="2017-01-18T05:58:22Z" user="rodatirod" uid="1045127">
-  <nd ref="1665481227"/>
-  <nd ref="1665481081"/>
-  <nd ref="1665481528"/>
-  <nd ref="1665481371"/>
-  <nd ref="1665481950"/>
-  <nd ref="1665481802"/>
-  <nd ref="1665481241"/>
-  <nd ref="1665481107"/>
-  <nd ref="1665481554"/>
-  <nd ref="1665481386"/>
-  <nd ref="1665481878"/>
-  <nd ref="1665481706"/>
-  <nd ref="1665481192"/>
-  <nd ref="1665481990"/>
-  <nd ref="1665481472"/>
-  <nd ref="4615670613"/>
-  <nd ref="1665481784"/>
-  <nd ref="1665446291"/>
-  <tag k="highway" v="living_street"/>
-  <tag k="name" v="Avenida del Reno"/>
-  <tag k="oneway" v="yes"/>
- </way>
+
  <way id="153931562" visible="true" version="3" changeset="45262067" timestamp="2017-01-18T05:58:24Z" user="rodatirod" uid="1045127">
   <nd ref="1665446224"/>
   <nd ref="1665481210"/>
@@ -27610,34 +27463,7 @@
   <tag k="name" v="Avenida de los Leones"/>
   <tag k="oneway" v="yes"/>
  </way>
- <way id="157103164" visible="true" version="3" changeset="56477262" timestamp="2018-02-19T01:45:37Z" user="bokusama" uid="7637568">
-  <nd ref="1665446330"/>
-  <nd ref="1665481628"/>
-  <nd ref="1665481091"/>
-  <nd ref="1665481935"/>
-  <nd ref="1665481277"/>
-  <nd ref="1665481156"/>
-  <nd ref="1665481596"/>
-  <nd ref="1665481432"/>
-  <nd ref="1665481917"/>
-  <nd ref="1665481747"/>
-  <nd ref="1665481216"/>
-  <nd ref="1665481066"/>
-  <nd ref="1665481508"/>
-  <nd ref="1665481344"/>
-  <nd ref="1665481831"/>
-  <nd ref="1665481671"/>
-  <nd ref="1665481147"/>
-  <nd ref="1665481971"/>
-  <nd ref="1665481423"/>
-  <nd ref="1665481270"/>
-  <nd ref="1665481847"/>
-  <nd ref="5421504586"/>
-  <nd ref="1665481690"/>
-  <tag k="highway" v="living_street"/>
-  <tag k="name" v="Avenida del Reno"/>
-  <tag k="oneway" v="yes"/>
- </way>
+
  <way id="157103166" visible="true" version="2" changeset="45261831" timestamp="2017-01-18T05:41:02Z" user="rodatirod" uid="1045127">
   <nd ref="1665481690"/>
   <nd ref="1665446396"/>
@@ -45380,24 +45206,6 @@
   <nd ref="4615639345"/>
   <tag k="highway" v="living_street"/>
  </way>
- <way id="466842559" visible="true" version="1" changeset="45262067" timestamp="2017-01-18T05:58:20Z" user="rodatirod" uid="1045127">
-  <nd ref="4615670552"/>
-  <nd ref="4615670553"/>
-  <nd ref="4615670554"/>
-  <nd ref="4615670555"/>
-  <nd ref="4615670556"/>
-  <nd ref="4615670557"/>
-  <nd ref="4615670559"/>
-  <nd ref="4615670561"/>
-  <nd ref="4615670558"/>
-  <tag k="highway" v="living_street"/>
-  <tag k="name" v="Villa San Francisco"/>
- </way>
- <way id="466842560" visible="true" version="1" changeset="45262067" timestamp="2017-01-18T05:58:20Z" user="rodatirod" uid="1045127">
-  <nd ref="4615670559"/>
-  <nd ref="4615670560"/>
-  <tag k="highway" v="living_street"/>
- </way>
  <way id="466842562" visible="true" version="1" changeset="45262067" timestamp="2017-01-18T05:58:20Z" user="rodatirod" uid="1045127">
   <nd ref="4615670562"/>
   <nd ref="1665481204"/>
@@ -45447,24 +45255,6 @@
   <tag k="highway" v="living_street"/>
   <tag k="name" v="Villa San Pablo"/>
  </way>
- <way id="466842569" visible="true" version="2" changeset="46469790" timestamp="2017-02-28T14:56:17Z" user="Maarten Deen" uid="9176">
-  <nd ref="4615670581"/>
-  <nd ref="4615670582"/>
-  <nd ref="4615670583"/>
-  <tag k="highway" v="living_street"/>
- </way>
- <way id="466842570" visible="true" version="2" changeset="46469790" timestamp="2017-02-28T14:56:17Z" user="Maarten Deen" uid="9176">
-  <nd ref="4615670584"/>
-  <nd ref="4615670585"/>
-  <nd ref="4615670582"/>
-  <nd ref="4615670586"/>
-  <nd ref="4615670587"/>
-  <nd ref="4615670588"/>
-  <nd ref="4615670589"/>
-  <nd ref="4615670590"/>
-  <tag k="highway" v="living_street"/>
-  <tag k="name" v="Villa San Miguel"/>
- </way>
  <way id="466842571" visible="true" version="1" changeset="45262067" timestamp="2017-01-18T05:58:20Z" user="rodatirod" uid="1045127">
   <nd ref="1665481400"/>
   <nd ref="4615670591"/>
@@ -45474,7 +45264,6 @@
   <nd ref="4615670594"/>
   <nd ref="4615670595"/>
   <nd ref="4615670596"/>
-  <nd ref="4615670597"/>
   <tag k="highway" v="living_street"/>
  </way>
  <way id="466842572" visible="true" version="1" changeset="45262067" timestamp="2017-01-18T05:58:20Z" user="rodatirod" uid="1045127">
@@ -45495,13 +45284,6 @@
   <nd ref="4615670612"/>
   <nd ref="4615670607"/>
   <nd ref="4615670608"/>
-  <tag k="highway" v="living_street"/>
- </way>
- <way id="466842574" visible="true" version="1" changeset="45262067" timestamp="2017-01-18T05:58:20Z" user="rodatirod" uid="1045127">
-  <nd ref="4615670609"/>
-  <nd ref="4615670610"/>
-  <nd ref="4615670611"/>
-  <nd ref="4615670612"/>
   <tag k="highway" v="living_street"/>
  </way>
  <way id="466842575" visible="true" version="1" changeset="45262067" timestamp="2017-01-18T05:58:20Z" user="rodatirod" uid="1045127">
