@@ -83,19 +83,19 @@ species places{
 	init{
 		spaceType <- rnd(3);
 		if spaceType = 0{
-			height <- float(20);
+			height <- float(50);
 			buildingColor <- rgb(66, 134, 244);
 		}		
 		else if spaceType = 1{
-			height <- float(60);
+			height <- float(100);
 			buildingColor <- rgb(244, 244, 65);
 		}
 		else if spaceType = 2{
-			height <- float(100);
+			height <- float(150);
 			buildingColor <- rgb(96, 255, 96);
 		}
 		else if spaceType = 3{
-			height <- float(120);
+			height <- float(2000);
 			buildingColor <- rgb(237, 28, 91);
 		}
 		
@@ -115,7 +115,7 @@ species people skills:[moving]{
 	point target;
 	init{
 		interacting <- false;
-		speed <- 3.0;
+		speed <- 5.0;
 		target  <- any_location_in(one_of(places));
 		create targets number:1{
 			location <- myself.target;
@@ -156,12 +156,11 @@ experiment simulation type:gui{
 				//data "mean" value:meanEncounters color: #blue;
 			}
 		}
-		display display1 type:opengl{
-			image "/miramar/TIF/Geo-Miramar-Image-clear.tif";
+		display display1 type:opengl ambient_light:150 refresh_every:5{
 			species road aspect:road_aspect;
-			species people aspect:sphere;
-			species places aspect:place_aspect transparency: 0.5;			
-			//species targets aspect:targets_aspect;			
+			species places aspect:place_aspect;
+			//species targets aspect:targets_aspect;
+			species people aspect:sphere;			
 		}
 		monitor "Current encounters" value:chartEncounters;
 		/*

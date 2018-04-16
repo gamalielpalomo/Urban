@@ -156,7 +156,7 @@ experiment simulation type:gui{
 				//data "mean" value:meanEncounters color: #blue;
 			}
 		}
-		display display1 type:opengl{
+		display display1 type:opengl ambient_light:150{
 			image "/miramar/TIF/Geo-Miramar-Image-clear.tif";
 			species road aspect:road_aspect;
 			species people aspect:sphere;
