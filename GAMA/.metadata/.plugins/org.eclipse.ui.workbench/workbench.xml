@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="23" version="2.0">
+<workbench progressCount="22" version="2.0">
 <workbenchAdvisor/>
-<window height="550" maximized="true" width="700" x="860" y="-10">
+<window height="550" maximized="true" width="700" x="2756" y="-20">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar/>
 <coolbarLayout>
@@ -19,14 +19,24 @@
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="2"/>
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="msi.gama.lang.gaml.Gaml" name="graph_example.gaml" partName="graph_example.gaml" path="C:/Users/gamaa/Documents/City Science Projects/GAMA/crowds/models/graph_example.gaml" title="graph_example.gaml" tooltip="crowds/models/graph_example.gaml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/crowds/models/graph_example.gaml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="611" selectionTopPixel="0"/>
+</editor>
+<editor id="msi.gama.lang.gaml.Gaml" name="graph_example_2.gaml" partName="graph_example_2.gaml" path="C:/Users/gamaa/Documents/City Science Projects/GAMA/crowds/models/graph_example_2.gaml" title="graph_example_2.gaml" tooltip="crowds/models/graph_example_2.gaml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/crowds/models/graph_example_2.gaml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="301" selectionTopPixel="0"/>
+</editor>
 <editor focus="true" id="msi.gama.lang.gaml.Gaml" name="crowds.gaml" partName="crowds.gaml" path="C:/Users/gamaa/Documents/City Science Projects/GAMA/crowds/models/crowds.gaml" title="crowds.gaml" tooltip="crowds/models/crowds.gaml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/crowds/models/crowds.gaml"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3869" selectionTopPixel="2421"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1488" selectionTopPixel="2109"/>
 </editor>
 </editors>
 <views>
@@ -36,7 +46,10 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Infos (5 items)"/>
+<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Infos (7 items)"/>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Infos"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -45,6 +58,9 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="msi.gama.application.view.ErrorView" partName="Errors">
+<viewState/>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
@@ -81,6 +97,7 @@
 <view id="msi.gama.gui.view.GamaNavigator"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
+<view id="msi.gama.application.view.ErrorView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -97,12 +114,14 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.29881656" ratioLeft="202" ratioRight="474" relationship="2" relative="org.eclipse.ui.internal.ViewStack@c6e0f32"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@21a66d45" ratio="0.6593674" ratioLeft="271" ratioRight="140" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<info part="org.eclipse.ui.editorss" ratio="0.19696176" ratioLeft="376" ratioRight="1533" relationship="2" relative="org.eclipse.ui.internal.ViewStack@c6e0f32"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@21a66d45" ratio="0.89662445" ratioLeft="850" ratioRight="98" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="msi.gama.application.view.ErrorView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="msi.gama.application.view.ErrorView" label="Errors"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
@@ -117,7 +136,7 @@
 </mainWindow>
 </layout>
 </perspective>
-<perspective editorAreaTrimState="2" editorAreaVisible="0" fixed="0" version="0.016">
+<perspective editorAreaTrimState="0" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="msi.gama.gui.swt.perspectives.SimulationPerspective" id="msi.gama.application.perspectives.SimulationPerspective" label="Simulation"/>
 <alwaysOnActionSet id="trial"/>
 <alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
@@ -161,31 +180,43 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@7e58f697" ratio="0.116291255" ratioLeft="222" ratioRight="1687" relationship="2" relative="org.eclipse.ui.internal.ViewStack@5f883d90">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@7e58f697" ratio="0.28810894" ratioLeft="550" ratioRight="1359" relationship="2" relative="org.eclipse.ui.internal.ViewStack@5f883d90">
 <folder appearance="2" expanded="2">
 <page content="msi.gama.application.view.LayeredDisplayView:*" label="LabelNotFound"/>
 <page content="msi.gama.application.view.LayeredDisplayView:display1" label="LabelNotFound"/>
+<page content="msi.gama.application.view.LayeredDisplayView:map" label="LabelNotFound"/>
+<page content="msi.gama.application.view.LayeredDisplayView:MyDisplay" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.61934805" ratioLeft="589" ratioRight="362" relationship="4" relative="org.eclipse.ui.internal.ViewStack@7e58f697"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@5cc3e49b" ratio="0.6846793" ratioLeft="1153" ratioRight="531" relationship="2" relative="org.eclipse.ui.internal.ViewStack@7e58f697">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2f336e00" ratio="0.5946148" ratioLeft="795" ratioRight="542" relationship="2" relative="org.eclipse.ui.internal.ViewStack@7e58f697">
 <folder appearance="2" expanded="2">
-<page content="msi.gama.application.view.ParameterView" label="LabelNotFound"/>
-<page content="msi.gama.application.view.ErrorView" label="LabelNotFound"/>
 <page content="msi.gama.application.view.LayeredDisplayView:chart" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="inspectorsFolder2" ratio="0.4991511" ratioLeft="294" ratioRight="295" relationship="4" relative="org.eclipse.ui.internal.ViewStack@5cc3e49b">
+<info folder="true" part="inspectorsFolder2" ratio="0.49472573" ratioLeft="469" ratioRight="479" relationship="4" relative="org.eclipse.ui.internal.ViewStack@2f336e00">
 <folder appearance="2" expanded="2">
 <page content="msi.gama.application.view.AgentInspectView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@50aa9a91" ratio="0.49947423" ratioLeft="475" ratioRight="476" relationship="4" relative="org.eclipse.ui.internal.ViewStack@5cc3e49b">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@4153ed5c" ratio="0.6919831" ratioLeft="656" ratioRight="292" relationship="4" relative="org.eclipse.ui.internal.ViewStack@2f336e00">
+<folder appearance="2" expanded="2">
+<page content="msi.gama.application.view.ParameterView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@3ac07f37" ratio="0.76875955" ratioLeft="502" ratioRight="151" relationship="4" relative="org.eclipse.ui.internal.ViewStack@2f336e00">
 <folder appearance="2" expanded="2">
 <page content="msi.gama.application.view.MonitorView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@14cf30b3" ratio="0.613924" ratioLeft="582" ratioRight="366" relationship="4" relative="org.eclipse.ui.internal.ViewStack@7e58f697">
+<folder appearance="2" expanded="2">
+<page content="msi.gama.application.view.ErrorView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
@@ -203,12 +234,71 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="msi.gama.lang.gaml.Gaml" path="/crowds/models/crowds.gaml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="msi.gama.lang.gaml.Gaml" path="/crowds/models/graph_example.gaml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="msi.gama.lang.gaml.Gaml" path="/crowds/models/graph_example_2.gaml"/>
 </editors>
 <item historyLabel="crowds.gaml" index="0">
 <position info="not_deleted" x="3564" y="0"/>
 </item>
+<item historyLabel="crowds.gaml" index="0">
+<position info="not_deleted" x="2224" y="0"/>
+</item>
+<item historyLabel="crowds.gaml" index="0">
+<position info="not_deleted" x="4228" y="10"/>
+</item>
+<item historyLabel="graph_example.gaml" index="1">
+<position info="not_deleted" x="1138" y="0"/>
+</item>
+<item historyLabel="crowds.gaml" index="0">
+<position info="not_deleted" x="900" y="0"/>
+</item>
+<item historyLabel="graph_example.gaml" index="1">
+<position info="not_deleted" x="1138" y="0"/>
+</item>
+<item historyLabel="crowds.gaml" index="0">
+<position info="not_deleted" x="4774" y="0"/>
+</item>
+<item historyLabel="graph_example.gaml" index="1">
+<position info="not_deleted" x="1138" y="0"/>
+</item>
+<item historyLabel="crowds.gaml" index="0">
+<position/>
+</item>
+<item historyLabel="graph_example.gaml" index="1">
+<position info="not_deleted" x="565" y="0"/>
+</item>
+<item historyLabel="crowds.gaml" index="0">
+<position/>
+</item>
+<item historyLabel="graph_example.gaml" index="1">
+<position info="not_deleted" x="611" y="0"/>
+</item>
+<item historyLabel="crowds.gaml" index="0">
+<position/>
+</item>
+<item historyLabel="graph_example.gaml" index="1">
+<position info="not_deleted" x="611" y="0"/>
+</item>
+<item historyLabel="crowds.gaml" index="0">
+<position/>
+</item>
+<item historyLabel="graph_example_2.gaml" index="2">
+<position info="not_deleted" x="301" y="0"/>
+</item>
+<item historyLabel="crowds.gaml" index="0">
+<position/>
+</item>
+<item historyLabel="graph_example_2.gaml" index="2">
+<position info="not_deleted" x="301" y="0"/>
+</item>
+<item historyLabel="crowds.gaml" index="0">
+<position/>
+</item>
+<item historyLabel="graph_example_2.gaml" index="2">
+<position info="not_deleted" x="301" y="0"/>
+</item>
 <item active="true" historyLabel="crowds.gaml" index="0">
-<position info="not_deleted" x="0" y="0"/>
+<position info="not_deleted" x="1488" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -216,6 +306,9 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -227,6 +320,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="msi.gama.lang.gaml.Gaml" name="graph_example_2.gaml" tooltip="crowds/models/graph_example_2.gaml">
+<persistable path="/crowds/models/graph_example_2.gaml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="msi.gama.lang.gaml.Gaml" name="graph_example.gaml" tooltip="crowds/models/graph_example.gaml">
+<persistable path="/crowds/models/graph_example.gaml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="msi.gama.lang.gaml.Gaml" name="crowds.gaml" tooltip="crowds/models/crowds.gaml">
 <persistable path="/crowds/models/crowds.gaml"/>
 </file>

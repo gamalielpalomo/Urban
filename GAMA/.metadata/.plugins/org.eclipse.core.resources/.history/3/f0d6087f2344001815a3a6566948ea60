@@ -34,18 +34,7 @@ global torus:false{
 	
 	reflex mainLoop{
 		string dataSpec <- string(cycle) + " -> " + "";
-		do updateGraph();
 		//if time >= 1000{do pause;}
-	}
-	action updateGraph{
-		Encounters <- graph([]);
-		ask people{
-			loop contact over:self.pEncounters{
-				if !(Encounters contains_edge (self::contact)){
-					Encounters <- Encounters add_edge(self::contact);
-				}
-			}
-		}
 	}
 	init{
 		distanceForInteraction <- 30#m;
@@ -61,14 +50,13 @@ global torus:false{
 		create places from: places_shp;
 		road_network <- as_edge_graph(road);
 		//point init_location <- any_location_in(one_of(road));
-		create people number:10{
+		create people number:2{
 			//location <- init_location;			
 			location <- any_location_in(one_of(road)) ;
 			target <- any_location_in(one_of(road));
 			//add the agent to the graph
 			add node(self) to: Encounters;
 		}
-		do updateGraph();
 	}
 }
 
@@ -87,8 +75,6 @@ species road {
 	}
 	
 }
-
-
 
 species places{
 	//spaceType -> 0:square 1:mall 2:park 3:church
