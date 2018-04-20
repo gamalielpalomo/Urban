@@ -196,9 +196,9 @@ experiment simulation type:gui{
 			}
 		}
 		display display1 type:opengl ambient_light:80{
-			grid cell;
-			species road aspect:road_aspect;
-			species people aspect:sphere;
+			//grid cell;
+			//species road aspect:road_aspect;
+			//species people aspect:sphere;
 			graphics "Encounters Graph"{
 				loop edge over: Encounters.edges{
 					draw edge color: rgb(60, 140, 127) size:10#m;

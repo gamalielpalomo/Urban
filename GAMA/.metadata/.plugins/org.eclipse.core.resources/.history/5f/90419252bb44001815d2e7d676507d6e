@@ -82,7 +82,7 @@ species osm_agent{
 species road {
 	
 	aspect road_aspect {
-		draw shape color: rgb(198, 59, 175);
+		draw shape color: rgb(3, 130, 173);
 	}
 	
 }
@@ -149,7 +149,7 @@ species people skills:[moving]{
 		interacting <- false;
 		do goto target:target on:road_network;
 		if(location = target){
-			target <- any_location_in(one_of(road));
+			target <- any_location_in(one_of(place));
 			ask targets{
 				location<-myself.target;
 			}
@@ -187,7 +187,7 @@ species Encounters_link{
 }
 
 experiment simulation type:gui{
-	parameter "perception" var: distanceForInteraction <- 100#m category:"Simple types";
+	parameter "perception" var: distanceForInteraction <- 50#m category:"Simple types";
 	output{
 		display chart {
 			chart "Encounters" type:series{
@@ -196,16 +196,16 @@ experiment simulation type:gui{
 			}
 		}
 		display display1 type:opengl ambient_light:80{
-			grid cell;
+			//grid cell;
 			species road aspect:road_aspect;
 			species people aspect:sphere;
 			graphics "Encounters Graph"{
 				loop edge over: Encounters.edges{
-					draw edge color: rgb(60, 140, 127) size:10#m;
+					draw edge color: #green;
 				}			
 			}
 			
-			//species places aspect:place_aspect transparency: 0.5;
+			species places aspect:place_aspect transparency: 0.5;
 			//species targets aspect:targets_aspect;			
 		}
 		monitor "Current encounters" value:chartEncounters;

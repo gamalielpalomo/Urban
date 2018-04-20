@@ -196,7 +196,7 @@ experiment simulation type:gui{
 			}
 		}
 		display display1 type:opengl ambient_light:80{
-			grid cell;
+			//grid cell;
 			species road aspect:road_aspect;
 			species people aspect:sphere;
 			graphics "Encounters Graph"{
@@ -205,7 +205,7 @@ experiment simulation type:gui{
 				}			
 			}
 			
-			//species places aspect:place_aspect transparency: 0.5;
+			species places aspect:place_aspect transparency: 0.5;
 			//species targets aspect:targets_aspect;			
 		}
 		monitor "Current encounters" value:chartEncounters;

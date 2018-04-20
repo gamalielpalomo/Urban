@@ -82,7 +82,7 @@ species osm_agent{
 species road {
 	
 	aspect road_aspect {
-		draw shape color: rgb(198, 59, 175);
+		draw shape color: rgb(3, 130, 173);
 	}
 	
 }
@@ -138,7 +138,7 @@ species people skills:[moving]{
 	init{
 		interacting <- false;
 		speed <- 2.0;
-		target  <- any_location_in(one_of(places));
+		target  <- any_location_in(one_of(road));
 		create targets number:1{
 			location <- myself.target;
 		}
@@ -196,12 +196,12 @@ experiment simulation type:gui{
 			}
 		}
 		display display1 type:opengl ambient_light:80{
-			grid cell;
+			//grid cell;
 			species road aspect:road_aspect;
 			species people aspect:sphere;
 			graphics "Encounters Graph"{
 				loop edge over: Encounters.edges{
-					draw edge color: rgb(60, 140, 127) size:10#m;
+					draw edge color: #green;
 				}			
 			}
 			

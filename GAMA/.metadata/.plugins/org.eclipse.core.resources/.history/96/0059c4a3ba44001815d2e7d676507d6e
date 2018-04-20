@@ -20,6 +20,8 @@ global torus:false{
 	bool is_night <- true update: current_hour < 7 or current_hour > 20;
 	graph road_network;
 	
+	bool graphVisible <- true;
+	
 	//filter for obtaining only the roads from the osm file
 	map filter <- map("highway"::["tertiary", "residential"]);
 	//creation of an osm file which will contain the roads of the city
@@ -82,7 +84,7 @@ species osm_agent{
 species road {
 	
 	aspect road_aspect {
-		draw shape color: rgb(198, 59, 175);
+		draw shape color: rgb(3, 130, 173);
 	}
 	
 }
@@ -187,7 +189,7 @@ species Encounters_link{
 }
 
 experiment simulation type:gui{
-	parameter "perception" var: distanceForInteraction <- 100#m category:"Simple types";
+	parameter "perception" var: distanceForInteraction <- 50#m category:"Simple types";
 	output{
 		display chart {
 			chart "Encounters" type:series{
@@ -196,16 +198,18 @@ experiment simulation type:gui{
 			}
 		}
 		display display1 type:opengl ambient_light:80{
-			grid cell;
+			//grid cell;
 			species road aspect:road_aspect;
 			species people aspect:sphere;
-			graphics "Encounters Graph"{
-				loop edge over: Encounters.edges{
-					draw edge color: rgb(60, 140, 127) size:10#m;
-				}			
+			if graphVisible{
+				graphics "Encounters Graph"{
+					loop edge over: Encounters.edges{
+						draw edge color: #green;
+					}			
+				}
 			}
 			
-			//species places aspect:place_aspect transparency: 0.5;
+			species places aspect:place_aspect transparency: 0.5;
 			//species targets aspect:targets_aspect;			
 		}
 		monitor "Current encounters" value:chartEncounters;
