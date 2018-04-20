@@ -191,7 +191,7 @@ experiment simulation type:gui{
 	output{
 		display chart {
 			chart "Encounters" type:series{
-				data "Agents interacting" value:chartEncounters color:rgb(150, 27, 105);
+				data "Agents interacting" value:chartEncounters color:#red;
 				data "Encounters" value:length(Encounters.edges) color:rgb(41, 152, 160);
 				//data "mean" value:meanEncounters color: #blue;
 			}
