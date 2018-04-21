@@ -210,6 +210,7 @@ experiment simulation type:gui{
 					draw edge color: rgb(60, 140, 127) size:10#m;
 				}		
 			}
+			
 			species places aspect:place_aspect transparency: 0.5;
 			//species targets aspect:targets_aspect;			
 		}

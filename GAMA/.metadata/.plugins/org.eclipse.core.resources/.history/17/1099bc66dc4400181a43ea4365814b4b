@@ -9,7 +9,7 @@ model crowds
 global torus:false{
 	
 	//Declaration of the global variables
-	int numAgents <- 0;
+	int numAgents;
 	int sumEncounters;
 	int chartEncounters <- 0 update: people count (each.interacting);
 	int acumEncounters;
@@ -53,7 +53,6 @@ global torus:false{
 	}
 	init{
 		distanceForInteraction <- 30#m;
-		numAgents <- 500;
 		create osm_agent from:osm_file with: [highway_str::string(read("highway"))];
 		ask osm_agent{
 				if(highway_str != nil){
@@ -65,7 +64,7 @@ global torus:false{
 		create places from: places_shp;
 		road_network <- as_edge_graph(road);
 		//point init_location <- any_location_in(one_of(road));
-		create people number:numAgents{
+		create people number:1000{
 			//location <- init_location;			
 			location <- any_location_in(one_of(road)) ;
 			target <- any_location_in(one_of(road));
@@ -208,8 +207,9 @@ experiment simulation type:gui{
 			graphics "Encounters Graph"{
 				loop edge over: Encounters.edges{
 					draw edge color: rgb(60, 140, 127) size:10#m;
-				}		
+				}			
 			}
+			
 			species places aspect:place_aspect transparency: 0.5;
 			//species targets aspect:targets_aspect;			
 		}
