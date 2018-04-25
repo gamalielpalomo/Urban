@@ -60,7 +60,7 @@ global torus:false{
 	}
 	init{
 		//distanceForInteraction <- 100#m;
-		numAgents <- 500;
+		numAgents <- 100;
 		create osm_agent from:osm_file with: [highway_str::string(read("highway"))];
 		ask osm_agent{
 				if(highway_str != nil and highway_str != "turning_circle"){
