@@ -38,7 +38,7 @@ global torus:false{
 		create roads from: streets_shp;
 		create places from: places_shp;
 		road_network <- as_edge_graph(streets_shp);
-		create people number:1000;
+		create people number:100;
 		//write road_network.connected;
 	}
 	
@@ -114,16 +114,16 @@ species people skills:[moving]{
 experiment simulation type:gui{
 	output{
 		
-		/*display display1 type:opengl ambient_light:150{
+		display display1 type:opengl ambient_light:150{
 			//species roads aspect:road_aspect;
 			//species places aspect:place_aspect;
 			species people aspect:sphere;
-		}*/
+		}/*
 		display display1{
-			//species roads aspect:road_aspect;
-			//species places aspect:place_aspect;
+			species roads aspect:road_aspect;
+			species places aspect:place_aspect;
 			species people aspect:standard_aspect;
 			//species targets aspect:targets_aspect;
-		}
+		}*/
 	}
 }

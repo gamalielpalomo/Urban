@@ -30,11 +30,11 @@ global torus:false{
 	//filter for obtaining only the roads from the osm file
 	map filter <- map("highway"::["tertiary", "residential"]);
 	//creation of an osm file which will contain the roads of the city
-	file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0409/miramar040918.osm"));
-	//file<geometry> osm_file <- file<geometry>(osm_file("/tijuana/tijuana-042418.osm"));
+	//file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0409/miramar040918.osm"));
+	file<geometry> osm_file <- file<geometry>(osm_file("/tijuana/tijuana-042418.osm"));
 	//This shp file is used to make the bounders for the simulation area
-	file places_shp <- file("/miramar/0409/miramar040818-2-places.shp");
-	//file places_shp <- file("/tijuana/tijuana-042418.shp");
+	//file places_shp <- file("/miramar/0409/miramar040818-2-places.shp");
+	file places_shp <- file("/tijuana/tijuana-042418.shp");
 	geometry shape <- envelope(osm_file);
 	//The graph for the representation of the relations between people in the physical space
 	graph Encounters <- graph([]);

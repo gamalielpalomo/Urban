@@ -23,6 +23,7 @@ global torus:false{
 	int meanEncounters;
 	int timeStep;
 	float distanceForInteraction;
+	float worldDimension <- 1000;
 	int current_hour update: (cycle / 60) mod 24;
 	bool is_night <- true update: current_hour < 7 or current_hour > 20;
 	graph road_network;

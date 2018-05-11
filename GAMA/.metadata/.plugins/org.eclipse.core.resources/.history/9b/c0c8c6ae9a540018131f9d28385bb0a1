@@ -120,8 +120,8 @@ experiment simulation type:gui{
 			species people aspect:sphere;
 		}*/
 		display display1{
-			//species roads aspect:road_aspect;
-			//species places aspect:place_aspect;
+			species roads aspect:road_aspect;
+			species places aspect:place_aspect;
 			species people aspect:standard_aspect;
 			//species targets aspect:targets_aspect;
 		}

@@ -27,8 +27,8 @@ global torus:false{
 	//map filter <- map("highway"::["primary", "secondary", "tertiary", "motorway", "living_street","residential", "unclassified"]);
 	file<geometry> osmfile <- file<geometry> (osm_file("/miramar/miramar.osm"));
 	
-	geometry shape <- square(worldDimension);
-	//geometry shape <- envelope(streets_shp);
+	//geometry shape <- square(worldDimension);
+	geometry shape <- envelope(streets_shp);
 	
 	reflex writeDebug{
 		//write sumEncounters;
@@ -38,7 +38,12 @@ global torus:false{
 		create roads from: streets_shp;
 		create places from: places_shp;
 		road_network <- as_edge_graph(streets_shp);
-		create people number:1000;
+		create people number:100{
+			location <- any_location_in(one_of(places)) ;
+			//point initPlace <- {rnd(worldDimension), rnd(worldDimension)};
+			//location <- initPlace;
+			//target <- any_location_in(one_of(roads));
+		}
 		//write road_network.connected;
 	}
 	
@@ -68,15 +73,15 @@ species targets{
 
 species people skills:[moving]{
 	float socialization;
-	float speed <- 1.0;
-	point target <- {rnd(worldDimension),rnd(worldDimension)};
+	float speed <- 5.0;
+	point target <- any_location_in(one_of(places));
 	//point targetPnt <- {rnd(worldDimension), rnd(worldDimension)};
 	//point target <- targetPnt;
 	aspect name:standard_aspect{
 		draw geometry:circle(10#m) color:#blue;					
 	}
 	aspect sphere{
-		draw sphere(5) color:#blue;
+		draw sphere(50) color:#blue;
 	}
 	init{
 		/*create targets number:1{
@@ -97,9 +102,9 @@ species people skills:[moving]{
 		}
 		location <- {x,y};
 		do move;*/
-		do goto target:target;
+		do goto target:target on:road_network;
 		if(location = target){
-			target <- {rnd(worldDimension),rnd(worldDimension)};
+			target <- any_location_in(one_of(roads));
 			//targetPnt <- {rnd(worldDimension), rnd(worldDimension)};
 			//target <- any_location_in(one_of(roads));
 			//target <- targetPnt;
@@ -114,16 +119,16 @@ species people skills:[moving]{
 experiment simulation type:gui{
 	output{
 		
-		/*display display1 type:opengl ambient_light:150{
+		display display1 type:opengl ambient_light:150{
 			//species roads aspect:road_aspect;
 			//species places aspect:place_aspect;
 			species people aspect:sphere;
-		}*/
+		}/*
 		display display1{
-			//species roads aspect:road_aspect;
-			//species places aspect:place_aspect;
+			species roads aspect:road_aspect;
+			species places aspect:place_aspect;
 			species people aspect:standard_aspect;
 			//species targets aspect:targets_aspect;
-		}
+		}*/
 	}
 }

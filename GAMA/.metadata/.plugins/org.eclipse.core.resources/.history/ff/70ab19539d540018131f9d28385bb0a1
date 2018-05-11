@@ -23,6 +23,7 @@ global torus:false{
 	int meanEncounters;
 	int timeStep;
 	float distanceForInteraction;
+	float worldDimension <- 100.0;
 	int current_hour update: (cycle / 60) mod 24;
 	bool is_night <- true update: current_hour < 7 or current_hour > 20;
 	graph road_network;
@@ -35,7 +36,7 @@ global torus:false{
 	//This shp file is used to make the bounders for the simulation area
 	file places_shp <- file("/miramar/0409/miramar040818-2-places.shp");
 	//file places_shp <- file("/tijuana/tijuana-042418.shp");
-	geometry shape <- envelope(osm_file);
+	geometry shape <- square(worldDimension);
 	//The graph for the representation of the relations between people in the physical space
 	graph Encounters <- graph([]);
 	int density <- 0;
@@ -79,8 +80,8 @@ global torus:false{
 		//point init_location <- any_location_in(one_of(road));
 		create people number:numAgents{
 			//location <- init_location;			
-			location <- any_location_in(one_of(road)) ;
-			target <- any_location_in(one_of(road));
+			location <- {rnd(worldDimension),rnd(worldDimension)} ;
+			target <- {rnd(worldDimension),rnd(worldDimension)};
 			//add the agent to the graph
 			add node(self) to: Encounters;
 		}
@@ -155,7 +156,7 @@ species people skills:[moving]{
 	init{
 		interacting <- false;
 		speed <- agentsSpeed;
-		target  <- any_location_in(one_of(road));
+		target  <- {rnd(worldDimension),rnd(worldDimension)};
 		create targets number:1{
 			location <- myself.target;
 		}
@@ -165,9 +166,9 @@ species people skills:[moving]{
 	reflex move{
 		speed <- agentsSpeed;
 		interacting <- false;
-		do goto target:target on:road_network;
+		do goto target:target;
 		if(location = target){
-			target <- any_location_in(one_of(road));
+			target <- {rnd(worldDimension),rnd(worldDimension)};
 			ask targets{
 				location<-myself.target;
 			}
@@ -215,7 +216,7 @@ experiment simulation type:gui{
 				data "Encounters" value:length(Encounters.edges) color:rgb(41, 152, 160);
 				//data "mean" value:meanEncounters color: #blue;
 			}
-		}
+		}/*
 		display display1 type:opengl ambient_light:80{
 			//grid cell;
 			species road aspect:road_aspect;
@@ -227,18 +228,22 @@ experiment simulation type:gui{
 					draw edge color: rgb(60, 140, 127) size:10#m;
 				}		
 			}			
-		}
+		}*/
 		monitor "Agents interacting" value:chartEncounters;
 		monitor "Vertices in graph" value: length(Encounters.vertices);
 		monitor "Edges in graph" value: length(Encounters.edges);
-		/*
+		
 		display display1{
-			species road aspect:road_aspect;
+			//species road aspect:road_aspect;
 			//species places aspect:place_aspect;
 			species people aspect:standard_aspect;
-			species Encounters_link;
+			graphics "Encounters Graph"{
+				loop edge over: Encounters.edges{
+					draw edge color: rgb(60, 140, 127) size:10#m;
+				}		
+			}	
 			//species targets aspect:targets_aspect;
-		}*/
+		}
 	
 	}
 }
