@@ -33,7 +33,7 @@ global torus:false{
 	file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0409/miramar040918.osm"));
 	//file<geometry> osm_file <- file<geometry>(osm_file("/tijuana/tijuana-042418.osm"));
 	//This shp file is used to make the bounders for the simulation area
-	file places_shp <- file("/miramar/0409/miramar040818-2-places.shp");
+	file places_shp <- file("/miramar/0515/miramar051518-places.shp");
 	//file places_shp <- file("/tijuana/tijuana-042418.shp");
 	geometry shape <- envelope(osm_file);
 	//The graph for the representation of the relations between people in the physical space
@@ -60,7 +60,7 @@ global torus:false{
 	}
 	init{
 		//distanceForInteraction <- 100#m;
-		numAgents <- 100;
+		numAgents <- 500;
 		create osm_agent from:osm_file with: [highway_str::string(read("highway"))];
 		ask osm_agent{
 				if(highway_str != nil and highway_str != "turning_circle"){
@@ -69,10 +69,13 @@ global torus:false{
 			do die;
 		}
 		
-		create osm_agent from: places_shp with: [highway_str::string(read("highway")), power_str::string(read("power"))];
+		create osm_agent from: places_shp with: [amenity::string(read("amenity")), highway_str::string(read("highway")), power_str::string(read("power"))];
 		ask osm_agent{
-			if(highway_str = nil or (highway_str != nil and highway_str != "traffic_signals" and highway_str != "turning_circle") and power_str != "tower"){
-				create places with: [shape::shape, type:: highway_str];
+			//if(highway_str = nil or (highway_str != nil and highway_str != "traffic_signals" and highway_str != "turning_circle") and power_str != "tower"){
+			if(amenity != nil and (amenity="school" or amenity="college" or amenity="university" or amenity="social_facility")){
+				//Here we create spaces for each osm_agent with the "amenity" feature as one of the values "school", "kindergarten", "college", "university", "social_facilty"
+				create places number:1 with: [shape::shape, amenity::amenity];
+				//create places with: [shape::shape, type:: highway_str];
 			}
 		}		
 		road_network <- as_edge_graph(road);
@@ -80,7 +83,7 @@ global torus:false{
 		create people number:numAgents{
 			//location <- init_location;			
 			location <- any_location_in(one_of(road)) ;
-			target <- any_location_in(one_of(road));
+			target <- any_location_in(one_of(places));
 			//add the agent to the graph
 			add node(self) to: Encounters;
 		}
@@ -94,6 +97,7 @@ species osm_agent{
 	
 	string highway_str;
 	string power_str;
+	string amenity;
 }
 
 species road {
@@ -108,7 +112,7 @@ species road {
 
 species places{
 	//spaceType -> 0:square 1:mall 2:park 3:church
-	int spaceType;
+	string amenity;
 	list<string> spaceActivities;
 	int size;
 	rgb buildingColor;
@@ -118,22 +122,27 @@ species places{
 		draw geometry:square(50#m) color:buildingColor border:#gray depth:height;
 	}
 	init{
-		spaceType <- rnd(3);
-		if spaceType = 0{
+		write amenity;
+		//spaceType <- rnd(3);
+		if amenity = "school"{
 			height <- float(20);
-			buildingColor <- rgb(66, 134, 244);
+			buildingColor <- rgb(66, 134, 244); //Blue
 		}		
-		else if spaceType = 1{
+		else if amenity = "kindergarten"{
 			height <- float(60);
-			buildingColor <- rgb(244, 244, 65);
+			buildingColor <- rgb(244, 244, 65); //Yellow
 		}
-		else if spaceType = 2{
+		else if amenity = "college"{
 			height <- float(100);
-			buildingColor <- rgb(96, 255, 96);
+			buildingColor <- rgb(96, 255, 96); //Green
 		}
-		else if spaceType = 3{
+		else if amenity = "University"{
 			height <- float(120);
-			buildingColor <- rgb(237, 28, 91);
+			buildingColor <- rgb(237, 28, 91); //Magenta
+		}
+		else if amenity = "social_facility"{
+			height <- float(150);
+			buildingColor <- rgb("red");
 		}
 	}
 }
@@ -155,7 +164,6 @@ species people skills:[moving]{
 	init{
 		interacting <- false;
 		speed <- agentsSpeed;
-		target  <- any_location_in(one_of(road));
 		create targets number:1{
 			location <- myself.target;
 		}
@@ -167,7 +175,7 @@ species people skills:[moving]{
 		interacting <- false;
 		do goto target:target on:road_network;
 		if(location = target){
-			target <- any_location_in(one_of(road));
+			//target <- any_location_in(one_of(road));
 			ask targets{
 				location<-myself.target;
 			}
@@ -219,13 +227,13 @@ experiment simulation type:gui{
 		display display1 type:opengl ambient_light:80{
 			//grid cell;
 			species road aspect:road_aspect;
-			species places aspect:place_aspect transparency: 0.5;
+			species places aspect:place_aspect transparency: 0.6;
 			species people aspect:sphere;
 			//species targets aspect:targets_aspect;
 			graphics "Encounters Graph"{
 				loop edge over: Encounters.edges{
-					draw edge color: rgb(60, 140, 127) size:10#m;
-				}		
+					draw edge color: rgb(60, 140, 127);
+				}
 			}			
 		}
 		monitor "Agents interacting" value:chartEncounters;
