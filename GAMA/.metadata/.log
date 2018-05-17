@@ -704,3 +704,104 @@ java.util.ConcurrentModificationException
 
 !ENTRY org.eclipse.ui 4 4 2018-05-16 17:41:16.903
 !MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@5be69296 (key: draw, firstFacet: null)
+!SESSION 2018-05-16 19:42:51.408 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=${target.nl}
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:42:59.377
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.findAndInstallUpdates", command "org.eclipse.ui.update.findAndInstallUpdates" not defined
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:42:59.377
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.manageConfiguration", command "org.eclipse.ui.update.manageConfiguration" not defined
+
+!ENTRY org.apache.log4j 2 0 2018-05-16 19:43:00.564
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.apache.log4j 2 0 2018-05-16 19:43:01.080
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:43:07.718
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@6a474495 (key: draw, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:43:08.984
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:44:07.811
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:44:20.756
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@6a474495 (key: draw, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:44:21.990
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@46773b03 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:44:26.199
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:44:29.538
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@5510be4d (key: draw, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:44:35.712
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@4c61791a
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:44:37.774
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:44:39.071
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:44:41.337
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:44:41.446
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:44:42.306
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:44:42.899
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:44:54.805
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FacetImpl@38104851 (name: null) (key: refresh:)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:44:58.794
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@db2978a (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:45:00.493
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:55:20.471
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:55:22.002
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@42267cef (key: draw, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:55:27.542
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@5667ea2a (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:55:30.276
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@792fa48 (op: Roads)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:55:32.026
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@65a028d7
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:55:34.011
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ExpressionListImpl@2476b7ec (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:55:36.042
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 19:57:36.376
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 20:05:55.533
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-16 20:06:19.020
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
