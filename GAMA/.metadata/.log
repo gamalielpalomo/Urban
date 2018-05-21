@@ -1128,3 +1128,99 @@ java.util.ConcurrentModificationException
 	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
 	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
 	at java.awt.EventDispatchThread.run(Unknown Source)
+!SESSION 2018-05-18 11:55:15.161 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=${target.nl}
+Framework arguments:  C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-05-18 11:55:16.581
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.apache.log4j 2 0 2018-05-18 11:55:17.263
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.apache.log4j 2 0 2018-05-18 11:55:17.544
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.eclipse.ui 4 4 2018-05-18 11:55:18.089
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.findAndInstallUpdates", command "org.eclipse.ui.update.findAndInstallUpdates" not defined
+
+!ENTRY org.eclipse.ui 4 4 2018-05-18 11:55:18.105
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.manageConfiguration", command "org.eclipse.ui.update.manageConfiguration" not defined
+
+!ENTRY org.eclipse.ui 4 4 2018-05-18 11:55:22.852
+!MESSAGE WorkspaceModelsManager.findAndLoadIFile C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-18 11:55:23.090
+!MESSAGE WorkspaceModelsManager.findInWorkspace  C:/Users/gamaa/Documents/City Science Projects/GAMA/crowds/models/crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-18 11:55:23.769
+!MESSAGE WorkspaceModelsManager.findAndLoadIFile C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-18 11:55:23.776
+!MESSAGE WorkspaceModelsManager.findInWorkspace  C:/Users/gamaa/Documents/City Science Projects/GAMA/crowds/models/crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-18 11:55:37.395
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-18 11:57:50.151
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-18 11:57:51.428
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@1eed7577 (key: draw, firstFacet: geometry:)
+!SESSION 2018-05-18 12:13:00.165 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=${target.nl}
+Framework arguments:  C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-18 12:13:02.719
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.findAndInstallUpdates", command "org.eclipse.ui.update.findAndInstallUpdates" not defined
+
+!ENTRY org.eclipse.ui 4 4 2018-05-18 12:13:02.731
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.manageConfiguration", command "org.eclipse.ui.update.manageConfiguration" not defined
+
+!ENTRY org.apache.log4j 2 0 2018-05-18 12:13:03.336
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.apache.log4j 2 0 2018-05-18 12:13:03.608
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.eclipse.ui 4 4 2018-05-18 12:13:07.189
+!MESSAGE WorkspaceModelsManager.findAndLoadIFile C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-18 12:13:07.388
+!MESSAGE WorkspaceModelsManager.findInWorkspace  C:/Users/gamaa/Documents/City Science Projects/GAMA/crowds/models/crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-18 12:13:08.697
+!MESSAGE WorkspaceModelsManager.findAndLoadIFile C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-18 12:13:08.705
+!MESSAGE WorkspaceModelsManager.findInWorkspace  C:/Users/gamaa/Documents/City Science Projects/GAMA/crowds/models/crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-18 12:13:09.931
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@3e5b628f (op: Roads)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-21 07:34:38.177
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@7a051008 (op: school)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-21 07:56:15.857
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-21 07:56:53.008
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-21 10:30:28.977
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-21 10:55:35.959
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
