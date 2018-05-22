@@ -11,13 +11,16 @@ global torus:false{
 	//Declaration of the global variables
 	
 	//Simulation parameters 
-	
 	int numAgents <- 0;
 	float agentsSpeed;
 	int agentsSize;
 	int streetWidth;
 	int edgesWidth;
 	bool showShortestPaths;
+	
+	bool lockStreetRefresh;
+	
+	//
 	
 	int sumEncounters;
 	int chartEncounters <- 0 update: people count (each.interacting);
@@ -62,7 +65,7 @@ global torus:false{
 	}
 	init{
 		//distanceForInteraction <- 100#m;
-		numAgents <- 1;
+		numAgents <- 100;
 		create osm_agent from:osm_file with: [highway_str::string(read("highway"))];
 		ask osm_agent{
 				if(highway_str != nil and highway_str != "turning_circle"){
@@ -182,8 +185,8 @@ species people skills:[moving]{
 	reflex move{
 		speed <- agentsSpeed;
 		interacting <- false;
-		do goto target:target on:road_network recompute_path:false;
-		//do goto target:target on:shortestPath.shape;
+		do follow path:shortestPath;
+		//do goto target:target on:road_network recompute_path:false;
 		if(location = target){
 			target <- any_location_in(one_of(road));
 			ask targets{
@@ -210,7 +213,7 @@ species people skills:[moving]{
 	}
 	
 	aspect sphere{
-		draw sphere(agentsSize) color:#blue;
+		draw square(agentsSize) color:#blue;
 	}
 	
 
@@ -229,7 +232,8 @@ experiment simulation type:gui{
 	parameter "Agents-size" var:agentsSize <- 30 category:"GUI";
 	parameter "Edges-size" var:edgesWidth <- 1 category:"GUI";
 	parameter "Streets-Size" var:streetWidth <- 1 category:"GUI";
-	parameter "showPaths" var:showShortestPaths <- false category:"GUI";
+	parameter "Show Paths" var:showShortestPaths <- false category:"GUI";
+	parameter "Lock Streets" var:lockStreetRefresh <- false category: "GUI";
 	output{
 		display chart {
 			chart "Encounters" type:series{
@@ -254,9 +258,9 @@ experiment simulation type:gui{
 			graphics "shortestPath"{
 				if showShortestPaths{
 					loop element over: people{
-						draw geometry(element.target);
+						draw geometry:triangle(agentsSize+3) color:rgb("red") at:element.target;
 						if element.shortestPath != nil{
-							draw (element.shortestPath.shape + streetWidth + 6) color: rgb(249, 246, 57) border:rgb(249, 246, 57);
+							draw (element.shortestPath.shape  + 6) color: rgb(249, 246, 57) border:rgb(249, 246, 57);
 						}
 					}
 				}
