@@ -290,12 +290,12 @@ experiment simulation type:gui{
 			graphics "People"{
 				if showPeople{
 					loop element over: people{
-						draw element geometry:circle(agentsSize) color:rgb(68, 150, 10) at:element.location;
+						draw geometry(element);
 					}
 				}
 			}
 			species places aspect:place_aspect transparency: 0.1;
-			//species people aspect:sphere;
+			species people aspect:sphere;
 			
 			//species targets aspect:targets_aspect;
 			graphics "Encounters Graph"{

@@ -247,7 +247,6 @@ experiment simulation type:gui{
 	parameter "Edges-Width" var:edgesWidth <- 1 category:"GUI";
 	//parameter "Streets-Width" var:streetWidth <- 1 category:"GUI";
 	//parameter "Paths-Width" var:pathWidth <- 0 category:"GUI";
-	parameter "Show People" var:showPeople <- true category: "GUI";
 	parameter "Show Streets" var:showStreets <- true category:"GUI";
 	parameter "Show Paths" var:showPaths <- false category:"GUI";
 	output{
@@ -287,15 +286,8 @@ experiment simulation type:gui{
 				}
 			}
 			//species road aspect:road_aspect;
-			graphics "People"{
-				if showPeople{
-					loop element over: people{
-						draw element geometry:circle(agentsSize) color:rgb(68, 150, 10) at:element.location;
-					}
-				}
-			}
 			species places aspect:place_aspect transparency: 0.1;
-			//species people aspect:sphere;
+			species people aspect:sphere;
 			
 			//species targets aspect:targets_aspect;
 			graphics "Encounters Graph"{

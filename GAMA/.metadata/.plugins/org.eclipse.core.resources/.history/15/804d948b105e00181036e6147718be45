@@ -290,7 +290,7 @@ experiment simulation type:gui{
 			graphics "People"{
 				if showPeople{
 					loop element over: people{
-						draw element geometry:circle(agentsSize) color:rgb(68, 150, 10) at:element.location;
+						draw element;
 					}
 				}
 			}

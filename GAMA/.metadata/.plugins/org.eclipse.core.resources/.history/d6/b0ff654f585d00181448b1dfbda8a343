@@ -17,7 +17,6 @@ global torus:false{
 	int streetWidth;
 	int edgesWidth;
 	int pathWidth;
-	bool showPeople;
 	bool showPaths;
 	bool showStreets;
 	
@@ -39,8 +38,8 @@ global torus:false{
 	map filter <- map("highway"::["tertiary", "residential"]);
 	//creation of an osm file which will contain the roads of the city
 	file<geometry> suburbs_file <- file<geometry>(osm_file("/miramar/Suburbs/Miramar-suburbs-0521.osm"));
-	//file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0409/miramar040918.osm"));
-	file<geometry> osm_file <- file<geometry>(osm_file("/tijuana/tijuana-042418.osm"));
+	file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0409/miramar040918.osm"));
+	//file<geometry> osm_file <- file<geometry>(osm_file("/tijuana/tijuana-042418.osm"));
 	//This shp file is used to make the bounders for the simulation area
 	//file places_shp <- file("/miramar/0515/miramar051518-places.shp");
 	//file places_shp <- file("/tijuana/tijuana-042418.shp");
@@ -69,7 +68,7 @@ global torus:false{
 	}
 	init{
 		//distanceForInteraction <- 100#m;
-		numAgents <- 500;
+		numAgents <- 10;
 		
 		//Create osm agents that will be used as roads
 		create osm_agent from:osm_file with: [highway_str::string(read("highway")),name::string(read("name"))];
@@ -94,7 +93,7 @@ global torus:false{
 		//point init_location <- any_location_in(one_of(road));
 		
 		//Create suburb agents
-		//create suburb from: suburbs_file with: [name::string(read("name")),place::string(read("place")),population::int(read("population"))];
+		create suburb from: suburbs_file with: [name::string(read("name")),place::string(read("place")),population::int(read("population"))];
 		
 		loop s over:suburb{
 			write s;
@@ -247,7 +246,6 @@ experiment simulation type:gui{
 	parameter "Edges-Width" var:edgesWidth <- 1 category:"GUI";
 	//parameter "Streets-Width" var:streetWidth <- 1 category:"GUI";
 	//parameter "Paths-Width" var:pathWidth <- 0 category:"GUI";
-	parameter "Show People" var:showPeople <- true category: "GUI";
 	parameter "Show Streets" var:showStreets <- true category:"GUI";
 	parameter "Show Paths" var:showPaths <- false category:"GUI";
 	output{
@@ -270,7 +268,7 @@ experiment simulation type:gui{
 			}
 			graphics "suburbs"{
 				loop element over: suburb{
-					draw geometry:square(100#m) color:rgb("RED") depth:200#m at: element.location;
+					draw geometry:square(100#m) color:rgb("RED") depth:200#m;
 				}
 			}
 			graphics "shortestPath"{
@@ -287,15 +285,8 @@ experiment simulation type:gui{
 				}
 			}
 			//species road aspect:road_aspect;
-			graphics "People"{
-				if showPeople{
-					loop element over: people{
-						draw element geometry:circle(agentsSize) color:rgb(68, 150, 10) at:element.location;
-					}
-				}
-			}
-			species places aspect:place_aspect transparency: 0.1;
-			//species people aspect:sphere;
+			//species places aspect:place_aspect transparency: 0.1;
+			species people aspect:sphere;
 			
 			//species targets aspect:targets_aspect;
 			graphics "Encounters Graph"{

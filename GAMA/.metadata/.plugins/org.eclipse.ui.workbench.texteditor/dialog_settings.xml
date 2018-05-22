@@ -2,12 +2,15 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="pEncounters" key="selection"/>
+		<item value="Speed" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="speed"/>
+			<item value="write"/>
+			<item value="showShortestPaths"/>
 			<item value="tmpContacts"/>
 			<item value="pEncounters"/>
 			<item value="eNetwork"/>
@@ -15,6 +18,7 @@
 			<item value="relationship_graph"/>
 		</list>
 		<list key="replacehistory">
+			<item value="showPaths"/>
 			<item value="pEncounters"/>
 			<item value=""/>
 			<item value="Encounters"/>
