@@ -68,7 +68,7 @@ global torus:false{
 	}
 	init{
 		//distanceForInteraction <- 100#m;
-		numAgents <- 500;
+		numAgents <- 10;
 		
 		//Create osm agents that will be used as roads
 		create osm_agent from:osm_file with: [highway_str::string(read("highway")),name::string(read("name"))];
@@ -103,7 +103,7 @@ global torus:false{
 		create people number:numAgents{
 			//location <- init_location;			
 			//location <- any_location_in(one_of(places)) ;
-			suburb miramar <- one_of(suburb where (each.name="Santa Ana Tepetitlán"));
+			suburb miramar <- one_of(suburb where (each.name="La Floresta del Colli"));
 			location <- miramar.location ;
 			target <- any_location_in(one_of(places));
 			//add the agent to the graph
@@ -191,7 +191,7 @@ species people skills:[moving]{
 	
 	init{
 		interacting <- false;
-		speed <- 0.01+rnd(agentsSpeed);
+		speed <- agentsSpeed;
 		create targets number:1{
 			location <- myself.target;
 		}
@@ -204,7 +204,7 @@ species people skills:[moving]{
 	}
 	
 	reflex move{
-		speed <- 0.01+rnd(agentsSpeed);
+		speed <- 1.0+rnd(agentsSpeed);
 		interacting <- false;
 		do follow path:shortestPath;
 		//do goto target:target on:road_network recompute_path:false;
@@ -268,7 +268,7 @@ experiment simulation type:gui{
 			}
 			graphics "suburbs"{
 				loop element over: suburb{
-					draw geometry:square(100#m) color:rgb("RED") depth:200#m at: element.location;
+					draw geometry:square(100#m) color:rgb("RED") depth:200#m;
 				}
 			}
 			graphics "shortestPath"{

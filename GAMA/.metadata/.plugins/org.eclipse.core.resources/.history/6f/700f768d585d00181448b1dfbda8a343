@@ -68,7 +68,7 @@ global torus:false{
 	}
 	init{
 		//distanceForInteraction <- 100#m;
-		numAgents <- 500;
+		numAgents <- 1000;
 		
 		//Create osm agents that will be used as roads
 		create osm_agent from:osm_file with: [highway_str::string(read("highway")),name::string(read("name"))];
@@ -268,7 +268,7 @@ experiment simulation type:gui{
 			}
 			graphics "suburbs"{
 				loop element over: suburb{
-					draw geometry:square(100#m) color:rgb("RED") depth:200#m at: element.location;
+					draw geometry:square(100#m) color:rgb("RED") depth:200#m;
 				}
 			}
 			graphics "shortestPath"{

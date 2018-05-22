@@ -268,7 +268,7 @@ experiment simulation type:gui{
 			}
 			graphics "suburbs"{
 				loop element over: suburb{
-					draw geometry:square(100#m) color:rgb("RED") depth:200#m at: element.location;
+					draw geometry:square(100#m) color:rgb("RED") depth:200#m;
 				}
 			}
 			graphics "shortestPath"{
