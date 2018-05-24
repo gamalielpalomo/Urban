@@ -94,7 +94,7 @@ global torus:false{
 		//point init_location <- any_location_in(one_of(road));
 		
 		//Create suburb agents
-		create suburb from: suburbs_file with: [name::string(read("name")),place::string(read("place")),population::int(read("population"))];
+		//create suburb from: suburbs_file with: [name::string(read("name")),place::string(read("place")),population::int(read("population"))];
 		
 		loop s over:suburb{
 			write s;
@@ -104,19 +104,9 @@ global torus:false{
 		create people number:numAgents{
 			//location <- init_location;			
 			//location <- any_location_in(one_of(places)) ;
-			int selection <- rnd(2);
-			suburb LaFlorestaDelColli <- one_of(suburb where (each.name="La Floresta del Colli"));
 			suburb miramar <- one_of(suburb where (each.name="Miramar"));
-			suburb SantaAnaTepetitlan <- one_of(suburb where (each.name="Santa Ana Tepetitlán"));
-			if selection = 0{
-				location <- LaFlorestaDelColli.location;
-			}
-			if selection = 1{
-				location <- miramar.location;
-			}
-			if selection = 2{
-				location <- SantaAnaTepetitlan.location;
-			}
+			location <- miramar.location ;
+			write miramar;
 			target <- any_location_in(one_of(places));
 			//add the agent to the graph
 			add node(self) to: Encounters;

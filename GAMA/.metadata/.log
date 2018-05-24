@@ -9631,3 +9631,1001 @@ java.util.ConcurrentModificationException
 
 !ENTRY org.eclipse.ui 4 4 2018-05-22 18:15:56.044
 !MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+!SESSION 2018-05-24 09:38:09.373 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=${target.nl}
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 09:38:29.240
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.findAndInstallUpdates", command "org.eclipse.ui.update.findAndInstallUpdates" not defined
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 09:38:29.249
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.manageConfiguration", command "org.eclipse.ui.update.manageConfiguration" not defined
+
+!ENTRY org.apache.log4j 2 0 2018-05-24 09:38:30.625
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.apache.log4j 2 0 2018-05-24 09:38:31.262
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 09:38:40.026
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 09:38:41.522
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 09:40:34.489
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:06:05.034
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:06:06.362
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:06:37.095
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:06:38.580
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-24 10:07:49.886
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:121)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:08:07.293
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:08:07.715
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_ReflexImpl@be98b0d (key: aspect, firstFacet: null) (name: targets_aspect)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:25:58.087
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-24 10:27:29.837
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:121)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-24 10:28:23.137
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:121)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:33:02.669
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:33:03.091
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_ReflexImpl@be98b0d (key: aspect, firstFacet: null) (name: targets_aspect)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:38:35.977
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@72422ff9 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:38:35.977
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@194bc6ba (key: null, firstFacet: null) (name: miramar)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:38:44.743
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@129389f2 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:38:49.617
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@49973095 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:38:52.024
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@194bc6ba (key: null, firstFacet: null) (name: miramar)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:38:56.522
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@3ca6af2f (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:38:56.522
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@3bc15703 (key: null, firstFacet: null) (name: shape)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:38:58.890
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@48034b8d (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:38:58.890
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@7a62e2a4 (key: null, firstFacet: null) (name: osm_file)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:39:01.659
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@48034b8d (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:39:01.659
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@7a62e2a4 (key: null, firstFacet: null) (name: osm_file)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:39:05.299
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@7b5cc14d (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:39:05.299
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@e645600 (key: null, firstFacet: null) (name: shape)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:39:06.506
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:39:17.153
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:39:18.211
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@7b5cc14d (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:39:18.211
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@e645600 (key: null, firstFacet: null) (name: shape)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:39:26.362
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BinaryImpl@50a9f543 (op: where)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:39:41.847
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:39:44.258
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:39:47.156
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:39:55.893
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:40:28.426
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@2c821db8 (op: Santa Ana Tepetitlán)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:40:30.519
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:40:39.007
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:40:52.613
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@336d4520 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:40:58.667
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@f52cc13 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:41:02.648
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_LoopImpl@510203de (key: loop, firstFacet: null) (name: s)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:41:08.243
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:41:10.312
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-24 10:41:21.959
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:127)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-24 10:41:26.699
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:127)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-24 10:41:31.509
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:127)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-24 10:41:36.321
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:127)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-24 10:41:41.112
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:127)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-24 10:41:45.971
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:127)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-24 10:42:24.528
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:121)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-24 10:42:24.814
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:121)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-24 10:42:29.610
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:121)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-24 10:42:47.250
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:121)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-24 10:42:48.024
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:121)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-24 10:42:48.933
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:121)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:20.472
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:30.164
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:30.352
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:32.864
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:33.005
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:33.262
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:33.379
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:35.378
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:37.902
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:38.696
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:42.267
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:44.980
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:46.949
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:48.878
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:49.775
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:51.509
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:52.681
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:57.475
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:43:58.093
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:00.590
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:02.041
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:08.488
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@7c5a15d4 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:08.488
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@fcf19b5 (key: null, firstFacet: null) (name: miramar)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:11.376
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@fcf19b5 (key: null, firstFacet: null) (name: miramar)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:16.894
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:17.818
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:34.727
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:35.575
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:42.475
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:44.005
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:45.473
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:46.121
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:49.652
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:49.714
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:53.412
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:57.582
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:58.037
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:59.196
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:44:59.896
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:45:00.106
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:45:00.729
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:45:07.791
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@2468e26d (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:45:07.806
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@71c74011 (key: null, firstFacet: null) (name: miramar)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:45:08.728
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:45:10.287
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:45:21.962
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@5d9dcf93 (key: null, firstFacet: null) (name: miramar)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:45:24.746
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@5d9dcf93 (key: null, firstFacet: null) (name: miramar)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:45:33.425
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@7210dcd1 (op: Miramar)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:45:40.163
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@7210dcd1 (op: Miramar)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:45:48.280
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:46:42.362
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:46:42.425
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:46:43.993
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:46:52.858
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:46:54.204
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:46:56.143
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:46:56.691
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:46:57.131
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:47:03.096
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DirectAssignmentImpl@52448fae (key: <-, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:47:07.509
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:47:09.380
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:47:09.536
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:47:10.257
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:47:14.871
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:47:15.267
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:47:16.761
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:47:17.188
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:47:19.102
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:47:19.550
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:47:21.108
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:47:24.591
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@486c630e (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:47:31.291
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:47:55.971
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-24 10:47:57.363
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DirectAssignmentImpl@47e11a (key: <-, firstFacet: null)
