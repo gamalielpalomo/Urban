@@ -7,7 +7,7 @@
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
-<coolItem id="msi.gama.application.common" itemType="typeToolBarContribution" x="370" y="22"/>
+<coolItem id="msi.gama.application.common" itemType="typeToolBarContribution" x="539" y="22"/>
 <coolItem id="pm.eclipse.editbox.ActionSetId" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -25,6 +25,10 @@
 </folder>
 </info>
 </editorArea>
+<editor focus="true" id="msi.gama.lang.gaml.Gaml" name="crowds.gaml" partName="crowds.gaml" path="C:/Users/gamaa/Documents/City Science Projects/GAMA/crowds/models/crowds.gaml" title="crowds.gaml" tooltip="crowds/models/crowds.gaml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/crowds/models/crowds.gaml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7630" selectionTopPixel="4403"/>
+</editor>
 </editors>
 <views>
 <view id="msi.gama.gui.view.GamaNavigator" partName="Gama Projects">
@@ -32,6 +36,9 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Infos (15 items)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -56,22 +63,22 @@
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
 <alwaysOnActionSet id="pm.eclipse.editbox.ActionSetId"/>
 <new_wizard_action id="msi.gama.gui.wizards.newProjectWizard"/>
+<hide_menu_item_id id="org.eclipse.ui.navigate.addToWorkingSet"/>
 <hide_menu_item_id id="org.eclipse.ui.project.buildAll"/>
 <hide_menu_item_id id="org.eclipse.pde.ui.junitWorkbenchShortcut.debug"/>
-<hide_menu_item_id id="org.eclipse.pde.ui.junitWorkbenchShortcut.run"/>
-<hide_menu_item_id id="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar"/>
-<hide_menu_item_id id="org.eclipse.ui.externalTools.commands.OpenExternalToolsConfigurations"/>
-<hide_menu_item_id id="org.eclipse.ui.navigate.addToWorkingSet"/>
 <hide_menu_item_id id="org.eclipse.ui.navigate.removeFromWorkingSet"/>
-<hide_toolbar_item_id id="org.eclipse.ui.navigate.back"/>
-<hide_toolbar_item_id id="org.eclipse.ui.navigate.forward"/>
-<hide_toolbar_item_id id="org.eclipse.ui.navigate.up"/>
+<hide_menu_item_id id="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar"/>
+<hide_menu_item_id id="org.eclipse.pde.ui.junitWorkbenchShortcut.run"/>
+<hide_menu_item_id id="org.eclipse.ui.externalTools.commands.OpenExternalToolsConfigurations"/>
 <hide_toolbar_item_id id="org.eclipse.ui.navigate.next"/>
-<hide_toolbar_item_id id="org.eclipse.ui.navigate.backwardHistory"/>
+<hide_toolbar_item_id id="org.eclipse.ui.navigate.back"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.eclipse.ui.navigate.forwardHistory"/>
 <hide_toolbar_item_id id="org.eclipse.ui.navigate.previous"/>
+<hide_toolbar_item_id id="org.eclipse.ui.navigate.forward"/>
+<hide_toolbar_item_id id="org.eclipse.ui.navigate.up"/>
+<hide_toolbar_item_id id="org.eclipse.ui.navigate.backwardHistory"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.gotoPreviousAnnotation"/>
-<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="msi.gama.gui.view.GamaNavigator"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
@@ -121,33 +128,30 @@
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
 <alwaysOnActionSet id="pm.eclipse.editbox.ActionSetId"/>
+<hide_menu_item_id id="org.eclipse.ui.navigate.addToWorkingSet"/>
 <hide_menu_item_id id="org.eclipse.ui.project.buildAll"/>
 <hide_menu_item_id id="org.eclipse.pde.ui.junitWorkbenchShortcut.debug"/>
-<hide_menu_item_id id="org.eclipse.pde.ui.junitWorkbenchShortcut.run"/>
-<hide_menu_item_id id="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar"/>
-<hide_menu_item_id id="org.eclipse.ui.externalTools.commands.OpenExternalToolsConfigurations"/>
-<hide_menu_item_id id="org.eclipse.ui.navigate.addToWorkingSet"/>
 <hide_menu_item_id id="org.eclipse.ui.navigate.removeFromWorkingSet"/>
-<hide_toolbar_item_id id="org.eclipse.ui.navigate.back"/>
-<hide_toolbar_item_id id="org.eclipse.ui.navigate.forward"/>
-<hide_toolbar_item_id id="org.eclipse.ui.navigate.up"/>
+<hide_menu_item_id id="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar"/>
+<hide_menu_item_id id="org.eclipse.pde.ui.junitWorkbenchShortcut.run"/>
+<hide_menu_item_id id="org.eclipse.ui.externalTools.commands.OpenExternalToolsConfigurations"/>
 <hide_toolbar_item_id id="org.eclipse.ui.navigate.next"/>
-<hide_toolbar_item_id id="org.eclipse.ui.navigate.backwardHistory"/>
+<hide_toolbar_item_id id="org.eclipse.ui.navigate.back"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.eclipse.ui.navigate.forwardHistory"/>
 <hide_toolbar_item_id id="org.eclipse.ui.navigate.previous"/>
+<hide_toolbar_item_id id="org.eclipse.ui.navigate.forward"/>
+<hide_toolbar_item_id id="org.eclipse.ui.navigate.up"/>
+<hide_toolbar_item_id id="org.eclipse.ui.navigate.backwardHistory"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.gotoPreviousAnnotation"/>
-<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="msi.gama.gui.view.GamaNavigator"/>
 <fastViewBars/>
 <viewLayoutRec id="msi.gama.gui.view.GamaNavigator" moveable="false"/>
 <layout>
 <mainWindow>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@28f4f300">
-<folder activePageID="msi.gama.gui.view.GamaNavigator" appearance="2" expanded="2">
-<page content="msi.gama.gui.view.GamaNavigator" label="Gama Projects"/>
-<presentation id="org.eclipse.ui.internal.presentations.classic.WorkbenchPresentationFactoryClassic">
-<part id="0"/>
-</presentation>
+<folder appearance="2" expanded="2">
+<page content="msi.gama.gui.view.GamaNavigator" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.internal.presentations.classic.WorkbenchPresentationFactoryClassic"/>
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.internal.ViewStack@28f4f300">
@@ -158,14 +162,18 @@
 <info folder="true" part="layersFolder" ratio="0.22974963" ratioLeft="312" ratioRight="1046" relationship="2" relative="org.eclipse.ui.internal.ViewStack@28f4f300">
 <folder appearance="2" expanded="2">
 <page content="msi.gama.application.view.LayeredDisplayView:*" label="LabelNotFound"/>
+<page content="msi.gama.application.view.LayeredDisplayView:chart" label="LabelNotFound"/>
+<page content="msi.gama.application.view.LayeredDisplayView:display1" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.internal.presentations.classic.WorkbenchPresentationFactoryClassic"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.6197183" ratioLeft="396" ratioRight="243" relationship="4" relative="layersFolder"/>
-<info folder="true" part="inspectorsFolder" ratio="0.51912045" ratioLeft="543" ratioRight="503" relationship="2" relative="layersFolder">
+<info folder="true" part="inspectorsFolder" ratio="0.6708487" ratioLeft="909" ratioRight="446" relationship="2" relative="layersFolder">
 <folder appearance="2" expanded="2">
 <page content="msi.gama.application.view.MonitorView" label="LabelNotFound"/>
 <page content="msi.gama.application.view.ParameterView" label="LabelNotFound"/>
 <page content="msi.gama.application.view.ErrorView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.internal.presentations.classic.WorkbenchPresentationFactoryClassic"/>
 </folder>
 </info>
 <info folder="true" part="inspectorsFolder2" ratio="0.5" ratioLeft="198" ratioRight="198" relationship="4" relative="inspectorsFolder">
@@ -184,7 +192,14 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="msi.gama.lang.gaml.Gaml" path="/crowds/models/crowds.gaml"/>
+</editors>
+<item active="true" historyLabel="crowds.gaml" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
