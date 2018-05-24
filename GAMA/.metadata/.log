@@ -9628,3 +9628,6 @@ java.util.ConcurrentModificationException
 
 !ENTRY org.eclipse.ui 4 4 2018-05-22 17:59:28.799
 !MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-22 18:15:56.044
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
