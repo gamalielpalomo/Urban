@@ -39,24 +39,12 @@ global torus:false{
 	map filter <- map("highway"::["tertiary", "residential"]);
 	//creation of an osm file which will contain the roads of the city
 	file<geometry> suburbs_file <- file<geometry>(osm_file("/miramar/Suburbs/Miramar-suburbs-0521.osm"));
-<<<<<<< HEAD
 	//file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0409/miramar040918.osm"));
-	file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0525/miramar.osm"));
-	file<geometry> places_file <- file<geometry>("/miramar/0525/miramar-places.shp");
-	//file<geometry> places_file <- file<geometry>(osm_file("/miramar/0525/miramar.osm"));
-	//file osm_file <- file("/miramar/0525/miramar.shp");
-=======
-	file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0409/miramar040918.osm"));
->>>>>>> f616a56d2cacfba5fc00d6d852f685c2e5e2c933
-	//file<geometry> osm_file <- file<geometry>(osm_file("/tijuana/tijuana-042418.osm"));
+	file<geometry> osm_file <- file<geometry>(osm_file("/tijuana/tijuana-042418.osm"));
 	//This shp file is used to make the bounders for the simulation area
 	//file places_shp <- file("/miramar/0515/miramar051518-places.shp");
 	//file places_shp <- file("/tijuana/tijuana-042418.shp");
-<<<<<<< HEAD
-	geometry shape <- envelope(geometry(places_file));
-=======
 	geometry shape <- envelope(osm_file);
->>>>>>> f616a56d2cacfba5fc00d6d852f685c2e5e2c933
 	//The graph for the representation of the relations between people in the physical space
 	graph Encounters <- graph([]);
 	int density <- 0;
@@ -84,25 +72,6 @@ global torus:false{
 		numAgents <- 500;
 		
 		//Create osm agents that will be used as roads
-<<<<<<< HEAD
-		create osm_agent from:osm_file with: [highway_str::string(read("highway")),name_str::string(read("name"))];
-		ask osm_agent{
-				
-				if(highway_str != nil and highway_str != "turning_circle"){
-					//write name_str;
-					create road with: [shape:: shape, type:: highway_str, name_str:: name_str];
-					
-				}
-			do die;
-		}
-		road_network <- as_edge_graph(road);
-		//Create osm agents that will be used as places
-		create osm_agent from: places_file with: [amenity::string(read("amenity")), highway_str::string(read("highway")), power_str::string(read("power")), name_strs::string(read("name"))];
-		ask osm_agent{
-			//if(highway_str = nil or (highway_str != nil and highway_str != "traffic_signals" and highway_str != "turning_circle") and power_str != "tower"){
-			if(amenity != nil and (amenity="school" or amenity="college" or amenity="university" or amenity="social_facility" or amenity="kindergarten")){
-				write amenity;
-=======
 		create osm_agent from:osm_file with: [highway_str::string(read("highway")),name::string(read("name"))];
 		ask osm_agent{
 				if(highway_str != nil and highway_str != "turning_circle"){
@@ -116,79 +85,29 @@ global torus:false{
 		ask osm_agent{
 			//if(highway_str = nil or (highway_str != nil and highway_str != "traffic_signals" and highway_str != "turning_circle") and power_str != "tower"){
 			if(amenity != nil and (amenity="school" or amenity="college" or amenity="university" or amenity="social_facility" or amenity="kindergarten")){
->>>>>>> f616a56d2cacfba5fc00d6d852f685c2e5e2c933
 				//Here we create spaces for each osm_agent with the "amenity" feature as one of the values "school", "kindergarten", "college", "university", "social_facilty"
 				create places number:1 with: [shape::shape, amenity::amenity];
 				//create places with: [shape::shape, type:: highway_str];
 			}
 		}		
-<<<<<<< HEAD
-		
-=======
 		road_network <- as_edge_graph(road);
->>>>>>> f616a56d2cacfba5fc00d6d852f685c2e5e2c933
 		//point init_location <- any_location_in(one_of(road));
 		
 		//Create suburb agents
-		create suburb from: suburbs_file with: [name::string(read("name")),place::string(read("place")),population::int(read("population"))];
+		//create suburb from: suburbs_file with: [name::string(read("name")),place::string(read("place")),population::int(read("population"))];
 		
 		loop s over:suburb{
-<<<<<<< HEAD
-			//write s;
-=======
 			write s;
->>>>>>> f616a56d2cacfba5fc00d6d852f685c2e5e2c933
 		}
 		
 		//Create agents representing people
 		create people number:numAgents{
 			//location <- init_location;			
-<<<<<<< HEAD
-			//location <- any_location_in(one_of(road));
-=======
 			//location <- any_location_in(one_of(places)) ;
->>>>>>> f616a56d2cacfba5fc00d6d852f685c2e5e2c933
-			int selection <- rnd(2);
-			suburb LaFlorestaDelColli <- one_of(suburb where (each.name="La Floresta del Colli"));
-			suburb miramar <- one_of(suburb where (each.name="Miramar"));
-			suburb SantaAnaTepetitlan <- one_of(suburb where (each.name="Santa Ana Tepetitlán"));
-<<<<<<< HEAD
-			
-			if selection = 0{
-				//location <- LaFlorestaDelColli.location;
-				location <- any_location_in(one_of(places));
-				write "agent location: "+location;
-				write "suburb location: "+LaFlorestaDelColli.location;
-			}
-			else if selection = 1{
-				//location <- miramar.location;
-				location <- any_location_in(one_of(places));
-				write "agent location: "+location;
-				write "suburb location: "+miramar.location;
-			}
-			else {
-				//location <- SantaAnaTepetitlan.location;
-				location <- any_location_in(one_of(places));
-				write "agent location: "+location;
-				write "suburb location: "+SantaAnaTepetitlan.location;
-			}
-			
+			suburb miramar <- one_of(suburb where (each.name="Santa Ana Tepetitlán"));
+			location <- miramar.location ;
 			target <- any_location_in(one_of(places));
 			//add the agent to the graph
-			
-=======
-			if selection = 0{
-				location <- LaFlorestaDelColli.location;
-			}
-			if selection = 1{
-				location <- miramar.location;
-			}
-			if selection = 2{
-				location <- SantaAnaTepetitlan.location;
-			}
-			target <- any_location_in(one_of(places));
-			//add the agent to the graph
->>>>>>> f616a56d2cacfba5fc00d6d852f685c2e5e2c933
 			add node(self) to: Encounters;
 		}
 		do updateGraph();
@@ -203,11 +122,7 @@ species suburb{
 
 species osm_agent{
 	
-<<<<<<< HEAD
-	string name_str;	
-=======
 	string name;	
->>>>>>> f616a56d2cacfba5fc00d6d852f685c2e5e2c933
 	string highway_str;
 	string power_str;
 	string amenity;
@@ -215,17 +130,10 @@ species osm_agent{
 
 species road {
 	
-<<<<<<< HEAD
-	string road_type;
-	string name;
-	
-		
-=======
 	aspect road_aspect {
 		draw shape color: rgb(198, 59, 175);
 	}
 	
->>>>>>> f616a56d2cacfba5fc00d6d852f685c2e5e2c933
 }
 
 
@@ -333,13 +241,8 @@ species people skills:[moving]{
 
 }
 experiment simulation type:gui{
-<<<<<<< HEAD
-	parameter "perception" var: distanceForInteraction <- 0.0#m category:"Globals";
-	parameter "speed" var:agentsSpeed <- 10.0 category:"Agents";
-=======
 	parameter "perception" var: distanceForInteraction <- 200#m category:"Globals";
 	parameter "speed" var:agentsSpeed <- 1.0 category:"Agents";
->>>>>>> f616a56d2cacfba5fc00d6d852f685c2e5e2c933
 	parameter "Agents-size" var:agentsSize <- 30 category:"GUI";
 	parameter "Edges-Width" var:edgesWidth <- 1 category:"GUI";
 	//parameter "Streets-Width" var:streetWidth <- 1 category:"GUI";
@@ -357,10 +260,6 @@ experiment simulation type:gui{
 		}
 		display display1 type:opengl ambient_light:60{
 			//grid cell;
-<<<<<<< HEAD
-			//species road aspect:road_aspect;
-=======
->>>>>>> f616a56d2cacfba5fc00d6d852f685c2e5e2c933
 			graphics "Roads"{
 				if showStreets{
 					draw geometry(road_network.edges) color: rgb(72, 161, 206) border:rgb(72, 161, 206);
@@ -387,20 +286,16 @@ experiment simulation type:gui{
 					}
 				}
 			}
-<<<<<<< HEAD
-			
-=======
 			//species road aspect:road_aspect;
->>>>>>> f616a56d2cacfba5fc00d6d852f685c2e5e2c933
 			graphics "People"{
 				if showPeople{
 					loop element over: people{
-						draw element geometry:circle(agentsSize) color:rgb(68, 150, 10) at:element.location;
+						draw geometry(element);
 					}
 				}
 			}
 			species places aspect:place_aspect transparency: 0.1;
-			//species people aspect:sphere;
+			species people aspect:sphere;
 			
 			//species targets aspect:targets_aspect;
 			graphics "Encounters Graph"{
@@ -412,11 +307,6 @@ experiment simulation type:gui{
 		monitor "Agents interacting" value:chartEncounters;
 		monitor "Vertices in graph" value: length(Encounters.vertices);
 		monitor "Edges in graph" value: length(Encounters.edges);
-<<<<<<< HEAD
-		monitor "Vertices in road" value: length(road_network.vertices);
-		monitor "Edges in road" value: length(road_network.edges);
-=======
->>>>>>> f616a56d2cacfba5fc00d6d852f685c2e5e2c933
 		/*
 		display display1{
 			species road aspect:road_aspect;
