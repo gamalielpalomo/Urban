@@ -16,7 +16,10 @@ global torus:false{
 	int agentsSize;
 	int streetWidth;
 	int edgesWidth;
-	bool showShortestPaths;
+	int pathWidth;
+	bool showPeople;
+	bool showPaths;
+	bool showStreets;
 	
 	bool lockStreetRefresh;
 	
@@ -35,10 +38,11 @@ global torus:false{
 	//filter for obtaining only the roads from the osm file
 	map filter <- map("highway"::["tertiary", "residential"]);
 	//creation of an osm file which will contain the roads of the city
-	file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0409/miramar040918.osm"));
-	//file<geometry> osm_file <- file<geometry>(osm_file("/tijuana/tijuana-042418.osm"));
+	file<geometry> suburbs_file <- file<geometry>(osm_file("/miramar/Suburbs/Miramar-suburbs-0521.osm"));
+	//file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0409/miramar040918.osm"));
+	file<geometry> osm_file <- file<geometry>(osm_file("/tijuana/tijuana-042418.osm"));
 	//This shp file is used to make the bounders for the simulation area
-	file places_shp <- file("/miramar/0515/miramar051518-places.shp");
+	//file places_shp <- file("/miramar/0515/miramar051518-places.shp");
 	//file places_shp <- file("/tijuana/tijuana-042418.shp");
 	geometry shape <- envelope(osm_file);
 	//The graph for the representation of the relations between people in the physical space
@@ -65,8 +69,10 @@ global torus:false{
 	}
 	init{
 		//distanceForInteraction <- 100#m;
-		numAgents <- 100;
-		create osm_agent from:osm_file with: [highway_str::string(read("highway"))];
+		numAgents <- 500;
+		
+		//Create osm agents that will be used as roads
+		create osm_agent from:osm_file with: [highway_str::string(read("highway")),name::string(read("name"))];
 		ask osm_agent{
 				if(highway_str != nil and highway_str != "turning_circle"){
 					create road with: [shape ::shape, type:: highway_str];
@@ -74,10 +80,11 @@ global torus:false{
 			do die;
 		}
 		
-		create osm_agent from: places_shp with: [amenity::string(read("amenity")), highway_str::string(read("highway")), power_str::string(read("power")), name::string(read("name"))];
+		//Create osm agents that will be used as places
+		create osm_agent from: osm_file with: [amenity::string(read("amenity")), highway_str::string(read("highway")), power_str::string(read("power")), name::string(read("name"))];
 		ask osm_agent{
 			//if(highway_str = nil or (highway_str != nil and highway_str != "traffic_signals" and highway_str != "turning_circle") and power_str != "tower"){
-			if(amenity != nil and (amenity="school" or amenity="college" or amenity="university" or amenity="social_facility")){
+			if(amenity != nil and (amenity="school" or amenity="college" or amenity="university" or amenity="social_facility" or amenity="kindergarten")){
 				//Here we create spaces for each osm_agent with the "amenity" feature as one of the values "school", "kindergarten", "college", "university", "social_facilty"
 				create places number:1 with: [shape::shape, amenity::amenity];
 				//create places with: [shape::shape, type:: highway_str];
@@ -85,10 +92,21 @@ global torus:false{
 		}		
 		road_network <- as_edge_graph(road);
 		//point init_location <- any_location_in(one_of(road));
+		
+		//Create suburb agents
+		//create suburb from: suburbs_file with: [name::string(read("name")),place::string(read("place")),population::int(read("population"))];
+		
+		loop s over:suburb{
+			write s;
+		}
+		
+		//Create agents representing people
 		create people number:numAgents{
 			//location <- init_location;			
-			location <- any_location_in(one_of(road)) ;
-			target <- any_location_in(one_of(road));
+			//location <- any_location_in(one_of(places)) ;
+			suburb miramar <- one_of(suburb where (each.name="Santa Ana Tepetitlán"));
+			location <- miramar.location ;
+			target <- any_location_in(one_of(places));
 			//add the agent to the graph
 			add node(self) to: Encounters;
 		}
@@ -96,7 +114,11 @@ global torus:false{
 	}
 }
 
-
+species suburb{
+	string name;
+	string place;
+	int population;
+}
 
 species osm_agent{
 	
@@ -128,7 +150,7 @@ species places{
 		draw geometry:square(50#m) color:buildingColor border:#gray depth:height;
 	}
 	init{
-		write amenity;
+		//write amenity;
 		//spaceType <- rnd(3);
 		if amenity = "school"{
 			height <- float(20);
@@ -170,7 +192,7 @@ species people skills:[moving]{
 	
 	init{
 		interacting <- false;
-		speed <- agentsSpeed;
+		speed <- 0.01+rnd(agentsSpeed);
 		create targets number:1{
 			location <- myself.target;
 		}
@@ -183,12 +205,12 @@ species people skills:[moving]{
 	}
 	
 	reflex move{
-		speed <- agentsSpeed;
+		speed <- 0.01+rnd(agentsSpeed);
 		interacting <- false;
 		do follow path:shortestPath;
 		//do goto target:target on:road_network recompute_path:false;
 		if(location = target){
-			target <- any_location_in(one_of(road));
+			target <- any_location_in(one_of(places));
 			ask targets{
 				location<-myself.target;
 			}
@@ -213,27 +235,21 @@ species people skills:[moving]{
 	}
 	
 	aspect sphere{
-		draw square(agentsSize) color:#blue;
+		draw circle(agentsSize) color:#blue;
 	}
 	
 
 }
-species Encounters_link{
-	
-	aspect default{
-		draw shape color: #red;
-	}
-	
-}
-
 experiment simulation type:gui{
 	parameter "perception" var: distanceForInteraction <- 200#m category:"Globals";
 	parameter "speed" var:agentsSpeed <- 1.0 category:"Agents";
 	parameter "Agents-size" var:agentsSize <- 30 category:"GUI";
-	parameter "Edges-size" var:edgesWidth <- 1 category:"GUI";
-	parameter "Streets-Size" var:streetWidth <- 1 category:"GUI";
-	parameter "Show Paths" var:showShortestPaths <- false category:"GUI";
-	parameter "Lock Streets" var:lockStreetRefresh <- false category: "GUI";
+	parameter "Edges-Width" var:edgesWidth <- 1 category:"GUI";
+	//parameter "Streets-Width" var:streetWidth <- 1 category:"GUI";
+	//parameter "Paths-Width" var:pathWidth <- 0 category:"GUI";
+	parameter "Show People" var:showPeople <- true category: "GUI";
+	parameter "Show Streets" var:showStreets <- true category:"GUI";
+	parameter "Show Paths" var:showPaths <- false category:"GUI";
 	output{
 		display chart {
 			chart "Encounters" type:series{
@@ -242,32 +258,45 @@ experiment simulation type:gui{
 				//data "mean" value:meanEncounters color: #blue;
 			}
 		}
-		display display1 type:opengl ambient_light:30{
+		display display1 type:opengl ambient_light:60{
 			//grid cell;
 			graphics "Roads"{
-				loop element over: road_network.edges{
-					/*if geometry(element).perimeter > 100#m{
-						draw geometry(element)+streetWidth color: rgb("black") border:rgb("black") ;
-					}
-					else{
-						draw geometry(element)+streetWidth color: rgb("yellow") border:rgb("yellow");
-					}*/
+				if showStreets{
+					draw geometry(road_network.edges) color: rgb(72, 161, 206) border:rgb(72, 161, 206);
+				}
+				/*loop element over: road_network.edges{
 					draw geometry(element)+streetWidth color: rgb(72, 161, 206) border:rgb(72, 161, 206);
+				}*/
+			}
+			graphics "suburbs"{
+				loop element over: suburb{
+					draw geometry:square(100#m) color:rgb("RED") depth:200#m at: element.location;
 				}
 			}
 			graphics "shortestPath"{
-				if showShortestPaths{
+				if showPaths{
 					loop element over: people{
 						draw geometry:triangle(agentsSize+3) color:rgb("red") at:element.target;
 						if element.shortestPath != nil{
-							draw (element.shortestPath.shape  + 6) color: rgb(249, 246, 57) border:rgb(249, 246, 57);
+							/*loop seg over:element.shortestPath.edges{
+								draw seg color: rgb(249, 246, 57) border:rgb(249, 246, 57);	
+							}*/
+							draw geometry(element.shortestPath.shape) color: rgb(249, 246, 57) border:rgb(249, 246, 57);
 						}
 					}
 				}
 			}
 			//species road aspect:road_aspect;
+			graphics "People"{
+				if showPeople{
+					loop element over: people{
+						draw element geometry:circle(agentsSize) color:rgb(68, 150, 10) at:element.location;
+					}
+				}
+			}
 			species places aspect:place_aspect transparency: 0.1;
-			species people aspect:sphere;
+			//species people aspect:sphere;
+			
 			//species targets aspect:targets_aspect;
 			graphics "Encounters Graph"{
 				loop edge over: Encounters.edges{

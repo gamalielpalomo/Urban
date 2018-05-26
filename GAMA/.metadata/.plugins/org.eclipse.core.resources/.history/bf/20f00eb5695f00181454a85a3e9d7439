@@ -109,14 +109,11 @@ global torus:false{
 			suburb miramar <- one_of(suburb where (each.name="Miramar"));
 			suburb SantaAnaTepetitlan <- one_of(suburb where (each.name="Santa Ana Tepetitlán"));
 			if selection = 0{
-				location <- LaFlorestaDelColli.location;
+				
 			}
-			if selection = 1{
-				location <- miramar.location;
-			}
-			if selection = 2{
-				location <- SantaAnaTepetitlan.location;
-			}
+			
+			location <- miramar.location ;
+			write miramar;
 			target <- any_location_in(one_of(places));
 			//add the agent to the graph
 			add node(self) to: Encounters;

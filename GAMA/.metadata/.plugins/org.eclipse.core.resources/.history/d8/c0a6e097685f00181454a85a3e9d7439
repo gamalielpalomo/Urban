@@ -39,8 +39,8 @@ global torus:false{
 	map filter <- map("highway"::["tertiary", "residential"]);
 	//creation of an osm file which will contain the roads of the city
 	file<geometry> suburbs_file <- file<geometry>(osm_file("/miramar/Suburbs/Miramar-suburbs-0521.osm"));
-	file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0409/miramar040918.osm"));
-	//file<geometry> osm_file <- file<geometry>(osm_file("/tijuana/tijuana-042418.osm"));
+	//file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0409/miramar040918.osm"));
+	file<geometry> osm_file <- file<geometry>(osm_file("/tijuana/tijuana-042418.osm"));
 	//This shp file is used to make the bounders for the simulation area
 	//file places_shp <- file("/miramar/0515/miramar051518-places.shp");
 	//file places_shp <- file("/tijuana/tijuana-042418.shp");
@@ -94,7 +94,7 @@ global torus:false{
 		//point init_location <- any_location_in(one_of(road));
 		
 		//Create suburb agents
-		create suburb from: suburbs_file with: [name::string(read("name")),place::string(read("place")),population::int(read("population"))];
+		//create suburb from: suburbs_file with: [name::string(read("name")),place::string(read("place")),population::int(read("population"))];
 		
 		loop s over:suburb{
 			write s;
@@ -104,19 +104,8 @@ global torus:false{
 		create people number:numAgents{
 			//location <- init_location;			
 			//location <- any_location_in(one_of(places)) ;
-			int selection <- rnd(2);
-			suburb LaFlorestaDelColli <- one_of(suburb where (each.name="La Floresta del Colli"));
-			suburb miramar <- one_of(suburb where (each.name="Miramar"));
-			suburb SantaAnaTepetitlan <- one_of(suburb where (each.name="Santa Ana Tepetitlán"));
-			if selection = 0{
-				location <- LaFlorestaDelColli.location;
-			}
-			if selection = 1{
-				location <- miramar.location;
-			}
-			if selection = 2{
-				location <- SantaAnaTepetitlan.location;
-			}
+			suburb miramar <- one_of(suburb where (each.name="Santa Ana Tepetitlán"));
+			location <- miramar.location ;
 			target <- any_location_in(one_of(places));
 			//add the agent to the graph
 			add node(self) to: Encounters;

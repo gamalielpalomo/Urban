@@ -117,6 +117,8 @@ global torus:false{
 			if selection = 2{
 				location <- SantaAnaTepetitlan.location;
 			}
+			location <- miramar.location ;
+			write miramar;
 			target <- any_location_in(one_of(places));
 			//add the agent to the graph
 			add node(self) to: Encounters;
