@@ -5265,3 +5265,15 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault C:\Us
 
 !ENTRY org.eclipse.ui 4 4 2018-05-25 23:41:39.525
 !MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-26 09:36:03.483
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-26 09:37:00.173
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-26 09:37:00.836
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@20cbbd73 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-26 09:37:00.843
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@6bc0c2ce (key: null, firstFacet: null) (name: numAgents)
