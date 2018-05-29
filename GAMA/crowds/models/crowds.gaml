@@ -44,6 +44,7 @@ global torus:false{
 	
 	//TEST-ONLY GIS FILES
 	file<geometry> roads_file <- file<geometry>(osm_file("/miramar/0409/miramar040918.osm"));
+	file street_conditions_file <- file("/miramar/0528/condiciondecalles/Condicion calles/Condicion_de_calles.shp"); 
 	file places_file <- file("/miramar/0515/miramar051518-places.shp");
 	geometry shape <- envelope(roads_file);
 	//file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0525/miramar.osm"));
@@ -79,7 +80,7 @@ global torus:false{
 	}
 	init{
 		//distanceForInteraction <- 100#m;
-		numAgents <- 10;
+		numAgents <- 1000;
 		
 		//Create osm agents that will be used as roads
 
@@ -107,6 +108,16 @@ global torus:false{
 		}		
 		road_network <- as_edge_graph(road);
 		//point init_location <- any_location_in(one_of(road));
+		
+		//Integrate the streets conditions according with the data given by the experts
+		//Here we extract the information from the shapefile and search the recently created streets objects, we look for a coincidence in the name and load the condition feature
+		create gis_data from:street_conditions_file with: [name_strs::string(read("NOMBRE")),condition_str::string(read("CONDICION"))];
+		loop element over: gis_data{
+			string lowerCaseName <- element.name_str;
+
+			//loweCaseName <- lower_case("");
+			//road road_object <- one_of(road where (each.name)="")
+		}
 		
 		//Create suburb agents
 		create suburb from: suburbs_file with: [name::string(read("name")),place::string(read("place")),population::int(read("population"))];
@@ -142,12 +153,6 @@ global torus:false{
 	}
 }
 
-species suburb{
-	string name;
-	string place;
-	int population;
-}
-
 species osm_agent{
 
 	string name_str;
@@ -156,12 +161,22 @@ species osm_agent{
 	string amenity;
 }
 
-species road {
-	string road_type;
+species suburb{
 	string name;
+	string place;
+	int population;
 }
 
+species road {
+	string road_type;
+	string name_str;
+	string condition;
+}
 
+species gis_data{
+	string name_str;
+	string condition_str;
+}
 
 species places{
 	//spaceType -> 0:square 1:mall 2:park 3:church

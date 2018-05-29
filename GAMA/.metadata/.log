@@ -5265,6 +5265,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault C:\Us
 
 !ENTRY org.eclipse.ui 4 4 2018-05-25 23:41:39.525
 !MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+<<<<<<< HEAD
 
 !ENTRY org.eclipse.ui 4 4 2018-05-26 09:36:03.483
 !MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
@@ -5277,3 +5278,3164 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault C:\Us
 
 !ENTRY org.eclipse.ui 4 4 2018-05-26 09:37:00.843
 !MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@6bc0c2ce (key: null, firstFacet: null) (name: numAgents)
+=======
+!SESSION 2018-05-28 10:21:25.257 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=${target.nl}
+Framework arguments:  C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-05-28 10:21:58.195
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.apache.log4j 2 0 2018-05-28 10:21:59.182
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.apache.log4j 2 0 2018-05-28 10:21:59.963
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:22:00.851
+!MESSAGE >> GAMA bundle loaded in 1746ms: 	irit.gaml.extensions.database
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:22:00.871
+!MESSAGE >> GAMA bundle loaded in 14ms: 	msi.gama.jogl
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:22:01.237
+!MESSAGE >> GAMA bundle loaded in 360ms: 	irit.gaml.extensions.test
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:22:01.291
+!MESSAGE >> GAMA bundle loaded in 44ms: 	ummisco.gaml.extensions.maths
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:22:01.478
+!MESSAGE >> GAMA bundle loaded in 176ms: 	idees.gama.mapcomparison
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:22:01.485
+!MESSAGE >> GAMA bundle loaded in 1ms: 	msi.gama.application
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:22:01.502
+!MESSAGE >> GAMA bundle loaded in 9ms: 	simtools.gaml.extensions.physics
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:22:01.531
+!MESSAGE >> GAMA bundle loaded in 23ms: 	msi.gaml.extensions.fipa
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:22:01.578
+!MESSAGE >> GAMA total load time 3013 ms.
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:22:01.827
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.findAndInstallUpdates", command "org.eclipse.ui.update.findAndInstallUpdates" not defined
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:22:01.827
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.manageConfiguration", command "org.eclipse.ui.update.manageConfiguration" not defined
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:22:04.723
+!MESSAGE WorkspaceModelsManager.findAndLoadIFile C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:22:04.753
+!MESSAGE WorkspaceModelsManager.findInWorkspace  C:/Users/gamaa/Documents/City Science Projects/GAMA/crowds/models/crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:22:05.592
+!MESSAGE WorkspaceModelsManager.findAndLoadIFile C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:22:05.600
+!MESSAGE WorkspaceModelsManager.findInWorkspace  C:/Users/gamaa/Documents/City Science Projects/GAMA/crowds/models/crowds.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:24:30.972
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@2996d1b2 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:24:30.981
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@26cb5207 (key: null, firstFacet: null) (name: suburbs_file)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:24:33.603
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 10:26:13.940
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:23:21.194
+!MESSAGE WorkspaceModelsManager.findAndLoadIFile C:\Users\gamaa\Documents\City Science Projects\GAMA\crowds\models\crowds - Copy.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:23:21.202
+!MESSAGE WorkspaceModelsManager.findInWorkspace  C:/Users/gamaa/Documents/City Science Projects/GAMA/crowds/models/crowds - Copy.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:23:21.208
+!MESSAGE WorkspaceModelsManager.findOutsideWorkspace C:/Users/gamaa/Documents/City Science Projects/GAMA/crowds/models/crowds - Copy.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:23:21.233
+!MESSAGE WorkspaceModelsManager.findInWorkspace  crowds/models/crowds - Copy.gaml
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:57:13.875
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@513ce5ec (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:57:26.517
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@2996d1b2 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:57:26.525
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@26cb5207 (key: null, firstFacet: null) (name: suburbs_file)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:57:28.002
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@2996d1b2 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:57:28.008
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@26cb5207 (key: null, firstFacet: null) (name: suburbs_file)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:57:31.405
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@935a6da (op: /miramar/0409/miramar040918.osm)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:57:37.740
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@5aac1b56 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:57:37.747
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@625d9132 (key: null, firstFacet: null) (name: Encounters)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:57:40.217
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@728d3a08 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:57:40.224
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@15400fff (key: null, firstFacet: null) (name: roads_file)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:58:01.714
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:58:02.986
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:58:04.070
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:58:06.136
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:58:07.127
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:58:11.024
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:58:13.676
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:58:19.301
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:58:20.221
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:58:28.252
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:58:28.729
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:58:29.953
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:58:31.650
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:59:02.206
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@4ca65712 (op: /miramar/)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:59:12.767
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@464ab835 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:59:12.773
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@7e327720 (key: null, firstFacet: null) (name: Encounters)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:59:35.097
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@41f2a719 (op: /miramar/0528/condiciondecalles/Condicion calles/)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:59:49.483
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@5bf98bc5 (key: create, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 11:59:52.380
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_IfImpl@2dc34c48 (key: if, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:00:02.592
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@5bf98bc5 (key: create, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:00:10.021
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_SpeciesImpl@1e4177e8 (key: species, firstFacet: null) (name: osm_agent)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:00:11.502
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:00:11.869
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:00:12.498
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:00:13.202
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:00:25.264
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@3fcbdfd3 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:00:28.555
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@5554b8b6
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:00:31.237
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@7273408d (key: create, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:08:39.407
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@4714941a (key: create, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:08:43.968
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@fde8b8c (key: create, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:10:16.061
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@34b3c550 (key: null, firstFacet: null) (name: amenity)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:10:30.657
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DirectAssignmentImpl@46bbc19d (key: <-, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:10:33.628
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@6ea30e1b (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:10:43.660
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:10:43.842
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:10:43.956
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:10:44.046
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:10:46.540
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:10:48.726
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:10:51.927
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:10:53.264
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:10:53.281
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:11:25.734
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@4391a5b1 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:11:25.741
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@23f9a845 (key: null, firstFacet: null) (name: condition)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:15:58.140
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@249a46e5 (key: null, firstFacet: null) (name: miramar)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:16:15.033
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:16:19.058
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:16:20.180
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:17:02.305
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:17:04.664
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:17:06.296
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:17:09.377
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:17:09.553
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:17:11.486
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:17:50.866
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:17:51.026
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:17:52.719
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:18:18.471
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:18:21.639
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:18:23.862
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:18:39.298
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:18:44.358
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:25:33.322
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:25:35.404
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:25:36.056
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:27:37.623
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@2c46dcea
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:27:47.667
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:27:51.736
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:27:54.464
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:27:55.445
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:27:56.315
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:27:56.510
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:28:08.744
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:28:08.967
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:28:09.114
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:28:10.626
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:28:13.277
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:28:15.809
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:28:15.989
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:28:16.817
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:28:18.764
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:28:20.262
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:36:47.595
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@53e570eb
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:28.654
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:30.008
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:31.368
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:34.271
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:40.863
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:41.730
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:43.896
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:45.519
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:47.159
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:47.607
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:48.999
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:52.698
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:53.981
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:54.143
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:54.328
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:55.888
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:58.888
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:59.215
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:39:59.361
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:00.865
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:00.925
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:08.516
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@45f3aa25 (key: create, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:12.781
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@3b6fc461 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:15.797
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_LoopImpl@737184c9 (key: loop, firstFacet: null) (name: element)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:16.524
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:19.285
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:22.266
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:24.928
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:25.141
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:26.895
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:34.377
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ModelImpl@85a408e (name: crowds)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:35.879
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:35.994
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:36.409
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:39.899
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:41.600
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:47.328
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:47.447
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:49.552
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:49.967
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:52.338
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:55.061
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:40:56.862
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:00.279
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:01.180
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:01.717
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:01.929
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:14.359
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:16.062
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:17.021
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:18.022
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:19.515
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:22.035
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:27.943
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:28.095
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:28.214
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:30.392
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:32.068
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:32.986
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:35.355
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:35.665
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:37.288
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:45.940
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@186cfecb (op: name)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:48.408
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:49.709
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@2340daa7 (op: condition)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:41:51.232
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:42:07.409
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@7726acd8 (key: create, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:42:15.454
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@13b0b4b0 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:42:16.780
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@7726acd8 (key: create, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:42:17.610
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@7726acd8 (key: create, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:42:18.656
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FacetImpl@51b28a72 (name: null) (key: with:)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:42:23.504
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@5385599f (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:42:25.530
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ArgumentPairImpl@43d98c96 (op: name:)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:42:28.345
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@525c2bf4 (op: NOMBRE)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:42:29.985
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@553e5729 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:42:31.592
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ExpressionListImpl@67d6731 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:42:44.347
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ExpressionListImpl@67d6731 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:00.715
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FacetImpl@5d793dbd (name: null) (key: with:)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:00.723
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:02.132
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:08.130
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ModelImpl@76b5140d (name: crowds)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:11.152
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ExpressionListImpl@7c1306ea (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:11.159
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:13.680
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:13.891
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:15.240
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:18.953
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:19.111
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:27.907
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ModelImpl@38061471 (name: crowds)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:31.220
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ModelImpl@38061471 (name: crowds)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:40.093
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@43f0fb16 (key: create, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:50.982
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ExpressionListImpl@447b68a5 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:52.904
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@bbd6c30 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:43:55.702
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@3d3bd079 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:44:03.634
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:44:06.578
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:44:09.815
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@71410b80
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:44:10.666
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:44:35.608
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ArrayImpl@42be84d1 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:44:41.566
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BinaryImpl@4a1db8c2 (op: string)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:44:49.502
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ExpressionListImpl@78e7e4f (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:44:51.376
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@4ac323d3 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:44:57.367
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:44:57.833
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@143f63e7 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:45:00.975
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:45:04.014
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@7fa14a53
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:45:04.978
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:45:07.826
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@76ffef60 (op: amenity)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:45:17.993
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:45:22.074
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:45:22.389
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:45:37.218
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ArgumentPairImpl@57c38bd4 (op: name_str)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:45:38.935
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FacetImpl@64ed1e13 (name: null) (key: with:)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:45:53.388
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ArgumentPairImpl@57c38bd4 (op: name_str)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:45:54.986
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ExpressionListImpl@6db6f22e (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:03.844
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ArgumentPairImpl@516d04d4 (op: amenity)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:05.290
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:08.549
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@723d31f4 (op: name)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:10.113
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:10.560
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:11.290
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:13.981
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:18.599
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:19.732
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:22.480
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:24.195
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:24.344
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:26.042
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:28.808
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:29.871
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:31.828
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_LoopImpl@79a2e8c7 (key: loop, firstFacet: null) (name: element)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:32.441
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:34.482
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:35.005
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:40.504
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ExpressionListImpl@68c6af63 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:43.169
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:44.426
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:45.069
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:45.208
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:49.704
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ArgumentPairImpl@61eda20d (op: name_strs)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:53.059
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:54.516
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ExpressionListImpl@66d040f5 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:54.524
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:46:55.197
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:02.970
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ArrayImpl@3149e209 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:02.980
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:04.504
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:05.367
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:05.890
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:06.094
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:06.180
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BinaryImpl@47b4b68f (op: string)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:06.703
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:08.560
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_OtherImpl@15f3c30 (key: name_strs, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:12.226
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:13.151
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:15.451
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ArrayImpl@496833a9 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:15.460
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:16.471
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:16.872
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:22.974
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@47cffd2e (key: create, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:26.764
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@471613ba (key: null, firstFacet: null) (name: condition)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:32.189
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@46005bf3 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:34.301
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:37.096
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:37.452
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:37.564
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:47:47.717
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@56add472 (key: create, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:10.710
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:10.834
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:10.958
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:11.234
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:26.145
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:27.392
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:27.513
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:29.364
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:33.560
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:36.665
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:38.130
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:39.384
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:49.537
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:52.646
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:52.869
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:53.852
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:56.364
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:48:57.913
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:01.032
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:01.882
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:06.392
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@729caf1a (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:09.939
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FacetImpl@51d652d7 (name: null) (key: road_object)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:13.585
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:16.250
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:19.297
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:20.697
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:21.555
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:22.481
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:26.050
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:26.612
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:26.737
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:27.425
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:28.208
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:29.594
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:33.261
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:34.514
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:36.810
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:37.325
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:40.181
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:43.554
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:43.835
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:45.104
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:49.069
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:51.860
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:55.953
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:57.624
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:49:59.570
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:50:00.090
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:50:00.692
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:50:01.157
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:50:03.226
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:50:04.417
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:50:06.057
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:50:07.422
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@2fbbb1be (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:51:09.233
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@2fbbb1be (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:51:11.670
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@5d20a1c5 (key: null, firstFacet: null) (name: lowerCaseName)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:51:16.545
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@1b68c183 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:51:18.034
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@4a86f92c (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:51:19.782
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@2fbbb1be (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:51:21.274
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:51:24.034
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:51:24.245
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:51:24.933
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:51:25.081
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:51:25.273
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:51:25.413
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:51:26.602
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:52:21.594
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:52:22.962
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:52:26.505
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:52:27.684
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:52:29.281
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:52:29.802
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:52:31.385
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:52:31.911
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:08.992
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@1e32da15 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:08.999
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:10.234
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:25.031
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@1e32da15 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:29.458
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@1ee9a039 (key: null, firstFacet: null) (name: lowerCaseName)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:30.524
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:31.082
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:31.203
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:31.978
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:32.890
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:33.095
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:34.546
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:35.858
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:36.302
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:39.818
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:41.014
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:41.992
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:42.225
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:43.470
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@19acfebc (key: null, firstFacet: null) (name: lowerCaseName)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:44.550
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@2cd74a1f (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:57:57.280
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@2cd74a1f (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:07.552
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_OtherImpl@f60ed6e (key: road, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:09.565
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ExpressionListImpl@33a902a6 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:12.753
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.StatementImpl@66f6b9c6 (key: create, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:14.418
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:16.296
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:16.473
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:18.722
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ExpressionImpl@776fe4 (op: =)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:21.739
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@73f6caf2 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:21.746
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@7dc57350 (key: null, firstFacet: null) (name: lowerCaseName)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:22.520
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@348e3180
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:25.638
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:25.934
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:28.425
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:29.754
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:30.276
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:32.081
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@2d706f3 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:59.467
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@3c4870ff (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:58:59.474
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@26a1b256 (key: null, firstFacet: null) (name: lowerCaseName)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:01.395
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:05.971
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_OtherImpl@28c443a5 (key: road, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:07.293
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:09.809
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:10.850
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:11.668
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:11.763
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:18.397
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@76700647 (key: null, firstFacet: null) (name: lowerCaseName)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:18.419
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:19.670
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:19.968
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:20.102
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:21.758
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:22.049
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:22.197
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:22.429
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:22.660
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 12:59:28.048
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@b2e31ea
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:03:56.533
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@b2e31ea
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:04:02.524
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:04:04.933
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:04:07.044
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:04:08.046
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:07:37.694
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FacetImpl@199c601e (name: null) (key: <-)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:07:38.191
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FacetImpl@199c601e (name: null) (key: <-)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:07:47.740
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@e6ded92
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:07:49.081
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:07:52.265
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:07:54.846
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:07:57.571
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:07:59.009
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:01.055
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:02.212
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:02.634
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:02.805
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:13.579
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:14.016
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:15.849
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:17.380
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:20.760
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:21.713
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:23.635
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:23.760
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:25.933
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:26.669
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:27.181
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:30.509
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_OtherImpl@5c880cd8 (key: lowerCaseName, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:33.962
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_OtherImpl@2903b1b7 (key: upper_case, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:36.728
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:37.781
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:38.453
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:40.672
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@5c6979f7
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:08:42.265
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_OtherImpl@1678e94f (key: lowerCaseName, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:11:05.007
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@3fb4fe9a (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:11:13.601
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:11:14.492
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:11:15.898
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:11:16.382
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:11:17.179
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:11:21.619
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@5f83a912 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:11:24.156
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@134fcb70
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:11:26.046
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@5f83a912 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:11:29.562
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:11:31.828
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:11:36.020
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@5cb209d7
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:12:17.518
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@5cb209d7
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:12:27.080
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@5cb209d7
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:12:35.042
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@5cb209d7
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:12:44.335
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:12:44.475
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:12:54.630
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:12:55.755
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:12:57.315
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:12:59.221
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:12:59.674
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:13:02.508
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:13:07.399
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:13:09.984
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:13:10.312
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:13:12.624
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:13:13.327
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:13:13.890
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:13:20.733
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@1008b457
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:13:42.520
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:13:42.788
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FacetImpl@2fcb820 (name: null) (key: from:)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:15:04.071
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@2438e676
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:15:04.977
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@2438e676
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:15:06.274
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@2438e676
+!SESSION 2018-05-28 13:25:12.844 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=${target.nl}
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:25:15.994
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.findAndInstallUpdates", command "org.eclipse.ui.update.findAndInstallUpdates" not defined
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:25:16.009
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.manageConfiguration", command "org.eclipse.ui.update.manageConfiguration" not defined
+
+!ENTRY org.apache.log4j 2 0 2018-05-28 13:25:16.431
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.apache.log4j 2 0 2018-05-28 13:25:16.650
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:25:26.408
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:26:11.382
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:26:23.810
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@15779a2b (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:26:33.368
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.IntLiteralImpl@396a883a (op: 10)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:26:37.060
+!MESSAGE Perspective msi.gama.application.perspectives.SimulationPerspective open 
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-28 13:26:47.586
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:121)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-28 13:26:47.789
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:121)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-28 13:27:54.813
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:121)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-05-28 13:28:01.428
+!MESSAGE An unexpected exception was thrown.
+!STACK 0
+java.util.ConcurrentModificationException
+	at msi.gama.util.TOrderedHashMap$THashIterator.nextIndex(TOrderedHashMap.java:640)
+	at msi.gama.util.TOrderedHashMap$THashIterator.hasNext(TOrderedHashMap.java:667)
+	at msi.gama.util.graph.GamaGraph.toString(GamaGraph.java:121)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at msi.gaml.expressions.UnaryOperator.value(UnaryOperator.java:64)
+	at msi.gaml.statements.LoopStatement$Over.runIn(LoopStatement.java:191)
+	at msi.gaml.statements.LoopStatement.privateExecuteIn(LoopStatement.java:125)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:180)
+	at msi.gaml.statements.AspectStatement.privateExecuteIn(AspectStatement.java:1)
+	at msi.gaml.statements.AbstractStatement.executeOn(AbstractStatement.java:42)
+	at msi.gaml.statements.AbstractStatementSequence.executeOn(AbstractStatementSequence.java:57)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:135)
+	at msi.gaml.statements.AspectStatement.executeOn(AspectStatement.java:1)
+	at msi.gama.runtime.AbstractScope.execute(AbstractScope.java:384)
+	at msi.gama.outputs.layers.GraphicLayer.privateDrawDisplay(GraphicLayer.java:29)
+	at msi.gama.outputs.layers.AbstractLayer.drawDisplay(AbstractLayer.java:97)
+	at msi.gama.outputs.display.LayerManager.drawLayersOn(LayerManager.java:139)
+	at msi.gama.jogl.JOGLAWTDisplaySurface.drawDisplaysWithoutRepainting(JOGLAWTDisplaySurface.java:248)
+	at msi.gama.jogl.JOGLAWTDisplaySurface$1.run(JOGLAWTDisplaySurface.java:105)
+	at msi.gama.gui.displays.awt.AbstractAWTDisplaySurface$1.run(AbstractAWTDisplaySurface.java:349)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 13:28:13.261
+!MESSAGE Perspective msi.gama.application.perspectives.ModelingPerspective open 
+!SESSION 2018-05-28 14:56:31.680 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=${target.nl}
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:56:37.366
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.findAndInstallUpdates", command "org.eclipse.ui.update.findAndInstallUpdates" not defined
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:56:37.397
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.manageConfiguration", command "org.eclipse.ui.update.manageConfiguration" not defined
+
+!ENTRY org.apache.log4j 2 0 2018-05-28 14:56:37.850
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.apache.log4j 2 0 2018-05-28 14:56:38.069
+!MESSAGE org.eclipse.xtext.ui.shared.internal.Activator  - Disabling JDT use. : org/eclipse/jdt/core/JavaCore
+
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:57:17.273
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FacetImpl@30bfcf94 (name: null) (key: <-)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:57:21.673
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:57:23.237
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:57:24.537
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:57:27.349
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:57:28.099
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:57:54.675
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FacetImpl@5fa81670 (name: null) (key: with:)
+
+!ENTRY org.eclipse.ui.ide 4 4 2018-05-28 14:57:58.128
+!MESSAGE File toolbar contribution item is missing
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:58:22.593
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:58:24.378
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:58:32.125
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@2de23fe8 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:58:34.836
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@7cc06dd4
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:58:43.930
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:58:54.753
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@7e70ada6
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:58:57.050
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:58:58.346
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:58:58.456
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:58:58.690
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:58:58.800
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@52fed508
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:59:04.882
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:59:18.117
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@7f6e2d1b (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:59:20.124
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@7f6e2d1b (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:59:22.030
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.TypeRefImpl@2b1384f8 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:59:22.030
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@54b28588 (key: null, firstFacet: null) (name: lowerCaseName)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:59:22.999
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_LoopImpl@506e9b3c (key: loop, firstFacet: null) (name: element)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:59:31.955
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:59:42.507
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:59:43.134
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:59:43.899
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:59:44.134
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:59:45.087
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:59:47.059
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:59:51.264
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.VariableRefImpl@2b428a23 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:59:53.107
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@40f50de8 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 14:59:58.798
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:01.033
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:01.356
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:03.606
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:07.392
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.ArgumentPairImpl@21ed98c5 (op: name_strs)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:08.346
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:12.994
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_OtherImpl@6278968 (key: element, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:14.041
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:15.806
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:17.134
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@55cce725
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:22.005
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_OtherImpl@72c5b63f (key: string, firstFacet: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:24.594
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:26.704
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FacetImpl@640d7aa6 (name: null) (key: element)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:28.923
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:32.561
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.S_DefinitionImpl@5ecce939 (key: null, firstFacet: null) (name: lowerCaseName)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:34.410
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:35.800
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:36.468
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:41.360
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:51.794
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.BlockImpl@58772fb2
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:00:57.949
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@64ae0072 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:01:03.091
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@64ae0072 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:01:09.672
+!MESSAGE GamlDocumentationProvider.getDocumentation for msi.gama.lang.gaml.gaml.impl.FunctionImpl@23470b33 (op: null)
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:01:23.900
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:01:24.025
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:01:24.150
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:01:24.353
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:01:26.214
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:01:28.480
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:01:28.746
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:01:30.371
+!MESSAGE GamlJavaValidator.validate
+
+!ENTRY org.eclipse.ui 4 4 2018-05-28 15:01:37.230
+!MESSAGE GamlJavaValidator.validate
+>>>>>>> 14edcceacb394cd045832f72410f7868b648dc5d
+!SESSION 2018-05-28 18:59:17.119 -----------------------------------------------
+eclipse.buildId=${build.id}
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.core.runtime 4 0 2018-05-28 18:59:18.108
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.core.runtime [2]
+  Unresolved requirement: Require-Bundle: javax.annotation; bundle-version="1.1.0"; visibility:="reexport"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: javax.inject; bundle-version="1.0.0"; visibility:="reexport"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.equinox.common; bundle-version="[3.7.0,4.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1562)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.SystemModule.startWorker(SystemModule.java:242)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.container.SystemModule.start(SystemModule.java:172)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:392)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:411)
+	at org.eclipse.osgi.launch.Equinox.start(Equinox.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:318)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:231)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.059
+!MESSAGE Could not install bundle plugins/com.google.gson_2.2.4.v201311231704.jar   A bundle is already installed with the name "com.google.gson" and version "2.2.4.v201311231704"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.075
+!MESSAGE Could not install bundle plugins/com.google.guava_15.0.0.v201403281430.jar   A bundle is already installed with the name "com.google.guava" and version "15.0.0.v201403281430"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.087
+!MESSAGE Could not install bundle plugins/com.google.inject_3.0.0.v201312141243.jar   A bundle is already installed with the name "com.google.inject" and version "3.0.0.v201312141243"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.105
+!MESSAGE Could not install bundle plugins/com.ibm.icu_54.1.1.v201501272100.jar   A bundle is already installed with the name "com.ibm.icu" and version "54.1.1.v201501272100"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.126
+!MESSAGE Could not install bundle plugins/irit.gaml.extensions.database_1.7.0.201704221607.jar   A bundle is already installed with the name "irit.gaml.extensions.database" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.139
+!MESSAGE Could not install bundle plugins/irit.gaml.extensions.test_1.7.0.201704221607.jar   A bundle is already installed with the name "irit.gaml.extensions.test" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.155
+!MESSAGE Could not install bundle plugins/javax.annotation_1.2.0.v201401042248.jar   A bundle is already installed with the name "javax.annotation" and version "1.2.0.v201401042248"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.161
+!MESSAGE Could not install bundle plugins/javax.inject_1.0.0.v20091030.jar   A bundle is already installed with the name "javax.inject" and version "1.0.0.v20091030"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.177
+!MESSAGE Could not install bundle plugins/javax.xml_1.3.4.v201005080400.jar   A bundle is already installed with the name "javax.xml" and version "1.3.4.v201005080400"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.193
+!MESSAGE Could not install bundle plugins/msi.gama.application_1.7.0.201704221607/   A bundle is already installed with the name "msi.gama.application" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.221
+!MESSAGE Could not install bundle plugins/msi.gama.core_1.7.0.201704221607.jar   A bundle is already installed with the name "msi.gama.core" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.239
+!MESSAGE Could not install bundle plugins/msi.gama.ext_1.7.0.201704221607.jar   A bundle is already installed with the name "msi.gama.ext" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.255
+!MESSAGE Could not install bundle plugins/msi.gama.headless_1.7.0.201704221607.jar   A bundle is already installed with the name "msi.gama.headless" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.279
+!MESSAGE Could not install bundle plugins/msi.gama.lang.gaml_1.7.0.201704221607.jar   A bundle is already installed with the name "msi.gama.lang.gaml" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.291
+!MESSAGE Could not install bundle plugins/msi.gama.models_1.7.0.201704221607/   A bundle is already installed with the name "msi.gama.models" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.305
+!MESSAGE Could not install bundle plugins/msi.gama.processor_1.4.0.201704221605.jar   A bundle is already installed with the name "msi.gama.processor" and version "1.4.0.201704221605"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.317
+!MESSAGE Could not install bundle plugins/msi.gaml.architecture.simplebdi_1.7.0.201704221607/   A bundle is already installed with the name "msi.gaml.architecture.simplebdi" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.333
+!MESSAGE Could not install bundle plugins/msi.gaml.extensions.fipa_1.7.0.201704221607/   A bundle is already installed with the name "msi.gaml.extensions.fipa" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.357
+!MESSAGE Could not install bundle plugins/org.antlr.runtime_3.2.0.v201101311130.jar   A bundle is already installed with the name "org.antlr.runtime" and version "3.2.0.v201101311130"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.371
+!MESSAGE Could not install bundle plugins/org.antlr.runtime_4.3.0.v201502022030.jar   A bundle is already installed with the name "org.antlr.runtime" and version "4.3.0.v201502022030"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.383
+!MESSAGE Could not install bundle plugins/org.apache.batik.css_1.7.0.v201011041433.jar   A bundle is already installed with the name "org.apache.batik.css" and version "1.7.0.v201011041433"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.404
+!MESSAGE Could not install bundle plugins/org.apache.batik.util.gui_1.7.0.v200903091627.jar   A bundle is already installed with the name "org.apache.batik.util.gui" and version "1.7.0.v200903091627"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.413
+!MESSAGE Could not install bundle plugins/org.apache.batik.util_1.7.0.v201011041433.jar   A bundle is already installed with the name "org.apache.batik.util" and version "1.7.0.v201011041433"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.427
+!MESSAGE Could not install bundle plugins/org.apache.commons.cli_1.2.0.v201404270220.jar   A bundle is already installed with the name "org.apache.commons.cli" and version "1.2.0.v201404270220"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.439
+!MESSAGE Could not install bundle plugins/org.apache.commons.codec_1.6.0.v201305230611.jar   A bundle is already installed with the name "org.apache.commons.codec" and version "1.6.0.v201305230611"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.448
+!MESSAGE Could not install bundle plugins/org.apache.commons.compress_1.6.0.v201310281400.jar   A bundle is already installed with the name "org.apache.commons.compress" and version "1.6.0.v201310281400"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.461
+!MESSAGE Could not install bundle plugins/org.apache.commons.io_2.2.0.v201405211200.jar   A bundle is already installed with the name "org.apache.commons.io" and version "2.2.0.v201405211200"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.469
+!MESSAGE Could not install bundle plugins/org.apache.commons.jxpath_1.3.0.v200911051830.jar   A bundle is already installed with the name "org.apache.commons.jxpath" and version "1.3.0.v200911051830"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.479
+!MESSAGE Could not install bundle plugins/org.apache.commons.lang_2.6.0.v201404270220.jar   A bundle is already installed with the name "org.apache.commons.lang" and version "2.6.0.v201404270220"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.487
+!MESSAGE Could not install bundle plugins/org.apache.commons.logging_1.1.1.v201101211721.jar   A bundle is already installed with the name "org.apache.commons.logging" and version "1.1.1.v201101211721"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.495
+!MESSAGE Could not install bundle plugins/org.apache.felix.gogo.command_0.10.0.v201209301215.jar   A bundle is already installed with the name "org.apache.felix.gogo.command" and version "0.10.0.v201209301215"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.503
+!MESSAGE Could not install bundle plugins/org.apache.felix.gogo.runtime_0.10.0.v201209301036.jar   A bundle is already installed with the name "org.apache.felix.gogo.runtime" and version "0.10.0.v201209301036"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.511
+!MESSAGE Could not install bundle plugins/org.apache.felix.gogo.shell_0.10.0.v201212101605.jar   A bundle is already installed with the name "org.apache.felix.gogo.shell" and version "0.10.0.v201212101605"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.531
+!MESSAGE Could not install bundle plugins/org.apache.httpcomponents.httpclient_4.3.6.v201411290715.jar   A bundle is already installed with the name "org.apache.httpcomponents.httpclient" and version "4.3.6.v201411290715"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.543
+!MESSAGE Could not install bundle plugins/org.apache.httpcomponents.httpcore_4.3.3.v201411290715.jar   A bundle is already installed with the name "org.apache.httpcomponents.httpcore" and version "4.3.3.v201411290715"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.559
+!MESSAGE Could not install bundle plugins/org.apache.log4j_1.2.15.v201012070815.jar   A bundle is already installed with the name "org.apache.log4j" and version "1.2.15.v201012070815"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.571
+!MESSAGE Could not install bundle plugins/org.eclipse.compare.core_3.5.500.v20150505-1058.jar   A bundle is already installed with the name "org.eclipse.compare.core" and version "3.5.500.v20150505-1058"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.584
+!MESSAGE Could not install bundle plugins/org.eclipse.compare_3.5.600.v20150420-1449.jar   A bundle is already installed with the name "org.eclipse.compare" and version "3.5.600.v20150420-1449"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.596
+!MESSAGE Could not install bundle plugins/org.eclipse.core.commands_3.7.0.v20150422-0725.jar   A bundle is already installed with the name "org.eclipse.core.commands" and version "3.7.0.v20150422-0725"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.608
+!MESSAGE Could not install bundle plugins/org.eclipse.core.contenttype_3.5.0.v20150421-2214.jar   A bundle is already installed with the name "org.eclipse.core.contenttype" and version "3.5.0.v20150421-2214"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.620
+!MESSAGE Could not install bundle plugins/org.eclipse.core.databinding.beans_1.3.0.v20150422-0725.jar   A bundle is already installed with the name "org.eclipse.core.databinding.beans" and version "1.3.0.v20150422-0725"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.632
+!MESSAGE Could not install bundle plugins/org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar   A bundle is already installed with the name "org.eclipse.core.databinding.observable" and version "1.5.0.v20150422-0725"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.656
+!MESSAGE Could not install bundle plugins/org.eclipse.core.databinding.property_1.5.0.v20150422-0725.jar   A bundle is already installed with the name "org.eclipse.core.databinding.property" and version "1.5.0.v20150422-0725"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.672
+!MESSAGE Could not install bundle plugins/org.eclipse.core.databinding_1.5.0.v20150422-0725.jar   A bundle is already installed with the name "org.eclipse.core.databinding" and version "1.5.0.v20150422-0725"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.693
+!MESSAGE Could not install bundle plugins/org.eclipse.core.expressions_3.5.0.v20150421-2214.jar   A bundle is already installed with the name "org.eclipse.core.expressions" and version "3.5.0.v20150421-2214"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.716
+!MESSAGE Could not install bundle plugins/org.eclipse.core.filebuffers_3.5.500.v20140723-1040.jar   A bundle is already installed with the name "org.eclipse.core.filebuffers" and version "3.5.500.v20140723-1040"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.744
+!MESSAGE Could not install bundle plugins/org.eclipse.core.filesystem_1.5.0.v20150725-1910.jar   A bundle is already installed with the name "org.eclipse.core.filesystem" and version "1.5.0.v20150725-1910"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.772
+!MESSAGE Could not install bundle plugins/org.eclipse.core.jobs_3.7.0.v20150330-2103.jar   A bundle is already installed with the name "org.eclipse.core.jobs" and version "3.7.0.v20150330-2103"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.784
+!MESSAGE Could not install bundle plugins/org.eclipse.core.net_1.2.300.v20141118-1725.jar   A bundle is already installed with the name "org.eclipse.core.net" and version "1.2.300.v20141118-1725"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.813
+!MESSAGE Could not install bundle plugins/org.eclipse.core.resources_3.10.1.v20150725-1910.jar   A bundle is already installed with the name "org.eclipse.core.resources" and version "3.10.1.v20150725-1910"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.866
+!MESSAGE Could not install bundle plugins/org.eclipse.core.variables_3.2.800.v20130819-1716.jar   A bundle is already installed with the name "org.eclipse.core.variables" and version "3.2.800.v20130819-1716"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.894
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.core.commands_0.11.0.v20150422-0725.jar   A bundle is already installed with the name "org.eclipse.e4.core.commands" and version "0.11.0.v20150422-0725"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.915
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.core.contexts_1.4.0.v20150828-0818.jar   A bundle is already installed with the name "org.eclipse.e4.core.contexts" and version "1.4.0.v20150828-0818"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.939
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.core.di.annotations_1.4.0.v20150528-1451.jar   A bundle is already installed with the name "org.eclipse.e4.core.di.annotations" and version "1.4.0.v20150528-1451"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.958
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.core.di.extensions_0.13.0.v20150421-2214.jar   A bundle is already installed with the name "org.eclipse.e4.core.di.extensions" and version "0.13.0.v20150421-2214"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.977
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.core.di_1.5.0.v20150421-2214.jar   A bundle is already installed with the name "org.eclipse.e4.core.di" and version "1.5.0.v20150421-2214"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:23.992
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.core.services_2.0.0.v20150403-1912.jar   A bundle is already installed with the name "org.eclipse.e4.core.services" and version "2.0.0.v20150403-1912"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.017
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.emf.xpath_0.1.100.v20150513-0856.jar   A bundle is already installed with the name "org.eclipse.e4.emf.xpath" and version "0.1.100.v20150513-0856"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.043
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.ui.bindings_0.11.0.v20150422-0725.jar   A bundle is already installed with the name "org.eclipse.e4.ui.bindings" and version "0.11.0.v20150422-0725"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.058
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.ui.css.core_0.11.0.v20150511-1937.jar   A bundle is already installed with the name "org.eclipse.e4.ui.css.core" and version "0.11.0.v20150511-1937"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.078
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.ui.css.swt.theme_0.10.0.v20150422-0725.jar   A bundle is already installed with the name "org.eclipse.e4.ui.css.swt.theme" and version "0.10.0.v20150422-0725"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.090
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.ui.css.swt_0.12.0.v20150511-1003.jar   A bundle is already installed with the name "org.eclipse.e4.ui.css.swt" and version "0.12.0.v20150511-1003"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.106
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.ui.dialogs_1.0.0.v20150513-0856.jar   A bundle is already installed with the name "org.eclipse.e4.ui.dialogs" and version "1.0.0.v20150513-0856"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.118
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.ui.di_1.1.0.v20150422-0725.jar   A bundle is already installed with the name "org.eclipse.e4.ui.di" and version "1.1.0.v20150422-0725"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.132
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.ui.model.workbench_1.1.100.v20150407-1430.jar   A bundle is already installed with the name "org.eclipse.e4.ui.model.workbench" and version "1.1.100.v20150407-1430"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.140
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.ui.services_1.2.0.v20150422-0725.jar   A bundle is already installed with the name "org.eclipse.e4.ui.services" and version "1.2.0.v20150422-0725"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.156
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.ui.widgets_1.1.0.v20150427-1751.jar   A bundle is already installed with the name "org.eclipse.e4.ui.widgets" and version "1.1.0.v20150427-1751"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.176
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.ui.workbench.addons.swt_1.2.0.v20150512-1414.jar   A bundle is already installed with the name "org.eclipse.e4.ui.workbench.addons.swt" and version "1.2.0.v20150512-1414"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.192
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.ui.workbench.renderers.swt_0.13.0.v20150901-1347.jar   A bundle is already installed with the name "org.eclipse.e4.ui.workbench.renderers.swt" and version "0.13.0.v20150901-1347"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.207
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.ui.workbench.swt_0.13.0.v20150504-0621.jar   A bundle is already installed with the name "org.eclipse.e4.ui.workbench.swt" and version "0.13.0.v20150504-0621"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.219
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.ui.workbench3_0.13.0.v20150422-0725.jar   A bundle is already installed with the name "org.eclipse.e4.ui.workbench3" and version "0.13.0.v20150422-0725"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.240
+!MESSAGE Could not install bundle plugins/org.eclipse.e4.ui.workbench_1.3.1.v20160203-0951.jar   A bundle is already installed with the name "org.eclipse.e4.ui.workbench" and version "1.3.1.v20160203-0951"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.252
+!MESSAGE Could not install bundle plugins/org.eclipse.ecf.filetransfer_5.0.0.v20151130-0157.jar   A bundle is already installed with the name "org.eclipse.ecf.filetransfer" and version "5.0.0.v20151130-0157"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.265
+!MESSAGE Could not install bundle plugins/org.eclipse.ecf.identity_3.6.0.v20151130-0157.jar   A bundle is already installed with the name "org.eclipse.ecf.identity" and version "3.6.0.v20151130-0157"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.277
+!MESSAGE Could not install bundle plugins/org.eclipse.ecf.provider.filetransfer.httpclient4.ssl_1.1.0.v20151130-0157.jar   A bundle is already installed with the name "org.eclipse.ecf.provider.filetransfer.httpclient4.ssl" and version "1.1.0.v20151130-0157"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.293
+!MESSAGE Could not install bundle plugins/org.eclipse.ecf.provider.filetransfer.httpclient4_1.1.0.v20151130-0157.jar   A bundle is already installed with the name "org.eclipse.ecf.provider.filetransfer.httpclient4" and version "1.1.0.v20151130-0157"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.303
+!MESSAGE Could not install bundle plugins/org.eclipse.ecf.provider.filetransfer.ssl_1.0.0.v20151130-0157.jar   A bundle is already installed with the name "org.eclipse.ecf.provider.filetransfer.ssl" and version "1.0.0.v20151130-0157"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.316
+!MESSAGE Could not install bundle plugins/org.eclipse.ecf.provider.filetransfer_3.2.200.v20151130-0157.jar   A bundle is already installed with the name "org.eclipse.ecf.provider.filetransfer" and version "3.2.200.v20151130-0157"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.331
+!MESSAGE Could not install bundle plugins/org.eclipse.ecf.ssl_1.2.0.v20151130-0157.jar   A bundle is already installed with the name "org.eclipse.ecf.ssl" and version "1.2.0.v20151130-0157"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.347
+!MESSAGE Could not install bundle plugins/org.eclipse.ecf_3.7.0.v20151130-0157.jar   A bundle is already installed with the name "org.eclipse.ecf" and version "3.7.0.v20151130-0157"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.359
+!MESSAGE Could not install bundle plugins/org.eclipse.emf.common.ui_2.10.1.v20160208-0841.jar   A bundle is already installed with the name "org.eclipse.emf.common.ui" and version "2.10.1.v20160208-0841"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.371
+!MESSAGE Could not install bundle plugins/org.eclipse.emf.common_2.11.1.v20160208-0816.jar   A bundle is already installed with the name "org.eclipse.emf.common" and version "2.11.1.v20160208-0816"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.383
+!MESSAGE Could not install bundle plugins/org.eclipse.emf.ecore.change_2.11.0.v20160208-0816.jar   A bundle is already installed with the name "org.eclipse.emf.ecore.change" and version "2.11.0.v20160208-0816"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.396
+!MESSAGE Could not install bundle plugins/org.eclipse.emf.ecore.xmi_2.11.1.v20160208-0816.jar   A bundle is already installed with the name "org.eclipse.emf.ecore.xmi" and version "2.11.1.v20160208-0816"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.409
+!MESSAGE Could not install bundle plugins/org.eclipse.emf.ecore_2.11.2.v20160208-0816.jar   A bundle is already installed with the name "org.eclipse.emf.ecore" and version "2.11.2.v20160208-0816"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.422
+!MESSAGE Could not install bundle plugins/org.eclipse.emf.edit.ui_2.11.1.v20160208-0841.jar   A bundle is already installed with the name "org.eclipse.emf.edit.ui" and version "2.11.1.v20160208-0841"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.435
+!MESSAGE Could not install bundle plugins/org.eclipse.emf.edit_2.11.1.v20160208-0841.jar   A bundle is already installed with the name "org.eclipse.emf.edit" and version "2.11.1.v20160208-0841"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.447
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.app_1.3.300.v20150423-1356.jar   A bundle is already installed with the name "org.eclipse.equinox.app" and version "1.3.300.v20150423-1356"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.458
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.bidi_0.10.0.v20130327-1442.jar   A bundle is already installed with the name "org.eclipse.equinox.bidi" and version "0.10.0.v20130327-1442"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.470
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.common_3.7.0.v20150402-1709.jar   A bundle is already installed with the name "org.eclipse.equinox.common" and version "3.7.0.v20150402-1709"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.478
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.concurrent_1.1.0.v20130327-1442.jar   A bundle is already installed with the name "org.eclipse.equinox.concurrent" and version "1.1.0.v20130327-1442"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.490
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.console_1.1.100.v20141023-1406.jar   A bundle is already installed with the name "org.eclipse.equinox.console" and version "1.1.100.v20141023-1406"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.501
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.ds_1.4.300.v20150423-1356.jar   A bundle is already installed with the name "org.eclipse.equinox.ds" and version "1.4.300.v20150423-1356"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.510
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.event_1.3.100.v20140115-1647.jar   A bundle is already installed with the name "org.eclipse.equinox.event" and version "1.3.100.v20140115-1647"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.519
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.frameworkadmin.equinox_1.0.600.v20150522-2234.jar   A bundle is already installed with the name "org.eclipse.equinox.frameworkadmin.equinox" and version "1.0.600.v20150522-2234"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.531
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.frameworkadmin_2.0.200.v20150423-1455.jar   A bundle is already installed with the name "org.eclipse.equinox.frameworkadmin" and version "2.0.200.v20150423-1455"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.544
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.300.v20150602-1417/   A bundle is already installed with the name "org.eclipse.equinox.launcher.win32.win32.x86_64" and version "1.1.300.v20150602-1417"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.554
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar   A bundle is already installed with the name "org.eclipse.equinox.launcher" and version "1.3.100.v20150511-1540"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.565
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.artifact.repository_1.1.400.v20150513-2116.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.artifact.repository" and version "1.1.400.v20150513-2116"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.577
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.console_1.0.400.v20150423-1455.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.console" and version "1.0.400.v20150423-1455"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.585
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.core_2.4.0.v20150527-1706.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.core" and version "2.4.0.v20150527-1706"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.601
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.director.app_1.0.400.v20150423-1455.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.director.app" and version "1.0.400.v20150423-1455"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.613
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.directorywatcher_1.1.100.v20150423-1455.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.directorywatcher" and version "1.1.100.v20150423-1455"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.625
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.director_2.3.200.v20150423-1455.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.director" and version "2.3.200.v20150423-1455"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.638
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.engine_2.4.0.v20150511-1532.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.engine" and version "2.4.0.v20150511-1532"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.646
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.extensionlocation_1.2.201.v20160129-0947.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.extensionlocation" and version "1.2.201.v20160129-0947"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.662
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.garbagecollector_1.0.200.v20131115-1210.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.garbagecollector" and version "1.0.200.v20131115-1210"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.687
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.jarprocessor_1.0.400.v20150430-1836.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.jarprocessor" and version "1.0.400.v20150430-1836"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.713
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.metadata.repository_1.2.200.v20150428-1613.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.metadata.repository" and version "1.2.200.v20150428-1613"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.772
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.metadata_2.3.0.v20150511-1532.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.metadata" and version "2.3.0.v20150511-1532"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.794
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.operations_2.4.100.v20150423-1455.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.operations" and version "2.4.100.v20150423-1455"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.834
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.publisher.eclipse_1.2.0.v20150601-1708.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.publisher.eclipse" and version "1.2.0.v20150601-1708"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.857
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.publisher_1.4.0.v20141117-0929.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.publisher" and version "1.4.0.v20141117-0929"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.875
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.reconciler.dropins_1.1.300.v20150423-1455.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.reconciler.dropins" and version "1.1.300.v20150423-1455"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.889
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.repository.tools_2.1.100.v20150423-1455.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.repository.tools" and version "2.1.100.v20150423-1455"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.904
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.repository_2.3.100.v20150428-1613.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.repository" and version "2.3.100.v20150428-1613"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.913
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.touchpoint.eclipse_2.1.300.v20150423-1455.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.touchpoint.eclipse" and version "2.1.300.v20150423-1455"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.928
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.touchpoint.natives_1.2.0.v20150519-1136.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.touchpoint.natives" and version "1.2.0.v20150519-1136"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.934
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.transport.ecf_1.1.100.v20150521-1342.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.transport.ecf" and version "1.1.100.v20150521-1342"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.944
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.ui.importexport_1.1.100.v20150423-1455.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.ui.importexport" and version "1.1.100.v20150423-1455"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.960
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.ui.sdk.scheduler_1.2.100.v20150423-1455.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.ui.sdk.scheduler" and version "1.2.100.v20150423-1455"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.968
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.ui.sdk_1.0.400.v20150423-1455.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.ui.sdk" and version "1.0.400.v20150423-1455"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.980
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.ui_2.4.0.v20150425-0422.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.ui" and version "2.4.0.v20150425-0422"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:24.985
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.updatechecker_1.1.200.v20131119-0908.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.updatechecker" and version "1.1.200.v20131119-0908"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.004
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.p2.updatesite_1.0.500.v20150423-1455.jar   A bundle is already installed with the name "org.eclipse.equinox.p2.updatesite" and version "1.0.500.v20150423-1455"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.014
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.preferences_3.5.300.v20150408-1437.jar   A bundle is already installed with the name "org.eclipse.equinox.preferences" and version "3.5.300.v20150408-1437"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.024
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar   A bundle is already installed with the name "org.eclipse.equinox.registry" and version "3.6.0.v20150318-1503"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.034
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.security.ui_1.1.201.v20150803-1228.jar   A bundle is already installed with the name "org.eclipse.equinox.security.ui" and version "1.1.201.v20150803-1228"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.043
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.security.win32.x86_64_1.0.100.v20130327-1442.jar   A bundle is already installed with the name "org.eclipse.equinox.security.win32.x86_64" and version "1.0.100.v20130327-1442"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.051
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.security_1.2.100.v20150423-1356.jar   A bundle is already installed with the name "org.eclipse.equinox.security" and version "1.2.100.v20150423-1356"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.057
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.simpleconfigurator.manipulator_2.0.100.v20150423-1455.jar   A bundle is already installed with the name "org.eclipse.equinox.simpleconfigurator.manipulator" and version "2.0.100.v20150423-1455"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.073
+!MESSAGE Could not install bundle plugins/org.eclipse.equinox.util_1.0.500.v20130404-1337.jar   A bundle is already installed with the name "org.eclipse.equinox.util" and version "1.0.500.v20130404-1337"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.085
+!MESSAGE Could not install bundle plugins/org.eclipse.help_3.6.0.v20130326-1254.jar   A bundle is already installed with the name "org.eclipse.help" and version "3.6.0.v20130326-1254"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.093
+!MESSAGE Could not install bundle plugins/org.eclipse.jface.databinding_1.7.0.v20150406-2148.jar   A bundle is already installed with the name "org.eclipse.jface.databinding" and version "1.7.0.v20150406-2148"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.106
+!MESSAGE Could not install bundle plugins/org.eclipse.jface.text_3.10.0.v20150603-1752.jar   A bundle is already installed with the name "org.eclipse.jface.text" and version "3.10.0.v20150603-1752"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.114
+!MESSAGE Could not install bundle plugins/org.eclipse.jface_3.11.1.v20160128-1644.jar   A bundle is already installed with the name "org.eclipse.jface" and version "3.11.1.v20160128-1644"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.122
+!MESSAGE Could not install bundle plugins/org.eclipse.ltk.core.refactoring_3.6.201.v20150819-1034.jar   A bundle is already installed with the name "org.eclipse.ltk.core.refactoring" and version "3.6.201.v20150819-1034"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.130
+!MESSAGE Could not install bundle plugins/org.eclipse.ltk.ui.refactoring_3.7.200.v20140625-1835.jar   A bundle is already installed with the name "org.eclipse.ltk.ui.refactoring" and version "3.7.200.v20140625-1835"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.143
+!MESSAGE Could not install bundle plugins/org.eclipse.rcp_4.5.2.v20160212-1500.jar   A bundle is already installed with the name "org.eclipse.rcp" and version "4.5.2.v20160212-1500"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.152
+!MESSAGE Could not install bundle plugins/org.eclipse.search_3.10.0.v20150318-0856.jar   A bundle is already installed with the name "org.eclipse.search" and version "3.10.0.v20150318-0856"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.160
+!MESSAGE Could not install bundle plugins/org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar   A bundle is already installed with the name "org.eclipse.swt.win32.win32.x86_64" and version "3.104.2.v20160212-1350"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.168
+!MESSAGE Could not install bundle plugins/org.eclipse.swt_3.104.2.v20160212-1350.jar   A bundle is already installed with the name "org.eclipse.swt" and version "3.104.2.v20160212-1350"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.176
+!MESSAGE Could not install bundle plugins/org.eclipse.team.core_3.7.100.v20150203-1452.jar   A bundle is already installed with the name "org.eclipse.team.core" and version "3.7.100.v20150203-1452"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.180
+!MESSAGE Could not install bundle plugins/org.eclipse.team.ui_3.7.200.v20150203-1452.jar   A bundle is already installed with the name "org.eclipse.team.ui" and version "3.7.200.v20150203-1452"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.192
+!MESSAGE Could not install bundle plugins/org.eclipse.text_3.5.400.v20150505-1044.jar   A bundle is already installed with the name "org.eclipse.text" and version "3.5.400.v20150505-1044"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.200
+!MESSAGE Could not install bundle plugins/org.eclipse.ui.browser_3.4.300.v20150429-0602.jar   A bundle is already installed with the name "org.eclipse.ui.browser" and version "3.4.300.v20150429-0602"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.208
+!MESSAGE Could not install bundle plugins/org.eclipse.ui.console_3.6.100.v20150822-1912.jar   A bundle is already installed with the name "org.eclipse.ui.console" and version "3.6.100.v20150822-1912"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.216
+!MESSAGE Could not install bundle plugins/org.eclipse.ui.editors_3.9.0.v20150213-1939.jar   A bundle is already installed with the name "org.eclipse.ui.editors" and version "3.9.0.v20150213-1939"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.244
+!MESSAGE Could not install bundle plugins/org.eclipse.ui.forms_3.6.200.v20150506-2029.jar   A bundle is already installed with the name "org.eclipse.ui.forms" and version "3.6.200.v20150506-2029"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.280
+!MESSAGE Could not install bundle plugins/org.eclipse.ui.ide.application_1.1.0.v20150422-0725.jar   A bundle is already installed with the name "org.eclipse.ui.ide.application" and version "1.1.0.v20150422-0725"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.300
+!MESSAGE Could not install bundle plugins/org.eclipse.ui.ide_3.11.0.v20150825-2158.jar   A bundle is already installed with the name "org.eclipse.ui.ide" and version "3.11.0.v20150825-2158"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.316
+!MESSAGE Could not install bundle plugins/org.eclipse.ui.navigator.resources_3.5.1.v20160128-1644.jar   A bundle is already installed with the name "org.eclipse.ui.navigator.resources" and version "3.5.1.v20160128-1644"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.328
+!MESSAGE Could not install bundle plugins/org.eclipse.ui.navigator_3.6.0.v20150422-0725.jar   A bundle is already installed with the name "org.eclipse.ui.navigator" and version "3.6.0.v20150422-0725"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.336
+!MESSAGE Could not install bundle plugins/org.eclipse.ui.net_1.2.200.v20120807-0927.jar   A bundle is already installed with the name "org.eclipse.ui.net" and version "1.2.200.v20120807-0927"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.349
+!MESSAGE Could not install bundle plugins/org.eclipse.ui.views.log_1.0.600.v20150513-1840.jar   A bundle is already installed with the name "org.eclipse.ui.views.log" and version "1.0.600.v20150513-1840"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.353
+!MESSAGE Could not install bundle plugins/org.eclipse.ui.views.properties.tabbed_3.6.100.v20150423-0822.jar   A bundle is already installed with the name "org.eclipse.ui.views.properties.tabbed" and version "3.6.100.v20150423-0822"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.365
+!MESSAGE Could not install bundle plugins/org.eclipse.ui.views_3.8.0.v20150422-0725.jar   A bundle is already installed with the name "org.eclipse.ui.views" and version "3.8.0.v20150422-0725"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.377
+!MESSAGE Could not install bundle plugins/org.eclipse.ui.workbench.texteditor_3.9.100.v20141023-1946.jar   A bundle is already installed with the name "org.eclipse.ui.workbench.texteditor" and version "3.9.100.v20141023-1946"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.389
+!MESSAGE Could not install bundle plugins/org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar   A bundle is already installed with the name "org.eclipse.ui.workbench" and version "3.107.1.v20160120-2131"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.399
+!MESSAGE Could not install bundle plugins/org.eclipse.ui_3.107.0.v20150507-1945.jar   A bundle is already installed with the name "org.eclipse.ui" and version "3.107.0.v20150507-1945"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.411
+!MESSAGE Could not install bundle plugins/org.eclipse.update.configurator_3.3.300.v20140518-1928.jar   A bundle is already installed with the name "org.eclipse.update.configurator" and version "3.3.300.v20140518-1928"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.419
+!MESSAGE Could not install bundle plugins/org.eclipse.xtend.lib.macro_2.9.1.v201512180746.jar   A bundle is already installed with the name "org.eclipse.xtend.lib.macro" and version "2.9.1.v201512180746"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.428
+!MESSAGE Could not install bundle plugins/org.eclipse.xtend.lib_2.9.1.v201512180746.jar   A bundle is already installed with the name "org.eclipse.xtend.lib" and version "2.9.1.v201512180746"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.436
+!MESSAGE Could not install bundle plugins/org.eclipse.xtext.activities_2.9.1.v201512180746.jar   A bundle is already installed with the name "org.eclipse.xtext.activities" and version "2.9.1.v201512180746"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.444
+!MESSAGE Could not install bundle plugins/org.eclipse.xtext.builder_2.9.1.v201512180746.jar   A bundle is already installed with the name "org.eclipse.xtext.builder" and version "2.9.1.v201512180746"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.452
+!MESSAGE Could not install bundle plugins/org.eclipse.xtext.ecore_2.9.1.v201512180746.jar   A bundle is already installed with the name "org.eclipse.xtext.ecore" and version "2.9.1.v201512180746"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.460
+!MESSAGE Could not install bundle plugins/org.eclipse.xtext.ide_2.9.1.v201512180746.jar   A bundle is already installed with the name "org.eclipse.xtext.ide" and version "2.9.1.v201512180746"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.469
+!MESSAGE Could not install bundle plugins/org.eclipse.xtext.logging_1.2.15.v201512180746.jar   A bundle is already installed with the name "org.eclipse.xtext.logging" and version "1.2.15.v201512180746"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.477
+!MESSAGE Could not install bundle plugins/org.eclipse.xtext.smap_2.9.1.v201512180746.jar   A bundle is already installed with the name "org.eclipse.xtext.smap" and version "2.9.1.v201512180746"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.485
+!MESSAGE Could not install bundle plugins/org.eclipse.xtext.ui.codetemplates.ui_2.9.1.v201512180746.jar   A bundle is already installed with the name "org.eclipse.xtext.ui.codetemplates.ui" and version "2.9.1.v201512180746"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.497
+!MESSAGE Could not install bundle plugins/org.eclipse.xtext.ui.codetemplates_2.9.1.v201512180746.jar   A bundle is already installed with the name "org.eclipse.xtext.ui.codetemplates" and version "2.9.1.v201512180746"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.506
+!MESSAGE Could not install bundle plugins/org.eclipse.xtext.ui.shared_2.9.1.v201512180746.jar   A bundle is already installed with the name "org.eclipse.xtext.ui.shared" and version "2.9.1.v201512180746"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.518
+!MESSAGE Could not install bundle plugins/org.eclipse.xtext.ui_2.9.1.v201512180746.jar   A bundle is already installed with the name "org.eclipse.xtext.ui" and version "2.9.1.v201512180746"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.526
+!MESSAGE Could not install bundle plugins/org.eclipse.xtext.util_2.9.1.v201512180746.jar   A bundle is already installed with the name "org.eclipse.xtext.util" and version "2.9.1.v201512180746"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.534
+!MESSAGE Could not install bundle plugins/org.eclipse.xtext.xbase.lib_2.9.1.v201512180746.jar   A bundle is already installed with the name "org.eclipse.xtext.xbase.lib" and version "2.9.1.v201512180746"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.548
+!MESSAGE Could not install bundle plugins/org.eclipse.xtext_2.9.1.v201512180746.jar   A bundle is already installed with the name "org.eclipse.xtext" and version "2.9.1.v201512180746"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.556
+!MESSAGE Could not install bundle plugins/org.hamcrest.core_1.3.0.v201303031735.jar   A bundle is already installed with the name "org.hamcrest.core" and version "1.3.0.v201303031735"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.564
+!MESSAGE Could not install bundle plugins/org.junit_4.12.0.v201504281640/   A bundle is already installed with the name "org.junit" and version "4.12.0.v201504281640"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.572
+!MESSAGE Could not install bundle plugins/org.objectweb.asm_5.0.1.v201404251740.jar   A bundle is already installed with the name "org.objectweb.asm" and version "5.0.1.v201404251740"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.580
+!MESSAGE Could not install bundle plugins/org.sat4j.core_2.3.5.v201308161310.jar   A bundle is already installed with the name "org.sat4j.core" and version "2.3.5.v201308161310"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.584
+!MESSAGE Could not install bundle plugins/org.sat4j.pb_2.3.5.v201404071733.jar   A bundle is already installed with the name "org.sat4j.pb" and version "2.3.5.v201404071733"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.592
+!MESSAGE Could not install bundle plugins/org.tukaani.xz_1.3.0.v201308270617.jar   A bundle is already installed with the name "org.tukaani.xz" and version "1.3.0.v201308270617"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.600
+!MESSAGE Could not install bundle plugins/org.w3c.css.sac_1.3.1.v200903091627.jar   A bundle is already installed with the name "org.w3c.css.sac" and version "1.3.1.v200903091627"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.604
+!MESSAGE Could not install bundle plugins/org.w3c.dom.events_3.0.0.draft20060413_v201105210656.jar   A bundle is already installed with the name "org.w3c.dom.events" and version "3.0.0.draft20060413_v201105210656"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.612
+!MESSAGE Could not install bundle plugins/org.w3c.dom.smil_1.0.1.v200903091627.jar   A bundle is already installed with the name "org.w3c.dom.smil" and version "1.0.1.v200903091627"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.620
+!MESSAGE Could not install bundle plugins/org.w3c.dom.svg_1.1.0.v201011041433.jar   A bundle is already installed with the name "org.w3c.dom.svg" and version "1.1.0.v201011041433"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.628
+!MESSAGE Could not install bundle plugins/simtools.gaml.extensions.physics_1.7.0.201704221607/   A bundle is already installed with the name "simtools.gaml.extensions.physics" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.636
+!MESSAGE Could not install bundle plugins/simtools.gaml.extensions.traffic_1.7.0.201704221607.jar   A bundle is already installed with the name "simtools.gaml.extensions.traffic" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.640
+!MESSAGE Could not install bundle plugins/ummisco.gama.annotations_1.7.0.201704221604.jar   A bundle is already installed with the name "ummisco.gama.annotations" and version "1.7.0.201704221604"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.648
+!MESSAGE Could not install bundle plugins/ummisco.gama.java2d_1.7.0.201704221607.jar   A bundle is already installed with the name "ummisco.gama.java2d" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.656
+!MESSAGE Could not install bundle plugins/ummisco.gama.network_1.7.0.201704221607/   A bundle is already installed with the name "ummisco.gama.network" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.661
+!MESSAGE Could not install bundle plugins/ummisco.gama.opengl_1.7.0.201704221607.jar   A bundle is already installed with the name "ummisco.gama.opengl" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.669
+!MESSAGE Could not install bundle plugins/ummisco.gama.serialize_1.7.0.201704221607/   A bundle is already installed with the name "ummisco.gama.serialize" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.678
+!MESSAGE Could not install bundle plugins/ummisco.gama.ui.experiment_1.7.0.201704221607.jar   A bundle is already installed with the name "ummisco.gama.ui.experiment" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.686
+!MESSAGE Could not install bundle plugins/ummisco.gama.ui.modeling_1.7.0.201704221607.jar   A bundle is already installed with the name "ummisco.gama.ui.modeling" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.694
+!MESSAGE Could not install bundle plugins/ummisco.gama.ui.navigator_1.7.0.201704221607.jar   A bundle is already installed with the name "ummisco.gama.ui.navigator" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.702
+!MESSAGE Could not install bundle plugins/ummisco.gama.ui.shared_1.7.0.201704221607/   A bundle is already installed with the name "ummisco.gama.ui.shared" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.706
+!MESSAGE Could not install bundle plugins/ummisco.gama.ui.viewers_1.7.0.201704221607.jar   A bundle is already installed with the name "ummisco.gama.ui.viewers" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.update.configurator 4 0 2018-05-28 18:59:25.714
+!MESSAGE Could not install bundle plugins/ummisco.gaml.extensions.maths_1.7.0.201704221607/   A bundle is already installed with the name "ummisco.gaml.extensions.maths" and version "1.7.0.201704221607"
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-05-28 19:00:10.190
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.osgi 4 0 2018-05-28 19:00:10.218
+!MESSAGE An error occurred while automatically activating bundle org.eclipse.core.resources (53).
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.core.resources.ResourcesPlugin.start() of bundle org.eclipse.core.resources.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:792)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at msi.gama.application.Application.start(Application.java:42)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+Caused by: org.eclipse.core.internal.dtree.ObjectNotFoundException: Tree element '/crowds/models/crowds.gaml' not found.
+	at org.eclipse.core.internal.dtree.AbstractDataTree.handleNotFound(AbstractDataTree.java:257)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.getData(DeltaDataTree.java:596)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:51)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:60)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:60)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:48)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.asBackwardDelta(DeltaDataTree.java:88)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:832)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:831)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:831)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:831)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:831)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:808)
+	at org.eclipse.core.internal.watson.ElementTree.immutable(ElementTree.java:518)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:740)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1588)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2386)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2157)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:463)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	... 29 more
+Root exception:
+org.eclipse.core.internal.dtree.ObjectNotFoundException: Tree element '/crowds/models/crowds.gaml' not found.
+	at org.eclipse.core.internal.dtree.AbstractDataTree.handleNotFound(AbstractDataTree.java:257)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.getData(DeltaDataTree.java:596)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:51)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:60)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:60)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:48)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.asBackwardDelta(DeltaDataTree.java:88)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:832)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:831)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:831)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:831)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:831)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:808)
+	at org.eclipse.core.internal.watson.ElementTree.immutable(ElementTree.java:518)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:740)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1588)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2386)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2157)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:463)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at msi.gama.application.Application.start(Application.java:42)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.osgi 4 0 2018-05-28 19:00:10.270
+!MESSAGE Application error
+!STACK 1
+java.lang.NoClassDefFoundError: org/eclipse/core/resources/IContainer
+	at msi.gama.application.Application.start(Application.java:42)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle org.eclipse.core.resources (53).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:116)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 13 more
+Caused by: org.osgi.framework.BundleException: Exception in org.eclipse.core.resources.ResourcesPlugin.start() of bundle org.eclipse.core.resources.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:792)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	... 22 more
+Caused by: org.eclipse.core.internal.dtree.ObjectNotFoundException: Tree element '/crowds/models/crowds.gaml' not found.
+	at org.eclipse.core.internal.dtree.AbstractDataTree.handleNotFound(AbstractDataTree.java:257)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.getData(DeltaDataTree.java:596)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:51)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:60)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:60)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:48)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.asBackwardDelta(DeltaDataTree.java:88)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:832)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:831)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:831)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:831)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:831)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:808)
+	at org.eclipse.core.internal.watson.ElementTree.immutable(ElementTree.java:518)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:740)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1588)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2386)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2157)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:463)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	... 29 more
+!SESSION 2018-05-28 19:17:25.573 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=${target.nl}
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-05-28 19:17:46.975
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.osgi 4 0 2018-05-28 19:17:47.003
+!MESSAGE An error occurred while automatically activating bundle org.eclipse.core.resources (42).
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.core.resources.ResourcesPlugin.start() of bundle org.eclipse.core.resources.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:734)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:461)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at msi.gama.gui.swt.ApplicationWorkbenchAdvisor.initialize(ApplicationWorkbenchAdvisor.java:47)
+	at org.eclipse.ui.application.WorkbenchAdvisor.internalBasicInitialize(WorkbenchAdvisor.java:188)
+	at org.eclipse.ui.internal.Workbench$28.runWithException(Workbench.java:1541)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4145)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3762)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2609)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at msi.gama.gui.swt.Application.start(Application.java:120)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+Caused by: org.eclipse.core.internal.dtree.ObjectNotFoundException: Tree element '/crowds/models/crowds.gaml' not found.
+	at org.eclipse.core.internal.dtree.AbstractDataTree.handleNotFound(AbstractDataTree.java:257)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.getData(DeltaDataTree.java:585)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:50)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:47)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.asBackwardDelta(DeltaDataTree.java:88)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:816)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:792)
+	at org.eclipse.core.internal.watson.ElementTree.immutable(ElementTree.java:518)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:710)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1528)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2502)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2251)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:439)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	... 42 more
+Root exception:
+org.eclipse.core.internal.dtree.ObjectNotFoundException: Tree element '/crowds/models/crowds.gaml' not found.
+	at org.eclipse.core.internal.dtree.AbstractDataTree.handleNotFound(AbstractDataTree.java:257)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.getData(DeltaDataTree.java:585)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:50)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:47)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.asBackwardDelta(DeltaDataTree.java:88)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:816)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:792)
+	at org.eclipse.core.internal.watson.ElementTree.immutable(ElementTree.java:518)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:710)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1528)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2502)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2251)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:439)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:461)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at msi.gama.gui.swt.ApplicationWorkbenchAdvisor.initialize(ApplicationWorkbenchAdvisor.java:47)
+	at org.eclipse.ui.application.WorkbenchAdvisor.internalBasicInitialize(WorkbenchAdvisor.java:188)
+	at org.eclipse.ui.internal.Workbench$28.runWithException(Workbench.java:1541)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4145)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3762)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2609)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at msi.gama.gui.swt.Application.start(Application.java:120)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+!ENTRY org.eclipse.osgi 4 0 2018-05-28 19:17:47.045
+!MESSAGE Application error
+!STACK 1
+java.lang.NoClassDefFoundError: org/eclipse/core/resources/ResourcesPlugin
+	at msi.gama.gui.swt.ApplicationWorkbenchAdvisor.initialize(ApplicationWorkbenchAdvisor.java:47)
+	at org.eclipse.ui.application.WorkbenchAdvisor.internalBasicInitialize(WorkbenchAdvisor.java:188)
+	at org.eclipse.ui.internal.Workbench$28.runWithException(Workbench.java:1541)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4145)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3762)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2609)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at msi.gama.gui.swt.Application.start(Application.java:120)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+Caused by: org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter$TerminatingClassNotFoundException: An error occurred while automatically activating bundle org.eclipse.core.resources (42).
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:461)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 27 more
+Caused by: org.osgi.framework.BundleException: Exception in org.eclipse.core.resources.ResourcesPlugin.start() of bundle org.eclipse.core.resources.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:734)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	... 36 more
+Caused by: org.eclipse.core.internal.dtree.ObjectNotFoundException: Tree element '/crowds/models/crowds.gaml' not found.
+	at org.eclipse.core.internal.dtree.AbstractDataTree.handleNotFound(AbstractDataTree.java:257)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.getData(DeltaDataTree.java:585)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:50)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:47)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.asBackwardDelta(DeltaDataTree.java:88)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:816)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:792)
+	at org.eclipse.core.internal.watson.ElementTree.immutable(ElementTree.java:518)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:710)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1528)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2502)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2251)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:439)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	... 42 more
+!SESSION 2018-05-28 19:18:11.635 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=${target.nl}
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-05-28 19:18:23.801
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.osgi 4 0 2018-05-28 19:18:23.829
+!MESSAGE An error occurred while automatically activating bundle org.eclipse.core.resources (42).
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.core.resources.ResourcesPlugin.start() of bundle org.eclipse.core.resources.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:734)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:461)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at msi.gama.gui.swt.ApplicationWorkbenchAdvisor.initialize(ApplicationWorkbenchAdvisor.java:47)
+	at org.eclipse.ui.application.WorkbenchAdvisor.internalBasicInitialize(WorkbenchAdvisor.java:188)
+	at org.eclipse.ui.internal.Workbench$28.runWithException(Workbench.java:1541)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4145)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3762)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2609)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at msi.gama.gui.swt.Application.start(Application.java:120)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+Caused by: org.eclipse.core.internal.dtree.ObjectNotFoundException: Tree element '/crowds/models/crowds.gaml' not found.
+	at org.eclipse.core.internal.dtree.AbstractDataTree.handleNotFound(AbstractDataTree.java:257)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.getData(DeltaDataTree.java:585)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:50)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:47)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.asBackwardDelta(DeltaDataTree.java:88)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:816)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:792)
+	at org.eclipse.core.internal.watson.ElementTree.immutable(ElementTree.java:518)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:710)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1528)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2502)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2251)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:439)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	... 42 more
+Root exception:
+org.eclipse.core.internal.dtree.ObjectNotFoundException: Tree element '/crowds/models/crowds.gaml' not found.
+	at org.eclipse.core.internal.dtree.AbstractDataTree.handleNotFound(AbstractDataTree.java:257)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.getData(DeltaDataTree.java:585)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:50)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:47)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.asBackwardDelta(DeltaDataTree.java:88)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:816)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:792)
+	at org.eclipse.core.internal.watson.ElementTree.immutable(ElementTree.java:518)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:710)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1528)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2502)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2251)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:439)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:461)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at msi.gama.gui.swt.ApplicationWorkbenchAdvisor.initialize(ApplicationWorkbenchAdvisor.java:47)
+	at org.eclipse.ui.application.WorkbenchAdvisor.internalBasicInitialize(WorkbenchAdvisor.java:188)
+	at org.eclipse.ui.internal.Workbench$28.runWithException(Workbench.java:1541)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4145)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3762)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2609)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at msi.gama.gui.swt.Application.start(Application.java:120)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+!ENTRY org.eclipse.osgi 4 0 2018-05-28 19:18:23.873
+!MESSAGE Application error
+!STACK 1
+java.lang.NoClassDefFoundError: org/eclipse/core/resources/ResourcesPlugin
+	at msi.gama.gui.swt.ApplicationWorkbenchAdvisor.initialize(ApplicationWorkbenchAdvisor.java:47)
+	at org.eclipse.ui.application.WorkbenchAdvisor.internalBasicInitialize(WorkbenchAdvisor.java:188)
+	at org.eclipse.ui.internal.Workbench$28.runWithException(Workbench.java:1541)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4145)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3762)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2609)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at msi.gama.gui.swt.Application.start(Application.java:120)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+Caused by: org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter$TerminatingClassNotFoundException: An error occurred while automatically activating bundle org.eclipse.core.resources (42).
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:461)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 27 more
+Caused by: org.osgi.framework.BundleException: Exception in org.eclipse.core.resources.ResourcesPlugin.start() of bundle org.eclipse.core.resources.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:734)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	... 36 more
+Caused by: org.eclipse.core.internal.dtree.ObjectNotFoundException: Tree element '/crowds/models/crowds.gaml' not found.
+	at org.eclipse.core.internal.dtree.AbstractDataTree.handleNotFound(AbstractDataTree.java:257)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.getData(DeltaDataTree.java:585)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:50)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:47)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.asBackwardDelta(DeltaDataTree.java:88)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:816)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:792)
+	at org.eclipse.core.internal.watson.ElementTree.immutable(ElementTree.java:518)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:710)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1528)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2502)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2251)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:439)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	... 42 more
