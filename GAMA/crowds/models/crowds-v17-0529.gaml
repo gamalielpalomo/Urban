@@ -20,8 +20,7 @@ global torus:false{
 	bool showPeople;
 	bool showPaths;
 	bool showStreets;
-	
-	bool lockStreetRefresh;
+	bool showLuciasMap;
 	
 	//
 	
@@ -47,10 +46,12 @@ global torus:false{
 	
 	
 	//TEST-ONLY GIS FILES
-	file<geometry> roads_file <- osm_file("/miramar/0409/miramar040918.osm"); 
+	file<geometry> roads_file <- osm_file("/miramar/0409/miramar040918.osm");
+	//file roads_file <- file("/miramar/0528/condiciondecalles/Condicion calles/Condicion_de_calles.shp"); 
 	file street_conditions_file <- file("/miramar/0528/condiciondecalles/Condicion calles/Condicion_de_calles.shp"); 
+	file zapopan_file <- file("miramar/0528/Calles_Nomenclatura/Calles_Nomenclatura.shp");
 	file places_file <- file("/miramar/0515/miramar051518-places.shp");
-	geometry shape <- envelope(roads_file);
+	geometry shape <- envelope(street_conditions_file);
 	//file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0525/miramar.osm"));
 	//file osm_file <- file("/miramar/0525/miramar.shp");
 	//file<geometry> osm_file <- file<geometry>(osm_file("/tijuana/tijuana-042418.osm"));
@@ -98,7 +99,7 @@ global torus:false{
 				}
 			do die;
 		}
-		road_network <- as_edge_graph(road);
+		//road_network <- as_edge_graph(road);
 		//Create osm agents that will be used as places
 		create osm_agent from: places_file with: [amenity::string(read("amenity")), highway_str::string(read("highway")), power_str::string(read("power")), name_strs::string(read("name"))];
 		ask osm_agent{
@@ -109,15 +110,14 @@ global torus:false{
 				//create places with: [shape::shape, type:: highway_str];
 			}
 		}		
-		//point init_location <- any_location_in(one_of(road));
 		
 		
 		//Integrate the streets conditions according with the data given by the experts
 		//Here we extract the information from the shapefile and search the recently created streets objects, we look for a coincidence in the name and load the condition feature
-		create gis_data from:street_conditions_file with: [name_str::string(read("NOMBRE")),condition_str::string(read("CONDICION"))];
+		create gis_data from:zapopan_file with: [name_str::string(read("NOMBRE")),condition_str::string(read("CONDICION"))];
 		gis_data_elements <- gis_data where (lower_case(each.name_str)="guadalupe" or lower_case(each.name_str)="guadalupe prolongacion");
-		//road_elements <- road where(lower_case(each.name_str)="prolongación avenida guadalupe" or lower_case(each.name_str)="avenida guadalupe");
-		
+		road_elements <- road where(lower_case(each.name_str)="prolongación avenida guadalupe" or lower_case(each.name_str)="avenida guadalupe");
+		road_network <- as_edge_graph(gis_data);
 		loop element over:gis_data_elements{
 			write element.name_str + ":" + element.condition_str;
 		}
@@ -138,10 +138,9 @@ global torus:false{
 				write "no overlaps";
 			}
 		}*/
-		/*
-		lint counter <- 0;
+		/*int counter <- 0;
 		list<gis_data> noCoincidence;
-		oop element over: gis_data{
+		loop element over: gis_data{
 			string lowerCaseName <- lower_case(element.name_str);
 			//suburb LaFlorestaDelColli <- one_of(suburb where (each.name_str="La Floresta del Colli"));
 			road tmpRoad <- one_of(road where(lower_case(each.name_str)=lowerCaseName));
@@ -158,8 +157,8 @@ global torus:false{
 		write "No coincidences = " + length(noCoincidence);
 		loop element over: noCoincidence{
 			save lower_case(element.name_str) to: "noCoincidence" type:text rewrite:false;
-		}*/
-		
+		}
+		*/
 		
 		//Create suburb agents
 		create suburb from: suburbs_file with: [name_str::string(read("name")),place::string(read("place")),population::int(read("population"))];
@@ -282,15 +281,14 @@ species people skills:[moving]{
 		else {
 			location <- SantaAnaTepetitlan.location;
 		}
-		//location <- any_location_in(one_of(places));
+		location <- any_location_in(one_of(gis_data));
 		target <- one_of(places).location;
 	}
 	
 	reflex move{
 		speed <- 0.01+rnd(agentsSpeed);
-		interacting <- false;
 		do follow path:shortestPath;
-		do goto target:target on:road_network recompute_path:false;
+		//do goto target:target on:road_network recompute_path:false;
 		if(location = target){
 			target <- one_of(places).location;
 			ask targets{
@@ -299,6 +297,7 @@ species people skills:[moving]{
 			do updateShortestPath;
 		}
 		pEncounters <- people at_distance(distanceForInteraction);
+		if pEncounters != nil{interacting <- true;}else{interacting<-false;}
 		if length(pEncounters) > 0{
 			self.interacting <- true;
 		}
@@ -327,6 +326,7 @@ experiment simulation type:gui{
 	//parameter "Paths-Width" var:pathWidth <- 0 category:"GUI";
 	parameter "Show People" var:showPeople <- true category: "GUI";
 	parameter "Show Streets" var:showStreets <- true category:"GUI";
+	parameter "Show Lucia's Map" var:showLuciasMap <- false category:"GUI";
 	parameter "Show Paths" var:showPaths <- false category:"GUI";
 	
 	output{
@@ -348,16 +348,14 @@ experiment simulation type:gui{
 					}
 				}
 			}
-			/*graphics "Guadalupe" {
-				loop element over: road_elements{
-					draw geometry(element) color:#red border:#red;
-				}
-			}*/
 			
 			graphics "Guadalupe" {
-				loop element over: gis_data_elements{
-					draw geometry(element) color:#red border:#red;
+				if showLuciasMap{
+					loop element over: gis_data{
+						draw geometry(element) color:#red border:#red;
+					}
 				}
+				
 			}
 			
 			/*graphics "suburbs"{
@@ -381,7 +379,7 @@ experiment simulation type:gui{
 			graphics "People"{
 				if showPeople{
 					loop element over: people{
-						draw element geometry:circle(agentsSize) color:rgb(68, 150, 10) at:element.location;
+						draw element geometry:circle(agentsSize) color:#mediumslateblue at:element.location;
 					}
 				}
 			}
@@ -395,7 +393,7 @@ experiment simulation type:gui{
 				}
 			}			
 		}
-		monitor "Agents interacting" value:chartEncounters;
+		monitor "Agents interacting" value: people count(each.interacting=true);
 		monitor "Vertices in graph" value: length(Encounters.vertices);
 		monitor "Edges in graph" value: length(Encounters.edges);
 		monitor "Vertices in road" value: length(road_network.vertices);
