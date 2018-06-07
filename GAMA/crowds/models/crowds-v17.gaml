@@ -22,6 +22,13 @@ global torus:false{
 	bool showStreets;
 	bool showLuciasMap;
 	
+	bool showAsfaltoStreet;
+	bool showConcretoStreet;
+	bool showEmpedradoStreet;
+	bool showPavimentadoStreet;
+	bool showTerraceriaStreet;
+	bool showNoEspecificadoStreet;
+	
 	//
 	
 	int sumEncounters;
@@ -36,6 +43,7 @@ global torus:false{
 	
 	//Test variables
 	list<road> road_elements;
+	list<road> road_gis_data;
 	list<gis_data> gis_data_elements;
 	
 	//filter for obtaining only the roads from the osm file
@@ -91,7 +99,10 @@ global torus:false{
 				
 				if(highway_str != nil and highway_str != "turning_circle"){
 					//write name_str;
-					create road with: [shape::shape, type:: highway_str, name_str:: name_str];
+					create road with: [shape::shape, type:: highway_str, name_str:: name_str]{
+						self.condition <- "NO ESPECIFICADO";
+						add self to: road_elements;
+					}
 					
 				}
 			do die;
@@ -112,17 +123,38 @@ global torus:false{
 		
 		//Integrate the streets conditions according with the data given by the experts
 		//Here we extract the information from the shapefile and search the recently created streets objects, we look for a coincidence in the name and load the condition feature
-		//create gis_data from:zapopan_file with: [name_str::string(read("NOMBRE")),condition_str::string(read("CONDICION"))];
+		create gis_data from:street_conditions_file with: [name_str::string(read("NOMBRE")),condition_str::string(read("CONDICION"))]{
+			if condition_str = "A"{
+				condition_str <- "ASFALTO";
+			}
+			else if condition_str = "C"{
+				condition_str <- "CONCRETO";
+			}
+			else if condition_str = "E"{
+				condition_str <- "EMPEDRADO";
+			}
+			else if condition_str = "P"{
+				condition_str <- "PAVIMENTO";
+			}
+			else if condition_str = "T"{
+				condition_str <- "TERRACERIA"; 
+			}
+			else{
+				condition_str <- "NO ESPECIFICADO";
+			}
+		}
+		//road_elements <- road where(lower_case(each.name_str)="prolongación avenida guadalupe" or lower_case(each.name_str)="avenida guadalupe");
 		gis_data_elements <- gis_data where (lower_case(each.name_str)="guadalupe" or lower_case(each.name_str)="guadalupe prolongacion");
-		road_elements <- road where(lower_case(each.name_str)="prolongación avenida guadalupe" or lower_case(each.name_str)="avenida guadalupe");
+		
 		//road_network <- as_edge_graph(gis_data);
 		
-		/*if gis_data_elements = nil{
+		if gis_data = nil{
 			write "gis_data_elements nil";
 		}
 		if road_elements = nil{
 			write "road_elements nil";
 		}
+		/*
 		loop element over:road_elements{
 			if one_of(gis_data_elements where(each overlaps element)) != nil{
 				write "OVERLAP!!";
@@ -134,15 +166,17 @@ global torus:false{
 				write "no overlaps";
 			}
 		}*/
-		/*int counter <- 0;
+		int counter <- 0;
 		list<gis_data> noCoincidence;
+		list<gis_data> coincidence;
 		loop element over: gis_data{
 			string lowerCaseName <- lower_case(element.name_str);
 			//suburb LaFlorestaDelColli <- one_of(suburb where (each.name_str="La Floresta del Colli"));
-			road tmpRoad <- one_of(road where(lower_case(each.name_str)=lowerCaseName));
+			road tmpRoad <- one_of(road_elements where(lower_case(each.name_str)=lowerCaseName));
 			if tmpRoad != nil{
 				write tmpRoad.name_str + " = " + lowerCaseName;
-				save lowerCaseName to: "Coincidence" type:text rewrite:false;
+				//save lowerCaseName to: "Coincidence" type:text rewrite:false;
+				add element to: coincidence;
 				counter <- counter+1;
 			}
 			else{
@@ -151,10 +185,15 @@ global torus:false{
 		}
 		write "Coincidences = " + counter + " of " + length(gis_data);
 		write "No coincidences = " + length(noCoincidence);
-		loop element over: noCoincidence{
+		/*loop element over: noCoincidence{
 			save lower_case(element.name_str) to: "noCoincidence" type:text rewrite:false;
+		}*/
+		
+		//Here we make the elements from both lists to coincide and load the road elements with condition feature
+		loop element over: road_elements{
+			gis_data tmpGisData <- one_of(coincidence where(lower_case(each.name_str)=lower_case(element.name_str)));
+			element.condition <- tmpGisData.condition_str;
 		}
-		*/
 		
 		//Create suburb agents
 		create suburb from: suburbs_file with: [name_str::string(read("name")),place::string(read("place")),population::int(read("population"))];
@@ -162,7 +201,7 @@ global torus:false{
 		}
 		
 		//Create agents representing people
-		numAgents <- 500;
+		numAgents <- 100;
 		create people number:numAgents{
 			add node(self) to: Encounters;
 		}
@@ -319,6 +358,7 @@ species people skills:[moving]{
 }
 
 experiment simulation type:gui{
+	
 	parameter "perception" var: distanceForInteraction <- 0.0#m category:"Globals";
 	parameter "speed" var:agentsSpeed <- 5.0 category:"Agents";
 	parameter "Agents-size" var:agentsSize <- 20 category:"GUI";
@@ -329,6 +369,12 @@ experiment simulation type:gui{
 	parameter "Show Streets" var:showStreets <- true category:"GUI";
 	parameter "Show Lucia's Map" var:showLuciasMap <- false category:"GUI";
 	parameter "Show Paths" var:showPaths <- false category:"GUI";
+	parameter "Asfalto" var:showAsfaltoStreet <- true category: "STREETS";
+	parameter "Concreto" var:showConcretoStreet <- true category: "STREETS";
+	parameter "Empedrado" var:showEmpedradoStreet <- true category: "STREETS";
+	parameter "Pavimento" var:showPavimentadoStreet <- true category: "STREETS";
+	parameter "Terraceria" var:showTerraceriaStreet <- true category: "STREETS";
+	parameter "No Especificado" var:showNoEspecificadoStreet <- true category: "STREETS";
 	
 	output{
 		display chart {
@@ -343,20 +389,42 @@ experiment simulation type:gui{
 			//species road aspect:road_aspect;
 			graphics "Roads" {
 				if showStreets{
+					if showAsfaltoStreet {
+						loop element over: road_elements where (each.condition="ASFALTO"){
+							draw element color: rgb(72, 161, 206) border:rgb(72, 161, 206);	
+						}
+					}
+					if showConcretoStreet {
+						loop element over: road_elements where (each.condition="CONCRETO"){
+							draw element color: rgb(72, 161, 206) border:rgb(72, 161, 206);	
+						}
+					}
+					if showEmpedradoStreet {
+						loop element over: road_elements where (each.condition="EMPEDRADO"){
+							draw element color: rgb(72, 161, 206) border:rgb(72, 161, 206);	
+						}
+					}
+					if showPavimentadoStreet {
+						loop element over: road_elements where (each.condition="PAVIMENTO"){
+							draw element color: rgb(72, 161, 206) border:rgb(72, 161, 206);	
+						}
+					}
+					if showTerraceriaStreet {
+						loop element over: road_elements where (each.condition="TERRACERIA"){
+							draw element color: rgb(72, 161, 206) border:rgb(72, 161, 206);	
+						}
+					}
+					if showNoEspecificadoStreet {
+						loop element over: road_elements where (each.condition="NO ESPECIFICADO"){
+							draw element color: rgb(72, 161, 206) border:rgb(72, 161, 206);	
+						}
+					}
+					
 					//draw geometry(road_network.edges) color: rgb(72, 161, 206) border:rgb(72, 161, 206);
-					loop element over: road_network.edges{
+					/*loop element over: road_network.edges{
 						draw geometry(element) color: rgb(72, 161, 206) border:rgb(72, 161, 206);
-					}
+					}*/
 				}
-			}
-			
-			graphics "Guadalupe" {
-				if showLuciasMap{
-					loop element over: gis_data{
-						draw geometry(element) color:#red border:#red;
-					}
-				}
-				
 			}
 			
 			/*graphics "suburbs"{
