@@ -17,7 +17,9 @@ global torus:false{
 	int streetWidth;
 	int edgesWidth;
 	int pathWidth;
+	
 	bool showPeople;
+	bool showInteractions;
 	bool showPaths;
 	bool showStreets;
 	bool showLuciasMap;
@@ -140,7 +142,7 @@ global torus:false{
 			else if condition_str = "T"{
 				condition_str <- "TERRACERIA"; 
 			}
-			else if condition_str = "" or condition_str = nil{
+			else if condition_str = ""{
 				condition_str <- "CNE";
 			}
 		}
@@ -152,6 +154,7 @@ global torus:false{
 		
 		ask road{
 			
+			self.condition <- "CNE";
 			list<gis_data> coincidences <- gis_data where(lower_case(each.name_str) = lower_case(self.name_str));
 			if length(coincidences) > 0 {
 				
@@ -324,7 +327,7 @@ species people skills:[moving]{
 		else {
 			location <- SantaAnaTepetitlan.location;
 		}
-		//location <- miramar.location;
+		location <- any_location_in(one_of(road));
 		target <- any_location_in(one_of(road));
 	}
 	
@@ -332,7 +335,7 @@ species people skills:[moving]{
 		speed <- agentsSpeed;
 		
 		//do follow path:shortestPath move_weights:road as_map(each::each.shape.perimeter)
-		do follow path:shortestPath;
+		do follow path:shortestPath move_weights: shortestPath.edges as_map(each::each.perimeter);
 		if(location = target){
 			target <- one_of(places).location;
 			do updateShortestPath;
@@ -374,6 +377,7 @@ experiment simulation type:gui{
 	//parameter "Streets-Width" var:streetWidth <- 1 category:"GUI";
 	//parameter "Paths-Width" var:pathWidth <- 0 category:"GUI";
 	parameter "Show People" var:showPeople <- true category: "GUI";
+	parameter "Show Interactions" var:showInteractions <- false category: "GUI";
 	parameter "Show Streets" var:showStreets <- true category:"GUI";
 	parameter "Show Lucia's Map" var:showLuciasMap <- false category:"GUI";
 	parameter "Show Paths" var:showPaths <- true category:"GUI";
@@ -460,12 +464,17 @@ experiment simulation type:gui{
 					}
 				}
 			}
+			
 			species places aspect:place_aspect refresh:false transparency: 0.1;
 			//species people aspect:sphere;
+			
 			graphics "Encounters Graph"{
-				loop edge over: Encounters.edges{
-					draw geometry(edge)+edgesWidth color: rgb(60, 140, 127) border: rgb(60, 140, 127);
+				if showInteractions{
+					loop edge over: Encounters.edges{
+						draw geometry(edge)+edgesWidth color: rgb(60, 140, 127) border: rgb(60, 140, 127);
+					}
 				}
+				
 			}
 			//species targets aspect:targets_aspect;
 					
