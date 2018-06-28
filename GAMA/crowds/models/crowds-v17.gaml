@@ -51,17 +51,14 @@ global torus:false{
 	
 	//filter for obtaining only the roads from the osm file
 	//creation of an osm file which will contain the roads of the city
-	//file<geometry> roads_file <- file<geometry>(osm_file("/miramar/0525/miramar.osm"));
-	file<geometry> suburbs_file <- osm_file("/miramar/Suburbs/Miramar-suburbs-0521.osm");
-	//file places_file <- file("/miramar/0525/miramar-places.shp");
-	
-	
-	//TEST-ONLY GIS FILES
 	file<geometry> roads_file <- osm_file("/miramar/0409/miramar040918.osm");
-	//file roads_file <- file("/miramar/0528/condiciondecalles/Condicion calles/Condicion_de_calles.shp"); 
 	file street_conditions_file <- file("/miramar/0528/condiciondecalles/Condicion calles/Condicion_de_calles.shp"); 
-	file zapopan_file <- file("miramar/0528/Calles_Nomenclatura/Calles_Nomenclatura.shp");
 	file places_file <- file("/miramar/0515/miramar051518-places.shp");
+	file<geometry> suburbs_file <- osm_file("/miramar/Suburbs/Miramar-suburbs-0521.osm");
+	file zapopan_file <- file("miramar/0528/Calles_Nomenclatura/Calles_Nomenclatura.shp");
+	
+	
+	
 	geometry shape <- envelope(roads_file);
 	//file<geometry> osm_file <- file<geometry>(osm_file("/miramar/0525/miramar.osm"));
 	//file osm_file <- file("/miramar/0525/miramar.shp");
@@ -118,7 +115,7 @@ global torus:false{
 			//if(highway_str = nil or (highway_str != nil and highway_str != "traffic_signals" and highway_str != "turning_circle") and power_str != "tower"){
 			if(amenity != nil and (amenity="school" or amenity="college" or amenity="university" or amenity="social_facility" or amenity="kindergarten")){
 				//Here we create spaces for each osm_agent with the "amenity" feature as one of the values "school", "kindergarten", "college", "university", "social_facilty"
-				create places number:1 with: [shape::shape, amenity::amenity];
+				create places with: [shape::shape, amenity::amenity];
 				//create places with: [shape::shape, type:: highway_str];
 			}
 			do die;
@@ -193,7 +190,7 @@ global torus:false{
 		weight_map <- road as_map(each::each.weight_value);
 		
 		road_network <- as_edge_graph(road) with_weights weight_map;
-		//road_network <- road_network with_weights road_Weights;
+		//road_network <- as_edge_graph(road);
 		write "Coincidences = " + counter + " of " + length(gis_data);
 		/*loop element over: noCoincidence{
 			save lower_case(element.name_str) to: "noCoincidence" type:text rewrite:false;
@@ -211,7 +208,6 @@ global torus:false{
 		numAgents <- 1000;
 		create people number:numAgents{
 			add node(self) to: Encounters;
-			roads_knowledge <- weight_map;
 		}
 		do updateGraph();
 	}
@@ -297,6 +293,7 @@ species people skills:[moving]{
 	map<road, float> roads_knowledge;
 	
 	init{
+		roads_knowledge <- weight_map;
 		interacting <- false;
 		speed <- agentsSpeed;
 		loop while: shortestPath = nil{
@@ -309,7 +306,8 @@ species people skills:[moving]{
 		pEncounters <- [];
 	}
 	action updateShortestPath{
-		shortestPath <- path_between(road_network , location, target);
+		//shortestPath <- path_between(road_network with_weights roads_knowledge, location, target);
+		shortestPath <- path_between(road_network, location, target);
 	}
 	
 	action initLocationAndTarget{
@@ -327,8 +325,10 @@ species people skills:[moving]{
 		else {
 			location <- SantaAnaTepetitlan.location;
 		}
-		location <- any_location_in(one_of(road));
-		target <- any_location_in(one_of(road));
+		location <- places(rnd(length(places)-1)).location;
+		target <- places(rnd(length(places)-1)).location;
+		//location <- LaFlorestaDelColli.location;
+		//target <- SantaAnaTepetitlan.location;
 	}
 	
 	reflex move{
@@ -378,8 +378,7 @@ experiment simulation type:gui{
 	//parameter "Paths-Width" var:pathWidth <- 0 category:"GUI";
 	parameter "Show People" var:showPeople <- true category: "GUI";
 	parameter "Show Interactions" var:showInteractions <- false category: "GUI";
-	parameter "Show Streets" var:showStreets <- true category:"GUI";
-	parameter "Show Lucia's Map" var:showLuciasMap <- false category:"GUI";
+	parameter "Show Streets" var:showStreets <- false category:"GUI";
 	parameter "Show Paths" var:showPaths <- true category:"GUI";
 	parameter "Asfalto" var:showAsfaltoStreet <- true category: "STREETS";
 	parameter "Concreto" var:showConcretoStreet <- true category: "STREETS";
