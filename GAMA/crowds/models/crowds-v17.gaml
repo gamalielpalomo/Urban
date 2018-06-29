@@ -18,12 +18,11 @@ global torus:false{
 	int edgesWidth;
 	int pathWidth;
 	
-	int caseStudy;
-	
 	bool showPeople;
 	bool showInteractions;
 	bool showPaths;
 	bool showPlaces;
+	bool showSuburbs;
 	bool showStreets;
 	bool showLuciasMap;
 	
@@ -45,6 +44,7 @@ global torus:false{
 	int current_hour update: (cycle / 60) mod 24;
 	bool is_night <- true update: current_hour < 7 or current_hour > 20;
 	graph road_network;
+	list<places> suburbs;
 	map<road, float> weight_map;
 	
 	//Test variables
@@ -53,32 +53,36 @@ global torus:false{
 	list<gis_data> gis_data_elements;
 	
 	// ______ Z A P O P  A N  ________________
-	/*file<geometry> roads_file <- osm_file("/miramar/0409/miramar040918.osm");
+	
+	int caseStudy <- 0;
+	file<geometry> roads_file <- osm_file("/miramar/0409/miramar040918.osm");
 	file street_conditions_file <- file("/miramar/0528/condiciondecalles/Condicion calles/Condicion_de_calles.shp"); 
 	file places_file <- file("/miramar/0515/miramar051518-places.shp");
 	file<geometry> suburbs_file <- osm_file("/miramar/Suburbs/Miramar-suburbs-0521.osm");
-	file zapopan_file <- file("miramar/0528/Calles_Nomenclatura/Calles_Nomenclatura.shp");*/
+	file zapopan_file <- file("miramar/0528/Calles_Nomenclatura/Calles_Nomenclatura.shp");
 	
 	//______ T I J U A N A  ________________
+	/*int caseStudy <- 1;
 	file<geometry> roads_file <- osm_file("/tijuana/tijuana-062818.osm");
 	file street_conditions_file <- file("/tijuana/tijuana-062718-roads.shp"); 
 	file places_file <- file("/tijuana/tijuana-062818-places.shp");
-	file<geometry> suburbs_file;
+	file<geometry> suburbs_file;*/
 	
 	geometry shape <- envelope(roads_file);
 	
 	//The graph for the representation of the relations between people in the physical space
 	graph Encounters <- graph([]);
-	int density <- 0;
-	int maxNumOfEdges;
+	float networkDensity <- 0.0;
+	float maxNumOfEdges;
 	
 	
 	reflex mainLoop{
-		string dataSpec <- string(cycle) + " -> " + "";
 		do updateGraph();
-		//if time >= 1000{do pause;}
 		int stepEdges <- length(Encounters.edges);
-		
+		networkDensity <- stepEdges / maxNumOfEdges;
+		string dataSpec <- string(cycle) + ", " + stepEdges + ", " + networkDensity + ", " + stepEdges + ", " + maxNumOfEdges;
+		save dataSpec to: "output" rewrite:false;
+		if cycle >= 20{do pause;}		
 	}
 	action updateGraph{
 		Encounters <- graph([]);
@@ -92,13 +96,11 @@ global torus:false{
 	}
 	init{
 		
-		caseStudy <- 1;
-		
 		//Create osm agents that will be used as ROADS
 		create osm_agent from:roads_file with: [highway_str::string(read("highway")),name_str::string(read("name"))];
 		ask osm_agent{
 			
-				if(highway_str != nil and highway_str != "turning_circle"){
+				if(highway_str != nil and highway_str != "" and highway_str != "turning_circle" and highway_str != "traffic_signals" and highway_str != "bus_stop"){
 					
 					create road with: [shape::shape, type:: highway_str, name_str:: name_str];
 					if self.name_str = nil{
@@ -111,13 +113,18 @@ global torus:false{
 		
 		//Create osm agents that will be used as PLACES
 		
-		create osm_agent from: places_file with: [amenity::string(read("amenity")), name_str::string(read("name"))]{
-			if amenity != nil {
-				create places with: [shape::shape, amenity::amenity, name_str::name_str];
+		create osm_agent from: places_file with: [amenity::string(read("amenity")), name_str::string(read("name")), place_str::string(read("place"))]{
+			if amenity != nil and amenity != "" or place_str != ""{
+				create places with: [shape::shape, amenity::amenity, name_str::name_str,place_str::place_str]{
+					if place_str = "neighbourhood" or place_str = "suburb"{
+						add(self) to: suburbs;
+					}
+				}
 			}
 			do die;
 		}
-		write "places: " + length(places);
+		write "Places: " + length(places-suburbs);
+		write "Suburbs: " + length(suburbs);
 		//Integrate the streets conditions according with the DATA GIVEN BY EXPERTS 
 		
 		if caseStudy = 0{
@@ -140,7 +147,7 @@ global torus:false{
 				else if condition_str = "T"{
 					condition_str <- "TERRACERIA"; 
 				}
-				else if condition_str = ""{
+				else if condition_str = "" or condition_str = nil{
 					condition_str <- "CNE";
 				}
 			}
@@ -211,11 +218,12 @@ global torus:false{
 			create suburb from: suburbs_file with: [name_str::string(read("name")),place::string(read("place")),population::int(read("population"))];
 		}
 		//Create agents representing people
-		numAgents <- 1;
+		numAgents <- 1000;
 		create people number:numAgents{
 			add node(self) to: Encounters;
 		}
 		do updateGraph();
+		maxNumOfEdges <- (numAgents * (numAgents - 1)) / 2;
 	}
 }
 
@@ -223,7 +231,7 @@ species osm_agent{
 
 	string name_str;
 	string highway_str;
-	string power_str;
+	string place_str;
 	string amenity;
 	string condition;
 }
@@ -249,6 +257,7 @@ species gis_data{
 species places{
 	string name_str;
 	string amenity;
+	string place_str;
 	float height;
 	init{
 		height <- float(50+rnd(100));
@@ -276,17 +285,12 @@ species people skills:[moving]{
 		do initLocationAndTarget;
 		do updateShortestPath;
 		loop while: shortestPath = nil{
-			write "Relocating";
-			//do initLocationAndTarget;
-			target <- one_of(places).location;
+			do initLocationAndTarget;
 			do updateShortestPath;
 		}
 		create targets{
 			location <- myself.target;
 		}
-		write "NT: "+target.location;
-		write length(shortestPath.edges);
-		write shortestPath;
 		pEncounters <- [];
 	}
 	action updateShortestPath{
@@ -295,28 +299,12 @@ species people skills:[moving]{
 	}
 	
 	action initLocationAndTarget{
-		if caseStudy = 0{
-			int selection <- rnd(2);
-			suburb LaFlorestaDelColli <- one_of(suburb where (each.name_str="La Floresta del Colli"));
-			suburb miramar <- one_of(suburb where (each.name_str="Miramar"));
-			suburb SantaAnaTepetitlan <- one_of(suburb where (each.name_str="Santa Ana Tepetitlán"));
-			
-			if selection = 0{
-				location <- LaFlorestaDelColli.location;
-			}
-			else if selection = 1{
-				location <- miramar.location;
-			}
-			else {
-				location <- SantaAnaTepetitlan.location;
-			}
-			target <- places(rnd(length(places)-1)).location;
-			location <- places(rnd(length(places)-1)).location;
-		}
-		else if caseStudy = 1{
-			location <- any_location_in(one_of(road));
-			target <- one_of(places where (each.name_str = "Parque Morelos")).location;
-		}
+		
+		location <- any_location_in(one_of(road));
+		target <- any_location_in(one_of(road));
+		//location <- one_of(suburbs).location;
+		//target <- one_of(suburbs).location;
+		
 	}
 	
 	reflex move{
@@ -325,11 +313,8 @@ species people skills:[moving]{
 		do follow path:shortestPath move_weights: shortestPath.edges as_map(each::each.perimeter);
 		
 		if(location = target){
-			target <- one_of(places).location;
+			target <- any_location_in(one_of(road));
 			do updateShortestPath;
-			if shortestPath = []{
-				write "No Path";
-			}
 			loop while: shortestPath = nil or shortestPath = []{
 				target <- any_location_in(one_of(road));
 				do updateShortestPath;
@@ -337,9 +322,6 @@ species people skills:[moving]{
 			ask targets{
 				location<-myself.target;
 			}
-			write "NT: "+target.location;
-			write length(shortestPath.edges);
-			write shortestPath;
 		}
 		
 		pEncounters <- people at_distance(distanceForInteraction) where(each != self);
@@ -352,7 +334,7 @@ species people skills:[moving]{
 	}
 	
 	aspect name:standard_aspect{
-		draw geometry:circle(agentsSize#m) color:#blue;			
+		draw geometry:circle(agentsSize/2#m) color:#blue;			
 	}
 	
 	aspect sphere{
@@ -365,17 +347,18 @@ species people skills:[moving]{
 experiment simulation type:gui{
 	
 	
-	parameter "perception" var: distanceForInteraction <- 0.0#m category:"Globals";
-	parameter "speed" var:agentsSpeed <- 3000.0 category:"Agents";
-	parameter "Agents-size" var:agentsSize <- 200 category:"GUI";
-	parameter "Edges-Width" var:edgesWidth <- 1 category:"GUI";
+	parameter "perception" var: distanceForInteraction <- 70.0#m category:"Agents";
+	parameter "speed" var:agentsSpeed <- 5.0 category:"Agents";
+	parameter "Agents-size" var:agentsSize <- 15 category:"Agents";
+	parameter "Edges-Width" var:edgesWidth <- 1 category:"Agents";
 	//parameter "Streets-Width" var:streetWidth <- 1 category:"GUI";
 	//parameter "Paths-Width" var:pathWidth <- 0 category:"GUI";
 	parameter "Show People" var:showPeople <- true category: "GUI";
 	parameter "Show Interactions" var:showInteractions <- false category: "GUI";
 	parameter "Show Streets" var:showStreets <- true category:"GUI";
 	parameter "Show Places" var:showPlaces <-false category:"GUI";
-	parameter "Show Paths" var:showPaths <- true category:"GUI";
+	parameter "Show Suburbs" var:showSuburbs <-false category:"GUI";
+	parameter "Show Paths" var:showPaths <- false category:"GUI";
 	parameter "Asfalto" var:showAsfaltoStreet <- true category: "STREETS";
 	parameter "Concreto" var:showConcretoStreet <- true category: "STREETS";
 	parameter "Empedrado" var:showEmpedradoStreet <- true category: "STREETS";
@@ -388,6 +371,7 @@ experiment simulation type:gui{
 			chart "Encounters" type:series{
 				data "Agents interacting" value:chartEncounters color:rgb(150, 27, 105);
 				data "Encounters" value:length(Encounters.edges) color:rgb(41, 152, 160);
+				data "Network density" value: networkDensity color: rgb (32, 142, 77,255);
 				//data "mean" value:meanEncounters color: #blue;
 			}
 		}
@@ -395,35 +379,37 @@ experiment simulation type:gui{
 			//grid cell;
 			//species road aspect:road_aspect;
 			graphics "Roads" {
+				rgb roadColor <- #silver;
 				if showStreets and caseStudy = 0{
+					
 					if showAsfaltoStreet {
 						loop element over: road where (each.condition="ASFALTO"){
-							draw element color: rgb(72, 161, 206) border:rgb(72, 161, 206);	
+							draw element color: roadColor border:roadColor;	
 						}
 					}
 					if showConcretoStreet {
 						loop element over: road where (each.condition="CONCRETO"){
-							draw element color: rgb(72, 161, 206) border:rgb(72, 161, 206);	
+							draw element color: roadColor border:roadColor;	
 						}
 					}
 					if showEmpedradoStreet {
 						loop element over: road where (each.condition="EMPEDRADO"){
-							draw element color: rgb(72, 161, 206) border:rgb(72, 161, 206);	
+							draw element color: roadColor border:roadColor;	
 						}
 					}
 					if showPavimentadoStreet {
 						loop element over: road where (each.condition="PAVIMENTO"){
-							draw element color: rgb(72, 161, 206) border:rgb(72, 161, 206);	
+							draw element color: roadColor border:roadColor;	
 						}
 					}
 					if showTerraceriaStreet {
 						loop element over: road where (each.condition="TERRACERIA"){
-							draw element color: rgb(72, 161, 206) border:rgb(72, 161, 206);	
+							draw element color: roadColor border:roadColor;	
 						}
 					}
 					if showNoEspecificadoStreet {
 						loop element over: road where (each.condition="CNE"){
-							draw element color: rgb(72, 161, 206) border:rgb(72, 161, 206);	
+							draw element color: roadColor border:roadColor;	
 						}
 					}
 					
@@ -434,37 +420,43 @@ experiment simulation type:gui{
 				}
 				else if showStreets and caseStudy = 1{
 					loop element over: road{
-						draw element color: rgb("darkcyan") border:rgb("darkcyan");
+						draw element color: roadColor border:roadColor;
 					}
 				}
 			}
 			
 			graphics "Places"{
 				if showPlaces{
-					loop element over:places{
-						draw geometry:square(60#m) color:#indigo border:#indigo depth:element.height at:element.location;
+					loop element over:places - suburbs{
+						draw geometry:square(60#m) color:rgb (86, 140, 158,255) border:#indigo depth:element.height at:element.location;
 					}
 					//species places aspect:place_aspect refresh:false transparency: 0.1;
 				}
 				
 			}
 			
-			
+			graphics "Suburbs"{
+				if showSuburbs{
+					loop element over:suburbs{
+						draw geometry:circle(60#m) color:#chocolate border:#chocolate depth:10#m at: element.location;
+					}	
+				}
+			}
 			/*graphics "suburbs"{
 				loop element over: suburb{
 					draw geometry:square(100#m) color:rgb("RED") depth:200#m at: element.location;
 				}
 			}*/
 			
-			graphics "shortestPath"{
+			graphics "shortestPath" {
 				if showPaths{
 					loop element over: people{
-						draw geometry:triangle(agentsSize+3) color:rgb("red") at:element.target;
+						draw geometry:circle(agentsSize) color:rgb (136, 53, 32,255) at:element.target;
 						if element.shortestPath != nil{
 							/*loop seg over:element.shortestPath.edges{
 								draw seg color: rgb(249, 246, 57) border:rgb(249, 246, 57);	
 							}*/
-							draw geometry(element.shortestPath.shape) color:rgb("maroon") border:rgb(249, 246, 57);
+							draw geometry(element.shortestPath.shape) color:rgb (136, 53, 32,255) border:rgb(249, 246, 57);
 						}
 					}
 				}
@@ -472,7 +464,7 @@ experiment simulation type:gui{
 			graphics "People"{
 				if showPeople{
 					loop element over: people{
-						draw element geometry:sphere(agentsSize) color:#mediumslateblue at:element.location;
+						draw element geometry:sphere(agentsSize) color:rgb (86, 130, 203,255) at:element.location;
 					}
 				}
 			}
@@ -482,7 +474,7 @@ experiment simulation type:gui{
 			graphics "Encounters Graph"{
 				if showInteractions{
 					loop edge over: Encounters.edges{
-						draw geometry(edge)+edgesWidth color: rgb(60, 140, 127) border: rgb(60, 140, 127);
+						draw geometry(edge)+edgesWidth color: rgb (0, 0, 0,255) border: rgb(60, 140, 127);
 					}
 				}
 				
@@ -491,6 +483,7 @@ experiment simulation type:gui{
 					
 		}
 		monitor "Agents interacting" value: people count(each.interacting=true);
+		monitor "Network density" value: networkDensity;
 		monitor "Vertices in graph" value: length(Encounters.vertices);
 		monitor "Edges in graph" value: length(Encounters.edges);
 		monitor "Vertices in road" value: length(road_network.vertices);
