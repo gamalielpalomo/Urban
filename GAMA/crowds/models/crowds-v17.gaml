@@ -273,8 +273,12 @@ species people skills:[moving]{
 		roads_knowledge <- weight_map;
 		interacting <- false;
 		speed <- agentsSpeed;
-		loop while: shortestPath = nil or shortestPath = []{
-			do initLocationAndTarget;
+		do initLocationAndTarget;
+		do updateShortestPath;
+		loop while: shortestPath = nil{
+			write "Relocating";
+			//do initLocationAndTarget;
+			target <- one_of(places).location;
 			do updateShortestPath;
 		}
 		create targets{
@@ -312,8 +316,6 @@ species people skills:[moving]{
 		else if caseStudy = 1{
 			location <- any_location_in(one_of(road));
 			target <- one_of(places where (each.name_str = "Parque Morelos")).location;
-			//location <- point([4039.68463164661,2661.4729159511626,0.0]);
-			//target <- point([6701.623785155825,1455.8507385244593,0.0]);
 		}
 	}
 	
@@ -325,8 +327,11 @@ species people skills:[moving]{
 		if(location = target){
 			target <- one_of(places).location;
 			do updateShortestPath;
-			loop while: shortestPath = nil or shortestPath = [] or length(shortestPath.edges) = 0{
-				target <- one_of(places).location;
+			if shortestPath = []{
+				write "No Path";
+			}
+			loop while: shortestPath = nil or shortestPath = []{
+				target <- any_location_in(one_of(road));
 				do updateShortestPath;
 			}
 			ask targets{
