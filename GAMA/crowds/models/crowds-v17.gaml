@@ -54,19 +54,19 @@ global torus:false{
 	
 	// ______ Z A P O P  A N  ________________
 	
-	int caseStudy <- 0;
+	/*int caseStudy <- 0;
 	file<geometry> roads_file <- osm_file("/miramar/0409/miramar040918.osm");
 	file street_conditions_file <- file("/miramar/0528/condiciondecalles/Condicion calles/Condicion_de_calles.shp"); 
 	file places_file <- file("/miramar/0515/miramar051518-places.shp");
 	file<geometry> suburbs_file <- osm_file("/miramar/Suburbs/Miramar-suburbs-0521.osm");
 	file zapopan_file <- file("miramar/0528/Calles_Nomenclatura/Calles_Nomenclatura.shp");
-	
+	*/
 	//______ T I J U A N A  ________________
-	/*int caseStudy <- 1;
+	int caseStudy <- 1;
 	file<geometry> roads_file <- osm_file("/tijuana/tijuana-062818.osm");
 	file street_conditions_file <- file("/tijuana/tijuana-062718-roads.shp"); 
 	file places_file <- file("/tijuana/tijuana-062818-places.shp");
-	file<geometry> suburbs_file;*/
+	file<geometry> suburbs_file;
 	
 	geometry shape <- envelope(roads_file);
 	
@@ -82,7 +82,7 @@ global torus:false{
 		networkDensity <- stepEdges / maxNumOfEdges;
 		string dataSpec <- string(cycle) + ", " + stepEdges + ", " + networkDensity + ", " + stepEdges + ", " + maxNumOfEdges;
 		save dataSpec to: "output" rewrite:false;
-		if cycle >= 20{do pause;}		
+		if cycle >= 1000{do pause;}		
 	}
 	action updateGraph{
 		Encounters <- graph([]);
@@ -294,8 +294,8 @@ species people skills:[moving]{
 		pEncounters <- [];
 	}
 	action updateShortestPath{
-		shortestPath <- path_between(road_network with_weights roads_knowledge, location, target);
-		//shortestPath <- path_between(road_network, location, target);
+		//shortestPath <- path_between(road_network with_weights roads_knowledge, location, target);
+		shortestPath <- path_between(road_network, location, target);
 	}
 	
 	action initLocationAndTarget{
