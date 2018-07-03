@@ -81,8 +81,8 @@ global torus:false{
 		int stepEdges <- length(Encounters.edges);
 		networkDensity <- stepEdges / maxNumOfEdges;
 		string dataSpec <- string(cycle) + ", " + stepEdges + ", " + networkDensity + ", " + stepEdges + ", " + maxNumOfEdges;
-		save dataSpec to: "output" rewrite:false;
-		if cycle >= 1000{do pause;}		
+		//save dataSpec to: "output" rewrite:false;
+		//if cycle >= 1000{do pause;}		
 	}
 	action updateGraph{
 		Encounters <- graph([]);
@@ -270,15 +270,18 @@ species targets{
 	}
 }
 
-
 species people skills:[moving]{
+	
 	bool interacting;
 	list pEncounters;
 	point target;
 	path shortestPath;
 	map<road, float> roads_knowledge;
 	
+	string income;
+	
 	init{
+		do initIncome;
 		roads_knowledge <- weight_map;
 		interacting <- false;
 		speed <- agentsSpeed;
@@ -296,6 +299,13 @@ species people skills:[moving]{
 	action updateShortestPath{
 		//shortestPath <- path_between(road_network with_weights roads_knowledge, location, target);
 		shortestPath <- path_between(road_network, location, target);
+	}
+	
+	action initIncome{
+		int opt <- rnd(2);
+		if opt = 0{income <- "low";}
+		else if opt = 1{income <- "middle";}
+		else {income <- "high";}
 	}
 	
 	action initLocationAndTarget{
