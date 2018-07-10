@@ -56,19 +56,19 @@ global torus:false{
 	
 	// ______ Z A P O P  A N  ________________
 	
-	int caseStudy <- 0;
+	/*int caseStudy <- 0;
 	file<geometry> roads_file <- osm_file("/miramar/0409/miramar040918.osm");
 	file street_conditions_file <- file("/miramar/0528/condiciondecalles/Condicion calles/Condicion_de_calles.shp"); 
 	file places_file <- file("/miramar/0515/miramar051518-places.shp");
 	file<geometry> suburbs_file <- osm_file("/miramar/Suburbs/Miramar-suburbs-0521.osm");
 	file zapopan_file <- file("miramar/0528/Calles_Nomenclatura/Calles_Nomenclatura.shp");
-	
+	*/
 	//______ T I J U A N A  ________________
-	/*int caseStudy <- 1;
+	int caseStudy <- 1;
 	file<geometry> roads_file <- osm_file("/tijuana/tijuana-062818.osm");
 	file street_conditions_file <- file("/tijuana/tijuana-062718-roads.shp"); 
 	file places_file <- file("/tijuana/tijuana-062818-places.shp");
-	file<geometry> suburbs_file;*/
+	file<geometry> suburbs_file;
 	
 	geometry shape <- envelope(roads_file);
 	
@@ -83,7 +83,7 @@ global torus:false{
 		int stepEdges <- length(Encounters.edges);
 		networkDensity <- stepEdges / maxNumOfEdges;
 		string dataSpec <- string(cycle) + "," + distanceForInteraction + "," +allowRoadsKnowledge+ "," +stepEdges + "," + networkDensity + "," + stepEdges + "," + maxNumOfEdges;
-		//save dataSpec to: "output" rewrite:false;
+		save dataSpec to: "output" rewrite:false;
 		int res <- int(cycle/250);
 		int module <- cycle-(res * 250);
 		if module = 0{
@@ -103,7 +103,7 @@ global torus:false{
 	}
 	init{
 		
-		allowRoadsKnowledge <- false;
+		allowRoadsKnowledge <- true;
 		
 		//Create osm agents that will be used as ROADS
 		create osm_agent from:roads_file with: [highway_str::string(read("highway")),name_str::string(read("name"))];
@@ -374,12 +374,12 @@ experiment simulation type:gui{
 	parameter "speed" var:agentsSpeed <- 5.0 category:"Agents";
 	parameter "Agents-size" var:agentsSize <- 15 category:"Agents";
 	parameter "Edges-Width" var:edgesWidth <- 5 category:"Agents";
-	parameter "Show People" var:showPeople <- true category: "GUI";
+	parameter "Show People" var:showPeople <- false category: "GUI";
 	parameter "Show Interactions" var:showInteractions <- true category: "GUI";
 	parameter "Show Streets" var:showStreets <- true category:"GUI";
-	parameter "Show Places" var:showPlaces <-true category:"GUI";
+	parameter "Show Places" var:showPlaces <-false category:"GUI";
 	parameter "Show Suburbs" var:showSuburbs <-false category:"GUI";
-	parameter "Show Paths" var:showPaths <- false category:"GUI";
+	parameter "Show Paths" var:showPaths <- true category:"GUI";
 	parameter "Asfalto" var:showAsfaltoStreet <- true category: "STREETS";
 	parameter "Concreto" var:showConcretoStreet <- true category: "STREETS";
 	parameter "Empedrado" var:showEmpedradoStreet <- true category: "STREETS";
