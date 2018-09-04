@@ -7,6 +7,20 @@ globals [
 
 breed [people person]
 
+people-own[
+  desiredLocation
+]
+
+to startup
+  LoadScenario
+end
+
+to LoadScenario
+  LoadMap
+  LoadPlaces
+  LoadPeople
+end
+
 to LoadMap
 
   set shpStreets gis:load-dataset "gis/miramar.shp"
@@ -21,25 +35,57 @@ to LoadPlaces
 
   set shpPlaces gis:load-dataset "gis/miramar-places.shp"
 
+
   gis:set-drawing-color 45
   gis:draw shpPlaces 1
-
-  foreach gis:feature-list-of shpPlaces[[element]->
-    show position 1 gis:vertex-lists-of element
-    ;show gis:location-of
-  ]
 
 end
 
 to LoadPeople
 
+  let placesAsFeatures gis:feature-list-of shpPlaces
+  let numPlaces length placesAsFeatures
+
   create-people numOfPeople[
 
+    let randomSelection random numPlaces
+    let element item (randomSelection) placesAsFeatures
+    let elementLocation gis:location-of gis:centroid-of element
+    setxy item 0 elementLocation item 1 elementLocation
 
+    write elementLocation
+
+    set randomSelection random numPlaces
+    set element item (randomSelection) placesAsFeatures
+    set desiredLocation gis:location-of gis:centroid-of element
+    gis:draw element 3
+
+    write desiredLocation
+
+
+    let desiredPatch patch item 0 desiredLocation item 1 desiredLocation
+    set heading towards desiredPatch
+
+    set shape "person"
+    set size 0.6
 
   ]
 
+end
 
+to go
+  ask people[
+
+    ifelse patch-here == desiredPatch[
+      show "Desired location reached"
+      ;The agent has arrived to its temporal destination
+      ;We need to check if it will be moving to another place
+    ][
+     ;The agent has not arrived to its destination, step forward
+      forward 1
+    ]
+
+  ]
 end
 
 to ClearPeople
@@ -47,17 +93,18 @@ to ClearPeople
 end
 
 to ClearScenario
+  clear-ticks
   clear-all
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
 11
 10
-498
-498
+856
+856
 -1
 -1
-14.52
+25.364
 1
 10
 1
@@ -78,10 +125,10 @@ ticks
 30.0
 
 BUTTON
-515
-14
-600
-47
+1013
+10
+1098
+43
 Load Map
 LoadMap
 NIL
@@ -95,10 +142,10 @@ NIL
 1
 
 BUTTON
-519
-140
-617
-173
+1017
+136
+1115
+169
 Load People
 LoadPeople
 NIL
@@ -112,10 +159,10 @@ NIL
 1
 
 BUTTON
-647
-139
-748
-172
+1145
+135
+1246
+168
 Clear People
 ClearPeople
 NIL
@@ -129,25 +176,25 @@ NIL
 1
 
 SLIDER
-518
-96
-690
-129
+1016
+92
+1188
+125
 numOfPeople
 numOfPeople
 0
 500
-271.0
+1.0
 1
 1
 NIL
 HORIZONTAL
 
 BUTTON
-622
-15
-733
-48
+1120
+52
+1231
+85
 Clear Scenario
 ClearScenario
 NIL
@@ -161,12 +208,63 @@ NIL
 1
 
 BUTTON
-517
-55
-613
-88
+1015
+51
+1111
+84
 Load Places
 LoadPlaces
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+1019
+198
+1106
+231
+Next Step
+go
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+1135
+200
+1198
+233
+Play
+go
+T
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+1123
+10
+1232
+43
+Load Scenario
+LoadScenario
 NIL
 1
 T
