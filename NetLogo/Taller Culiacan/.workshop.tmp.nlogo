@@ -5,6 +5,8 @@ globals [
   shpPlaces
 ]
 
+breed [people person]
+
 to LoadMap
 
   set shpStreets gis:load-dataset "gis/miramar.shp"
@@ -12,15 +14,33 @@ to LoadMap
   gis:set-drawing-color 115
   gis:draw shpStreets 1
 
+
 end
 
 to LoadPlaces
 
   set shpPlaces gis:load-dataset "gis/miramar-places.shp"
 
+  gis:set-drawing-color 45
+  gis:draw shpPlaces 1
+
+  foreach gis:feature-list-of shpPlaces[[element]->
+    show position  gis:vertex-lists-of element
+    ;show gis:location-of
+  ]
 
 end
 
+to LoadPeople
+
+  create-people numOfPeople[
+
+
+
+  ]
+
+
+end
 
 to ClearPeople
   clear-turtles
@@ -75,12 +95,12 @@ NIL
 1
 
 BUTTON
-516
-138
-614
-171
+519
+140
+617
+173
 Load People
-NIL
+LoadPeople
 NIL
 1
 T
@@ -92,10 +112,10 @@ NIL
 1
 
 BUTTON
-644
-137
-745
-170
+647
+139
+748
+172
 Clear People
 ClearPeople
 NIL
@@ -109,10 +129,10 @@ NIL
 1
 
 SLIDER
-515
-81
-687
-114
+518
+96
+690
+129
 numOfPeople
 numOfPeople
 0
@@ -130,6 +150,23 @@ BUTTON
 48
 Clear Scenario
 ClearScenario
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+517
+55
+613
+88
+Load Places
+LoadPlaces
 NIL
 1
 T
@@ -482,7 +519,7 @@ false
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
 @#$#@#$#@
-NetLogo 6.0
+NetLogo 6.0.2
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
