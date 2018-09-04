@@ -7,6 +7,14 @@ globals [
 
 breed [people person]
 
+to go
+  ask people [
+    rt random 20
+    lt random 20
+    fd 1
+  ]
+end
+
 to LoadMap
 
   set shpStreets gis:load-dataset "gis/miramar.shp"
@@ -25,7 +33,7 @@ to LoadPlaces
   gis:draw shpPlaces 1
 
   foreach gis:feature-list-of shpPlaces[[element]->
-    show position  gis:vertex-lists-of element
+    show position 1 gis:vertex-lists-of element
     ;show gis:location-of
   ]
 
@@ -34,11 +42,8 @@ end
 to LoadPeople
 
   create-people numOfPeople[
-
-
-
+    setxy random-xcor random-ycor
   ]
-
 
 end
 
@@ -176,6 +181,38 @@ NIL
 NIL
 NIL
 1
+
+BUTTON
+519
+196
+623
+229
+Run Scenario
+go
+T
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+SLIDER
+705
+96
+877
+129
+radius
+radius
+0
+100
+50.0
+1
+1
+NIL
+HORIZONTAL
 
 @#$#@#$#@
 ## WHAT IS IT?
@@ -519,7 +556,7 @@ false
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
 @#$#@#$#@
-NetLogo 6.0.2
+NetLogo 6.0
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
