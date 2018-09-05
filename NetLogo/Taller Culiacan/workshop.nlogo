@@ -3,47 +3,109 @@ extensions [gis]
 globals [
   shpStreets
   shpPlaces
-  place
 ]
 
 breed [people person]
 
+people-own[
+  desiredLocation
+  desiredPatch
+]
+
+to startup
+  LoadScenario
+end
+
+to LoadScenario
+  LoadMap
+  LoadPlaces
+  LoadPeople
+end
+
 to LoadMap
-  reset-ticks
 
-  set shpStreets gis:load-dataset "gis/miramar-EPSG4326-NAD83.shp"
-  set shpPlaces gis:load-dataset "gis/miramar051518-places.shp"
-  gis:set-world-envelope gis:envelope-of shpStreets
-
+  set shpStreets gis:load-dataset "gis/miramar.shp"
 
   gis:set-drawing-color 115
   gis:draw shpStreets 1
 
+
+end
+
+to LoadPlaces
+
+  set shpPlaces gis:load-dataset "gis/miramar-places.shp"
+
+
   gis:set-drawing-color 45
-  gis:draw shpPlaces 2
+  gis:draw shpPlaces 1
 
 end
 
 to LoadPeople
-  create-people numberOfPeople[
-    set place one-of shpPlaces
-    setxy place place
+
+  let placesAsFeatures gis:feature-list-of shpPlaces
+  let numPlaces length placesAsFeatures
+
+  create-people numOfPeople[
+
+    let randomSelection random numPlaces
+    let element item (randomSelection) placesAsFeatures
+    let elementLocation gis:location-of gis:centroid-of element
+    setxy item 0 elementLocation item 1 elementLocation
+
+    write elementLocation
+
+    set randomSelection random numPlaces
+    set element item (randomSelection) placesAsFeatures
+    set desiredLocation gis:location-of gis:centroid-of element
+    gis:draw element 3
+
+    write desiredLocation
+
+
+    set desiredPatch patch item 0 desiredLocation item 1 desiredLocation
+    set heading towards desiredPatch
+
+    set shape "person"
+    set size 0.6
+
+  ]
+
+end
+
+to go
+  ask people[
+
+    ifelse patch-here = desiredPatch[
+      show "Desired location reached"
+      ;The agent has arrived to its temporal destination
+      ;We need to check if it will be moving to another place
+    ][
+     ;The agent has not arrived to its destination, step forward
+      forward 1
+    ]
+
   ]
 end
 
+to ClearPeople
+  clear-turtles
+end
 
-to Clear
+to ClearScenario
+  clear-ticks
   clear-all
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
-20
-22
-777
-780
+-24
+-25
+534
+534
 -1
 -1
-22.7
+16.67
 1
 10
 1
@@ -64,11 +126,11 @@ ticks
 30.0
 
 BUTTON
-788
-23
-873
-56
-Load map
+880
+10
+965
+43
+Load Map
 LoadMap
 NIL
 1
@@ -81,12 +143,29 @@ NIL
 1
 
 BUTTON
-885
-22
-995
-55
-Clear scenario
-Clear
+884
+136
+982
+169
+Load People
+LoadPeople
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+1012
+135
+1113
+168
+Clear People
+ClearPeople
 NIL
 1
 T
@@ -98,27 +177,95 @@ NIL
 1
 
 SLIDER
-787
-66
-959
-99
-numberOfPeople
-numberOfPeople
+883
+92
+1055
+125
+numOfPeople
+numOfPeople
 0
 500
-250.0
+275.0
 1
 1
 NIL
 HORIZONTAL
 
 BUTTON
-789
-105
-887
-138
-Load people
-LoadPeople
+987
+52
+1098
+85
+Clear Scenario
+ClearScenario
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+882
+51
+978
+84
+Load Places
+LoadPlaces
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+886
+198
+973
+231
+Next Step
+go
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+1002
+200
+1065
+233
+Play
+go
+T
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+990
+10
+1099
+43
+Load Scenario
+LoadScenario
 NIL
 1
 T
@@ -471,7 +618,7 @@ false
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
 @#$#@#$#@
-NetLogo 6.0.2
+NetLogo 6.0
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
