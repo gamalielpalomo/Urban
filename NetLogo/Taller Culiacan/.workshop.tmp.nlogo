@@ -57,23 +57,33 @@ to LoadLandUse
     if value = "education"[
       gis:set-drawing-color 28 gis:fill element 1.0
       ask patches with [ gis:intersects? self element] [
-        set landuse "education"
+        set landuse value
       ]
     ]
     if value = "economic"[
       gis:set-drawing-color 68 gis:fill element 1.0
       ask patches with [ gis:intersects? self element] [
-        set landuse "economic"
+        set landuse value
       ]
     ]
     if value = "habitacional"[
       gis:set-drawing-color 108 gis:fill element 1.0
       ask patches with [ gis:intersects? self element] [
-        set landuse ""
+        set landuse value
       ]
     ]
-    if value = "medical"[ gis:set-drawing-color 18 gis:fill element 1.0 ]
-    if value = "recreation"[ gis:set-drawing-color 47 gis:fill element 1.0 ]
+    if value = "medical"[
+      gis:set-drawing-color 18 gis:fill element 1.0
+      ask patches with [ gis:intersects? self element] [
+        set landuse value
+      ]
+    ]
+    if value = "recreation"[
+      gis:set-drawing-color 47 gis:fill element 1.0
+      ask patches with [ gis:intersects? self element] [
+        set landuse value
+      ]
+    ]
   ]
 
 
@@ -92,6 +102,21 @@ to LoadPeople
 
   let placesAsFeatures gis:feature-list-of shpPlaces
   let numPlaces length placesAsFeatures
+  let economicPatches patches with [landuse = "economic"]
+  let educationPatches patches with [landuse = "education"]
+  let habitationalPatches patches with [landuse = "habitational"]
+  let medicalPatches patches with [landuse = "medical"]
+  let recreationPatches patches with [landuse = "recreation"]
+
+  create-people Students[
+    set kind "worker"
+    set color blue
+
+    let rndPatch one-of educationPatches
+
+
+  ]
+
 
   create-people numOfPeople[
 
@@ -206,10 +231,10 @@ NIL
 1
 
 BUTTON
-824
-346
-960
-379
+820
+488
+956
+521
 Load People
 LoadPeople
 NIL
@@ -223,10 +248,10 @@ NIL
 1
 
 BUTTON
-966
-347
-1101
-380
+962
+489
+1097
+522
 Clear People
 ClearPeople
 NIL
@@ -240,10 +265,10 @@ NIL
 1
 
 SLIDER
-823
-306
-1101
-339
+819
+448
+1097
+481
 numOfPeople
 numOfPeople
 0
@@ -409,6 +434,51 @@ NIL
 NIL
 NIL
 1
+
+SLIDER
+822
+296
+1192
+329
+Students
+Students
+0
+100
+20.0
+1
+1
+NIL
+HORIZONTAL
+
+SLIDER
+822
+340
+1194
+373
+Workers
+Workers
+0
+100
+20.0
+1
+1
+NIL
+HORIZONTAL
+
+SLIDER
+824
+386
+1194
+419
+Familiar
+Familiar
+0
+100
+20.0
+1
+1
+NIL
+HORIZONTAL
 
 @#$#@#$#@
 ## WHAT IS IT?
