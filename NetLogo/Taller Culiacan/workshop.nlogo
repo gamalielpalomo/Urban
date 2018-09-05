@@ -3,6 +3,9 @@ extensions [gis]
 globals [
   shpStreets
   shpPlaces
+  shpLandUse
+  hour
+  minute
 ]
 
 breed [people person]
@@ -10,6 +13,11 @@ breed [people person]
 people-own[
   desiredLocation
   desiredPatch
+  kind
+]
+
+patches-own[
+  landuse
 ]
 
 to startup
@@ -17,6 +25,11 @@ to startup
 end
 
 to LoadScenario
+  clear-all
+  reset-ticks
+  set hour InitialHour
+  set minute InitialMinute
+  LoadLandUse
   LoadMap
   LoadPlaces
   LoadPeople
@@ -24,20 +37,63 @@ end
 
 to LoadMap
 
-  set shpStreets gis:load-dataset "gis/miramar.shp"
+  set shpStreets gis:load-dataset "gis/gdl-streets.shp"
 
   gis:set-drawing-color 115
-  gis:draw shpStreets 1
+  gis:draw shpStreets 1.5
+
+end
+
+to LoadLandUse
+
+  set shpLandUse gis:load-dataset "gis/gdl-land-use.shp"
+
+  ;gis:set-drawing-color 29
+ ; gis:draw shpLandUse 1
+
+  foreach gis:feature-list-of shpLandUse[
+    element ->
+    let value gis:property-value element "landuse"
+    if value = "education"[
+      gis:set-drawing-color 28 gis:fill element 1.0
+      ask patches with [ gis:intersects? self element] [
+        set landuse value
+      ]
+    ]
+    if value = "economic"[
+      gis:set-drawing-color 68 gis:fill element 1.0
+      ask patches with [ gis:intersects? self element] [
+        set landuse value
+      ]
+    ]
+    if value = "habitacional"[
+      gis:set-drawing-color 108 gis:fill element 1.0
+      ask patches with [ gis:intersects? self element] [
+        set landuse value
+      ]
+    ]
+    if value = "medical"[
+      gis:set-drawing-color 18 gis:fill element 1.0
+      ask patches with [ gis:intersects? self element] [
+        set landuse value
+      ]
+    ]
+    if value = "recreation"[
+      gis:set-drawing-color 47 gis:fill element 1.0
+      ask patches with [ gis:intersects? self element] [
+        set landuse value
+      ]
+    ]
+  ]
 
 
 end
 
 to LoadPlaces
 
-  set shpPlaces gis:load-dataset "gis/miramar-places.shp"
+  set shpPlaces gis:load-dataset "gis/gdl-places.shp"
 
-
-  gis:set-drawing-color 45
+  gis:set-drawing-color black
   gis:draw shpPlaces 1
 
 end
@@ -54,31 +110,46 @@ to LoadPeople
     let elementLocation gis:location-of gis:centroid-of element
     setxy item 0 elementLocation item 1 elementLocation
 
-    write elementLocation
-
     set randomSelection random numPlaces
     set element item (randomSelection) placesAsFeatures
     set desiredLocation gis:location-of gis:centroid-of element
     gis:draw element 3
 
-    write desiredLocation
-
+    set randomSelection random 3
+    if randomSelection = 0 [
+      set kind "worker"
+      set color blue
+    ]
+    if randomSelection = 1 [
+      set kind "student"
+      set color red
+    ]
+    if randomSelection = 2 [
+      set kind "familiar"
+      set color 53
+    ]
 
     set desiredPatch patch item 0 desiredLocation item 1 desiredLocation
     set heading towards desiredPatch
 
     set shape "person"
-    set size 0.6
+    set size 1.5
 
   ]
 
 end
 
 to go
-  ask people[
 
+  ifelse minute = 59 [
+    set minute 0
+    set hour (hour + 1)
+  ][    set minute (minute + 1)  ]
+  if hour = 24 [    set hour 0  ]
+
+  ask people[
     ifelse patch-here = desiredPatch[
-      show "Desired location reached"
+      ;show "Desired location reached"
       ;The agent has arrived to its temporal destination
       ;We need to check if it will be moving to another place
     ][
@@ -87,6 +158,8 @@ to go
     ]
 
   ]
+
+  tick
 end
 
 to ClearPeople
@@ -99,13 +172,13 @@ to ClearScenario
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
--24
--25
-534
-534
+-5
+10
+806
+690
 -1
 -1
-16.67
+13.164
 1
 10
 1
@@ -115,10 +188,10 @@ GRAPHICS-WINDOW
 1
 1
 1
--16
-16
--16
-16
+-30
+30
+-25
+25
 0
 0
 1
@@ -126,10 +199,10 @@ ticks
 30.0
 
 BUTTON
-880
-10
-965
-43
+820
+156
+903
+189
 Load Map
 LoadMap
 NIL
@@ -143,10 +216,10 @@ NIL
 1
 
 BUTTON
-884
-136
-982
-169
+824
+346
+960
+379
 Load People
 LoadPeople
 NIL
@@ -160,10 +233,10 @@ NIL
 1
 
 BUTTON
-1012
-135
-1113
-168
+966
+347
+1101
+380
 Clear People
 ClearPeople
 NIL
@@ -177,25 +250,25 @@ NIL
 1
 
 SLIDER
-883
-92
-1055
-125
+823
+306
+1101
+339
 numOfPeople
 numOfPeople
 0
 500
-275.0
+250.0
 1
 1
 NIL
 HORIZONTAL
 
 BUTTON
-987
-52
+821
+236
 1098
-85
+269
 Clear Scenario
 ClearScenario
 NIL
@@ -209,10 +282,10 @@ NIL
 1
 
 BUTTON
-882
-51
-978
-84
+908
+157
+986
+190
 Load Places
 LoadPlaces
 NIL
@@ -226,10 +299,10 @@ NIL
 1
 
 BUTTON
-886
-198
-973
-231
+1112
+84
+1199
+185
 Next Step
 go
 NIL
@@ -243,10 +316,10 @@ NIL
 1
 
 BUTTON
-1002
-200
-1065
-233
+1112
+196
+1197
+267
 Play
 go
 T
@@ -260,12 +333,83 @@ NIL
 1
 
 BUTTON
-990
-10
-1099
-43
+820
+196
+1097
+229
 Load Scenario
 LoadScenario
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+INPUTBOX
+820
+87
+953
+147
+InitialHour
+6.0
+1
+0
+Number
+
+INPUTBOX
+958
+85
+1097
+145
+InitialMinute
+0.0
+1
+0
+Number
+
+MONITOR
+821
+610
+993
+691
+Simulated Hour
+hour
+0
+1
+20
+
+MONITOR
+1003
+610
+1195
+691
+Simulated Minute
+minute
+0
+1
+20
+
+TEXTBOX
+822
+20
+972
+62
+YELLOW - WORKERS\nRED - STUDENTS\nGREEN - FAMILY
+11
+0.0
+1
+
+BUTTON
+991
+156
+1097
+189
+Load Land Use
+LoadLandUse
 NIL
 1
 T
@@ -618,7 +762,7 @@ false
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
 @#$#@#$#@
-NetLogo 6.0
+NetLogo 6.0.2
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
