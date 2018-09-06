@@ -6,6 +6,11 @@ globals [
   shpLandUse
   hour
   minute
+  habitacionalPatches
+  economicPatches
+  recreationPatches
+  medicalPatches
+  educationPatches
 ]
 
 breed [people person]
@@ -102,55 +107,88 @@ to LoadPeople
 
   let placesAsFeatures gis:feature-list-of shpPlaces
   let numPlaces length placesAsFeatures
-  let economicPatches patches with [landuse = "economic"]
-  let educationPatches patches with [landuse = "education"]
-  let habitationalPatches patches with [landuse = "habitational"]
-  let medicalPatches patches with [landuse = "medical"]
-  let recreationPatches patches with [landuse = "recreation"]
+  set economicPatches patches with [landuse = "economic"]
+  set educationPatches patches with [landuse = "education"]
+  set habitacionalPatches patches with [landuse = "habitacional"]
+  set medicalPatches patches with [landuse = "medical"]
+  set recreationPatches patches with [landuse = "recreation"]
 
   create-people Students[
-    set kind "worker"
-    set color blue
-
-    let rndPatch one-of educationPatches
-    setxy item 0 rndPatch item 1 rndPatch
-
-  ]
-
-
-  create-people numOfPeople[
-
-    let randomSelection random numPlaces
-    let element item (randomSelection) placesAsFeatures
-    let elementLocation gis:location-of gis:centroid-of element
-    setxy item 0 elementLocation item 1 elementLocation
-
-    set randomSelection random numPlaces
-    set element item (randomSelection) placesAsFeatures
-    set desiredLocation gis:location-of gis:centroid-of element
-    gis:draw element 3
-
-    set randomSelection random 3
-    if randomSelection = 0 [
-      set kind "worker"
-      set color blue
+    set kind "student"
+    set color red
+    let xvar 0
+    let yvar 0
+    let rndPatch one-of habitacionalPatches
+    ask rndPatch[
+      set xvar pxcor
+      set yvar pycor
     ]
-    if randomSelection = 1 [
-      set kind "student"
-      set color red
-    ]
-    if randomSelection = 2 [
-      set kind "familiar"
-      set color 53
-    ]
+    setxy xvar yvar
 
-    set desiredPatch patch item 0 desiredLocation item 1 desiredLocation
+
+    let destPatch one-of educationPatches
+    ask destPatch[
+      set xvar pxcor
+      set yvar pycor
+    ]
+    set desiredPatch patch xvar yvar
     set heading towards desiredPatch
 
     set shape "person"
     set size 1.5
 
   ]
+
+  create-people Workers[
+    set kind "worker"
+    set color yellow
+    let xvar 0
+    let yvar 0
+    let rndPatch one-of habitacionalPatches
+    ask rndPatch[
+      set xvar pxcor
+      set yvar pycor
+    ]
+    setxy xvar yvar
+
+    let destPatch one-of economicPatches
+    ask destPatch[
+      set xvar pxcor
+      set yvar pycor
+    ]
+    set desiredPatch patch xvar yvar
+    set heading towards desiredPatch
+
+    set shape "person"
+    set size 1.5
+
+  ]
+
+  create-people Familiar[
+    set kind "family"
+    set color 53
+    let xvar 0
+    let yvar 0
+    let rndPatch one-of habitacionalPatches
+    ask rndPatch[
+      set xvar pxcor
+      set yvar pycor
+    ]
+    setxy xvar yvar
+
+    let destPatch one-of recreationPatches
+    ask destPatch[
+      set xvar pxcor
+      set yvar pycor
+    ]
+    set desiredPatch patch xvar yvar
+    set heading towards desiredPatch
+
+    set shape "person"
+    set size 1.5
+
+  ]
+
 
 end
 
@@ -161,6 +199,18 @@ to go
     set hour (hour + 1)
   ][    set minute (minute + 1)  ]
   if hour = 24 [    set hour 0  ]
+
+  if hour >= 14 and hour < 16[
+    ask people with [kind = "student"][
+      goHome
+    ]
+  ]
+
+  if hour >= 17 and hour < 20[
+    ask people with [kind = "worker"][
+      goHome
+    ]
+  ]
 
   ask people[
     ifelse patch-here = desiredPatch[
@@ -177,6 +227,43 @@ to go
   tick
 end
 
+to goHome
+  let xvar 0
+  let yvar 0
+  let destPatch one-of habitacionalPatches
+  ask destPatch[
+    set xvar pxcor
+    set yvar pycor
+  ]
+  set desiredPatch patch xvar yvar
+  set heading towards desiredPatch
+end
+
+to goWork
+  let xvar 0
+  let yvar 0
+  let destPatch one-of economicPatches
+  ask destPatch[
+    set xvar pxcor
+    set yvar pycor
+  ]
+  set desiredPatch patch xvar yvar
+  set heading towards desiredPatch
+end
+
+to goStudy
+  let xvar 0
+  let yvar 0
+  let destPatch one-of educationPatches
+  ask destPatch[
+    set xvar pxcor
+    set yvar pycor
+  ]
+  set desiredPatch patch xvar yvar
+  set heading towards desiredPatch
+end
+
+
 to ClearPeople
   clear-turtles
 end
@@ -189,11 +276,11 @@ end
 GRAPHICS-WINDOW
 -5
 10
-806
-690
+765
+656
 -1
 -1
-13.164
+12.5
 1
 10
 1
@@ -273,7 +360,7 @@ numOfPeople
 numOfPeople
 0
 500
-250.0
+258.0
 1
 1
 NIL
@@ -387,10 +474,10 @@ InitialMinute
 Number
 
 MONITOR
-821
-610
-993
-691
+814
+537
+986
+618
 Simulated Hour
 hour
 0
@@ -398,10 +485,10 @@ hour
 20
 
 MONITOR
-1003
-610
-1195
-691
+996
+537
+1188
+618
 Simulated Minute
 minute
 0
@@ -444,7 +531,7 @@ Students
 Students
 0
 100
-20.0
+88.0
 1
 1
 NIL
@@ -459,7 +546,7 @@ Workers
 Workers
 0
 100
-20.0
+60.0
 1
 1
 NIL
@@ -474,7 +561,7 @@ Familiar
 Familiar
 0
 100
-20.0
+55.0
 1
 1
 NIL
@@ -822,7 +909,7 @@ false
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
 @#$#@#$#@
-NetLogo 6.0.2
+NetLogo 6.0.4
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
