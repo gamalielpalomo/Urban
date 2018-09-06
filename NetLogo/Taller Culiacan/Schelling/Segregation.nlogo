@@ -1,363 +1,63 @@
-extensions [gis]
-
-globals [
-  shpStreets
-  shpPlaces
-  shpLandUse
-  hour
-  minute
-  habitacionalPatches
-  economicPatches
-  recreationPatches
-  medicalPatches
-  educationPatches
+patches-own [
+  vacant
+  happy
 ]
 
-breed [people person]
+to setup
 
-people-own[
-  desiredLocation
-  desiredPatch
-  kind
-  currentState
-]
-
-patches-own[
-  landuse
-]
-
-to startup
-  LoadScenario
-end
-
-to LoadScenario
   clear-all
   reset-ticks
-  set hour InitialHour
-  set minute InitialMinute
-  LoadLandUse
-  LoadMap
-  LoadPlaces
-  LoadPeople
-end
-
-to LoadMap
-
-  set shpStreets gis:load-dataset "gis/gdl-streets.shp"
-
-  gis:set-drawing-color 115
-  gis:draw shpStreets 1.5
-
-end
-
-to LoadLandUse
-
-  set shpLandUse gis:load-dataset "gis/gdl-land-use.shp"
-
-  ;gis:set-drawing-color 29
- ; gis:draw shpLandUse 1
-
-  foreach gis:feature-list-of shpLandUse[
-    element ->
-    let value gis:property-value element "landuse"
-    if value = "education"[
-      gis:set-drawing-color 28 gis:fill element 1.0
-      ask patches with [ gis:intersects? self element] [
-        set landuse value
-      ]
-    ]
-    if value = "economic"[
-      gis:set-drawing-color 68 gis:fill element 1.0
-      ask patches with [ gis:intersects? self element] [
-        set landuse value
-      ]
-    ]
-    if value = "habitacional"[
-      gis:set-drawing-color 108 gis:fill element 1.0
-      ask patches with [ gis:intersects? self element] [
-        set landuse value
-      ]
-    ]
-    if value = "medical"[
-      gis:set-drawing-color 18 gis:fill element 1.0
-      ask patches with [ gis:intersects? self element] [
-        set landuse value
-      ]
-    ]
-    if value = "recreation"[
-      gis:set-drawing-color 47 gis:fill element 1.0
-      ask patches with [ gis:intersects? self element] [
-        set landuse value
-      ]
+  ask patches[
+    set vacant true
+    if random 100 < Density[
+      set pcolor one-of [red green]
+      set happy false
+      set vacant false
     ]
   ]
-
-
-end
-
-to LoadPlaces
-
-  set shpPlaces gis:load-dataset "gis/gdl-places.shp"
-
-  gis:set-drawing-color black
-  gis:draw shpPlaces 1
-
-end
-
-to LoadPeople
-
-  let placesAsFeatures gis:feature-list-of shpPlaces
-  let numPlaces length placesAsFeatures
-  set economicPatches patches with [landuse = "economic"]
-  set educationPatches patches with [landuse = "education"]
-  set habitacionalPatches patches with [landuse = "habitacional"]
-  set medicalPatches patches with [landuse = "medical"]
-  set recreationPatches patches with [landuse = "recreation"]
-
-  create-people Students[
-    set kind "student"
-    set color red
-    let xvar 0
-    let yvar 0
-    let rndPatch one-of habitacionalPatches
-    ask rndPatch[
-      set xvar pxcor
-      set yvar pycor
-    ]
-    setxy xvar yvar
-    set shape "person"
-    set size 1.5
-
-    goStudy
-
-  ]
-
-  create-people Workers[
-    set kind "worker"
-    set color yellow
-    let xvar 0
-    let yvar 0
-    let rndPatch one-of habitacionalPatches
-    ask rndPatch[
-      set xvar pxcor
-      set yvar pycor
-    ]
-    setxy xvar yvar
-    set shape "person"
-    set size 1.5
-
-    goEconomic
-
-  ]
-
-  create-people Familiar[
-    set kind "family"
-    set color 53
-    let xvar 0
-    let yvar 0
-    let rndPatch one-of habitacionalPatches
-    ask rndPatch[
-      set xvar pxcor
-      set yvar pycor
-    ]
-    setxy xvar yvar
-    set shape "person"
-    set size 1.5
-
-    goSomeWhere
-
-
-
-  ]
-
 
 end
 
 to go
 
-  ifelse minute = 59 [
-    set minute 0
-    set hour (hour + 1)
-  ][    set minute (minute + 1)  ]
-  if hour = 24 [    set hour 0  ]
+  ask patches with [ happy = false ][
 
-  if hour >= 6 and hour < 8 [
-    ask people with [ kind = "worker" ][
-      if currentState != "going Work" [ goWork ]
+    let tmpPatch one-of patches with [ vacant = true ]
+    let myColor pcolor
+    ask tmpPatch[
+      set pcolor myColor
+      set happy false
+      set vacant false
     ]
+    set pcolor black
+    set vacant true
+    set happy false
+
   ]
 
-  if hour >= 7 and hour < 9 [
-    ask people with [ kind = "student" ][
-      if currentState != "going Study"[ goStudy ]
-    ]
-  ]
+  ask patches with [ vacant = false and happy = false][
 
-  if hour >= 9 and hour < 12 [
-    ask people with [ kind = "student" ][
-      if currentState != "going Study"[ goStudy ]
-    ]
-  ]
+    let myColor pcolor
+    let patchAffinity count neighbors with [ pcolor = myColor ]
+    set patchAffinity ( patchAffinity / 9)
+    ;show patchAffinity
 
-
-  if hour >= 14 and hour < 16[
-    ask people with [kind = "student"][
-      if currentState != "going Home" [ goHome ]
-    ]
-  ]
-
-  if hour >= 17 and hour < 20[
-    ask people with [kind = "worker"][
-      if currentState != "going Home" [ goHome ]
-    ]
-  ]
-
-  if hour >= 12 and hour < 14[
-    ask people with [ kind = "family" ][
-      if currentState != "going Home" [ goHome ]
-    ]
-  ]
-
-  ask people[
-    ifelse patch-here = desiredPatch[
-      set currentState "idle"
-      ;show "Desired location reached"
-      ;The agent has arrived to its temporal destination
-      ;We need to check if it will be moving to another place
-    ][
-     ;The agent has not arrived to its destination, step forward
-      forward 0.5
+    if ( patchAffinity * 100 ) >= Affinity [
+      set happy true
     ]
 
   ]
-  updateLinks
   tick
-end
-
-to updateLinks
-
-  ask links[  if link-length > Perception[    die    ]  ]
-  ask people [
-    let agentNeighbors (other people) in-radius Perception
-    ask agentNeighbors[      create-link-with myself        ]
-  ]
-
-end
-
-to goHome
-  let xvar 0
-  let yvar 0
-  let destPatch one-of habitacionalPatches
-  ask destPatch[
-    set xvar pxcor
-    set yvar pycor
-  ]
-  set desiredPatch patch xvar yvar
-  set heading towards desiredPatch
-  set currentState "going Home"
-end
-
-to goWork
-  let xvar 0
-  let yvar 0
-  let destPatch one-of economicPatches
-  ask destPatch[
-    set xvar pxcor
-    set yvar pycor
-  ]
-  set desiredPatch patch xvar yvar
-  set heading towards desiredPatch
-  set currentState "going Work"
-end
-
-to goStudy
-  let xvar 0
-  let yvar 0
-  let destPatch one-of educationPatches
-  ask destPatch[
-    set xvar pxcor
-    set yvar pycor
-  ]
-  set desiredPatch patch xvar yvar
-  set heading towards desiredPatch
-  set currentState "going Study"
-end
-
-to goMedical
-  let xvar 0
-  let yvar 0
-  let destPatch one-of medicalPatches
-  ask destPatch[
-    set xvar pxcor
-    set yvar pycor
-  ]
-  set desiredPatch patch xvar yvar
-  set heading towards desiredPatch
-  set currentState "going Medical"
-end
-
-to goEconomic
-  let xvar 0
-  let yvar 0
-  let destPatch one-of economicPatches
-  ask destPatch[
-    set xvar pxcor
-    set yvar pycor
-  ]
-  set desiredPatch patch xvar yvar
-  set heading towards desiredPatch
-  set currentState "going Economic"
-end
-
-to goRecreation
-  let xvar 0
-  let yvar 0
-  let destPatch one-of recreationPatches
-  ask destPatch[
-    set xvar pxcor
-    set yvar pycor
-  ]
-  set desiredPatch patch xvar yvar
-  set heading towards desiredPatch
-  set currentState "going Recreation"
-end
-
-to goSomeWhere
-  let xvar 0
-  let yvar 0
-  let rnd random 5
-  let destPatch ""
-  if rnd = 0 [    set destPatch one-of educationPatches  set currentState "going Study" ]
-  if rnd = 1 [    set destPatch one-of habitacionalPatches  set currentState "going Home" ]
-  if rnd = 2 [    set destPatch one-of medicalPatches  set currentState "going Medical" ]
-  if rnd = 3 [    set destPatch one-of economicPatches  set currentState "going Economic" ]
-  if rnd = 4 [    set destPatch one-of recreationPatches  set currentState "going Recreation" ]
-  ask destPatch[
-    set xvar pxcor
-    set yvar pycor
-  ]
-  set desiredPatch patch xvar yvar
-  set heading towards desiredPatch
-end
-
-
-to ClearPeople
-  clear-turtles
-end
-
-to ClearScenario
-  clear-ticks
-  clear-all
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
--5
+210
 10
-765
-656
+647
+448
 -1
 -1
-12.5
+13.0
 1
 10
 1
@@ -367,89 +67,53 @@ GRAPHICS-WINDOW
 1
 1
 1
--30
-30
--25
-25
+-16
+16
+-16
+16
 0
 0
 1
 ticks
 30.0
 
-BUTTON
-820
-156
-903
-189
-Load Map
-LoadMap
-NIL
+SLIDER
+697
+18
+869
+51
+Density
+Density
+0
+100
+96.0
 1
-T
-OBSERVER
-NIL
-NIL
-NIL
-NIL
 1
-
-BUTTON
-820
-488
-956
-521
-Load People
-LoadPeople
 NIL
-1
-T
-OBSERVER
-NIL
-NIL
-NIL
-NIL
-1
-
-BUTTON
-962
-489
-1097
-522
-Clear People
-ClearPeople
-NIL
-1
-T
-OBSERVER
-NIL
-NIL
-NIL
-NIL
-1
+HORIZONTAL
 
 SLIDER
-823
-430
-1193
-463
-Perception
-Perception
+697
+66
+869
+99
+Affinity
+Affinity
 0
-10
-3.0
+100
+0.0
 1
 1
 NIL
 HORIZONTAL
 
 BUTTON
-821
-236
-1098
-269
-Clear Scenario
-ClearScenario
+697
+121
+761
+154
+Setup
+setup
 NIL
 1
 T
@@ -461,45 +125,11 @@ NIL
 1
 
 BUTTON
-908
-157
-986
-190
-Load Places
-LoadPlaces
-NIL
-1
-T
-OBSERVER
-NIL
-NIL
-NIL
-NIL
-1
-
-BUTTON
-1112
-84
-1199
-185
-Next Step
-go
-NIL
-1
-T
-OBSERVER
-NIL
-NIL
-NIL
-NIL
-1
-
-BUTTON
-1112
-196
-1197
-267
-Play
+779
+122
+842
+155
+Go
 go
 T
 1
@@ -510,168 +140,6 @@ NIL
 NIL
 NIL
 1
-
-BUTTON
-820
-196
-1097
-229
-Load Scenario
-LoadScenario
-NIL
-1
-T
-OBSERVER
-NIL
-NIL
-NIL
-NIL
-1
-
-INPUTBOX
-820
-87
-953
-147
-InitialHour
-8.0
-1
-0
-Number
-
-INPUTBOX
-958
-85
-1097
-145
-InitialMinute
-0.0
-1
-0
-Number
-
-MONITOR
-814
-537
-986
-618
-Simulated Hour
-hour
-0
-1
-20
-
-MONITOR
-996
-537
-1188
-618
-Simulated Minute
-minute
-0
-1
-20
-
-TEXTBOX
-822
-20
-972
-62
-YELLOW - WORKERS\nRED - STUDENTS\nGREEN - FAMILY
-11
-0.0
-1
-
-BUTTON
-991
-156
-1097
-189
-Load Land Use
-LoadLandUse
-NIL
-1
-T
-OBSERVER
-NIL
-NIL
-NIL
-NIL
-1
-
-SLIDER
-822
-296
-1192
-329
-Students
-Students
-0
-200
-100.0
-1
-1
-NIL
-HORIZONTAL
-
-SLIDER
-822
-340
-1194
-373
-Workers
-Workers
-0
-200
-100.0
-1
-1
-NIL
-HORIZONTAL
-
-SLIDER
-824
-386
-1194
-419
-Familiar
-Familiar
-0
-200
-100.0
-1
-1
-NIL
-HORIZONTAL
-
-MONITOR
-1214
-84
-1340
-165
-Encounters
-count links
-0
-1
-20
-
-PLOT
-1215
-177
-1415
-327
-Social Network of Encounters
-Time
-Encounters
-0.0
-100.0
-0.0
-100.0
-true
-true
-"" ""
-PENS
-"default" 1.0 0 -5298144 true "" "plot count links"
 
 @#$#@#$#@
 ## WHAT IS IT?
