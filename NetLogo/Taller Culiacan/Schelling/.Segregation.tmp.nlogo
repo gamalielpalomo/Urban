@@ -87,7 +87,7 @@ Density
 Density
 0
 100
-62.0
+78.0
 1
 1
 NIL
@@ -160,7 +160,7 @@ PLOT
 430
 Happiness
 Time
-Happy agents
+Number of agents
 0.0
 100.0
 0.0
@@ -169,7 +169,18 @@ true
 true
 "" ""
 PENS
-"default" 1.0 0 -16777216 true "" "plot count patches with [happy = true]"
+"Happy agents" 1.0 0 -10141563 true "" "plot count patches with [happy = true]"
+
+MONITOR
+701
+198
+965
+279
+Percentage of happiness
+( count patches with [happy = true] / count patches )
+0
+1
+20
 
 @#$#@#$#@
 ## WHAT IS IT?

@@ -7,6 +7,7 @@ to setup
 
   clear-all
   reset-ticks
+
   ask patches[
     set vacant true
     if random 100 < Density[
@@ -51,13 +52,13 @@ to go
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
-210
+14
 10
-647
-448
+623
+620
 -1
 -1
-13.0
+3.0
 1
 10
 1
@@ -67,10 +68,10 @@ GRAPHICS-WINDOW
 1
 1
 1
--16
-16
--16
-16
+-100
+100
+-100
+100
 0
 0
 1
@@ -86,7 +87,7 @@ Density
 Density
 0
 100
-96.0
+78.0
 1
 1
 NIL
@@ -101,17 +102,17 @@ Affinity
 Affinity
 0
 100
-0.0
+50.0
 1
 1
 NIL
 HORIZONTAL
 
 BUTTON
-697
-121
-761
-154
+701
+279
+765
+312
 Setup
 setup
 NIL
@@ -125,10 +126,10 @@ NIL
 1
 
 BUTTON
-779
-122
-842
-155
+783
+280
+846
+313
 Go
 go
 T
@@ -140,6 +141,46 @@ NIL
 NIL
 NIL
 1
+
+MONITOR
+702
+352
+857
+433
+Happy agents
+count patches with [happy = true]
+0
+1
+20
+
+PLOT
+908
+18
+1430
+430
+Happiness
+Time
+Number of agents
+0.0
+100.0
+0.0
+10.0
+true
+true
+"" ""
+PENS
+"Happy agents" 1.0 0 -10141563 true "" "plot count patches with [happy = true]"
+
+MONITOR
+701
+446
+965
+527
+Percentage of happiness
+( count patches with [happy = true] / count patches ) * 100
+2
+1
+20
 
 @#$#@#$#@
 ## WHAT IS IT?
