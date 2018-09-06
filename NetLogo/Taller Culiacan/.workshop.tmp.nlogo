@@ -175,6 +175,8 @@ to LoadPeople
     set shape "person"
     set size 1.5
 
+
+
   ]
 
 
@@ -604,8 +606,8 @@ SLIDER
 Students
 Students
 0
-100
-88.0
+200
+100.0
 1
 1
 NIL
