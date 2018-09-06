@@ -161,19 +161,10 @@ to LoadPeople
       set yvar pycor
     ]
     setxy xvar yvar
-
-    let destPatch one-of recreationPatches
-    ask destPatch[
-      set xvar pxcor
-      set yvar pycor
-    ]
-    set desiredPatch patch xvar yvar
-    set heading towards desiredPatch
-
-    set currentState "idle"
-
     set shape "person"
     set size 1.5
+
+    goSomeWhere
 
 
 
@@ -239,8 +230,18 @@ to go
     ]
 
   ]
-
+  updateLinks
   tick
+end
+
+to updateLinks
+
+  ask links[  if link-length > Perception[    die    ]  ]
+  ask people [
+    let agentNeighbors (other people) in-radius Perception
+    ask agentNeighbors[      create-link-with myself        ]
+  ]
+
 end
 
 to goHome
@@ -428,15 +429,15 @@ NIL
 1
 
 SLIDER
-819
-448
-1097
-481
-numOfPeople
-numOfPeople
+823
+430
+1193
+463
+Perception
+Perception
 0
-500
-258.0
+10
+3.0
 1
 1
 NIL
@@ -621,8 +622,8 @@ SLIDER
 Workers
 Workers
 0
-100
-60.0
+200
+100.0
 1
 1
 NIL
@@ -636,12 +637,41 @@ SLIDER
 Familiar
 Familiar
 0
-100
-55.0
+200
+100.0
 1
 1
 NIL
 HORIZONTAL
+
+MONITOR
+1214
+84
+1340
+165
+Encounters
+count links
+0
+1
+20
+
+PLOT
+1215
+177
+1415
+327
+Social Network of Encounters
+Time
+Encounters
+0.0
+100.0
+0.0
+100.0
+true
+true
+"" ""
+PENS
+"default" 1.0 0 -5298144 true "" "plot count links"
 
 @#$#@#$#@
 ## WHAT IS IT?
