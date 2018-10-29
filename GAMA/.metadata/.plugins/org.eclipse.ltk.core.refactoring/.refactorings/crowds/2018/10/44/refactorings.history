@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;crowds/models/crowds-v17.gaml&apos; to &apos;SocialFabric.gaml&apos;" description="Rename resource &apos;crowds-v17.gaml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="models/crowds-v17.gaml" name="SocialFabric.gaml" stamp="1540852519449" updateReferences="true"/>
+</session>

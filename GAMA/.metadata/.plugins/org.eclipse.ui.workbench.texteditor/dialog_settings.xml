@@ -2,22 +2,15 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-<<<<<<< HEAD
-		<item value="places" key="selection"/>
-=======
-		<item value="" key="selection"/>
->>>>>>> 741646ce6d858badea2893ddcf04734206d46273
+		<item value="allowRoadsKnowledge" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-<<<<<<< HEAD
-			<item value="places"/>
-=======
->>>>>>> 741646ce6d858badea2893ddcf04734206d46273
-			<item value="pause"/>
-			<item value="write"/>
+			<item value="allowRoadsKnowledge"/>
+			<item value="TIJUANA"/>
+			<item value="road_network"/>
 		</list>
 		<list key="replacehistory">
 		</list>
@@ -26,7 +19,7 @@
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="381" key="DIALOG_HEIGHT"/>
-		<item value="563" key="DIALOG_X_ORIGIN"/>
-		<item value="123" key="DIALOG_Y_ORIGIN"/>
+		<item value="921" key="DIALOG_X_ORIGIN"/>
+		<item value="546" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
