@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.6.0 (13690 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="20.6412500" minlon="-103.4634300" maxlat="20.6426000" maxlon="-103.4607900"/>
+ <node id="1479622358" visible="true" version="3" changeset="13900175" timestamp="2012-11-16T22:36:11Z" user="minoxfilm" uid="258237" lat="20.6296962" lon="-103.4605977"/>
+ <node id="1653525823" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:28Z" user="minoxfilm" uid="258237" lat="20.6316937" lon="-103.4603186"/>
+ <node id="1653525874" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:29Z" user="minoxfilm" uid="258237" lat="20.6482268" lon="-103.4581273"/>
+ <node id="1653525901" visible="true" version="2" changeset="10870444" timestamp="2012-03-04T16:22:13Z" user="minoxfilm" uid="258237" lat="20.6333633" lon="-103.4606995"/>
+ <node id="1653525925" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:30Z" user="minoxfilm" uid="258237" lat="20.6428128" lon="-103.4649568"/>
+ <node id="1653525933" visible="true" version="2" changeset="11503601" timestamp="2012-05-05T01:30:07Z" user="minoxfilm" uid="258237" lat="20.6460241" lon="-103.4600356"/>
+ <node id="1653525949" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:31Z" user="minoxfilm" uid="258237" lat="20.6410513" lon="-103.4546918"/>
+ <node id="1653525958" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:32Z" user="minoxfilm" uid="258237" lat="20.6319993" lon="-103.4603445"/>
+ <node id="1653525964" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:32Z" user="minoxfilm" uid="258237" lat="20.6421027" lon="-103.4609595"/>
+ <node id="1653525977" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:32Z" user="minoxfilm" uid="258237" lat="20.6400481" lon="-103.4610767"/>
+ <node id="1653525982" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:32Z" user="minoxfilm" uid="258237" lat="20.6340263" lon="-103.4605864"/>
+ <node id="1653526003" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:33Z" user="minoxfilm" uid="258237" lat="20.6369466" lon="-103.4601310"/>
+ <node id="1653526009" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:33Z" user="minoxfilm" uid="258237" lat="20.6484746" lon="-103.4578646"/>
+ <node id="1653526012" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:34Z" user="minoxfilm" uid="258237" lat="20.6407036" lon="-103.4526841"/>
+ <node id="1653526016" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:34Z" user="minoxfilm" uid="258237" lat="20.6428670" lon="-103.4649759"/>
+ <node id="1653526017" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:34Z" user="minoxfilm" uid="258237" lat="20.6328154" lon="-103.4606078"/>
+ <node id="1653526034" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:35Z" user="minoxfilm" uid="258237" lat="20.6462258" lon="-103.4599363"/>
+ <node id="1653526038" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:35Z" user="minoxfilm" uid="258237" lat="20.6458443" lon="-103.4600972"/>
+ <node id="1653526064" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:35Z" user="minoxfilm" uid="258237" lat="20.6407199" lon="-103.4612601"/>
+ <node id="1653526093" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:36Z" user="minoxfilm" uid="258237" lat="20.6372194" lon="-103.4601310"/>
+ <node id="1653526113" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:37Z" user="minoxfilm" uid="258237" lat="20.6394075" lon="-103.4453333"/>
+ <node id="1653526114" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:37Z" user="minoxfilm" uid="258237" lat="20.6330619" lon="-103.4606908"/>
+ <node id="1653526133" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:38Z" user="minoxfilm" uid="258237" lat="20.6463506" lon="-103.4598413"/>
+ <node id="1653526138" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:38Z" user="minoxfilm" uid="258237" lat="20.6397747" lon="-103.4473206"/>
+ <node id="1653526160" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:38Z" user="minoxfilm" uid="258237" lat="20.6408598" lon="-103.4612460"/>
+ <node id="1653526179" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:39Z" user="minoxfilm" uid="258237" lat="20.6405614" lon="-103.4612433"/>
+ <node id="1653526197" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:40Z" user="minoxfilm" uid="258237" lat="20.6427400" lon="-103.4648716"/>
+ <node id="1653526228" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:40Z" user="minoxfilm" uid="258237" lat="20.6397329" lon="-103.4470940"/>
+ <node id="1653526272" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:42Z" user="minoxfilm" uid="258237" lat="20.6403864" lon="-103.4611953"/>
+ <node id="1653526278" visible="true" version="1" changeset="10833032" timestamp="2012-02-29T22:23:42Z" user="minoxfilm" uid="258237" lat="20.6323582" lon="-103.4604297"/>
+ <node id="1653861008" visible="true" version="2" changeset="10870444" timestamp="2012-03-04T16:22:22Z" user="minoxfilm" uid="258237" lat="20.6317831" lon="-103.4603240"/>
+ <node id="1654013107" visible="true" version="1" changeset="10834760" timestamp="2012-03-01T06:53:24Z" user="minoxfilm" uid="258237" lat="20.6386287" lon="-103.4639605"/>
+ <node id="1654013265" visible="true" version="1" changeset="10834760" timestamp="2012-03-01T06:53:30Z" user="minoxfilm" uid="258237" lat="20.6375741" lon="-103.4601914"/>
+ <node id="1654013839" visible="true" version="1" changeset="10834760" timestamp="2012-03-01T06:53:47Z" user="minoxfilm" uid="258237" lat="20.6313568" lon="-103.4603321"/>
+ <node id="1655249392" visible="true" version="1" changeset="10843223" timestamp="2012-03-01T23:04:17Z" user="minoxfilm" uid="258237" lat="20.6308244" lon="-103.4604167"/>
+ <node id="1655249411" visible="true" version="1" changeset="10843223" timestamp="2012-03-01T23:04:17Z" user="minoxfilm" uid="258237" lat="20.6298924" lon="-103.4605647"/>
+ <node id="1655249459" visible="true" version="1" changeset="10843223" timestamp="2012-03-01T23:04:18Z" user="minoxfilm" uid="258237" lat="20.6303585" lon="-103.4604907"/>
+ <node id="1658274470" visible="true" version="1" changeset="10863152" timestamp="2012-03-03T22:31:15Z" user="lxbarth" uid="589596" lat="20.6399393" lon="-103.4482709"/>
+ <node id="1658274473" visible="true" version="1" changeset="10863152" timestamp="2012-03-03T22:31:15Z" user="lxbarth" uid="589596" lat="20.6400437" lon="-103.4488737"/>
+ <node id="1658274475" visible="true" version="1" changeset="10863152" timestamp="2012-03-03T22:31:16Z" user="lxbarth" uid="589596" lat="20.6400857" lon="-103.4491164"/>
+ <node id="1658274477" visible="true" version="1" changeset="10863152" timestamp="2012-03-03T22:31:16Z" user="lxbarth" uid="589596" lat="20.6401706" lon="-103.4496063"/>
+ <node id="1658274479" visible="true" version="1" changeset="10863152" timestamp="2012-03-03T22:31:16Z" user="lxbarth" uid="589596" lat="20.6402443" lon="-103.4500321"/>
+ <node id="1658274482" visible="true" version="1" changeset="10863152" timestamp="2012-03-03T22:31:16Z" user="lxbarth" uid="589596" lat="20.6403478" lon="-103.4506298"/>
+ <node id="1658274483" visible="true" version="1" changeset="10863152" timestamp="2012-03-03T22:31:16Z" user="lxbarth" uid="589596" lat="20.6404004" lon="-103.4509333"/>
+ <node id="1658274485" visible="true" version="1" changeset="10863152" timestamp="2012-03-03T22:31:16Z" user="lxbarth" uid="589596" lat="20.6404829" lon="-103.4514096"/>
+ <node id="1658274488" visible="true" version="1" changeset="10863152" timestamp="2012-03-03T22:31:16Z" user="lxbarth" uid="589596" lat="20.6405693" lon="-103.4519086"/>
+ <node id="1658274498" visible="true" version="1" changeset="10863152" timestamp="2012-03-03T22:31:17Z" user="lxbarth" uid="589596" lat="20.6408751" lon="-103.4536742"/>
+ <node id="1658274501" visible="true" version="1" changeset="10863152" timestamp="2012-03-03T22:31:17Z" user="lxbarth" uid="589596" lat="20.6409180" lon="-103.4539220"/>
+ <node id="1658274506" visible="true" version="1" changeset="10863152" timestamp="2012-03-03T22:31:18Z" user="lxbarth" uid="589596" lat="20.6412336" lon="-103.4557788"/>
+ <node id="1658274507" visible="true" version="1" changeset="10863152" timestamp="2012-03-03T22:31:18Z" user="lxbarth" uid="589596" lat="20.6412415" lon="-103.4558255"/>
+ <node id="1658290427" visible="true" version="1" changeset="10863312" timestamp="2012-03-03T22:51:32Z" user="lxbarth" uid="589596" lat="20.6408022" lon="-103.4532537"/>
+ <node id="1658290430" visible="true" version="1" changeset="10863312" timestamp="2012-03-03T22:51:33Z" user="lxbarth" uid="589596" lat="20.6408866" lon="-103.4537405"/>
+ <node id="1658299489" visible="true" version="1" changeset="10863350" timestamp="2012-03-03T22:57:27Z" user="lxbarth" uid="589596" lat="20.6469944" lon="-103.4592580"/>
+ <node id="1659191738" visible="true" version="1" changeset="10870444" timestamp="2012-03-04T16:22:03Z" user="minoxfilm" uid="258237" lat="20.6331964" lon="-103.4607063"/>
+ <node id="1676278627" visible="true" version="1" changeset="10993582" timestamp="2012-03-15T22:13:31Z" user="juey" uid="617650" lat="20.6426324" lon="-103.4642142"/>
+ <node id="1676278637" visible="true" version="1" changeset="10993582" timestamp="2012-03-15T22:13:32Z" user="juey" uid="617650" lat="20.6426933" lon="-103.4646125"/>
+ <node id="1740935248" visible="true" version="1" changeset="11503601" timestamp="2012-05-05T01:29:50Z" user="minoxfilm" uid="258237" lat="20.6421861" lon="-103.4614778"/>
+ <node id="1740935251" visible="true" version="1" changeset="11503601" timestamp="2012-05-05T01:29:50Z" user="minoxfilm" uid="258237" lat="20.6422501" lon="-103.4618760"/>
+ <node id="1740935253" visible="true" version="1" changeset="11503601" timestamp="2012-05-05T01:29:50Z" user="minoxfilm" uid="258237" lat="20.6424456" lon="-103.4630920"/>
+ <node id="1740935255" visible="true" version="1" changeset="11503601" timestamp="2012-05-05T01:29:50Z" user="minoxfilm" uid="258237" lat="20.6425633" lon="-103.4637987"/>
+ <node id="1740935257" visible="true" version="1" changeset="11503601" timestamp="2012-05-05T01:29:50Z" user="minoxfilm" uid="258237" lat="20.6425934" lon="-103.4639798"/>
+ <node id="1740935280" visible="true" version="1" changeset="11503601" timestamp="2012-05-05T01:29:50Z" user="minoxfilm" uid="258237" lat="20.6430312" lon="-103.4607455"/>
+ <node id="1740935282" visible="true" version="1" changeset="11503601" timestamp="2012-05-05T01:29:50Z" user="minoxfilm" uid="258237" lat="20.6431072" lon="-103.4612787"/>
+ <node id="1740935286" visible="true" version="1" changeset="11503601" timestamp="2012-05-05T01:29:50Z" user="minoxfilm" uid="258237" lat="20.6431608" lon="-103.4616550"/>
+ <node id="1740935336" visible="true" version="1" changeset="11503601" timestamp="2012-05-05T01:29:51Z" user="minoxfilm" uid="258237" lat="20.6443880" lon="-103.4604328"/>
+ <node id="1740935341" visible="true" version="1" changeset="11503601" timestamp="2012-05-05T01:29:51Z" user="minoxfilm" uid="258237" lat="20.6446208" lon="-103.4603792"/>
+ <node id="1740935350" visible="true" version="1" changeset="11503601" timestamp="2012-05-05T01:29:51Z" user="minoxfilm" uid="258237" lat="20.6447205" lon="-103.4609298"/>
+ <node id="1740935411" visible="true" version="1" changeset="11503601" timestamp="2012-05-05T01:29:52Z" user="minoxfilm" uid="258237" lat="20.6450693" lon="-103.4602758"/>
+ <node id="1740935467" visible="true" version="1" changeset="11503601" timestamp="2012-05-05T01:29:52Z" user="minoxfilm" uid="258237" lat="20.6456015" lon="-103.4601532"/>
+ <node id="1740935655" visible="true" version="1" changeset="11503601" timestamp="2012-05-05T01:29:55Z" user="minoxfilm" uid="258237" lat="20.6478754" lon="-103.4584497"/>
+ <node id="1740935671" visible="true" version="1" changeset="11503601" timestamp="2012-05-05T01:29:55Z" user="minoxfilm" uid="258237" lat="20.6479545" lon="-103.4583771"/>
+ <node id="1740935743" visible="true" version="1" changeset="11503601" timestamp="2012-05-05T01:29:56Z" user="minoxfilm" uid="258237" lat="20.6485956" lon="-103.4576593"/>
+ <node id="1796569847" visible="true" version="2" changeset="24589192" timestamp="2014-08-07T06:12:27Z" user="minoxfilm" uid="258237" lat="20.6394614" lon="-103.4435839"/>
+ <node id="1796569850" visible="true" version="1" changeset="11964703" timestamp="2012-06-21T02:47:35Z" user="minoxfilm" uid="258237" lat="20.6394854" lon="-103.4457548"/>
+ <node id="1796569851" visible="true" version="1" changeset="11964703" timestamp="2012-06-21T02:47:35Z" user="minoxfilm" uid="258237" lat="20.6396317" lon="-103.4465465"/>
+ <node id="1938352916" visible="true" version="1" changeset="13300388" timestamp="2012-09-29T18:28:19Z" user="minoxfilm" uid="258237" lat="20.6400012" lon="-103.4486281"/>
+ <node id="1938352918" visible="true" version="1" changeset="13300388" timestamp="2012-09-29T18:28:19Z" user="minoxfilm" uid="258237" lat="20.6403178" lon="-103.4504568"/>
+ <node id="1941852587" visible="true" version="1" changeset="13326928" timestamp="2012-10-01T19:48:18Z" user="minoxfilm" uid="258237" lat="20.6305387" lon="-103.4604621"/>
+ <node id="1941852685" visible="true" version="1" changeset="13326928" timestamp="2012-10-01T19:48:22Z" user="minoxfilm" uid="258237" lat="20.6360061" lon="-103.4602776"/>
+ <node id="1942795546" visible="true" version="1" changeset="13336134" timestamp="2012-10-02T15:17:51Z" user="minoxfilm" uid="258237" lat="20.6350335" lon="-103.4604161"/>
+ <node id="1944457431" visible="true" version="2" changeset="13377326" timestamp="2012-10-05T19:36:33Z" user="minoxfilm" uid="258237" lat="20.6390281" lon="-103.4606935"/>
+ <node id="1944457443" visible="true" version="1" changeset="13349057" timestamp="2012-10-03T15:19:37Z" user="minoxfilm" uid="258237" lat="20.6394542" lon="-103.4637613"/>
+ <node id="1944457453" visible="true" version="1" changeset="13349057" timestamp="2012-10-03T15:19:37Z" user="minoxfilm" uid="258237" lat="20.6398683" lon="-103.4636613"/>
+ <node id="1944457473" visible="true" version="1" changeset="13349057" timestamp="2012-10-03T15:19:37Z" user="minoxfilm" uid="258237" lat="20.6404782" lon="-103.4635234"/>
+ <node id="1944457495" visible="true" version="1" changeset="13349057" timestamp="2012-10-03T15:19:38Z" user="minoxfilm" uid="258237" lat="20.6412587" lon="-103.4633469"/>
+ <node id="1944457497" visible="true" version="1" changeset="13349057" timestamp="2012-10-03T15:19:38Z" user="minoxfilm" uid="258237" lat="20.6413793" lon="-103.4640258"/>
+ <node id="1944457515" visible="true" version="1" changeset="13349057" timestamp="2012-10-03T15:19:38Z" user="minoxfilm" uid="258237" lat="20.6416509" lon="-103.4632626"/>
+ <node id="1944457517" visible="true" version="1" changeset="13349057" timestamp="2012-10-03T15:19:38Z" user="minoxfilm" uid="258237" lat="20.6417668" lon="-103.4639515"/>
+ <node id="1944457519" visible="true" version="1" changeset="13349057" timestamp="2012-10-03T15:19:38Z" user="minoxfilm" uid="258237" lat="20.6420348" lon="-103.4631802"/>
+ <node id="1944457520" visible="true" version="1" changeset="13349057" timestamp="2012-10-03T15:19:38Z" user="minoxfilm" uid="258237" lat="20.6421470" lon="-103.4638786"/>
+ <node id="1948043055" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:19Z" user="minoxfilm" uid="258237" lat="20.6380837" lon="-103.4603674"/>
+ <node id="1948043060" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:19Z" user="minoxfilm" uid="258237" lat="20.6387857" lon="-103.4606098"/>
+ <node id="1948043074" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:20Z" user="minoxfilm" uid="258237" lat="20.6396537" lon="-103.4609285"/>
+ <node id="1948043100" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:21Z" user="minoxfilm" uid="258237" lat="20.6409688" lon="-103.4542153"/>
+ <node id="1948043101" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:21Z" user="minoxfilm" uid="258237" lat="20.6409996" lon="-103.4612138"/>
+ <node id="1948043102" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:21Z" user="minoxfilm" uid="258237" lat="20.6414401" lon="-103.4566598"/>
+ <node id="1948043103" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:21Z" user="minoxfilm" uid="258237" lat="20.6414686" lon="-103.4568432"/>
+ <node id="1948043104" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:21Z" user="minoxfilm" uid="258237" lat="20.6415516" lon="-103.4573784"/>
+ <node id="1948043105" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:21Z" user="minoxfilm" uid="258237" lat="20.6416203" lon="-103.4578209"/>
+ <node id="1948043107" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:21Z" user="minoxfilm" uid="258237" lat="20.6416246" lon="-103.4578486"/>
+ <node id="1948043109" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:21Z" user="minoxfilm" uid="258237" lat="20.6416981" lon="-103.4583226"/>
+ <node id="1948043110" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:21Z" user="minoxfilm" uid="258237" lat="20.6417772" lon="-103.4588324"/>
+ <node id="1948043111" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:21Z" user="minoxfilm" uid="258237" lat="20.6418155" lon="-103.4590796"/>
+ <node id="1948043112" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:21Z" user="minoxfilm" uid="258237" lat="20.6418511" lon="-103.4593125"/>
+ <node id="1948043113" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:21Z" user="minoxfilm" uid="258237" lat="20.6418857" lon="-103.4595389"/>
+ <node id="1948043114" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:21Z" user="minoxfilm" uid="258237" lat="20.6419224" lon="-103.4597790"/>
+ <node id="1948043115" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:21Z" user="minoxfilm" uid="258237" lat="20.6419560" lon="-103.4599991"/>
+ <node id="1948043116" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:21Z" user="minoxfilm" uid="258237" lat="20.6419953" lon="-103.4602567"/>
+ <node id="1948043117" visible="true" version="1" changeset="13377326" timestamp="2012-10-05T19:36:21Z" user="minoxfilm" uid="258237" lat="20.6420239" lon="-103.4604434"/>
+ <node id="3802569763" visible="true" version="1" changeset="34866182" timestamp="2015-10-25T19:02:05Z" user="Irk_Ley" uid="346931" lat="20.6424960" lon="-103.4624700">
+  <tag k="addr:postcode" v="45060"/>
+  <tag k="addr:street" v="Puerto Tampico 2225"/>
+  <tag k="amenity" v="school"/>
+  <tag k="desciption" v="Nivel: Secundaria; Subnivel Secundaria General; Tipo de servicio: Secundaria General; Turno Matutino"/>
+  <tag k="is_in:suburb" v="Colonia Miramar"/>
+  <tag k="name" v="Colegio Champagnat"/>
+  <tag k="operator" v="Particular"/>
+  <tag k="SEP:CLAVEESC" v="14PES0968W"/>
+  <tag k="source" v="SEP-Catalogo de Centros de Trabajo"/>
+  <tag k="source:date" v="28/09/2015"/>
+ </node>
+ <node id="4614775038" visible="true" version="1" changeset="45252848" timestamp="2017-01-17T20:04:42Z" user="rodatirod" uid="1045127" lat="20.6405105" lon="-103.4515692"/>
+ <node id="5540905288" visible="true" version="1" changeset="57948560" timestamp="2018-04-09T18:15:05Z" user="Gamaliel Palomo" uid="8090238" lat="20.6417385" lon="-103.4616369">
+  <tag k="addr:city" v="Zapopan"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="addr:postcode" v="45060"/>
+  <tag k="addr:street" v="Prolongación Avenida Guadalupe"/>
+  <tag k="amenity" v="social_facility"/>
+  <tag k="description" v="A place for encounters, a diverse quantity of activities are done inside."/>
+  <tag k="name" v="La Colmena"/>
+  <tag k="social_facility" v="social_fabric_facility"/>
+  <tag k="social_facility:for" v="family"/>
+  <tag k="wheelchair" v="yes"/>
+ </node>
+ <way id="155214527" visible="true" version="2" changeset="11503601" timestamp="2012-05-05T01:30:03Z" user="minoxfilm" uid="258237">
+  <nd ref="1740935251"/>
+  <nd ref="1740935286"/>
+  <tag k="highway" v="residential"/>
+ </way>
+ <way id="155214562" visible="true" version="3" changeset="45257511" timestamp="2017-01-17T22:52:45Z" user="rodatirod" uid="1045127">
+  <nd ref="1740935248"/>
+  <nd ref="1740935282"/>
+  <nd ref="1740935350"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Volcán de Fuego"/>
+ </way>
+ <way id="184008242" visible="true" version="4" changeset="45258088" timestamp="2017-01-17T23:28:14Z" user="rodatirod" uid="1045127">
+  <nd ref="1740935253"/>
+  <nd ref="1944457519"/>
+  <nd ref="1944457515"/>
+  <nd ref="1944457495"/>
+  <nd ref="1944457473"/>
+  <nd ref="1944457453"/>
+  <nd ref="1944457443"/>
+  <nd ref="1654013107"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Tezontle"/>
+  <tag k="width:street" v="10"/>
+ </way>
+ <way id="184008254" visible="true" version="4" changeset="45258088" timestamp="2017-01-17T23:28:14Z" user="rodatirod" uid="1045127">
+  <nd ref="1944457497"/>
+  <nd ref="1944457495"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Tepetates"/>
+  <tag k="width:street" v="10"/>
+ </way>
+ <way id="184008265" visible="true" version="4" changeset="45258088" timestamp="2017-01-17T23:28:14Z" user="rodatirod" uid="1045127">
+  <nd ref="1944457520"/>
+  <nd ref="1944457519"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Jal"/>
+  <tag k="width:street" v="10"/>
+ </way>
+ <way id="184008267" visible="true" version="4" changeset="45258088" timestamp="2017-01-17T23:28:14Z" user="rodatirod" uid="1045127">
+  <nd ref="1944457517"/>
+  <nd ref="1944457515"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Arena"/>
+  <tag k="width:street" v="10"/>
+ </way>
+ <way id="296391659" visible="true" version="4" changeset="45252848" timestamp="2017-01-17T20:04:43Z" user="rodatirod" uid="1045127">
+  <nd ref="1796569847"/>
+  <nd ref="1653526113"/>
+  <nd ref="1796569850"/>
+  <nd ref="1796569851"/>
+  <nd ref="1653526228"/>
+  <nd ref="1653526138"/>
+  <nd ref="1658274470"/>
+  <nd ref="1938352916"/>
+  <nd ref="1658274473"/>
+  <nd ref="1658274475"/>
+  <nd ref="1658274477"/>
+  <nd ref="1658274479"/>
+  <nd ref="1938352918"/>
+  <nd ref="1658274482"/>
+  <nd ref="1658274483"/>
+  <nd ref="1658274485"/>
+  <nd ref="4614775038"/>
+  <nd ref="1658274488"/>
+  <nd ref="1653526012"/>
+  <nd ref="1658290427"/>
+  <nd ref="1658274498"/>
+  <nd ref="1658290430"/>
+  <nd ref="1658274501"/>
+  <nd ref="1948043100"/>
+  <nd ref="1653525949"/>
+  <nd ref="1658274506"/>
+  <nd ref="1658274507"/>
+  <nd ref="1948043102"/>
+  <nd ref="1948043103"/>
+  <nd ref="1948043104"/>
+  <nd ref="1948043105"/>
+  <nd ref="1948043107"/>
+  <nd ref="1948043109"/>
+  <nd ref="1948043110"/>
+  <nd ref="1948043111"/>
+  <nd ref="1948043112"/>
+  <nd ref="1948043113"/>
+  <nd ref="1948043114"/>
+  <nd ref="1948043115"/>
+  <nd ref="1948043116"/>
+  <nd ref="1948043117"/>
+  <nd ref="1653525964"/>
+  <nd ref="1740935248"/>
+  <nd ref="1740935251"/>
+  <nd ref="1740935253"/>
+  <nd ref="1740935255"/>
+  <nd ref="1740935257"/>
+  <nd ref="1676278627"/>
+  <nd ref="1676278637"/>
+  <nd ref="1653526197"/>
+  <nd ref="1653525925"/>
+  <nd ref="1653526016"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="name" v="Puerto Tampico"/>
+  <tag k="width:street" v="12"/>
+ </way>
+ <way id="466724287" visible="true" version="1" changeset="45251492" timestamp="2017-01-17T19:15:53Z" user="rodatirod" uid="1045127">
+  <nd ref="1740935743"/>
+  <nd ref="1653526009"/>
+  <nd ref="1653525874"/>
+  <nd ref="1740935671"/>
+  <nd ref="1740935655"/>
+  <nd ref="1658299489"/>
+  <nd ref="1653526133"/>
+  <nd ref="1653526034"/>
+  <nd ref="1653525933"/>
+  <nd ref="1653526038"/>
+  <nd ref="1740935467"/>
+  <nd ref="1740935411"/>
+  <nd ref="1740935341"/>
+  <nd ref="1740935336"/>
+  <nd ref="1740935280"/>
+  <nd ref="1653525964"/>
+  <nd ref="1948043101"/>
+  <nd ref="1653526160"/>
+  <nd ref="1653526064"/>
+  <nd ref="1653526179"/>
+  <nd ref="1653526272"/>
+  <nd ref="1653525977"/>
+  <nd ref="1948043074"/>
+  <nd ref="1944457431"/>
+  <nd ref="1948043060"/>
+  <nd ref="1948043055"/>
+  <nd ref="1654013265"/>
+  <nd ref="1653526093"/>
+  <nd ref="1653526003"/>
+  <nd ref="1941852685"/>
+  <nd ref="1942795546"/>
+  <nd ref="1653525982"/>
+  <nd ref="1653525901"/>
+  <nd ref="1659191738"/>
+  <nd ref="1653526114"/>
+  <nd ref="1653526017"/>
+  <nd ref="1653526278"/>
+  <nd ref="1653525958"/>
+  <nd ref="1653861008"/>
+  <nd ref="1653525823"/>
+  <nd ref="1654013839"/>
+  <nd ref="1655249392"/>
+  <nd ref="1941852587"/>
+  <nd ref="1655249459"/>
+  <nd ref="1655249411"/>
+  <nd ref="1479622358"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="name" v="Prolongación Avenida Guadalupe"/>
+ </way>
+</osm>
