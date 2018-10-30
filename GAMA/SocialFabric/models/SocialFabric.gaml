@@ -1,6 +1,6 @@
 /**
  *  crowds
- *  Author: gamaa
+ *  Author: Gamaliel Palomo
  *  Description: Model for social interactions in a city
  */
 
