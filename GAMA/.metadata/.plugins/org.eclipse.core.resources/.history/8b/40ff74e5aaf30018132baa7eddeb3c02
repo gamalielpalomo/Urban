@@ -1,10 +1,10 @@
 /**
  *  crowds
- *  Author: gamaa
+ *  Author: Gamaliel Palomo
  *  Description: Model for social interactions in a city
  */
 
-model crowds
+model SocialFabric
 
 global torus:false{
 	

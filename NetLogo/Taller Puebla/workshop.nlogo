@@ -11,14 +11,14 @@ globals [
   recreationPatches
   medicalPatches
   educationPatches
+  pinta
 ]
 
 breed [people person]
 
 people-own[
-  desiredLocation
   desiredPatch
-  kind
+  class
   currentState
 ]
 
@@ -115,7 +115,7 @@ to LoadPeople
   set recreationPatches patches with [landuse = "recreation"]
 
   create-people Students[
-    set kind "student"
+    set class "student"
     set color red
     let xvar 0
     let yvar 0
@@ -128,12 +128,12 @@ to LoadPeople
     set shape "person"
     set size 1.5
 
-    goStudy
+    ifelse(random 100 < 70) [ goStudy ][goSomeWhere]
 
   ]
 
   create-people Workers[
-    set kind "worker"
+    set class "worker"
     set color yellow
     let xvar 0
     let yvar 0
@@ -151,7 +151,7 @@ to LoadPeople
   ]
 
   create-people Familiar[
-    set kind "family"
+    set class "family"
     set color 53
     let xvar 0
     let yvar 0
@@ -173,8 +173,8 @@ to LoadPeople
 
 end
 
-to go
 
+to go
   ifelse minute = 59 [
     set minute 0
     set hour (hour + 1)
@@ -182,39 +182,38 @@ to go
   if hour = 24 [    set hour 0  ]
 
   if hour >= 6 and hour < 8 [
-    ask people with [ kind = "worker" ][
-      if currentState != "going Work" [ goWork ]
+    ask people with [ class = "worker" ][
+      if currentState != "onWay" [ goWork ]
     ]
   ]
 
   if hour >= 7 and hour < 9 [
-    ask people with [ kind = "student" ][
-      if currentState != "going Study"[ goStudy ]
+    ask people with [ class = "student" and currentState = "idle" and currentState != "depinta"][
+      ifelse(random 100 < 70) [ goStudy ][goSomeWhere]
     ]
   ]
 
   if hour >= 9 and hour < 12 [
-    ask people with [ kind = "student" ][
-      if currentState != "going Study"[ goStudy ]
+    ask people with [ class = "student" and currentState != "depinta"][
+      if currentState != "onWay"[ goStudy ]
     ]
   ]
 
-
   if hour >= 14 and hour < 16[
-    ask people with [kind = "student"][
-      if currentState != "going Home" [ goHome ]
+    ask people with [class = "student"][
+      if currentState != "onWay" [ goHome ]
     ]
   ]
 
   if hour >= 17 and hour < 20[
-    ask people with [kind = "worker"][
-      if currentState != "going Home" [ goHome ]
+    ask people with [class = "worker"][
+      if currentState != "onWay" [ goHome ]
     ]
   ]
 
   if hour >= 12 and hour < 14[
-    ask people with [ kind = "family" ][
-      if currentState != "going Home" [ goHome ]
+    ask people with [ class = "family" ][
+      if currentState != "onWay" [ goHome ]
     ]
   ]
 
@@ -226,11 +225,11 @@ to go
       ;We need to check if it will be moving to another place
     ][
      ;The agent has not arrived to its destination, step forward
-      forward 0.5
+      if currentState != "depinta"[forward 0.5]
     ]
-
   ]
   updateLinks
+
   tick
 end
 
@@ -254,7 +253,7 @@ to goHome
   ]
   set desiredPatch patch xvar yvar
   set heading towards desiredPatch
-  set currentState "going Home"
+  set currentState "onWay"
 end
 
 to goWork
@@ -267,7 +266,7 @@ to goWork
   ]
   set desiredPatch patch xvar yvar
   set heading towards desiredPatch
-  set currentState "going Work"
+  set currentState "onWay"
 end
 
 to goStudy
@@ -280,7 +279,7 @@ to goStudy
   ]
   set desiredPatch patch xvar yvar
   set heading towards desiredPatch
-  set currentState "going Study"
+  set currentState "onWay"
 end
 
 to goMedical
@@ -293,7 +292,7 @@ to goMedical
   ]
   set desiredPatch patch xvar yvar
   set heading towards desiredPatch
-  set currentState "going Medical"
+  set currentState "onWay"
 end
 
 to goEconomic
@@ -306,7 +305,7 @@ to goEconomic
   ]
   set desiredPatch patch xvar yvar
   set heading towards desiredPatch
-  set currentState "going Economic"
+  set currentState "onWay"
 end
 
 to goRecreation
@@ -319,25 +318,25 @@ to goRecreation
   ]
   set desiredPatch patch xvar yvar
   set heading towards desiredPatch
-  set currentState "going Recreation"
+  set currentState "onWay"
 end
 
 to goSomeWhere
   let xvar 0
   let yvar 0
-  let rnd random 5
+  let rnd random 4
   let destPatch ""
-  if rnd = 0 [    set destPatch one-of educationPatches  set currentState "going Study" ]
-  if rnd = 1 [    set destPatch one-of habitacionalPatches  set currentState "going Home" ]
-  if rnd = 2 [    set destPatch one-of medicalPatches  set currentState "going Medical" ]
-  if rnd = 3 [    set destPatch one-of economicPatches  set currentState "going Economic" ]
-  if rnd = 4 [    set destPatch one-of recreationPatches  set currentState "going Recreation" ]
+  if rnd = 0 [    set destPatch one-of habitacionalPatches  ]
+  if rnd = 1 [    set destPatch one-of medicalPatches ]
+  if rnd = 2 [    set destPatch one-of economicPatches ]
+  if rnd = 3 [    set destPatch one-of recreationPatches ]
   ask destPatch[
     set xvar pxcor
     set yvar pycor
   ]
   set desiredPatch patch xvar yvar
   set heading towards desiredPatch
+  set currentState "depinta"
 end
 
 
@@ -364,8 +363,8 @@ GRAPHICS-WINDOW
 1
 1
 0
-1
-1
+0
+0
 1
 -30
 30
@@ -437,7 +436,7 @@ Perception
 Perception
 0
 10
-3.0
+4.0
 1
 1
 NIL
@@ -671,7 +670,36 @@ true
 true
 "" ""
 PENS
-"default" 1.0 0 -5298144 true "" "plot count links"
+"default" 1.0 0 -12895429 true "" "plot count links"
+
+MONITOR
+818
+631
+875
+676
+Pinta
+count people with[class = \"student\" and currentState = \"depinta\"]
+17
+1
+11
+
+PLOT
+1215
+621
+1756
+771
+Pinta
+NIL
+NIL
+0.0
+10.0
+0.0
+10.0
+true
+false
+"" ""
+PENS
+"default" 1.0 0 -2674135 true "" "plot count people with [class = \"student\" and currentState = \"depinta\"]"
 
 @#$#@#$#@
 ## WHAT IS IT?
@@ -1015,7 +1043,7 @@ false
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
 @#$#@#$#@
-NetLogo 6.0.2
+NetLogo 6.0.4
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@

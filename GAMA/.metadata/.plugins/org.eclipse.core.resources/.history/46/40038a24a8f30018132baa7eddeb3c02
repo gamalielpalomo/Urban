@@ -1,0 +1,43 @@
+/**
+* Name: tmpmodel
+* Author: gamaa
+* Description: 
+* Tags: Tag1, Tag2, TagN
+*/
+
+model tmpmodel
+
+/* Insert your model definition here */
+
+global {
+	int number_of_adults <- 50;
+	int number_of_children <- 20; 
+	init{
+		create adult number:number_of_adults;
+		create children number:number_of_children;
+	}
+}
+species adult skills:[moving]{
+	bool is_infected <- false;
+	aspect adult_aspect{
+		draw circle(2) color: (is_infected)? #red : #green;
+	}
+	reflex{
+		do wander;
+	}
+}
+species children{
+	bool is_infected <- flip(0.5);
+	aspect child_aspect{
+		draw circle(1) color: (is_infected)? #red : #green;
+	}
+}
+
+experiment my_experiment type:gui{
+	output{
+		display my_display{
+		 	species adult aspect: adult_aspect;
+		 	species children aspect: child_aspect;
+		}
+	}
+}
