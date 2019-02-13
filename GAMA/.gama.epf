@@ -1,5 +1,6 @@
-#Thu Nov 29 01:52:01 CST 2018
+#Wed Dec 12 10:59:54 CST 2018
 /instance/msi.gama.lang.gaml.Gaml/msi.gama.lang.gaml.Gaml.syntaxColorer.tokenStyles.assignment.style=1
+/instance/org.eclipse.ui.workbench/UIActivities.disabled2=true
 /instance/ummisco.gaml.editbox/ummisco.gaml.editbox.provider.Text_fileNames=*.txt,*.*
 /instance/org.eclipse.ui.ide/quickStart=false
 /instance/org.eclipse.ui.ide/platformState=1527552484323
@@ -7,12 +8,15 @@
 /instance/ummisco.gaml.editbox/ummisco.gaml.editbox.provider.Text_enabled=true
 file_export_version=3.0
 /instance/ummisco.gaml.editbox/ummisco.gaml.editbox.provider.Text_default=Default
+/instance/org.eclipse.ui.workbench/ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc
 /instance/org.eclipse.core.resources/version=1
 /instance/org.eclipse.ui.ide/=\=\=\=\=\=\=
 /instance/org.eclipse.ui.workbench//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
 /instance/org.eclipse.ui.ide/PROBLEMS_FILTERS_MIGRATE=true
 @org.eclipse.core.net=1.2.300.v20141118-1725
+/instance/org.eclipse.ui.workbench/ColorsAndFontsPreferencePage.selectedElement=Torg.eclipse.ui.workbenchMisc
 /instance/org.eclipse.team.svn.core/migrateFromAuthorizationDatabase/isMigrated=true
+/instance/org.eclipse.core.resources/pathvariable.CACHE_LOC=C\:/Users/gamaa/Documents/City Science/GAMA/.cache
 /instance/org.eclipse.ui.ide/tipsAndTricks=false
 /instance/org.eclipse.ui.ide/>>>>>>>=8d1dac9e2765d8fbed2367978171e0974a2ef740
 /instance/ummisco.gaml.editbox/ummisco.gaml.editbox.provider.GAML_Default=\#COMMENT\r\n\#Fri May 25 21\:25\:20 CDT 2018\r\nHighlightOne\=true\r\nFillGradient\=false\r\nFillSelected\=true\r\nRoundBox\=true\r\nBorderColorType\=0\r\nName\=Default\r\nExpandBox\=false\r\nBorderDrawLine\=false\r\nFillOnMove\=false\r\nAlpha\=0\r\nHighlightWidth\=1\r\nBorderWidth\=1\r\nHighlightColor\=000000\r\nBorderColor\=00bbbb\r\nFillKeyModifier\=Alt\r\nHighlightColorType\=0\r\nFillGradientColor\=null\r\nBuilder\=Text\r\nHighlightDrawLine\=false\r\nFillSelectedColor\=ffffc4\r\nBorderLineStyle\=0\r\nColors\=null-d0dd9b-cdd8b9-e9f58b\r\nHighlightLineStyle\=0\r\nNoBackground\=false\r\nCirculateLevelColors\=false\r\n
