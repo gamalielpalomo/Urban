@@ -30,8 +30,8 @@ global{
 			do die;
 		}
 		
-		//Importamos del archivo GIS las formas que nos interesan y creamos agentes type street
-		create agente_osm from: places with: [type::string(read("amenity")), name_str::string(read("name"))]{
+		//Importamos del archivo GIS las formas que nos interesan y creamos agentes type place
+		create agente_osm from:places with: [type::string(read("amenity")), name::string(read("name"))]{
 			if type != nil and type != "" or type != ""{
 				create place with: [shape::shape, type::type, name::name];
 			}

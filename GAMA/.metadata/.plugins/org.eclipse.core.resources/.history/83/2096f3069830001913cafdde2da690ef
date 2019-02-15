@@ -1,0 +1,27 @@
+/***
+* Name: Violence
+* Author: gamalielpalomo
+* Description: This GAMA model implements a ABM model for violence based on the Levy equation for movements.
+* Tags: Tag1, Tag2, TagN
+***/
+
+model Violence
+
+/* Insert your model definition here */
+
+global torus:false{
+	file<geometry> roads <- osm_file("/gis/centinela/centinela.osm");
+	geometry shape <- envelope(roads);	
+	
+	init{
+		
+		
+		
+	}
+}
+
+species osm_agent{
+	
+	string name_str;
+	
+}
