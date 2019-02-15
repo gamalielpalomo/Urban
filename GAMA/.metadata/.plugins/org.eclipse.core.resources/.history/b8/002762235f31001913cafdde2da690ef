@@ -122,7 +122,7 @@ experiment experiment1 type:gui{
 			}
 			graphics "people"{
 				loop element over:people{
-					draw circle(20) color:element.current_color at:element.location;
+					draw circle(30) color:element.current_color at:element.location;
 				}
 			}
 		}

@@ -23,7 +23,7 @@ global torus:false{
 			do die;
 		}
 		road_network <- as_edge_graph(road);
-		create people number:300;
+		create people number:100;
 	}
 	reflex update{
 		ask cell{
@@ -68,7 +68,7 @@ species people skills:[moving]{
 	init{
 		state <- "walker";
 		victimized <- false;
-		clusteringAttractivity <- rnd(15,20);
+		clusteringAttractivity <- rnd(8,9);
 		target 		<- any_location_in(one_of(road));
 		location 	<- any_location_in(one_of(road));
 		current_color <- rgb (11, 157, 44,255);	
@@ -122,7 +122,7 @@ experiment experiment1 type:gui{
 			}
 			graphics "people"{
 				loop element over:people{
-					draw circle(20) color:element.current_color at:element.location;
+					draw circle(30) color:element.current_color at:element.location;
 				}
 			}
 		}
