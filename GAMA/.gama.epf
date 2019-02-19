@@ -1,4 +1,4 @@
-#Wed Feb 13 13:01:14 CST 2019
+#Mon Feb 18 19:32:15 CST 2019
 \!/=
 /instance/msi.gama.lang.gaml.Gaml/msi.gama.lang.gaml.Gaml.syntaxColorer.tokenStyles.assignment.font=1|Consolas|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|49|Consolas;
 /instance/msi.gama.lang.gaml.Gaml/msi.gama.lang.gaml.Gaml.syntaxColorer.tokenStyles.assignment.style=1
@@ -19,16 +19,16 @@
 /instance/org.eclipse.ui.ide/<<<<<<<=HEAD
 /instance/org.eclipse.ui.ide/>>>>>>>=8d1dac9e2765d8fbed2367978171e0974a2ef740
 /instance/org.eclipse.ui.ide/PROBLEMS_FILTERS_MIGRATE=true
-/instance/org.eclipse.ui.ide/platformState=1550074592761
+/instance/org.eclipse.ui.ide/platformState=1550510943791
 /instance/org.eclipse.ui.ide/quickStart=false
 /instance/org.eclipse.ui.ide/tipsAndTricks=false
 /instance/org.eclipse.ui.workbench//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
-/instance/org.eclipse.ui.workbench/ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc
-/instance/org.eclipse.ui.workbench/ColorsAndFontsPreferencePage.selectedElement=Torg.eclipse.ui.workbenchMisc
 /instance/org.eclipse.ui.workbench/ENABLED_DECORATORS=org.eclipse.ui.LinkedResourceDecorator\:false,org.eclipse.ui.SymlinkDecorator\:true,org.eclipse.ui.VirtualResourceDecorator\:false,org.eclipse.ui.ContentTypeDecorator\:true,org.eclipse.ui.ResourceFilterDecorator\:false,msi.gama.application.decorator\:true,msi.gama.application.date.decorator\:false,msi.gama.light.decorator\:true,
 /instance/org.eclipse.ui.workbench/UIActivities.disabled2=true
+/instance/org.eclipse.ui.workbench/UIActivities.org.eclipse.graphiti.ui.capabilities.examples=false
+/instance/org.eclipse.ui.workbench/UIActivities.org.eclipse.graphiti.ui.capabilities.framework=false
 /instance/org.eclipse.ui.workbench/UIActivities.org.eclipse.xtext.ui=false
-/instance/org.eclipse.ui.workbench/clearWorkspace=true
+/instance/org.eclipse.ui.workbench/clearWorkspace=false
 /instance/org.eclipse.ui/CURRENT_THEME_ID=org.eclipse.ui.r30
 /instance/org.eclipse.ui/presentationFactoryId=org.eclipse.ui.presentations.r30
 /instance/ummisco.gaml.editbox/ummisco.gaml.editbox.provider.GAML_Default=\#COMMENT\r\n\#Fri May 25 21\:25\:20 CDT 2018\r\nHighlightOne\=true\r\nFillGradient\=false\r\nFillSelected\=true\r\nRoundBox\=true\r\nBorderColorType\=0\r\nName\=Default\r\nExpandBox\=false\r\nBorderDrawLine\=false\r\nFillOnMove\=false\r\nAlpha\=0\r\nHighlightWidth\=1\r\nBorderWidth\=1\r\nHighlightColor\=000000\r\nBorderColor\=00bbbb\r\nFillKeyModifier\=Alt\r\nHighlightColorType\=0\r\nFillGradientColor\=null\r\nBuilder\=Text\r\nHighlightDrawLine\=false\r\nFillSelectedColor\=ffffc4\r\nBorderLineStyle\=0\r\nColors\=null-d0dd9b-cdd8b9-e9f58b\r\nHighlightLineStyle\=0\r\nNoBackground\=false\r\nCirculateLevelColors\=false\r\n
