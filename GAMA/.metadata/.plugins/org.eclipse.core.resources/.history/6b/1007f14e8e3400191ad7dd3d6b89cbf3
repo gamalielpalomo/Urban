@@ -15,9 +15,7 @@ global torus:false{
 	int yCells;
 	graph road_network;
 	file<geometry> roads <- osm_file("/gis/centinela/centinela.osm");
-	file neighborhood <- file("gis/centinela/neighborhood.shp");
-	geometry shape <- envelope(roads);
-		
+	geometry shape <- envelope(roads);	
 	init{
 		crimes <- 0;
 		xCells <- 20;
@@ -29,14 +27,11 @@ global torus:false{
 			do die;
 		}
 		road_network <- as_edge_graph(road);
-		create suburb from:neighborhood with:[name::string(read(name))];
 		create people number:200{
 			possibleOffender <- false;
-			do updateProperties;
 		}
 		create people number: 10{
 			possibleOffender <- true;
-			do updateProperties;
 		}
 	}
 	reflex update{
@@ -60,22 +55,17 @@ grid cell width:xCells height:yCells{
 		current_people_inside <- 0;
 		tension <- 0;
 	}
-	reflex main{
-		do updateState;
-	}
 	action updateState{
 		current_people_inside <- length(people inside self);
-		write world.shape.width;
+		if(tension>0){
+			current_color <- #red;
+		}
 	}
 }
 
 species road{
 	string name;
 	string type;
-}
-
-species suburb{
-	string name;
 }
 
 species people skills:[moving]{
@@ -89,8 +79,9 @@ species people skills:[moving]{
 		clusteringAttractivity <- rnd(1,5);
 		target 		<- any_location_in(one_of(road));
 		location 	<- any_location_in(one_of(road));
+		current_color <- rgb (11, 157, 44,255);	
 	}
-	/*reflex updateState{
+	reflex updateState{
 		list<cell> attractiveCells <- cell where (each.current_people_inside >= clusteringAttractivity);
 		if(length(attractiveCells)>0){			
 			cell selected <- one_of(attractiveCells);
@@ -106,11 +97,12 @@ species people skills:[moving]{
 				current_color <- rgb (210, 23, 23,255);
 			}
 		}
-	}*/
+	}
 	reflex move{
 		if(location = target or path_between(road_network,location,target)=nil){
 			location <- location + 1;
 			target <- any_location_in(one_of(road));
+			current_color <- rgb (11, 157, 44,255);
 		}
 		do goto on:road_network target:target speed:10.0;
 	}
@@ -123,23 +115,15 @@ species people skills:[moving]{
 		}
 		crimes <- crimes + 1;
 	}
-	action updateProperties{
-		current_color <- possibleOffender?rgb (210, 23, 23,255):rgb (11, 157, 44,255); 
-	}
 }
 
 experiment experiment1 type:gui{
 	output{
 		display scenario{
-			graphics "roads" refresh:false{
+			graphics "roads"{
 				rgb road_Color <- rgb (121, 121, 121,255);
 				loop element over:road{
-					draw element color:road_Color width:1.0;
-				}
-			}
-			graphics "neighborhood" refresh:false{
-				loop element over:suburb{
-					draw square(30) depth:10 color:rgb (145, 101, 197,255) at:element.location;
+					draw element color:road_Color width:2.0;
 				}
 			}
 			graphics "people"{
@@ -149,14 +133,14 @@ experiment experiment1 type:gui{
 			}
 		}
 		display grid{
-			graphics "roads"{
+			graphics "roads" refresh:false{
 				rgb road_Color <- rgb (121, 121, 121,255);
 				loop element over:road{
-					draw element color:road_Color width:1.0;
+					draw element color:road_Color width:2.0;
 				}
 			}
 			graphics "cells"{
-				loop element over:cell where (each.current_people_inside>=5){
+				loop element over:cell where (each.current_people_inside>=2){
 					draw rectangle(world.shape.width/yCells,world.shape.height/xCells) color:rgb (128, 0, 64,255,200) at:element.location;
 				}
 			}

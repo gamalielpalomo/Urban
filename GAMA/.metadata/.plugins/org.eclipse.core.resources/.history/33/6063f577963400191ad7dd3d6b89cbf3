@@ -14,14 +14,15 @@ global torus:false{
 	int xCells;
 	int yCells;
 	graph road_network;
-	file<geometry> roads <- osm_file("/gis/centinela/centinela.osm");
-	file neighborhood <- file("gis/centinela/neighborhood.shp");
-	geometry shape <- envelope(roads);
-		
+	file<geometry> roads;
+	file neighborhood;
+	geometry shape <- envelope(roads);	
 	init{
 		crimes <- 0;
 		xCells <- 20;
 		yCells <- 20;
+		roads <- osm_file("/gis/centinela/centinela.osm");
+		neighborhood <- file("gis/centinela/neighborhood.shp");
 		create osm_agent from:roads with:[name_str::string(read("name")), type_str::string(read("highway"))]{
 			if(type_str != nil and type_str != "" and type_str != "turning_circle" and type_str != "traffic_signals" and type_str != "bus_stop"){
 				create road with: [shape::shape, type::type_str, name::name_str];
@@ -29,7 +30,7 @@ global torus:false{
 			do die;
 		}
 		road_network <- as_edge_graph(road);
-		create suburb from:neighborhood with:[name::string(read(name))];
+		create suburb from:heighborhood with:[name::string(read(name))];
 		create people number:200{
 			possibleOffender <- false;
 			do updateProperties;
@@ -60,12 +61,11 @@ grid cell width:xCells height:yCells{
 		current_people_inside <- 0;
 		tension <- 0;
 	}
-	reflex main{
-		do updateState;
-	}
 	action updateState{
 		current_people_inside <- length(people inside self);
-		write world.shape.width;
+		if(tension>0){
+			current_color <- #red;
+		}
 	}
 }
 
@@ -131,15 +131,10 @@ species people skills:[moving]{
 experiment experiment1 type:gui{
 	output{
 		display scenario{
-			graphics "roads" refresh:false{
+			graphics "roads"{
 				rgb road_Color <- rgb (121, 121, 121,255);
 				loop element over:road{
 					draw element color:road_Color width:1.0;
-				}
-			}
-			graphics "neighborhood" refresh:false{
-				loop element over:suburb{
-					draw square(30) depth:10 color:rgb (145, 101, 197,255) at:element.location;
 				}
 			}
 			graphics "people"{
@@ -149,14 +144,14 @@ experiment experiment1 type:gui{
 			}
 		}
 		display grid{
-			graphics "roads"{
+			graphics "roads" refresh:false{
 				rgb road_Color <- rgb (121, 121, 121,255);
 				loop element over:road{
 					draw element color:road_Color width:1.0;
 				}
 			}
 			graphics "cells"{
-				loop element over:cell where (each.current_people_inside>=5){
+				loop element over:cell where (each.current_people_inside>=2){
 					draw rectangle(world.shape.width/yCells,world.shape.height/xCells) color:rgb (128, 0, 64,255,200) at:element.location;
 				}
 			}
