@@ -126,7 +126,7 @@ species people skills:[moving]{
 	}
 	action commitCrime{
 		cell current <- one_of(cell at_distance(0));
-		people victim <- one_of(people at_distance(50));
+		people victim <- one_of(people at_distance(100));
 		if(victim != nil){
 			victim.victimized <- true;
 			current.tension <- current.tension + 1;
@@ -184,7 +184,7 @@ experiment experiment1 type:gui{
 		}
 		display chart{
 			chart "Crimes" type:series{
-				data "Crimes" value:crimes color:rgb (255, 0, 0,255);
+				data "Crimes" value:crimes/2 color:rgb (255, 0, 0,255);
 			}
 		}
 	}

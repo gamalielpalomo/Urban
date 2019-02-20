@@ -1,9 +1,0 @@
-eclipse.preferences.version=1
-ummisco.gaml.editbox.provider.GAML_Default=\#COMMENT\r\n\#Fri May 25 21\:25\:20 CDT 2018\r\nHighlightOne\=true\r\nFillGradient\=false\r\nFillSelected\=true\r\nRoundBox\=true\r\nBorderColorType\=0\r\nName\=Default\r\nExpandBox\=false\r\nBorderDrawLine\=false\r\nFillOnMove\=false\r\nAlpha\=0\r\nHighlightWidth\=1\r\nBorderWidth\=1\r\nHighlightColor\=000000\r\nBorderColor\=00bbbb\r\nFillKeyModifier\=Alt\r\nHighlightColorType\=0\r\nFillGradientColor\=null\r\nBuilder\=Text\r\nHighlightDrawLine\=false\r\nFillSelectedColor\=ffffc4\r\nBorderLineStyle\=0\r\nColors\=null-d0dd9b-cdd8b9-e9f58b\r\nHighlightLineStyle\=0\r\nNoBackground\=false\r\nCirculateLevelColors\=false\r\n
-ummisco.gaml.editbox.provider.GAML_default=Default
-ummisco.gaml.editbox.provider.GAML_enabled=true
-ummisco.gaml.editbox.provider.GAML_fileNames=*.gaml
-ummisco.gaml.editbox.provider.Text_Default=\#COMMENT\r\n\#Fri May 25 21\:25\:20 CDT 2018\r\nHighlightOne\=true\r\nFillGradient\=false\r\nFillSelected\=true\r\nRoundBox\=true\r\nBorderColorType\=0\r\nName\=Default\r\nExpandBox\=false\r\nBorderDrawLine\=false\r\nFillOnMove\=false\r\nAlpha\=0\r\nHighlightWidth\=1\r\nBorderWidth\=1\r\nHighlightColor\=000000\r\nBorderColor\=00bbbb\r\nFillKeyModifier\=Alt\r\nHighlightColorType\=0\r\nFillGradientColor\=null\r\nBuilder\=Text\r\nHighlightDrawLine\=false\r\nFillSelectedColor\=ffffc4\r\nBorderLineStyle\=0\r\nColors\=null-d0dd9b-cdd8b9-e9f58b\r\nHighlightLineStyle\=0\r\nNoBackground\=false\r\nCirculateLevelColors\=false\r\n
-ummisco.gaml.editbox.provider.Text_default=Default
-ummisco.gaml.editbox.provider.Text_enabled=true
-ummisco.gaml.editbox.provider.Text_fileNames=*.txt,*.*

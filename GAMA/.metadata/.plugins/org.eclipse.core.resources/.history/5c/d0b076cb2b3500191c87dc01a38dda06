@@ -126,7 +126,7 @@ species people skills:[moving]{
 	}
 	action commitCrime{
 		cell current <- one_of(cell at_distance(0));
-		people victim <- one_of(people at_distance(50));
+		people victim <- one_of(people at_distance(100));
 		if(victim != nil){
 			victim.victimized <- true;
 			current.tension <- current.tension + 1;

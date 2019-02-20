@@ -109,7 +109,6 @@ species people skills:[moving]{
 				if(rndVar>pi){
 					target <- selected.location;
 				}
-				offenderOnTheWay <- true;
 			}
 		}
 	}
@@ -119,14 +118,13 @@ species people skills:[moving]{
 			target <- any_location_in(one_of(road));
 			if (possibleOffender = true){
 				do commitCrime;
-				offenderOnTheWay <- false;
 			}
 		}
 		do goto on:road_network target:target speed:10.0;
 	}
 	action commitCrime{
 		cell current <- one_of(cell at_distance(0));
-		people victim <- one_of(people at_distance(50));
+		people victim <- one_of(people at_distance(10));
 		if(victim != nil){
 			victim.victimized <- true;
 			current.tension <- current.tension + 1;
