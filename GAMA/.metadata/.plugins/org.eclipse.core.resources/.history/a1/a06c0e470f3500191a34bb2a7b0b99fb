@@ -65,6 +65,7 @@ grid cell width:xCells height:yCells{
 	}
 	action updateState{
 		current_people_inside <- length(people inside self);
+		write world.shape.width;
 	}
 }
 
