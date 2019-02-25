@@ -1,15 +1,8 @@
-#Wed Feb 20 09:03:54 CST 2019
+#Fri Feb 22 19:35:34 CST 2019
 \!/=
-/instance/msi.gama.lang.gaml.Gaml/msi.gama.lang.gaml.Gaml.syntaxColorer.tokenStyles.assignment.font=1|Consolas|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|49|Consolas;
-/instance/msi.gama.lang.gaml.Gaml/msi.gama.lang.gaml.Gaml.syntaxColorer.tokenStyles.assignment.style=1
 /instance/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
-/instance/org.eclipse.core.resources/=\=\=\=\=\=\=
-/instance/org.eclipse.core.resources/<<<<<<<=HEAD
-/instance/org.eclipse.core.resources/>>>>>>>=8d1dac9e2765d8fbed2367978171e0974a2ef740
-/instance/org.eclipse.core.resources/description.autobuilding=false
 /instance/org.eclipse.core.resources/pathvariable.CACHE_LOC=C\:/Users/gamaa/Documents/Software Projects/City Science/GAMA/.cache
 /instance/org.eclipse.core.resources/version=1
-/instance/org.eclipse.ui.editors/AbstractTextEditor.Color.Background.SystemDefault=false
 /instance/org.eclipse.ui.editors/overviewRuler_migration=migrated_3.1
 /instance/org.eclipse.ui.ide/=\=\=\=\=\=\=
 /instance/org.eclipse.ui.ide/<<<<<<<=HEAD
