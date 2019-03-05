@@ -11,7 +11,7 @@ global torus:false{
 	int crimes;
 	float mu parameter: 'Mu:' category: 'Model' <- 1.0 min: 0.0 max: 2.0; 
 	graph road_network;
-	string case_study <- "tijuana" ;
+	string case_study <- "centinela" ;
 	file<geometry> roads <- osm_file("/gis/"+case_study + "/" +case_study +".osm");
 	//file neighborhood <- file("gis/case_study/neighborhood.shp");
 	geometry shape <- envelope(roads);
@@ -62,6 +62,15 @@ species road{
 	
 	aspect default{
 		draw shape color:rgb (121, 121, 121,255);
+		if name_str = "Calzada del Vergel"{
+			draw shape color:#blue width:5.0;
+		}
+		if name_str = "Camino a la Mesa"{
+			draw shape color:#red width:5.0;
+		}
+		if name_str = "Crisantemos"{
+			draw shape color:#orange width:5.0;
+		}
 	}
 }
 
