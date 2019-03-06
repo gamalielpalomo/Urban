@@ -35,8 +35,8 @@ global torus:false{
 		road_network <- as_edge_graph(road);
 		//create suburb from:neighborhood with:[name_str::string(read(name))];
 		create transport from:transport_file with:[name_str::string(read("name"))];
-		//create transport from:proposal_file with:[name_str::string(read("name_str"))];
-		create transport from:proposal_file2 with:[name_str::string(read("name_str"))];
+		create transport from:proposal_file with:[name_str::string(read("name_str"))];
+		create transoirt from:prpoposal_file2 with:[name_str::string(read("name_str"))]
 		create hospital from:hospitals_file with:[name_str::string(read("name_str"))];
 		create people number:250;
 		

@@ -16,7 +16,7 @@ global torus:false{
 	file hospitals_file <- file("gis/"+case_study+"/"+"hospitals"+".shp");
 	file transport_file <- file("gis/"+case_study+"/"+"transport"+".shp");
 	file proposal_file <- file("gis/"+case_study+"/"+"proposal"+".shp");
-	file proposal_file2 <- file("gis/"+case_study+"/"+"proposal_interno"+".shp");
+	file proposal_file2 <- file("gis/"+case_study+"/"+"proposal2"+".shp");
 	//file neighborhood <- file("gis/case_study/neighborhood.shp");
 	geometry shape <- envelope(osmfile);
 	float maxDistance <- sqrt(world.shape.width^2+world.shape.height^2)#m;
@@ -35,8 +35,7 @@ global torus:false{
 		road_network <- as_edge_graph(road);
 		//create suburb from:neighborhood with:[name_str::string(read(name))];
 		create transport from:transport_file with:[name_str::string(read("name"))];
-		//create transport from:proposal_file with:[name_str::string(read("name_str"))];
-		create transport from:proposal_file2 with:[name_str::string(read("name_str"))];
+		create transport from:proposal_file with:[name_str::string(read("name_str"))];
 		create hospital from:hospitals_file with:[name_str::string(read("name_str"))];
 		create people number:250;
 		
