@@ -214,7 +214,7 @@ GreenAffinity
 GreenAffinity
 0
 100
-70.0
+80.0
 1
 1
 NIL
@@ -229,7 +229,7 @@ RedAffinity
 RedAffinity
 0
 100
-70.0
+50.0
 1
 1
 NIL
