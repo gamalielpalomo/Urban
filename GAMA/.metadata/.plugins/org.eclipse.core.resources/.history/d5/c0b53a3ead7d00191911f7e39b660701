@@ -55,7 +55,7 @@ global torus:false{
 	list<gis_data> gis_data_elements;
 	
 	// ______ Zapopan Geo Info  ________________
-	file<geometry> roads_file <- osm_file("/gis/miramar/miramar.osm");
+	file<geometry> roads_file <- osm_file("/gis/miramar/Condicion_de_calles.shp");
 	file street_conditions_file <- file("/gis/miramar/Condicion_de_calles.shp"); 
 	file places_file <- file("/gis/miramar/miramar-places.shp");
 	file<geometry> suburbs_file <- osm_file("/gis/miramar/Miramar-suburbs.osm");

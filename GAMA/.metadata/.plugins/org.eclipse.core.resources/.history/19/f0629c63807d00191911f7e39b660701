@@ -328,7 +328,7 @@ species people skills:[moving]{
 	}
 	
 	aspect name:standard_aspect{
-		draw geometry:circle(agentsSize#m) color:rgb (73, 220, 48,255);			
+		draw geometry:circle(agentsSize#m) color:rgb (241, 216, 69,255);			
 	}
 	
 	aspect sphere{
@@ -343,14 +343,14 @@ experiment simulation type:gui{
 	
 	parameter "perception" var: distanceForInteraction <- 50.0#m category:"Agents";
 	parameter "speed" var:agentsSpeed <- 5.0 category:"Agents";
-	parameter "Agents-size" var:agentsSize <- 5 category:"Agents";
-	parameter "Edges-Width" var:edgesWidth <- 3 category:"Agents";
-	parameter "Show People" var:showPeople <- true category: "GUI";
+	parameter "Agents-size" var:agentsSize <- 10 category:"Agents";
+	parameter "Edges-Width" var:edgesWidth <- 5 category:"Agents";
+	parameter "Show People" var:showPeople <- false category: "GUI";
 	parameter "Show Interactions" var:showInteractions <- true category: "GUI";
 	parameter "Show Streets" var:showStreets <- true category:"GUI";
 	parameter "Show Places" var:showPlaces <-true category:"GUI";
 	parameter "Show Suburbs" var:showSuburbs <-false category:"GUI";
-	parameter "Show Paths" var:showPaths <- false category:"GUI";
+	parameter "Show Paths" var:showPaths <- true category:"GUI";
 	parameter "Asfalto" var:showAsfaltoStreet <- true category: "STREETS";
 	parameter "Concreto" var:showConcretoStreet <- true category: "STREETS";
 	parameter "Empedrado" var:showEmpedradoStreet <- true category: "STREETS";

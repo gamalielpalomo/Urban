@@ -95,7 +95,7 @@ global torus:false{
 		allowRoadsKnowledge <- true;
 		
 		//Create osm agents that will be used as ROADS
-		create osm_agent from:roads_file with: [highway_str::string(read("highway")),name_str::string(read("name"))];
+		create osm_agent from:roads_file with: [highway_str::string(read("NOMBRE")),name_str::string(read("NOMBRE"))];
 		ask osm_agent{
 			
 				if(highway_str != nil and highway_str != "" and highway_str != "turning_circle" and highway_str != "traffic_signals" and highway_str != "bus_stop"){

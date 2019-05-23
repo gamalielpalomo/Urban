@@ -54,11 +54,22 @@ global torus:false{
 	list<road> road_gis_data;
 	list<gis_data> gis_data_elements;
 	
-	// ______ Zapopan Geo Info  ________________
+	// ______ Z A P O P  A N  ________________
+	
+	int caseStudy <- 0;
 	file<geometry> roads_file <- osm_file("/gis/miramar/miramar.osm");
+	//file<geometry> roads_file <- osm_file("/miramar/0409/miramar040918.osm");
 	file street_conditions_file <- file("/gis/miramar/Condicion_de_calles.shp"); 
 	file places_file <- file("/gis/miramar/miramar-places.shp");
 	file<geometry> suburbs_file <- osm_file("/gis/miramar/Miramar-suburbs.osm");
+	/*
+	//______ T I J U A N A  ________________
+	int caseStudy <- 1;
+	file<geometry> roads_file <- osm_file("/gis/tijuana/tijuana.osm");
+	file street_conditions_file <- file("/gis/tijuana/tijuana-roads.shp"); 
+	file places_file <- file("/tijuana/tijuana-places.shp");
+	file<geometry> suburbs_file;
+	*/
 	geometry shape <- envelope(roads_file);
 	
 	//The graph for the representation of the relations between people in the physical space
@@ -125,27 +136,37 @@ global torus:false{
 		write "Places: " + length(places-suburbs);
 		write "Suburbs: " + length(suburbs);
 		//Integrate the streets conditions according with the DATA GIVEN BY EXPERTS 
-		//Here we extract the information from the shapefile and search the recently created streets objects, we look for a coincidence in the name and load the condition feature
-		create gis_data from:street_conditions_file with: [name_str::string(read("NOMBRE")),condition_str::string(read("CONDICION"))]{
-			if condition_str = "A"{
-				condition_str <- "ASFALTO";
+		
+		if caseStudy = 0{
+			
+			// _________Z A P O P A N Case Study_______________
+			//Here we extract the information from the shapefile and search the recently created streets objects, we look for a coincidence in the name and load the condition feature
+			create gis_data from:street_conditions_file with: [name_str::string(read("NOMBRE")),condition_str::string(read("CONDICION"))]{
+				if condition_str = "A"{
+					condition_str <- "ASFALTO";
+				}
+				else if condition_str = "C"{
+					condition_str <- "CONCRETO";
+				}
+				else if condition_str = "E"{
+					condition_str <- "EMPEDRADO";
+				}
+				else if condition_str = "P"{
+					condition_str <- "PAVIMENTO";
+				}
+				else if condition_str = "T"{
+					condition_str <- "TERRACERIA"; 
+				}
+				else if condition_str = "" or condition_str = nil{
+					condition_str <- "CNE";
+				}
 			}
-			else if condition_str = "C"{
-				condition_str <- "CONCRETO";
-			}
-			else if condition_str = "E"{
-				condition_str <- "EMPEDRADO";
-			}
-			else if condition_str = "P"{
-				condition_str <- "PAVIMENTO";
-			}
-			else if condition_str = "T"{
-				condition_str <- "TERRACERIA"; 
-			}
-			else if condition_str = "" or condition_str = nil{
-				condition_str <- "CNE";
-			}
+			
 		}
+		else if caseStudy = 1{
+			// _________T I J U A N A  Case Study_______________
+		}
+		
 		
 		int counter <- 0;
 		list<gis_data> noCoincidence;
@@ -154,38 +175,43 @@ global torus:false{
 		
 		ask road{
 	
-			self.condition <- "CNE";
-			list<gis_data> coincidences <- gis_data where(lower_case(each.name) = lower_case(self.name));
-			if length(coincidences) > 0 {
-				
-				gis_data gis_data_element <- one_of(coincidences);
-				self.condition <- gis_data_element.condition_str;
-				add self to: coincidence;
-				
-				if gis_data_element.condition_str = "ASFALTO"{
-					self.weight_value <- 10.0;
+			if caseStudy = 0{
+				self.condition <- "CNE";
+				list<gis_data> coincidences <- gis_data where(lower_case(each.name) = lower_case(self.name));
+				if length(coincidences) > 0 {
+					
+					gis_data gis_data_element <- one_of(coincidences);
+					self.condition <- gis_data_element.condition_str;
+					add self to: coincidence;
+					
+					if gis_data_element.condition_str = "ASFALTO"{
+						self.weight_value <- 10.0;
+					}
+					else if gis_data_element.condition_str = "PAVIMENTO"{
+						self.weight_value <- 10.0;
+					}
+					else if gis_data_element.condition_str = "CONCRETO"{
+						self.weight_value <- 10.0;
+					}
+					else if gis_data_element.condition_str = "EMPEDRADO"{
+						self.weight_value <- 60.0;
+					}
+					else if gis_data_element.condition_str = "TERRACERIA"{
+						self.weight_value <- 100.0;
+					}
+					else if gis_data_element.condition_str = "CNE"{
+						self.weight_value <- 1000.0;
+					}
+					counter <- counter + 1;
+					
+					//write self.name_str + ":" + self.weight;
 				}
-				else if gis_data_element.condition_str = "PAVIMENTO"{
-					self.weight_value <- 10.0;
-				}
-				else if gis_data_element.condition_str = "CONCRETO"{
-					self.weight_value <- 10.0;
-				}
-				else if gis_data_element.condition_str = "EMPEDRADO"{
-					self.weight_value <- 60.0;
-				}
-				else if gis_data_element.condition_str = "TERRACERIA"{
-					self.weight_value <- 100.0;
-				}
-				else if gis_data_element.condition_str = "CNE"{
+				else{
 					self.weight_value <- 1000.0;
 				}
-				counter <- counter + 1;
-				
-				//write self.name_str + ":" + self.weight;
 			}
-			else{
-				self.weight_value <- 1000.0;
+			else if caseStudy = 1{
+				self.weight_value <- self.shape.perimeter;
 			}
 			
 		}
@@ -198,7 +224,9 @@ global torus:false{
 		write "Coincidences = " + counter + " of " + length(gis_data);
 		
 		//Create suburb agents
-		create suburb from: suburbs_file with: [name_str::string(read("name")),place::string(read("place")),population::int(read("population"))];
+		if caseStudy = 0{
+			create suburb from: suburbs_file with: [name_str::string(read("name")),place::string(read("place")),population::int(read("population"))];
+		}
 		//Create agents representing people
 		numAgents <- 500;
 		create people number:numAgents{
@@ -298,6 +326,8 @@ species people skills:[moving]{
 		
 		location <- any_location_in(one_of(road));
 		target <- one_of(places).location;
+		//location <- one_of(suburbs).location;
+		//target <- one_of(suburbs).location;
 		
 	}
 	
@@ -328,7 +358,7 @@ species people skills:[moving]{
 	}
 	
 	aspect name:standard_aspect{
-		draw geometry:circle(agentsSize#m) color:rgb (73, 220, 48,255);			
+		draw geometry:circle(agentsSize#m) color:rgb (241, 216, 69,255);			
 	}
 	
 	aspect sphere{
@@ -343,14 +373,14 @@ experiment simulation type:gui{
 	
 	parameter "perception" var: distanceForInteraction <- 50.0#m category:"Agents";
 	parameter "speed" var:agentsSpeed <- 5.0 category:"Agents";
-	parameter "Agents-size" var:agentsSize <- 5 category:"Agents";
-	parameter "Edges-Width" var:edgesWidth <- 3 category:"Agents";
-	parameter "Show People" var:showPeople <- true category: "GUI";
+	parameter "Agents-size" var:agentsSize <- 10 category:"Agents";
+	parameter "Edges-Width" var:edgesWidth <- 5 category:"Agents";
+	parameter "Show People" var:showPeople <- false category: "GUI";
 	parameter "Show Interactions" var:showInteractions <- true category: "GUI";
 	parameter "Show Streets" var:showStreets <- true category:"GUI";
-	parameter "Show Places" var:showPlaces <-true category:"GUI";
+	parameter "Show Places" var:showPlaces <-false category:"GUI";
 	parameter "Show Suburbs" var:showSuburbs <-false category:"GUI";
-	parameter "Show Paths" var:showPaths <- false category:"GUI";
+	parameter "Show Paths" var:showPaths <- true category:"GUI";
 	parameter "Asfalto" var:showAsfaltoStreet <- true category: "STREETS";
 	parameter "Concreto" var:showConcretoStreet <- true category: "STREETS";
 	parameter "Empedrado" var:showEmpedradoStreet <- true category: "STREETS";
@@ -372,7 +402,8 @@ experiment simulation type:gui{
 			//species road aspect:road_aspect;
 			graphics "Roads" {
 				rgb roadColor <- #silver;
-				if showStreets{
+				if showStreets and caseStudy = 0{
+					
 					if showAsfaltoStreet {
 						loop element over: road where (each.condition="ASFALTO"){
 							draw element color: roadColor border:roadColor;	
@@ -408,6 +439,11 @@ experiment simulation type:gui{
 					/*loop element over: road_network.edges{
 						draw geometry(element) color: rgb(72, 161, 206) border:rgb(72, 161, 206);
 					}*/
+				}
+				else if showStreets and caseStudy = 1{
+					loop element over: road{
+						draw element color: roadColor border:roadColor;
+					}
 				}
 			}
 			

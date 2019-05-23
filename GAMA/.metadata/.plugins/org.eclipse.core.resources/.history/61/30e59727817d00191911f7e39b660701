@@ -344,7 +344,7 @@ experiment simulation type:gui{
 	parameter "perception" var: distanceForInteraction <- 50.0#m category:"Agents";
 	parameter "speed" var:agentsSpeed <- 5.0 category:"Agents";
 	parameter "Agents-size" var:agentsSize <- 5 category:"Agents";
-	parameter "Edges-Width" var:edgesWidth <- 3 category:"Agents";
+	parameter "Edges-Width" var:edgesWidth <- 5 category:"Agents";
 	parameter "Show People" var:showPeople <- true category: "GUI";
 	parameter "Show Interactions" var:showInteractions <- true category: "GUI";
 	parameter "Show Streets" var:showStreets <- true category:"GUI";
