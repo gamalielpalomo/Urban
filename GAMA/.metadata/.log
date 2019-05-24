@@ -1,11 +1,11 @@
-!SESSION 2019-05-23 11:23:31.075 -----------------------------------------------
+!SESSION 2019-05-24 09:28:24.888 -----------------------------------------------
 eclipse.buildId=${build.id}
 java.version=1.8.0_202
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-05-23 11:29:05.176
+!ENTRY org.eclipse.ui.workbench 4 2 2019-05-24 09:29:45.513
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -24,9 +24,9 @@ java.lang.NullPointerException
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:313)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.ui 4 4 2019-05-23 11:29:06.009
+!ENTRY org.eclipse.ui 4 4 2019-05-24 09:29:45.520
 !MESSAGE Exception in Decorator. The 'Metadata Decorator' decorator will be disabled.
-!SUBENTRY 1 org.eclipse.ui 4 4 2019-05-23 11:29:06.009
+!SUBENTRY 1 org.eclipse.ui 4 4 2019-05-24 09:29:45.520
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 java.lang.NullPointerException
@@ -45,900 +45,213 @@ java.lang.NullPointerException
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:313)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.apache.log4j 4 0 2019-05-23 11:54:33.142
+!ENTRY org.apache.log4j 4 0 2019-05-24 11:57:35.819
+!MESSAGE org.eclipse.xtext.ui.editor.hover.html.DefaultEObjectHoverProvider  - Error on computation of hover information. No hover information available for msi.gama.lang.gaml.gaml.impl.StringLiteralImpl@354b8e9 (eProxyURI: platform:/resource/SocialFabric_CS/models/Social%20Fabric.gaml#//@block/@statements.0/@block/@statements.34/@facets.0/@expr/@right/@exprs.0) at offset: 1286, length: 18
+
+!STACK 0
+java.lang.NullPointerException
+	at msi.gama.lang.gaml.ui.editor.GamlHyperlinkDetector.getURI(GamlHyperlinkDetector.java:95)
+	at msi.gama.lang.gaml.ui.hover.GamlDocumentationProvider.getDocumentation(GamlDocumentationProvider.java:62)
+	at org.eclipse.xtext.ui.editor.hover.html.DefaultHoverDocumentationProvider.getDocumentation(DefaultHoverDocumentationProvider.java:26)
+	at org.eclipse.xtext.ui.editor.hover.html.DefaultEObjectHoverProvider.getDocumentation(DefaultEObjectHoverProvider.java:117)
+	at org.eclipse.xtext.ui.editor.hover.html.DefaultEObjectHoverProvider.getHoverInfoAsHtml(DefaultEObjectHoverProvider.java:83)
+	at org.eclipse.xtext.ui.editor.hover.html.DefaultEObjectHoverProvider.getHoverInfo(DefaultEObjectHoverProvider.java:94)
+	at org.eclipse.xtext.ui.editor.hover.html.DefaultEObjectHoverProvider$2.getInfo(DefaultEObjectHoverProvider.java:539)
+	at org.eclipse.xtext.ui.editor.hover.DispatchingEObjectTextHover.getHoverInfo(DispatchingEObjectTextHover.java:41)
+	at msi.gama.lang.gaml.ui.hover.GamlHoverProvider$GamlDispatchingEObjectTextHover.getHoverInfo(GamlHoverProvider.java:136)
+	at org.eclipse.xtext.ui.editor.hover.AbstractEObjectHover$2.exec(AbstractEObjectHover.java:96)
+	at org.eclipse.xtext.ui.editor.hover.AbstractEObjectHover$2.exec(AbstractEObjectHover.java:1)
+	at org.eclipse.xtext.resource.OutdatedStateManager.exec(OutdatedStateManager.java:91)
+	at org.eclipse.xtext.ui.editor.model.XtextDocument$XtextDocumentLocker.internalReadOnly(XtextDocument.java:527)
+	at org.eclipse.xtext.ui.editor.model.XtextDocument$XtextDocumentLocker.readOnly(XtextDocument.java:499)
+	at org.eclipse.xtext.ui.editor.model.XtextDocument.readOnly(XtextDocument.java:138)
+	at org.eclipse.xtext.ui.editor.hover.AbstractEObjectHover.getHoverInfo2(AbstractEObjectHover.java:87)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:03:05.489
 !MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
 
-!ENTRY org.apache.log4j 4 0 2019-05-23 11:54:33.162
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:03:05.499
 !MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
 
-!ENTRY org.apache.log4j 4 0 2019-05-23 11:54:36.168
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:03:06.373
 !MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
 
-!ENTRY org.apache.log4j 4 0 2019-05-23 11:54:36.177
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:03:06.379
 !MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
 
-!ENTRY org.apache.log4j 4 0 2019-05-23 11:55:00.744
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:28.867
 !MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
 
-!ENTRY org.apache.log4j 4 0 2019-05-23 11:55:00.750
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:29.544
 !MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
 
-!ENTRY org.apache.log4j 4 0 2019-05-23 11:55:00.756
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:33.226
 !MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
 
-!ENTRY org.apache.log4j 4 0 2019-05-23 11:55:00.763
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:37.054
 !MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
 
-!ENTRY org.apache.log4j 4 0 2019-05-23 11:55:00.771
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:37.936
 !MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
 
-!ENTRY org.apache.log4j 4 0 2019-05-23 11:55:00.778
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:37.941
 !MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
 
-!ENTRY org.apache.log4j 4 0 2019-05-23 11:55:00.785
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:37.947
 !MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
 
-!ENTRY org.eclipse.ui 4 4 2019-05-23 12:03:31.239
-!MESSAGE An internal error has occurred.
-!STACK 0
-Unknown field 'vertices' for type geometry
-	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:68)
-	at msi.gaml.descriptions.SymbolDescription.flagError(SymbolDescription.java:247)
-	at msi.gaml.descriptions.SymbolDescription.error(SymbolDescription.java:277)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compileFieldExpr(GamlExpressionCompiler.java:548)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseDot(GamlExpressionCompiler.java:847)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:853)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:563)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.unary(GamlExpressionCompiler.java:215)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:963)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:587)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:183)
-	at msi.gaml.expressions.GamlExpressionFactory.createExpr(GamlExpressionFactory.java:140)
-	at msi.gama.util.GAML.compileExpression(GAML.java:366)
-	at msi.gama.util.GAML.compileExpression(GAML.java:358)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:115)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:1)
-	at ummisco.gama.ui.views.ExpandableItemsView.createItem(ExpandableItemsView.java:100)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addItem(MonitorView.java:85)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addOutput(MonitorView.java:79)
-	at msi.gama.outputs.AbstractDisplayOutput.lambda$0(AbstractDisplayOutput.java:42)
-	at ummisco.gama.ui.utils.SwtGui.lambda$14(SwtGui.java:580)
-	at ummisco.gama.ui.utils.WorkbenchHelper$2.runInUIThread(WorkbenchHelper.java:350)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at msi.gama.application.Application.start(Application.java:121)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:37.952
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
-!ENTRY org.eclipse.ui 4 4 2019-05-23 12:03:31.293
-!MESSAGE An internal error has occurred.
-!STACK 0
-Unknown field 'edges' for type geometry
-	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:68)
-	at msi.gaml.descriptions.SymbolDescription.flagError(SymbolDescription.java:247)
-	at msi.gaml.descriptions.SymbolDescription.error(SymbolDescription.java:277)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compileFieldExpr(GamlExpressionCompiler.java:548)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseDot(GamlExpressionCompiler.java:847)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:853)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:563)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.unary(GamlExpressionCompiler.java:215)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:963)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:587)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:183)
-	at msi.gaml.expressions.GamlExpressionFactory.createExpr(GamlExpressionFactory.java:140)
-	at msi.gama.util.GAML.compileExpression(GAML.java:366)
-	at msi.gama.util.GAML.compileExpression(GAML.java:358)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:115)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:1)
-	at ummisco.gama.ui.views.ExpandableItemsView.createItem(ExpandableItemsView.java:100)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addItem(MonitorView.java:85)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addOutput(MonitorView.java:79)
-	at msi.gama.outputs.AbstractDisplayOutput.lambda$0(AbstractDisplayOutput.java:42)
-	at ummisco.gama.ui.utils.SwtGui.lambda$14(SwtGui.java:580)
-	at ummisco.gama.ui.utils.WorkbenchHelper$2.runInUIThread(WorkbenchHelper.java:350)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at msi.gama.application.Application.start(Application.java:121)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
 
-!ENTRY org.eclipse.ui 4 4 2019-05-23 12:22:53.760
-!MESSAGE An internal error has occurred.
-!STACK 0
-Unknown field 'vertices' for type geometry
-	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:68)
-	at msi.gaml.descriptions.SymbolDescription.flagError(SymbolDescription.java:247)
-	at msi.gaml.descriptions.SymbolDescription.error(SymbolDescription.java:277)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compileFieldExpr(GamlExpressionCompiler.java:548)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseDot(GamlExpressionCompiler.java:847)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:853)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:563)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.unary(GamlExpressionCompiler.java:215)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:963)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:587)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:183)
-	at msi.gaml.expressions.GamlExpressionFactory.createExpr(GamlExpressionFactory.java:140)
-	at msi.gama.util.GAML.compileExpression(GAML.java:366)
-	at msi.gama.util.GAML.compileExpression(GAML.java:358)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:115)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:1)
-	at ummisco.gama.ui.views.ExpandableItemsView.createItem(ExpandableItemsView.java:100)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addItem(MonitorView.java:85)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addOutput(MonitorView.java:79)
-	at msi.gama.outputs.AbstractDisplayOutput.lambda$0(AbstractDisplayOutput.java:42)
-	at ummisco.gama.ui.utils.SwtGui.lambda$14(SwtGui.java:580)
-	at ummisco.gama.ui.utils.WorkbenchHelper$2.runInUIThread(WorkbenchHelper.java:350)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at msi.gama.application.Application.start(Application.java:121)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:37.957
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
-!ENTRY org.eclipse.ui 4 4 2019-05-23 12:22:53.788
-!MESSAGE An internal error has occurred.
-!STACK 0
-Unknown field 'edges' for type geometry
-	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:68)
-	at msi.gaml.descriptions.SymbolDescription.flagError(SymbolDescription.java:247)
-	at msi.gaml.descriptions.SymbolDescription.error(SymbolDescription.java:277)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compileFieldExpr(GamlExpressionCompiler.java:548)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseDot(GamlExpressionCompiler.java:847)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:853)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:563)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.unary(GamlExpressionCompiler.java:215)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:963)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:587)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:183)
-	at msi.gaml.expressions.GamlExpressionFactory.createExpr(GamlExpressionFactory.java:140)
-	at msi.gama.util.GAML.compileExpression(GAML.java:366)
-	at msi.gama.util.GAML.compileExpression(GAML.java:358)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:115)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:1)
-	at ummisco.gama.ui.views.ExpandableItemsView.createItem(ExpandableItemsView.java:100)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addItem(MonitorView.java:85)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addOutput(MonitorView.java:79)
-	at msi.gama.outputs.AbstractDisplayOutput.lambda$0(AbstractDisplayOutput.java:42)
-	at ummisco.gama.ui.utils.SwtGui.lambda$14(SwtGui.java:580)
-	at ummisco.gama.ui.utils.WorkbenchHelper$2.runInUIThread(WorkbenchHelper.java:350)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at msi.gama.application.Application.start(Application.java:121)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
 
-!ENTRY org.eclipse.ui 4 4 2019-05-23 12:27:51.685
-!MESSAGE An internal error has occurred.
-!STACK 0
-Unknown field 'vertices' for type geometry
-	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:68)
-	at msi.gaml.descriptions.SymbolDescription.flagError(SymbolDescription.java:247)
-	at msi.gaml.descriptions.SymbolDescription.error(SymbolDescription.java:277)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compileFieldExpr(GamlExpressionCompiler.java:548)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseDot(GamlExpressionCompiler.java:847)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:853)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:563)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.unary(GamlExpressionCompiler.java:215)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:963)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:587)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:183)
-	at msi.gaml.expressions.GamlExpressionFactory.createExpr(GamlExpressionFactory.java:140)
-	at msi.gama.util.GAML.compileExpression(GAML.java:366)
-	at msi.gama.util.GAML.compileExpression(GAML.java:358)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:115)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:1)
-	at ummisco.gama.ui.views.ExpandableItemsView.createItem(ExpandableItemsView.java:100)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addItem(MonitorView.java:85)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addOutput(MonitorView.java:79)
-	at msi.gama.outputs.AbstractDisplayOutput.lambda$0(AbstractDisplayOutput.java:42)
-	at ummisco.gama.ui.utils.SwtGui.lambda$14(SwtGui.java:580)
-	at ummisco.gama.ui.utils.WorkbenchHelper$2.runInUIThread(WorkbenchHelper.java:350)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at msi.gama.application.Application.start(Application.java:121)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:53.520
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
-!ENTRY org.eclipse.ui 4 4 2019-05-23 12:27:51.741
-!MESSAGE An internal error has occurred.
-!STACK 0
-Unknown field 'edges' for type geometry
-	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:68)
-	at msi.gaml.descriptions.SymbolDescription.flagError(SymbolDescription.java:247)
-	at msi.gaml.descriptions.SymbolDescription.error(SymbolDescription.java:277)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compileFieldExpr(GamlExpressionCompiler.java:548)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseDot(GamlExpressionCompiler.java:847)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:853)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:563)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.unary(GamlExpressionCompiler.java:215)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:963)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:587)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:183)
-	at msi.gaml.expressions.GamlExpressionFactory.createExpr(GamlExpressionFactory.java:140)
-	at msi.gama.util.GAML.compileExpression(GAML.java:366)
-	at msi.gama.util.GAML.compileExpression(GAML.java:358)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:115)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:1)
-	at ummisco.gama.ui.views.ExpandableItemsView.createItem(ExpandableItemsView.java:100)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addItem(MonitorView.java:85)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addOutput(MonitorView.java:79)
-	at msi.gama.outputs.AbstractDisplayOutput.lambda$0(AbstractDisplayOutput.java:42)
-	at ummisco.gama.ui.utils.SwtGui.lambda$14(SwtGui.java:580)
-	at ummisco.gama.ui.utils.WorkbenchHelper$2.runInUIThread(WorkbenchHelper.java:350)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at msi.gama.application.Application.start(Application.java:121)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
 
-!ENTRY org.eclipse.ui 4 4 2019-05-23 12:30:17.081
-!MESSAGE An internal error has occurred.
-!STACK 0
-Unknown field 'vertices' for type geometry
-	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:68)
-	at msi.gaml.descriptions.SymbolDescription.flagError(SymbolDescription.java:247)
-	at msi.gaml.descriptions.SymbolDescription.error(SymbolDescription.java:277)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compileFieldExpr(GamlExpressionCompiler.java:548)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseDot(GamlExpressionCompiler.java:847)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:853)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:563)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.unary(GamlExpressionCompiler.java:215)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:963)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:587)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:183)
-	at msi.gaml.expressions.GamlExpressionFactory.createExpr(GamlExpressionFactory.java:140)
-	at msi.gama.util.GAML.compileExpression(GAML.java:366)
-	at msi.gama.util.GAML.compileExpression(GAML.java:358)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:115)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:1)
-	at ummisco.gama.ui.views.ExpandableItemsView.createItem(ExpandableItemsView.java:100)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addItem(MonitorView.java:85)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addOutput(MonitorView.java:79)
-	at msi.gama.outputs.AbstractDisplayOutput.lambda$0(AbstractDisplayOutput.java:42)
-	at ummisco.gama.ui.utils.SwtGui.lambda$14(SwtGui.java:580)
-	at ummisco.gama.ui.utils.WorkbenchHelper$2.runInUIThread(WorkbenchHelper.java:350)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at msi.gama.application.Application.start(Application.java:121)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:53.526
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
-!ENTRY org.eclipse.ui 4 4 2019-05-23 12:30:17.111
-!MESSAGE An internal error has occurred.
-!STACK 0
-Unknown field 'edges' for type geometry
-	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:68)
-	at msi.gaml.descriptions.SymbolDescription.flagError(SymbolDescription.java:247)
-	at msi.gaml.descriptions.SymbolDescription.error(SymbolDescription.java:277)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compileFieldExpr(GamlExpressionCompiler.java:548)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseDot(GamlExpressionCompiler.java:847)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:853)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:563)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.unary(GamlExpressionCompiler.java:215)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:963)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:587)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:183)
-	at msi.gaml.expressions.GamlExpressionFactory.createExpr(GamlExpressionFactory.java:140)
-	at msi.gama.util.GAML.compileExpression(GAML.java:366)
-	at msi.gama.util.GAML.compileExpression(GAML.java:358)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:115)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:1)
-	at ummisco.gama.ui.views.ExpandableItemsView.createItem(ExpandableItemsView.java:100)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addItem(MonitorView.java:85)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addOutput(MonitorView.java:79)
-	at msi.gama.outputs.AbstractDisplayOutput.lambda$0(AbstractDisplayOutput.java:42)
-	at ummisco.gama.ui.utils.SwtGui.lambda$14(SwtGui.java:580)
-	at ummisco.gama.ui.utils.WorkbenchHelper$2.runInUIThread(WorkbenchHelper.java:350)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at msi.gama.application.Application.start(Application.java:121)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
 
-!ENTRY org.eclipse.ui 4 4 2019-05-23 12:35:48.945
-!MESSAGE An internal error has occurred.
-!STACK 0
-Unknown field 'vertices' for type geometry
-	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:68)
-	at msi.gaml.descriptions.SymbolDescription.flagError(SymbolDescription.java:247)
-	at msi.gaml.descriptions.SymbolDescription.error(SymbolDescription.java:277)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compileFieldExpr(GamlExpressionCompiler.java:548)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseDot(GamlExpressionCompiler.java:847)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:853)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:563)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.unary(GamlExpressionCompiler.java:215)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:963)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:587)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:183)
-	at msi.gaml.expressions.GamlExpressionFactory.createExpr(GamlExpressionFactory.java:140)
-	at msi.gama.util.GAML.compileExpression(GAML.java:366)
-	at msi.gama.util.GAML.compileExpression(GAML.java:358)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:115)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:1)
-	at ummisco.gama.ui.views.ExpandableItemsView.createItem(ExpandableItemsView.java:100)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addItem(MonitorView.java:85)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addOutput(MonitorView.java:79)
-	at msi.gama.outputs.AbstractDisplayOutput.lambda$0(AbstractDisplayOutput.java:42)
-	at ummisco.gama.ui.utils.SwtGui.lambda$14(SwtGui.java:580)
-	at ummisco.gama.ui.utils.WorkbenchHelper$2.runInUIThread(WorkbenchHelper.java:350)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at msi.gama.application.Application.start(Application.java:121)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:53.530
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
-!ENTRY org.eclipse.ui 4 4 2019-05-23 12:35:49.026
-!MESSAGE An internal error has occurred.
-!STACK 0
-Unknown field 'edges' for type geometry
-	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:68)
-	at msi.gaml.descriptions.SymbolDescription.flagError(SymbolDescription.java:247)
-	at msi.gaml.descriptions.SymbolDescription.error(SymbolDescription.java:277)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compileFieldExpr(GamlExpressionCompiler.java:548)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseDot(GamlExpressionCompiler.java:847)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:853)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:563)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.unary(GamlExpressionCompiler.java:215)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:963)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:587)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:183)
-	at msi.gaml.expressions.GamlExpressionFactory.createExpr(GamlExpressionFactory.java:140)
-	at msi.gama.util.GAML.compileExpression(GAML.java:366)
-	at msi.gama.util.GAML.compileExpression(GAML.java:358)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:115)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:1)
-	at ummisco.gama.ui.views.ExpandableItemsView.createItem(ExpandableItemsView.java:100)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addItem(MonitorView.java:85)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addOutput(MonitorView.java:79)
-	at msi.gama.outputs.AbstractDisplayOutput.lambda$0(AbstractDisplayOutput.java:42)
-	at ummisco.gama.ui.utils.SwtGui.lambda$14(SwtGui.java:580)
-	at ummisco.gama.ui.utils.WorkbenchHelper$2.runInUIThread(WorkbenchHelper.java:350)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at msi.gama.application.Application.start(Application.java:121)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
 
-!ENTRY org.eclipse.ui 4 4 2019-05-23 13:11:16.555
-!MESSAGE An internal error has occurred.
-!STACK 0
-Unknown field 'vertices' for type geometry
-	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:68)
-	at msi.gaml.descriptions.SymbolDescription.flagError(SymbolDescription.java:247)
-	at msi.gaml.descriptions.SymbolDescription.error(SymbolDescription.java:277)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compileFieldExpr(GamlExpressionCompiler.java:548)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseDot(GamlExpressionCompiler.java:847)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:853)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:563)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.unary(GamlExpressionCompiler.java:215)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:963)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:587)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:183)
-	at msi.gaml.expressions.GamlExpressionFactory.createExpr(GamlExpressionFactory.java:140)
-	at msi.gama.util.GAML.compileExpression(GAML.java:366)
-	at msi.gama.util.GAML.compileExpression(GAML.java:358)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:115)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:1)
-	at ummisco.gama.ui.views.ExpandableItemsView.createItem(ExpandableItemsView.java:100)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addItem(MonitorView.java:85)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addOutput(MonitorView.java:79)
-	at msi.gama.outputs.AbstractDisplayOutput.lambda$0(AbstractDisplayOutput.java:42)
-	at ummisco.gama.ui.utils.SwtGui.lambda$14(SwtGui.java:580)
-	at ummisco.gama.ui.utils.WorkbenchHelper$2.runInUIThread(WorkbenchHelper.java:350)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at msi.gama.application.Application.start(Application.java:121)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:53.534
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
-!ENTRY org.eclipse.ui 4 4 2019-05-23 13:11:16.608
-!MESSAGE An internal error has occurred.
-!STACK 0
-Unknown field 'edges' for type geometry
-	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:68)
-	at msi.gaml.descriptions.SymbolDescription.flagError(SymbolDescription.java:247)
-	at msi.gaml.descriptions.SymbolDescription.error(SymbolDescription.java:277)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compileFieldExpr(GamlExpressionCompiler.java:548)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseDot(GamlExpressionCompiler.java:847)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:853)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:563)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.unary(GamlExpressionCompiler.java:215)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:963)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:587)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:183)
-	at msi.gaml.expressions.GamlExpressionFactory.createExpr(GamlExpressionFactory.java:140)
-	at msi.gama.util.GAML.compileExpression(GAML.java:366)
-	at msi.gama.util.GAML.compileExpression(GAML.java:358)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:115)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:1)
-	at ummisco.gama.ui.views.ExpandableItemsView.createItem(ExpandableItemsView.java:100)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addItem(MonitorView.java:85)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addOutput(MonitorView.java:79)
-	at msi.gama.outputs.AbstractDisplayOutput.lambda$0(AbstractDisplayOutput.java:42)
-	at ummisco.gama.ui.utils.SwtGui.lambda$14(SwtGui.java:580)
-	at ummisco.gama.ui.utils.WorkbenchHelper$2.runInUIThread(WorkbenchHelper.java:350)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at msi.gama.application.Application.start(Application.java:121)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
 
-!ENTRY org.eclipse.ui 4 4 2019-05-23 18:04:31.399
-!MESSAGE An internal error has occurred.
-!STACK 0
-Unknown field 'vertices' for type geometry
-	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:68)
-	at msi.gaml.descriptions.SymbolDescription.flagError(SymbolDescription.java:247)
-	at msi.gaml.descriptions.SymbolDescription.error(SymbolDescription.java:277)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compileFieldExpr(GamlExpressionCompiler.java:548)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseDot(GamlExpressionCompiler.java:847)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:853)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:563)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.unary(GamlExpressionCompiler.java:215)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:963)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:587)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:183)
-	at msi.gaml.expressions.GamlExpressionFactory.createExpr(GamlExpressionFactory.java:140)
-	at msi.gama.util.GAML.compileExpression(GAML.java:366)
-	at msi.gama.util.GAML.compileExpression(GAML.java:358)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:115)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:1)
-	at ummisco.gama.ui.views.ExpandableItemsView.createItem(ExpandableItemsView.java:100)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addItem(MonitorView.java:85)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addOutput(MonitorView.java:79)
-	at msi.gama.outputs.AbstractDisplayOutput.lambda$0(AbstractDisplayOutput.java:42)
-	at ummisco.gama.ui.utils.SwtGui.lambda$14(SwtGui.java:580)
-	at ummisco.gama.ui.utils.WorkbenchHelper$2.runInUIThread(WorkbenchHelper.java:350)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at msi.gama.application.Application.start(Application.java:121)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:53.538
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
 
-!ENTRY org.eclipse.ui 4 4 2019-05-23 18:04:31.461
-!MESSAGE An internal error has occurred.
-!STACK 0
-Unknown field 'edges' for type geometry
-	at msi.gama.runtime.exceptions.GamaRuntimeException.error(GamaRuntimeException.java:68)
-	at msi.gaml.descriptions.SymbolDescription.flagError(SymbolDescription.java:247)
-	at msi.gaml.descriptions.SymbolDescription.error(SymbolDescription.java:277)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compileFieldExpr(GamlExpressionCompiler.java:548)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseDot(GamlExpressionCompiler.java:847)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:853)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseAccess(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:563)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.unary(GamlExpressionCompiler.java:215)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:963)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.caseFunction(GamlExpressionCompiler.java:1)
-	at msi.gama.lang.gaml.gaml.util.GamlSwitch.doSwitch(GamlSwitch.java:587)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:53)
-	at org.eclipse.emf.ecore.util.Switch.doSwitch(Switch.java:69)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:201)
-	at msi.gama.lang.gaml.expression.GamlExpressionCompiler.compile(GamlExpressionCompiler.java:183)
-	at msi.gaml.expressions.GamlExpressionFactory.createExpr(GamlExpressionFactory.java:140)
-	at msi.gama.util.GAML.compileExpression(GAML.java:366)
-	at msi.gama.util.GAML.compileExpression(GAML.java:358)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:115)
-	at ummisco.gama.ui.views.inspectors.MonitorView.createItemContentsFor(MonitorView.java:1)
-	at ummisco.gama.ui.views.ExpandableItemsView.createItem(ExpandableItemsView.java:100)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addItem(MonitorView.java:85)
-	at ummisco.gama.ui.views.inspectors.MonitorView.addOutput(MonitorView.java:79)
-	at msi.gama.outputs.AbstractDisplayOutput.lambda$0(AbstractDisplayOutput.java:42)
-	at ummisco.gama.ui.utils.SwtGui.lambda$14(SwtGui.java:580)
-	at ummisco.gama.ui.utils.WorkbenchHelper$2.runInUIThread(WorkbenchHelper.java:350)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at msi.gama.application.Application.start(Application.java:121)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:57.727
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:58.016
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:05:58.244
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:00.690
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:00.695
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:00.700
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:00.705
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:00.709
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:07.449
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:07.455
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:07.460
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:07.464
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:07.469
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:08.543
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:10.282
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:10.287
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:10.291
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:10.295
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:10.300
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:35.688
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:35.693
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:35.697
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:35.702
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:35.706
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:37.253
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:37.258
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:37.262
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:37.266
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
+
+!ENTRY org.apache.log4j 4 0 2019-05-24 12:06:37.271
+!MESSAGE org.eclipse.xtext.linking.lazy.LazyLinkingResource  - An element of type msi.gama.lang.gaml.gaml.impl.TypeDefinitionImpl is not assignable to the reference VariableRef.ref
+
