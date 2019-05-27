@@ -1,4 +1,4 @@
-#Thu May 23 18:41:14 CDT 2019
+#Mon May 27 16:59:27 CDT 2019
 \!/=
 /instance/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
 /instance/org.eclipse.core.resources/pathvariable.CACHE_LOC=C\:/Users/gamaa/Documents/Software Projects/City Science/GAMA/.cache
@@ -12,6 +12,7 @@
 /instance/org.eclipse.ui.ide/platformState=1558628613773
 /instance/org.eclipse.ui.ide/quickStart=false
 /instance/org.eclipse.ui.ide/tipsAndTricks=false
+/instance/org.eclipse.ui.workbench//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
 /instance/org.eclipse.ui.workbench/ENABLED_DECORATORS=org.eclipse.ui.LinkedResourceDecorator\:false,org.eclipse.ui.SymlinkDecorator\:true,org.eclipse.ui.VirtualResourceDecorator\:false,org.eclipse.ui.ContentTypeDecorator\:true,org.eclipse.ui.ResourceFilterDecorator\:false,msi.gama.application.decorator\:true,msi.gama.application.date.decorator\:false,msi.gama.light.decorator\:true,
 /instance/org.eclipse.ui.workbench/UIActivities.disabled2=true
 /instance/org.eclipse.ui.workbench/UIActivities.org.eclipse.xtext.ui=false
