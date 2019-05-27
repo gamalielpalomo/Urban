@@ -16,7 +16,7 @@ global torus:false{
 	int numAgents <- 500;
 	bool allowRoadsKnowledge <- false;
 	float agentsSpeed <- 5.0; //This is the mean walk speed of a person.
-	int agentsSize <- 6;
+	int agentsSize <- 10;
 	int edgesWidth <- 2;
 	
 	int sumEncounters;
@@ -221,7 +221,7 @@ experiment simulation type:gui{
 			species block aspect:default refresh:false;
 			//species block_front aspect:default refresh:false;
 			//species places aspect:default;
-			species people aspect:default trace:0;
+			species people aspect:default trace:3;
 		}
 		display Environment type:opengl ambient_light:100{
 			species road aspect:default refresh:false;
