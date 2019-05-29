@@ -1,0 +1,36 @@
+/***
+* Name: Movilidad
+* Author: Gamaliel Palomo
+* Description: Modelo para la movilidad dentro de una ciudad
+
+* Tags: Tag1, Tag2, TagN
+***/
+
+model Movilidad
+
+global torus:false{
+	file archivoSHP_calles <- file("gis/Zapopan/calles.shp");
+	geometry shape <- envelope(archivoSHP_calles);
+	init{
+		create calle from:archivoSHP_calles with:[nombre::string(read("NOMVIAL"))];	
+	}
+}
+
+species calle{
+	string nombre;
+	aspect default{
+		draw shape color:#silver;
+	}
+}
+
+species automovil{
+	
+}
+
+experiment experimento1 type:gui{
+	output{
+		display Principal type:opengl background:#black{
+			species calle aspect:default;
+		}	
+	}
+}

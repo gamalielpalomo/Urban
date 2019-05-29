@@ -1,0 +1,12 @@
+/***
+* Name: Movilidad
+* Author: Gamaliel Palomo
+* Description: Modelo para la movilidad dentro de una ciudad
+
+* Tags: Tag1, Tag2, TagN
+***/
+
+model Movilidad
+
+/* Insert your model definition here */
+
