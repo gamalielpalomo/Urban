@@ -15,8 +15,8 @@ global torus:false{
 	//Model parameters 
 	int numAgents <- 500;
 	bool allowRoadsKnowledge <- false;
-	float agentsSpeed <- 1.4; //This is the mean walk speed of a person.
-	int agentsSize <- 15;
+	float agentsSpeed <- 5.0; //This is the mean walk speed of a person.
+	int agentsSize <- 6;
 	int edgesWidth <- 2;
 	
 	int sumEncounters;
@@ -41,7 +41,7 @@ global torus:false{
 	
 	
 	reflex mainLoop{
-		do updateGraph();
+		//do updateGraph();
 		int stepEdges <- length(Encounters.edges);
 		networkDensity <- stepEdges / maxNumOfEdges;
 	}
@@ -67,8 +67,10 @@ global torus:false{
 			else if int_paving = 2 { int_paving <- 0; }
 			else{ int_paving <- 1; }
 		}
-		ask cell{ do initialize(); }
-		create road from:roads_file;
+		//ask cell{ do initialize(); }
+		create road from:roads_file{
+			do init_condition;
+		}
 		create places from: places_file;			
 		weight_map <- road as_map(each::each.weight_value);
 		road_network <- as_edge_graph(road);
@@ -76,15 +78,6 @@ global torus:false{
 		do updateGraph();
 		maxNumOfEdges <- (numAgents * (numAgents - 1)) / 2;
 	}
-}
-
-species osm_agent{
-
-	string name_str;
-	string highway_str;
-	string place_str;
-	string amenity;
-	string condition;
 }
 
 grid cell width:world.shape.width/100 height:world.shape.height/100{
@@ -99,17 +92,27 @@ grid cell width:world.shape.width/100 height:world.shape.height/100{
 		else{ attractivity <- 0; }
 	}
 	aspect default{
-		draw shape color:rgb(255-(127*attractivity),0+(127*attractivity),50,50);
+		draw shape color:rgb(0,100*attractivity,0,200);
 	}
 }
 
 species road{
 	string road_type;
-	string name;
-	string condition;
+	string road_name;
+	string str_condition;
+	int int_condition;
 	float weight_value;
+	action init_condition{
+		int_condition <- 0;
+		list nearBlockFronts;
+		nearBlockFronts <- block_front at_distance(70);
+		if length(nearBlockFronts)>0{
+			block tmpBlockFront <- one_of(nearBlockFronts);
+			int_condition <- tmpBlockFront.int_lightning;
+		}
+	}
 	aspect default{
-		draw shape color: #silver;
+		draw shape color: rgb(255-(127*int_condition),0+(127*int_condition),50,255);
 	}
 }
 
@@ -117,7 +120,8 @@ species block{
 	string blockID;
 	string str_lightning;
 	int int_lightning;
-	aspect default{	draw shape color: rgb(255-(127*int_lightning),0+(127*int_lightning),50,255); }
+	aspect default{	draw shape color: rgb(255-(127*int_lightning),0+(127*int_lightning),50,100) depth:5.0;}
+	aspect simple{ draw shape color: rgb (218, 179, 61,255) depth:10;}
 }
 
 species block_front{
@@ -224,31 +228,14 @@ experiment simulation type:gui{
 	bool showInteractions <- false;
 		
 	output{
-		/*display chart {
-			chart "Encounters" type:series{
-				data "Agents interacting" value:chartEncounters color:rgb(150, 27, 105);
-				data "Encounters" value:length(Encounters.edges) color:rgb(41, 152, 160);
-				data "Network density" value: networkDensity color: rgb (32, 142, 77,255);
-			}
-		}*/
+		layout #split;
 		display Main type:opengl ambient_light:100{
-			species cell aspect:default refresh:false;
-			//species road aspect:default refresh:false;
-			//species block aspect:default refresh:false;
-			species block_front aspect:default refresh:false;
-			//species places aspect:default;
-			species people aspect:default;
-			graphics "Encounters Graph"{
-				if showInteractions{
-					loop edge over: Encounters.edges{
-						draw geometry(edge)+edgesWidth color: rgb (0, 0, 0,255) border: rgb(60, 140, 127);
-					}
-				}
-				
-			}
-					
+			species block aspect:default refresh:false;
+			species people aspect:default trace:0;
 		}
-		monitor "Agents interacting" value: people count(each.interacting=true);
-		monitor "Network density" value: networkDensity;	
+		display Environment type:opengl ambient_light:100{
+			species road aspect:default refresh:false;
+			//species cell aspect:default refresh:false;
+		}
 	}
 }
