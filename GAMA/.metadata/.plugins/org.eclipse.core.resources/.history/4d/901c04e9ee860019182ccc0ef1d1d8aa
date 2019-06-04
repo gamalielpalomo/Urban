@@ -17,6 +17,7 @@ global torus:false{
 	bool allowRoadsKnowledge <- true;
 	float agentsSpeed <- 1.4; //This is the mean walk speed of a person.
 	int agentsSize <- 5;
+	int edgesWidth <- 2;
 	
 	int sumEncounters;
 	int chartEncounters <- 0 update: people count (each.interacting);

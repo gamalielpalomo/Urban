@@ -15,8 +15,9 @@ global torus:false{
 	//Model parameters 
 	int numAgents <- 500;
 	bool allowRoadsKnowledge <- true;
-	float agentsSpeed <- 1.4; //This is the mean walk speed of a person.
-	int agentsSize <- 5;
+	float agentsSpeed <- 5.0; //This is the mean walk speed of a person.
+	int agentsSize <- 6;
+	int edgesWidth <- 2;
 	
 	int sumEncounters;
 	int chartEncounters <- 0 update: people count (each.interacting);
@@ -59,8 +60,24 @@ global torus:false{
 			else if str_lightning = "Alguna vialidad"{ int_lightning <- 1; }
 			else{ int_lightning <- 0; }
 		}
-		create block_front from:block_fronts_file with:[block_frontID::string(read("CVEGEO")), int_lightning::int(read("ALUMPUB_")), int_paving::int(read("RECUCALL_")), int_sideWalk::int(read("BANQUETA_")), int_access::int(read("ACESOPER_"))]{ do init_condition; }
-		create road from:roads_file{ do init_condition;	}
+		create block_front from:block_fronts_file with:[block_frontID::string(read("CVEGEO")), int_lightning::int(read("ALUMPUB_")), int_paving::int(read("RECUCALL_")), int_sideWalk::int(read("BANQUETA_")), int_access::int(read("ACESOPER_"))]{
+			if int_lightning = 1 { int_lightning <-2; }
+			else if int_lightning = 2 { int_lightning <- 0; }
+			else{ int_lightning <- 1; }
+			if int_paving = 1 or int_paving = 2 { int_paving <- 2; }
+			else if int_paving = 2 { int_paving <- 0; }
+			else{ int_paving <- 1; }
+			if int_sideWalk = 1 {int_sideWalk <- 2;}
+			else if int_sideWalk = 2 {int_sideWalk <- 0;}
+			else {int_sideWalk <- 1;}
+			if int_access = 2 {int_access <- 2;}
+			else {int_access <- 0;}
+			do init_Valuation;
+		}
+		//ask cell{ do initialize(); }
+		create road from:roads_file{
+			do init_condition;
+		}
 		create places from: places_file;			
 		weight_map <- road as_map(each::each.valuation);
 		road_network <- as_edge_graph(road);
@@ -135,20 +152,6 @@ species block_front{
 	int int_sideWalk;
 	int int_access;
 	float valuation;
-	action init_condition{
-		if int_lightning = 1 { int_lightning <-2; }
-			else if int_lightning = 2 { int_lightning <- 0; }
-			else{ int_lightning <- 1; }
-			if int_paving = 1 or int_paving = 2 { int_paving <- 2; }
-			else if int_paving = 2 { int_paving <- 0; }
-			else{ int_paving <- 1; }
-			if int_sideWalk = 1 {int_sideWalk <- 2;}
-			else if int_sideWalk = 2 {int_sideWalk <- 0;}
-			else {int_sideWalk <- 1;}
-			if int_access = 2 {int_access <- 2;}
-			else {int_access <- 0;}
-			do init_Valuation;
-	}
 	action init_Valuation{
 		valuation <- 0.0;
 		int sum <- int_lightning + int_paving + int_sideWalk + int_access;
@@ -182,6 +185,8 @@ species people skills:[moving]{
 	point target;
 	path shortestPath;
 	map<road, float> roads_knowledge;
+	
+	string income;
 	
 	init{
 		roads_knowledge <- weight_map;

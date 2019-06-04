@@ -15,8 +15,9 @@ global torus:false{
 	//Model parameters 
 	int numAgents <- 500;
 	bool allowRoadsKnowledge <- true;
-	float agentsSpeed <- 1.4; //This is the mean walk speed of a person.
-	int agentsSize <- 5;
+	float agentsSpeed <- 5.0; //This is the mean walk speed of a person.
+	int agentsSize <- 6;
+	int edgesWidth <- 2;
 	
 	int sumEncounters;
 	int chartEncounters <- 0 update: people count (each.interacting);
@@ -59,7 +60,9 @@ global torus:false{
 			else if str_lightning = "Alguna vialidad"{ int_lightning <- 1; }
 			else{ int_lightning <- 0; }
 		}
-		create block_front from:block_fronts_file with:[block_frontID::string(read("CVEGEO")), int_lightning::int(read("ALUMPUB_")), int_paving::int(read("RECUCALL_")), int_sideWalk::int(read("BANQUETA_")), int_access::int(read("ACESOPER_"))]{ do init_condition; }
+		create block_front from:block_fronts_file with:[block_frontID::string(read("CVEGEO")), int_lightning::int(read("ALUMPUB_")), int_paving::int(read("RECUCALL_")), int_sideWalk::int(read("BANQUETA_")), int_access::int(read("ACESOPER_"))]{
+			do init_condition;
+		}
 		create road from:roads_file{ do init_condition;	}
 		create places from: places_file;			
 		weight_map <- road as_map(each::each.valuation);
