@@ -61,10 +61,7 @@ global torus:false{
 		}
 		create block_front from:block_fronts_file with:[block_frontID::string(read("CVEGEO")), int_lightning::int(read("ALUMPUB_")), int_paving::int(read("RECUCALL_")), int_sideWalk::int(read("BANQUETA_")), int_access::int(read("ACESOPER_"))]{ do init_condition; }
 		create road from:roads_file{ do init_condition;	}
-		/*string id;
-	string name_str;
-	string economic_activity; */
-		create places from: places_file with:[id::string(read("id")),name_str::string(read("nom_estab"))];			
+		create places from: places_file;			
 		weight_map <- road as_map(each::each.valuation);
 		road_network <- as_edge_graph(road);
 		create people number:numAgents{ add node(self) to: Encounters; }
@@ -169,6 +166,7 @@ species places{
 	string id;
 	string name_str;
 	string economic_activity;
+	string place_str;
 	float height;
 	init{ height <- float(50+rnd(100)); }
 	aspect default{ draw geometry:square(60#m)  color:rgb (86, 140, 158,255) border:#indigo depth:height; }

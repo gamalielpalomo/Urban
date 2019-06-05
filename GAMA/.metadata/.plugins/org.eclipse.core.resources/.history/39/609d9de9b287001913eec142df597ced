@@ -64,7 +64,7 @@ global torus:false{
 		/*string id;
 	string name_str;
 	string economic_activity; */
-		create places from: places_file with:[id::string(read("id")),name_str::string(read("nom_estab"))];			
+		create places from: places_file with:[string_id::string(read("id"))];			
 		weight_map <- road as_map(each::each.valuation);
 		road_network <- as_edge_graph(road);
 		create people number:numAgents{ add node(self) to: Encounters; }
