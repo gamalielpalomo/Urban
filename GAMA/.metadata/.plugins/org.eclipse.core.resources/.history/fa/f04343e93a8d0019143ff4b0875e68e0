@@ -12,7 +12,7 @@ global torus:false{
 	
 	//Declaration of the global variables
 	//Model parameters 
-	int numAgents <- 500;
+	int numAgents <- 1;
 	bool allowRoadsKnowledge <- false;
 	float agentSpeed <- 1.4; //This is the mean walk speed of a person.
 	int agentSize <- 15;
@@ -173,7 +173,7 @@ species people skills:[moving]{
 	point target;
 	path shortestPath;
 	map<road, float> roads_knowledge;
-	list<places> routine;
+	list routine;
 	bool onTheWay;
 	
 	init{
@@ -184,26 +184,25 @@ species people skills:[moving]{
 		speed <- agentSpeed;
 		do buildRoutine;
 		do updateTarget;
-		loop while: shortestPath = nil or shortestPath = []{
-				routine[routineCount] <- one_of(places at_distance(2#km));
-				target <- routine[routineCount].location;
-				do updateShortestPath;
-			}
+		/*loop while: shortestPath = nil{
+			do updateTarget;
+			do updateShortestPath;
+		}*/
 		create targets{ location <- myself.target; }
 		pEncounters <- [];
 	}
 	action buildRoutine{ 
 		add one_of(places) to:routine;
-		location <- routine[0].location;
+		location <- routine[0];
 		loop times: 2{ add one_of(places at_distance(2#km)) to: routine; }
 	}
 	action updateTarget{
 		if length(routine)-1 = routineCount{
-			target <- routine[0].location;
+			target <- routine[0];
 			routineCount <- 0;
 		}else{
 			routineCount <- routineCount + 1;
-			target <- routine[routineCount].location;	
+			target <- routine[routineCount];	
 		}
 		do updateShortestPath;
 	}
@@ -215,11 +214,10 @@ species people skills:[moving]{
 		do follow path:shortestPath move_weights: shortestPath.edges as_map(each::each.perimeter);
 		if(location = target){
 			do updateTarget;
-			loop while: shortestPath = nil or shortestPath = []{
-				routine[routineCount] <- one_of(places at_distance(2#km));
-				target <- routine[routineCount].location;
+			/*loop while: shortestPath = nil or shortestPath = []{
+				target <- one_of(places).location;
 				do updateShortestPath;
-			}
+			}*/
 			ask targets{ location<-myself.target; }
 		}
 		/*pEncounters <- people at_distance(distanceForInteraction) where(each != self);
@@ -233,12 +231,16 @@ experiment simulation type:gui{
 	
 	bool showPaths <- false;
 	bool showInteractions <- false;
+	init{
+		create simulation with:[seed::10.0];
+	}
 	output{
 		layout #split;
-		display Main type:opengl ambient_light:50{
+		/*display Main type:opengl ambient_light:50{
 			species block aspect:simple refresh:false;
 			species people aspect:default trace:0;
-		}
+			species targets aspect:default;
+		}*/
 		display Mobility type:opengl ambient_light:100{
 			graphics "paths"{
 				loop person over:people{
@@ -246,6 +248,14 @@ experiment simulation type:gui{
 				}
 			}
 			species road aspect:gray refresh:false;
+			graphics "targetPlaces"{
+				loop person over:people{
+					loop element over:person.routine{
+						draw square(60#m) at element.location;
+					}
+				}
+			}
+			//species cell aspect:default refresh:false;
 		}
 	}
 }

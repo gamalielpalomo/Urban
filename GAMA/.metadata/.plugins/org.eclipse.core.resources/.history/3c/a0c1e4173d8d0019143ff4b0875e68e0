@@ -122,7 +122,7 @@ species block{
 	string blockID;
 	string str_lightning;
 	int int_lightning;
-	aspect default{	draw shape color: rgb(255-(127*int_lightning),0+(127*int_lightning),50,255) depth:rnd(30);}
+	aspect default{	draw shape color: rgb(255-(127*int_lightning),0+(127*int_lightning),50,255) depth:rnd(30) size:10.0;}
 	aspect simple{ draw shape color: rgb (218, 179, 61,120) depth:0;}
 }
 
@@ -184,11 +184,10 @@ species people skills:[moving]{
 		speed <- agentSpeed;
 		do buildRoutine;
 		do updateTarget;
-		loop while: shortestPath = nil or shortestPath = []{
-				routine[routineCount] <- one_of(places at_distance(2#km));
-				target <- routine[routineCount].location;
-				do updateShortestPath;
-			}
+		/*loop while: shortestPath = nil{
+			do updateTarget;
+			do updateShortestPath;
+		}*/
 		create targets{ location <- myself.target; }
 		pEncounters <- [];
 	}
@@ -215,11 +214,10 @@ species people skills:[moving]{
 		do follow path:shortestPath move_weights: shortestPath.edges as_map(each::each.perimeter);
 		if(location = target){
 			do updateTarget;
-			loop while: shortestPath = nil or shortestPath = []{
-				routine[routineCount] <- one_of(places at_distance(2#km));
-				target <- routine[routineCount].location;
+			/*loop while: shortestPath = nil or shortestPath = []{
+				target <- one_of(places).location;
 				do updateShortestPath;
-			}
+			}*/
 			ask targets{ location<-myself.target; }
 		}
 		/*pEncounters <- people at_distance(distanceForInteraction) where(each != self);
@@ -238,6 +236,7 @@ experiment simulation type:gui{
 		display Main type:opengl ambient_light:50{
 			species block aspect:simple refresh:false;
 			species people aspect:default trace:0;
+			species targets aspect:default;
 		}
 		display Mobility type:opengl ambient_light:100{
 			graphics "paths"{

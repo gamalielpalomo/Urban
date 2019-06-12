@@ -6,17 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="edgesWidth"/>
+		<item key="selection" value="agentSize"/>
 		<list key="findhistory">
+			<item value="agentsSize"/>
+			<item value="initLocationAndTarget"/>
+			<item value="updateTar"/>
+			<item value="agentsSpeed"/>
 			<item value="edgesWidth"/>
 			<item value="pathWidth"/>
 			<item value="streetWidth"/>
 			<item value="street_conditions_file"/>
 			<item value="road"/>
-			<item value="agentsSize"/>
 			<item value="agents"/>
 		</list>
 		<list key="replacehistory">
+			<item value="agentSize"/>
+			<item value="updateTarget"/>
+			<item value="agentSpeed"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

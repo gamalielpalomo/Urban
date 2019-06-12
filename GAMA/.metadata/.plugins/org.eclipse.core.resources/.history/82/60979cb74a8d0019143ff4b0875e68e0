@@ -238,6 +238,7 @@ experiment simulation type:gui{
 		display Main type:opengl ambient_light:50{
 			species block aspect:simple refresh:false;
 			species people aspect:default trace:0;
+			species targets aspect:default;
 		}
 		display Mobility type:opengl ambient_light:100{
 			graphics "paths"{
