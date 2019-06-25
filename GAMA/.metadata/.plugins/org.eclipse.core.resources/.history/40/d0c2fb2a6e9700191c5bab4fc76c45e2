@@ -236,7 +236,7 @@ experiment simulation type:gui{
 	output{
 		layout #split;
 		display Main type:opengl ambient_light:50{
-			species block aspect:default refresh:false;
+			species block aspect:simple refresh:false;
 			species people aspect:default trace:0;
 		}
 		/*display Mobility type:opengl ambient_light:100{
