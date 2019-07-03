@@ -34,7 +34,7 @@ global torus:false{
 	file places_file <- file("/gis/test/interest.shp");
 	geometry shape <- envelope(roads_file);
 	
-	string outputFile <- "/output/output.txt";
+	string outputFile <- "output";
 	
 	//The graph for the representation of the relations between people in the physical space
 	graph Encounters <- graph([]);
@@ -46,10 +46,8 @@ global torus:false{
 		int stepEdges <- length(Encounters.edges);
 		if current_date - starting_date >= 3600{
 			//list<agent>
-			int used <- list(road) count (length(list(people overlapping(self)))>0); //Counting the number of streets used currently by people. (Represented in GAMA as spacial overlapping between street species and people species.
-			write "Saving output";
-			save "test" type:"text" to:outputFile rewrite:false;
-			write "Done";
+			//int used <- list(road) count (length(list(people overlapping(self)))>0); //Counting the number of streets used currently by people. (Represented in GAMA as spacial overlapping between street species and people species.
+			save used type:"text" to:outputFile rewrite:false;
 			if dodie{do die;}
 		}
 		//networkDensity <- stepEdges / maxNumOfEdges;

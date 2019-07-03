@@ -34,7 +34,7 @@ global torus:false{
 	file places_file <- file("/gis/test/interest.shp");
 	geometry shape <- envelope(roads_file);
 	
-	string outputFile <- "/output/output.txt";
+	string outputFile <- "output.txt";
 	
 	//The graph for the representation of the relations between people in the physical space
 	graph Encounters <- graph([]);
