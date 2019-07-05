@@ -12,7 +12,7 @@ global torus:false{
 	
 	//Declaration of the global variables
 	//Model parameters 
-	int numAgents <- 500;
+	int numAgents <- 50;
 	bool allowRoadsKnowledge <- true;
 	float agentSpeed <- 1.4; //This is the mean walk speed of a person.
 	int agentSize <- 15;
@@ -25,6 +25,7 @@ global torus:false{
 	float distanceForInteraction;
 	graph road_network;
 	map<road, float> weight_map;
+	map<string, int> usedRoads;
 	
 	date starting_date <- date([2019,7,1,20,0,0]);
 
@@ -44,11 +45,12 @@ global torus:false{
 	reflex mainLoop{
 		//do updateGraph();
 		int stepEdges <- length(Encounters.edges);
+		//save (name+": "+current_date) type:text to:outputFile rewrite:false;
 		if current_date - starting_date >= 3600{
-			//list<agent>
-			int used <- list(road) count (length(list(people overlapping(self)))>0); //Counting the number of streets used currently by people. (Represented in GAMA as spacial overlapping between street species and people species.
+			int used <- 0;
+			//used <- length(road where(each overlaps geometry(people))); //Counting the number of streets used currently by people. (Represented in GAMA as spacial overlapping between street species and people species. 
 			write "Saving output";
-			save "test" type:"text" to:outputFile rewrite:false;
+			save used type:text to:outputFile rewrite:false;
 			write "Done";
 			if dodie{do die;}
 		}
@@ -234,6 +236,9 @@ species people skills:[moving]{
 			}
 			ask targets{ location<-myself.target; }
 		}
+		string tmpRoad <- string(current_edge);
+		write name+": "+tmpRoad;
+		//usedRoads(tmpRoad) <- 1;
 		/*pEncounters <- people at_distance(distanceForInteraction) where(each != self);
 		if length(pEncounters) > 0{ self.interacting <- true; }
 		else{ self.interacting<-false; }*/
@@ -242,14 +247,12 @@ species people skills:[moving]{
 }
 
 experiment simulation1 type:gui{
-	
-	bool showPaths <- false;
-	bool showInteractions <- false;
+	parameter var:dodie <- true;
 	output{
 		layout #split;
 		display Main type:opengl ambient_light:50{
 			species block aspect:default refresh:false;
-			species people aspect:default trace:0;
+			species people aspect:default;
 		}
 		/*display Mobility type:opengl ambient_light:100{
 			graphics "paths"{
@@ -262,7 +265,8 @@ experiment simulation1 type:gui{
 	}
 }
 experiment StreetsUsage{
-	init{
+	parameter var:dodie <- true;
+	/*init{
 		create simulation with:[dodie:true];
-	}
+	}*/
 }
